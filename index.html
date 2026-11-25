@@ -506,7 +506,7 @@ function donFormHtml(e){
   var h='<form class="panel section" data-act="don-form">'+inp("naziv","Naziv organizacije *",e.naziv);
   h+='<div class="field"><label for="d-vrsta">Vrsta</label><select id="d-vrsta" name="vrsta">'+VRSTE.map(function(v){return '<option value="'+v[0]+'"'+(e.vrsta===v[0]?" selected":"")+'>'+esc(v[1])+'</option>';}).join("")+'</select></div>';
   h+=ta("opis","Kako pomažu",e.opis)+inp("kome","Kome pomažu",e.kome);
-  h+='<div class="two">'+inp("web","Web stranica",e.web,"url")+inp("facebook","Facebook stranica",e.facebook,"url")+'</div>';
+  h+='<div class="two">'+inp("web","Web stranica",e.web,"url")+inp("facebook","Facebook stranica",e.facebook,"url")+'</div>'+inp("pozivi","Link na njihove javne pozive",e.pozivi,"url");
   h+='<div class="two">'+inp("email","Email",e.email,"email")+inp("telefon","Telefon",e.telefon,"tel")+'</div>';
   h+=inp("adresa","Adresa",e.adresa)+inp("osobe","Kontakt osobe",e.osobe)+ta("napomena","Napomena",e.napomena)+inp("provjereno","Datum provjere",e.provjereno,"date");
   h+='<p class="err" id="don-err" role="alert"></p><div class="row"><button class="btn primary" type="submit">Sačuvaj organizaciju</button><button class="btn ghost" type="button" data-act="cancel-don">Odustani</button>'+(e.id?'<button class="btn danger" type="button" data-act="delete-don" style="margin-left:auto">Obriši</button>':'')+'</div></form>';
@@ -839,8 +839,9 @@ function donatoriView(){
   h+='<div class="fbar"><div class="cats" role="group" aria-label="Vrsta organizacije">'+vr.map(function(c){var n=baza.filter(function(d){return c[0]==="sve"||d.vrsta===c[0];}).length;if(!n&&c[0]!=="sve"&&S.filterVrsta!==c[0])return "";return '<button class="cat" data-act="fvr" data-v="'+c[0]+'" aria-pressed="'+(S.filterVrsta===c[0])+'"><span class="ico">'+ic(c[2])+'</span>'+esc(c[1])+' <span class="n">'+n+'</span></button>';}).join("")+'</div></div>';
   if(!list.length)return h+'<div class="section">'+prazno("Nema organizacija za ovaj izbor.","")+'</div>';
   h+='<div class="section cgrid'+(S.anim?" stag":"")+'" style="margin-top:22px">'+list.map(function(d,i){
-    var web=safeUrl(d.web), fb=safeUrl(d.facebook), a='';
-    if(web)a+='<a class="act main-act" href="'+esc(web)+'" target="_blank" rel="noopener noreferrer">'+ic("globe")+'<span>'+esc(host(web))+'</span></a>';
+    var web=safeUrl(d.web), fb=safeUrl(d.facebook), poz=safeUrl(d.pozivi), a='';
+    if(poz)a+='<a class="act main-act" href="'+esc(poz)+'" target="_blank" rel="noopener noreferrer">'+ic("inbox")+'<span>Njihovi javni pozivi</span></a>';
+    if(web)a+='<a class="act'+(poz?"":" main-act")+'" href="'+esc(web)+'" target="_blank" rel="noopener noreferrer">'+ic("globe")+'<span>'+esc(host(web))+'</span></a>';
     if(fb)a+='<a class="act" href="'+esc(fb)+'" target="_blank" rel="noopener noreferrer" aria-label="Facebook stranica">'+ic("fb")+'<span>Facebook</span></a>';
     if(d.email)a+='<a class="act" href="mailto:'+esc(d.email)+'">'+ic("mail")+'<span>'+esc(d.email)+'</span></a>';
     if(d.telefon)a+='<a class="act" href="tel:'+esc(d.telefon.replace(/[^\d+]/g,""))+'">'+ic("phone")+'<span>'+esc(d.telefon)+'</span></a>';
@@ -1146,13 +1147,14 @@ document.addEventListener("submit",function(ev){
     S.editOp=null;render();return;
   }
   if(a==="don-form"&&S.editDon){
-    var dn=S.editDon, fields=["naziv","vrsta","opis","kome","web","facebook","email","telefon","adresa","osobe","napomena","provjereno"];
+    var dn=S.editDon, fields=["naziv","vrsta","opis","kome","web","facebook","pozivi","email","telefon","adresa","osobe","napomena","provjereno"];
     fields.forEach(function(k){dn[k]=(f[k].value||"").trim();});
     var de=document.getElementById("don-err");
     if(!dn.naziv){de.textContent="Upiši naziv organizacije.";return;}
     if(dn.web&&!safeUrl(dn.web)){de.textContent="Web adresa nije ispravna.";return;}
     if(dn.facebook&&!safeUrl(dn.facebook)){de.textContent="Facebook link nije ispravan.";return;}
-    var dbody={};fields.forEach(function(k){dbody[k]=dn[k]||"";});dbody.web=dn.web?safeUrl(dn.web):"";dbody.facebook=dn.facebook?safeUrl(dn.facebook):"";
+    if(dn.pozivi&&!safeUrl(dn.pozivi)){de.textContent="Link na javne pozive nije ispravan.";return;}
+    var dbody={};fields.forEach(function(k){dbody[k]=dn[k]||"";});dbody.web=dn.web?safeUrl(dn.web):"";dbody.facebook=dn.facebook?safeUrl(dn.facebook):"";dbody.pozivi=dn.pozivi?safeUrl(dn.pozivi):"";
     var dref=dn.id?S.db.collection("donatori").doc(dn.id):S.db.collection("donatori").doc();
     queue(function(){return dref.set(dbody);}).then(function(){toast("Organizacija sačuvana");});
     S.editDon=null;render();return;
