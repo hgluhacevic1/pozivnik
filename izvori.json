@@ -1166,7 +1166,8 @@
   "url": "https://www.bdcentral.net",
   "tip": "stranica",
   "grupa": "brcko",
-  "podrucje": ""
+  "podrucje": "",
+  "rezerva": "\"Brčko distrikt\" (javni poziv OR konkurs OR grant)"
  },
  {
   "naziv": "Fond za zaštitu životne sredine i energetsku efikasnost RS",
@@ -1243,7 +1244,8 @@
   "url": "https://icmp.int",
   "tip": "stranica",
   "grupa": "medjunarodna",
-  "podrucje": ""
+  "podrucje": "",
+  "rezerva": "ICMP \"Bosnia\" (\"call for\" OR grant)"
  },
  {
   "naziv": "Vlada Hercegbosanske županije (Kanton 10)",
@@ -1355,7 +1357,8 @@
   "url": "https://mttstk.gov.ba",
   "tip": "stranica",
   "grupa": "kanton",
-  "podrucje": ""
+  "podrucje": "",
+  "rezerva": "\"Tuzlanskog kantona\" ministarstvo trgovine turizma (javni poziv OR konkurs)"
  },
  {
   "naziv": "Vlada Tuzlanskog kantona",
@@ -1376,11 +1379,12 @@
   "url": "https://unicredit.ba",
   "tip": "stranica",
   "grupa": "kompanija",
-  "podrucje": ""
+  "podrucje": "",
+  "rezerva": "UniCredit BiH (donacija OR \"javni poziv\" OR konkurs)"
  },
  {
   "naziv": "Vijeće Evrope – ured u Sarajevu",
-  "url": "https://www.coe.int/bs/web/sarajevo",
+  "url": "https://www.coe.int/web/sarajevo",
   "tip": "stranica",
   "grupa": "medjunarodna",
   "podrucje": ""
@@ -1429,7 +1433,7 @@
  },
  {
   "naziv": "British Council BiH – Culture Connects",
-  "url": "https://www.britishcouncil.ba/en/programmes/arts/culture-connects-grants-202526",
+  "url": "https://www.britishcouncil.ba/en/programmes/arts",
   "tip": "stranica",
   "grupa": "ambasada",
   "podrucje": ""
@@ -1467,7 +1471,8 @@
   "url": "https://www.goethe.de/ins/ba/de/kul/aus/ocz.html",
   "tip": "stranica",
   "grupa": "ambasada",
-  "podrucje": ""
+  "podrucje": "",
+  "rezerva": "\"Goethe\" Sarajevo (poziv OR konkurs OR grant)"
  },
  {
   "naziv": "Privredna komora FBiH",
@@ -1534,14 +1539,14 @@
  },
  {
   "naziv": "UN Women BiH",
-  "url": "https://eca.unwomen.org",
+  "url": "https://eca.unwomen.org/en/programme-implementation",
   "tip": "stranica",
   "grupa": "medjunarodna",
   "podrucje": ""
  },
  {
   "naziv": "UNDP / UN – Gender Equality Accelerator (GEA)",
-  "url": "https://www.undp.org/bosnia-herzegovina",
+  "url": "https://www.undp.org/bosnia-herzegovina/news",
   "tip": "stranica",
   "grupa": "medjunarodna",
   "podrucje": ""
@@ -1579,21 +1584,24 @@
   "url": "https://www.undp.org/bs/bosnia-herzegovina/news",
   "tip": "stranica",
   "grupa": "portal",
-  "podrucje": ""
+  "podrucje": "",
+  "rezerva": "UNDP BiH (\"javni poziv\" OR \"call for proposals\" OR grant)"
  },
  {
   "naziv": "Ambasada SAD – grantovi",
   "url": "https://ba.usembassy.gov/education/grant-opportunities/",
   "tip": "stranica",
   "grupa": "portal",
-  "podrucje": ""
+  "podrucje": "",
+  "rezerva": "\"Ambasada SAD\" BiH (grant OR \"javni poziv\" OR \"mali grantovi\")"
  },
  {
   "naziv": "Ambasada Japana",
   "url": "https://www.bosnia.emb-japan.go.jp",
   "tip": "stranica",
   "grupa": "portal",
-  "podrucje": ""
+  "podrucje": "",
+  "rezerva": "\"Ambasada Japana\" BiH (grant OR projekat OR donacija)"
  },
  {
   "naziv": "Ambasada Češke",
@@ -1698,6 +1706,20 @@
   "url": "news:\"javni poziv\" poljoprivrednicima poticaji",
   "tip": "vijesti",
   "grupa": "opca",
+  "podrucje": ""
+ },
+ {
+  "naziv": "UNDP BiH – javni pozivi (vijesti)",
+  "url": "news:UNDP \"Bosni i Hercegovini\" \"javni poziv\"",
+  "tip": "vijesti",
+  "grupa": "medjunarodna",
+  "podrucje": ""
+ },
+ {
+  "naziv": "UN Women BiH (vijesti)",
+  "url": "news:\"UN Women\" BiH (poziv OR \"call for proposals\")",
+  "tip": "vijesti",
+  "grupa": "medjunarodna",
   "podrucje": ""
  }
 ]
