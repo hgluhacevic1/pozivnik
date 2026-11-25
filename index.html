@@ -1,3 +1,5 @@
+Pozivnik – fajlovi za GitHub
+index.html
 <!doctype html>
 <html lang="bs">
 <head>
@@ -389,6 +391,24 @@ footer{max-width:1220px;margin:0 auto;padding:0 20px 40px;color:var(--muted);fon
   *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
   .stream-in{animation:none!important}
 }
+.doc{max-width:760px;margin:0 auto}
+.doc h1{font-size:clamp(34px,5vw,52px)}
+.doc-meta{font-size:13px;color:var(--muted);margin:0 0 10px}
+.doc-toc{margin:28px 0 8px;padding:20px 22px;border-radius:22px;background:var(--surface)}
+.doc-toc p{margin:0 0 8px;font-weight:700}
+.doc-toc ol{margin:0;padding-left:20px;columns:2 240px;column-gap:28px;line-height:1.9}
+.doc-toc a{color:var(--ink2);text-decoration:none;font-weight:600}
+.doc-toc a:hover{color:var(--accent)}
+.doc-sec{padding-top:28px;scroll-margin-top:90px}
+.doc-sec h2{font-size:22px;margin-bottom:10px}
+.doc-sec p,.doc-sec li{color:var(--ink2);font-size:16px;line-height:1.7;max-width:68ch}
+.doc-sec ul{padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.doc-sec strong{color:var(--ink)}
+.foot-in{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:22px}
+.foot-in nav{display:flex;flex-wrap:wrap;gap:6px 18px}
+.foot-in a{color:var(--ink2);text-decoration:none;font-weight:600}
+.foot-in a:hover{color:var(--accent)}
+.danger-zone{border-color:color-mix(in srgb,var(--danger) 35%,var(--line))}
 </style>
 </head>
 <body>
@@ -399,7 +419,7 @@ footer{max-width:1220px;margin:0 auto;padding:0 20px 40px;color:var(--muted);fon
   </div>
 </header>
 <main id="app" tabindex="-1"><p class="lead">Učitavanje…</p></main>
-<footer>Podaci iz javnih objava. Rokove uvijek provjeri u originalnom pozivu.</footer>
+<footer><div class="foot-in"><span>Podaci iz javnih objava. Rokove uvijek provjeri u originalnom pozivu.</span><nav aria-label="Pravne informacije"><a href="#uslovi">Uslovi korištenja</a><a href="#privatnost">Politika privatnosti</a><a href="mailto:hgluhacevic22@gmail.com">Kontakt</a></nav></div></footer>
 <div id="drawer-root"></div>
 <div id="toast-root" aria-live="polite"></div>
 
@@ -457,7 +477,7 @@ function trackedCount(){var c=0;S.pozivi.forEach(function(p){if(tracked(p.id))c+
 function profileDone(){return !!(S.profil.tip||S.profil.podrucje||(S.profil.teme||[]).length);}
 
 /* ---------- routing ---------- */
-var VIEWS=["prijava","registracija","zaboravljena-lozinka","nova-lozinka","nalog","za-tebe","pozivi","donatori","izvori","rokovi","cijene","naruci","profil","uredi","zahtjevi"];
+var VIEWS=["prijava","registracija","zaboravljena-lozinka","nova-lozinka","nalog","za-tebe","pozivi","donatori","izvori","rokovi","cijene","naruci","profil","uredi","zahtjevi","privatnost","uslovi"];
 function view(){var h=(location.hash||"").replace(/^#/,"");return VIEWS.indexOf(h)!==-1?h:"za-tebe";}
 window.addEventListener("hashchange",function(){S.open=null;S.paywall=null;render();window.scrollTo(0,0);});
 
@@ -624,6 +644,7 @@ function authKlik(a,el){
   }
   if(a==="reg-reset"){S.regSent="";render();return true;}
   if(a==="reset-again"){S.resetSent="";render();return true;}
+  if(a==="doc-skok"){var cilj=document.getElementById(el.getAttribute("data-v"));if(cilj)cilj.scrollIntoView({behavior:reduceMotion?"auto":"smooth",block:"start"});return true;}
   if(a==="odjava-sve"){if(!confirm("Odjaviti se sa svih uređaja?"))return true;S.sb.auth.signOut({scope:"global"}).then(function(){location.hash="#za-tebe";location.reload();});return true;}
   return false;
 }
@@ -692,6 +713,15 @@ function authSubmit(a,f){
       setBusy(f,false);
       if(r.error){authErr(authPoruka(r.error),"mail-err");return;}
       f.reset();authErr("","mail-err");toast("Poslali smo link za potvrdu na "+nm+".");
+    });
+    return true;
+  }
+  if(a==="obrisi-form"){
+    if(f.potvrda.value.trim().toUpperCase()!=="OBRIŠI"&&f.potvrda.value.trim().toUpperCase()!=="OBRISI"){authErr("Upiši OBRIŠI da potvrdiš brisanje.","del-err");return true;}
+    setBusy(f,true,"Brišem…");
+    S.sb.rpc("obrisi_moj_nalog").then(function(r){
+      if(r.error){setBusy(f,false);authErr("Brisanje nije uspjelo. Piši nam na hgluhacevic22@gmail.com i obrisaćemo nalog ručno.","del-err");return;}
+      S.sb.auth.signOut().finally(function(){location.hash="#za-tebe";location.reload();});
     });
     return true;
   }
@@ -981,6 +1011,8 @@ function render(){
   else if(v==="naruci")app.innerHTML=naruciView();
   else if(v==="zahtjevi")app.innerHTML=S.canEdit?zahtjeviView():'<p class="lead">Ovo vide samo urednici.</p>';
   else if(v==="profil")app.innerHTML=profilView();
+  else if(v==="privatnost")app.innerHTML=privatnostView();
+  else if(v==="uslovi")app.innerHTML=usloviView();
   else if(v==="uredi")app.innerHTML=S.canEdit?urediView():'<p class="lead">Samo urednici mogu mijenjati pozive.</p>';
   renderDrawer();
   zavrsi(app,novo,v);
@@ -1046,7 +1078,7 @@ function registracijaView(){
     '<div class="two" style="gap:14px">'+fl("a-ime","ime","Ime i prezime","text","name","user",' required maxlength="80"')+fl("a-org","org","Organizacija (nije obavezno)","text","organization","org",' maxlength="120"')+'</div>'+
     fl("a-email","email","Email adresa","email","email","mail",' required inputmode="email"')+
     pwPolje("a-lozinka","Lozinka","new-password",true)+pwPolje("a-lozinka2","Ponovi lozinku","new-password",false)+
-    '<label class="check"><input type="checkbox" name="uslovi" required><span>Slažem se s <a href="#cijene">uslovima korištenja</a> i obradom podataka radi rada Pozivnika.</span></label>'+
+    '<label class="check"><input type="checkbox" name="uslovi" required><span>Prihvatam <a href="#uslovi" target="_blank">uslove korištenja</a> i pročitao sam <a href="#privatnost" target="_blank">politiku privatnosti</a>.</span></label>'+
     '<p class="err" id="auth-err" role="alert"></p><button class="btn primary wide" type="submit">Napravi besplatan nalog '+ic("arrow","go")+'</button></form>';
   return authOkvir(h,"registracija");
 }
@@ -1071,6 +1103,7 @@ function nalogView(){
   h+='<form class="acc-card" data-act="chpw-form" novalidate style="--d:1"><h2>Promjena lozinke</h2>'+pwPolje("a-lozinka","Nova lozinka","new-password",true)+pwPolje("a-lozinka2","Ponovi lozinku","new-password",false)+'<p class="err" id="pw-err" role="alert"></p><button class="btn dark" type="submit">Promijeni lozinku</button></form>';
   h+='<form class="acc-card" data-act="chmail-form" novalidate style="--d:2"><h2>Promjena emaila</h2><p class="hint">Poslat ćemo link za potvrdu na novi email. Do potvrde ostaje stari.</p>'+fl("m-mail","email","Novi email","email","email","mail",' required')+'<p class="err" id="mail-err" role="alert"></p><button class="btn dark" type="submit">Promijeni email</button></form>';
   h+='<div class="acc-card" style="--d:3"><h2>Sigurnost</h2><p class="hint">Odjavi se na svim uređajima na kojima si prijavljen, npr. ako si zaboravio odjavu na tuđem računaru.</p><div class="row"><a class="btn ghost" href="#profil">Profil organizacije</a><button class="btn danger" data-act="odjava-sve">Odjava sa svih uređaja</button></div></div>';
+  h+='<form class="acc-card danger-zone" data-act="obrisi-form" style="--d:4"><h2>Brisanje naloga</h2><p class="hint">Trajno briše nalog, profil, praćene rokove, upite i paket. Ovo se ne može poništiti.</p>'+fl("m-potvrda","potvrda","Upiši OBRIŠI za potvrdu","text","off","lock",' required')+'<p class="err" id="del-err" role="alert"></p><button class="btn danger" type="submit">Obriši moj nalog</button></form>';
   return h+'</div>';
 }
 function lockView(v){
@@ -1085,6 +1118,45 @@ function zahtjeviView(){
   return h+'<div class="section list">'+rows.map(function(r){var z=r.z, pr=(S.pretplate||{})[r.u], paket=z.sta!=="pisanje";
     var akt=paket?'<div class="row" style="margin-top:8px">'+(pr?'<span class="plan-badge">'+ic("check")+esc(pr.paket)+' do '+esc(fmtDate(pr.vazi_do))+'</span>':'<span class="plan-badge free">Paket nije aktivan</span>')+'<button class="btn" data-act="aktiviraj" data-u="'+esc(r.u)+'" data-paket="'+esc(z.sta)+'" data-v="1">Aktiviraj 1 mjesec</button><button class="btn" data-act="aktiviraj" data-u="'+esc(r.u)+'" data-paket="'+esc(z.sta)+'" data-v="12">Aktiviraj 1 godinu</button></div>':'';
     return '<div class="item" style="align-items:flex-start"><div class="main"><span class="donor">'+esc(fmtTs(z.kreirano))+'</span><h3>'+esc(z.organizacija)+', '+esc(z.sta==="pisanje"?"pisanje prijave":"paket "+z.sta)+'</h3><p class="meta" style="margin:4px 0">'+esc(z.osoba)+', <a href="mailto:'+esc(z.email)+'">'+esc(z.email)+'</a>'+(z.telefon?', '+esc(z.telefon):'')+'</p><p class="meta" style="margin:4px 0">'+esc(z.pozivNaslov||"Bez izabranog poziva")+'</p>'+(z.opis?'<p class="note" style="margin:6px 0">'+esc(z.opis)+'</p>':'')+((z.dokumenti||[]).length?'<p class="trust">Imaju: '+esc(z.dokumenti.join(", "))+'</p>':'')+akt+'</div><div class="side"><label class="sr" for="st-'+r.u+'-'+r.i+'">Status</label><select id="st-'+r.u+'-'+r.i+'" data-act="upit-status" data-u="'+esc(r.u)+'" data-i="'+r.i+'" style="min-height:44px;border:1px solid var(--line);border-radius:12px;padding:0 10px;background:var(--bg)">'+Object.keys(UPIT_ST).map(function(k){return '<option value="'+k+'"'+(z.status===k?" selected":"")+'>'+UPIT_ST[k]+'</option>';}).join("")+'</select></div></div>';}).join("")+'</div>';
+}
+
+/* ---------- pravni dokumenti ---------- */
+var PRAVNO_DATUM="25. 11. 2026.", KONTAKT_EMAIL="hgluhacevic22@gmail.com", VLASNIK="Hamza Gluhačević";
+function dok(naslov,uvod,dijelovi){
+  return '<article class="doc"><p class="doc-meta">Važi od '+PRAVNO_DATUM+'</p><h1>'+naslov+'</h1><p class="lead">'+uvod+'</p>'+
+    '<nav class="doc-toc" aria-label="Sadržaj"><p>Sadržaj</p><ol>'+dijelovi.map(function(d,i){return '<li><a href="#'+location.hash.replace(/^#/,"")+'" data-act="doc-skok" data-v="d'+i+'">'+d[0]+'</a></li>';}).join("")+'</ol></nav>'+
+    dijelovi.map(function(d,i){return '<section class="doc-sec" id="d'+i+'"><h2>'+(i+1)+'. '+d[0]+'</h2>'+d[1]+'</section>';}).join("")+
+    '<p class="trust" style="margin-top:32px">Pitanja: <a href="mailto:'+KONTAKT_EMAIL+'">'+KONTAKT_EMAIL+'</a></p></article>';
+}
+function privatnostView(){
+  return dok("Politika privatnosti","Ovdje piše koje podatke Pozivnik prikuplja, zašto, gdje se čuvaju i kako ih možeš vidjeti, ispraviti ili obrisati. Pisali smo jednostavno, bez sitnih slova.",[
+  ["Ko je odgovoran za podatke",'<p>Rukovalac podacima je '+VLASNIK+', Bosna i Hercegovina, koji vodi servis Pozivnik (u daljem tekstu: „mi“). Za sva pitanja o podacima piši na <a href="mailto:'+KONTAKT_EMAIL+'">'+KONTAKT_EMAIL+'</a>.</p><p>Podatke obrađujemo u skladu sa Zakonom o zaštiti ličnih podataka Bosne i Hercegovine („Službeni glasnik BiH“, broj 12/25).</p>'],
+  ["Koje podatke prikupljamo",'<ul><li><strong>Nalog:</strong> email adresa i lozinka. Lozinku ne vidimo: čuva se samo u šifrovanom (hash) obliku.</li><li><strong>Lični podaci koje sam upišeš:</strong> ime i prezime i naziv organizacije.</li><li><strong>Profil organizacije:</strong> vrsta organizacije, oblasti kojima se bavite i područje djelovanja. Služi da ti pokažemo odgovarajuće pozive.</li><li><strong>Korištenje servisa:</strong> pozivi čije rokove pratiš i koje si pozive otvorio u tekućem mjesecu (zbog ograničenja besplatnog paketa).</li><li><strong>Upiti i narudžbe:</strong> naziv organizacije, kontakt osoba, email, telefon, opis projekta i spisak dokumentacije koju imate, kad pošalješ upit za paket ili pisanje prijave.</li><li><strong>Paket:</strong> naziv paketa i datum do kada važi.</li><li><strong>Tehnički podaci:</strong> IP adresa i podaci o pregledniku koje naši pružaoci usluga automatski bilježe radi sigurnosti i rada servisa.</li></ul><p>Ne tražimo i ne obrađujemo posebne kategorije podataka (zdravlje, vjera, politička opredjeljenja i sl.), JMBG ni podatke o platnim karticama. U opis upita nemoj upisivati takve podatke.</p>'],
+  ["Zašto ih koristimo i na kojem osnovu",'<ul><li><strong>Da bi nalog i servis radili</strong> (prijava, profil, praćenje rokova, prikaz poziva): izvršenje ugovora, odnosno uslova korištenja koje prihvataš pri registraciji.</li><li><strong>Da odgovorimo na upit i izvršimo narudžbu</strong> (paket, pisanje prijave): izvršenje ugovora i radnje na tvoj zahtjev prije zaključenja ugovora.</li><li><strong>Fakture i evidencija plaćanja:</strong> zakonska obaveza.</li><li><strong>Sigurnost i sprječavanje zloupotrebe:</strong> legitimni interes.</li><li><strong>Obavještenja o rokovima i novim pozivima na email:</strong> samo ako ih uključiš, i možeš ih isključiti u svakom trenutku.</li></ul><p>Ne prodajemo podatke, ne dijelimo ih radi reklama i ne koristimo ih za automatsko odlučivanje koje bi imalo pravne posljedice za tebe.</p>'],
+  ["Gdje se podaci čuvaju i ko ih još obrađuje",'<p>Koristimo pouzdane pružaoce usluga koji podatke obrađuju samo po našem nalogu:</p><ul><li><strong>Supabase</strong> (baza podataka i prijava). Podaci se čuvaju na serverima u Evropskoj uniji, u Frankfurtu (Njemačka).</li><li><strong>Brevo</strong> (slanje emailova za potvrdu naloga, lozinku i obavještenja), Francuska, Evropska unija.</li><li><strong>GitHub</strong> (smještaj web stranice i program koji prikuplja javne pozive), SAD. Na GitHubu se ne čuvaju podaci korisnika, ali server stranice bilježi IP adresu posjetioca.</li><li><strong>Google Fonts i jsDelivr</strong> (fontovi i programske biblioteke stranice). Pri učitavanju stranice tvoj preglednik im šalje IP adresu.</li></ul><p>Kad podaci idu izvan BiH, to je u EU, koja ima odgovarajući nivo zaštite, ili uz standardne ugovorne klauzule koje ti pružaoci nude.</p>'],
+  ["Koliko dugo ih čuvamo",'<ul><li>Podatke naloga i profila dok imaš nalog. Kad obrišeš nalog, brišu se odmah, a iz rezervnih kopija pružaoca najkasnije u roku od 30 dana.</li><li>Upite i narudžbe do dvije godine od završetka posla, osim dijela koji moramo čuvati duže zbog računovodstvenih i poreskih propisa (fakture).</li><li>Tehničke zapise onoliko koliko ih čuvaju pružaoci, obično nekoliko dana do nekoliko sedmica.</li></ul>'],
+  ["Tvoja prava",'<p>U svakom trenutku možeš:</p><ul><li>zatražiti uvid u podatke koje imamo o tebi i njihovu kopiju;</li><li>ispraviti netačne podatke (većinu i sam, u <a href="#nalog">Mom nalogu</a> i <a href="#profil">Profilu</a>);</li><li>obrisati nalog i sve podatke dugmetom „Obriši nalog“ u Mom nalogu, ili zahtjevom na email;</li><li>ograničiti obradu ili joj prigovoriti;</li><li>dobiti podatke u mašinski čitljivom obliku (prenosivost);</li><li>povući pristanak za obavještenja, bez uticaja na raniju obradu.</li></ul><p>Na zahtjeve odgovaramo najkasnije u roku od 30 dana. Ako smatraš da podatke obrađujemo protivno zakonu, možeš podnijeti prigovor Agenciji za zaštitu ličnih podataka u Bosni i Hercegovini (<a href="https://www.azlp.ba" target="_blank" rel="noopener noreferrer">azlp.ba</a>).</p>'],
+  ["Kolačići i lokalna pohrana",'<p>Ne koristimo kolačiće za reklame ni za praćenje. Preglednik čuva samo ono što je nužno da bi servis radio: podatke o prijavi (da te ne odjavljuje pri svakom otvaranju) i privremene postavke stranice. Zato ne prikazujemo baner za kolačiće. Ako obrišeš podatke preglednika, samo ćeš se morati ponovo prijaviti.</p>'],
+  ["Sigurnost",'<p>Veza sa stranicom je šifrovana (HTTPS), lozinke se čuvaju samo kao hash, a pristup podacima u bazi je ograničen pravilima: svaki korisnik vidi samo svoje podatke, a upite vide samo urednici. Ako dođe do povrede podataka koja te može ugroziti, obavijestit ćemo tebe i Agenciju u zakonskom roku.</p>'],
+  ["Djeca",'<p>Pozivnik je namijenjen organizacijama i odraslima. Ne pravimo svjesno naloge osobama mlađim od 16 godina.</p>'],
+  ["Izmjene politike",'<p>Ako promijenimo ovu politiku, novu verziju objavljujemo ovdje s novim datumom. O bitnim izmjenama obavještavamo registrovane korisnike emailom prije nego što počnu važiti.</p>']
+  ]);
+}
+function usloviView(){
+  return dok("Uslovi korištenja","Ovo su pravila korištenja Pozivnika. Registracijom ih prihvataš. Ako se s nečim ne slažeš, nemoj koristiti servis i piši nam.",[
+  ["Šta je Pozivnik",'<p>Pozivnik je servis koji na jednom mjestu prikuplja javne pozive, grantove i davaoce sredstava u Bosni i Hercegovini, te nudi uslugu pisanja prijava na pozive. Servis vodi '+VLASNIK+', Bosna i Hercegovina („mi“).</p>'],
+  ["Nalog",'<ul><li>Za detalje poziva, praćenje rokova, profil i narudžbe potreban je nalog. Pregled liste poziva je dostupan bez naloga.</li><li>Podaci pri registraciji moraju biti tačni. Odgovoran si za čuvanje lozinke i za sve što se radi s tvog naloga.</li><li>Jedan nalog koristi jedna osoba. Dijeljenje pristupa s drugim organizacijama nije dozvoljeno.</li><li>Nalog možeš obrisati u svakom trenutku u Mom nalogu.</li></ul>'],
+  ["Paketi i cijene",'<ul><li><strong>Besplatno:</strong> lista svih poziva i rokova, detalji i link na original za 3 poziva mjesečno i praćenje 1 roka.</li><li><strong>Udruženja i klubovi:</strong> 30 KM mjesečno ili 300 KM godišnje.</li><li><strong>Firme i poduzetnici:</strong> 49 KM mjesečno ili 490 KM godišnje.</li></ul><p>Šta tačno uključuje koji paket piše na stranici <a href="#cijene">Cijene</a> i važi ono što je tamo objavljeno u trenutku narudžbe. Cijene su konačne cijene za korisnika.</p>'],
+  ["Plaćanje, trajanje i otkaz",'<ul><li>Paket naručuješ preko stranice. Šaljemo ti fakturu ili ponudu, a paket aktiviramo kad uplata bude evidentirana.</li><li>Paket traje mjesec ili godinu od aktivacije i <strong>ne obnavlja se automatski</strong>. Prije isteka te obavještavamo, a produžavaš ga novom uplatom.</li><li>Ako paket ne produžiš, nalog prelazi na besplatni paket. Podaci i profil ostaju sačuvani.</li><li>Ako u roku od 14 dana od aktivacije utvrdiš da servis ne odgovara onome što je opisano, vraćamo cijeli iznos na zahtjev poslan na email.</li></ul>'],
+  ["Tačnost podataka o pozivima",'<p>Pozive prikupljamo iz javnih izvora: web stranica institucija, službenih glasila i medija. Trudimo se da podaci budu tačni i ažurni, ali <strong>mjerodavan je uvijek originalni poziv</strong> davaoca. Prije prijave provjeri uslove, rok i dokumentaciju u originalu, do kojeg vodi link kod svakog poziva.</p><p>Rok s oznakom „≈“ i pozivi „Očekuje se“ su procjene na osnovu ranijih godina, a ne službeni podatak. Ne odgovaramo za štetu nastalu zbog oslanjanja na podatke bez provjere u originalnom pozivu, niti za izmjene koje davalac napravi nakon objave.</p>'],
+  ["Pisanje prijava",'<ul><li>Usluga pisanja prijave se ugovara posebno: nakon upita šaljemo ponudu s cijenom, rokom i spiskom dokumentacije. Posao počinje kad prihvatiš ponudu.</li><li>Ti odgovaraš za tačnost dokumentacije i podataka o organizaciji. Prije predaje pregledaš i potpisuješ prijavu, a predaješ je ti, osim ako se drugačije ne dogovorimo.</li><li><strong>Ne garantujemo da će prijava biti odobrena.</strong> Odluku donosi isključivo davalac sredstava.</li><li>Ako davalac ne dozvoljava da se izrada prijave plati iz budžeta projekta, usluga se plaća iz vlastitih sredstava.</li><li>Tekstove napisane za tebe možeš slobodno koristiti za svoje projekte nakon plaćanja usluge.</li></ul>'],
+  ["Dozvoljeno korištenje",'<p>Nije dozvoljeno:</p><ul><li>automatsko preuzimanje (scraping) baze poziva, davalaca i izvora, ni njihova preprodaja ili objavljivanje na drugom servisu;</li><li>zaobilaženje ograničenja paketa ili zaštite servisa;</li><li>korištenje servisa za slanje neželjenih poruka ili za bilo šta protivno zakonu.</li></ul><p>Kod kršenja ovih pravila možemo ograničiti ili ukinuti nalog. Ako je nalog bio plaćen, vraćamo srazmjeran dio iznosa, osim kod namjerne zloupotrebe.</p>'],
+  ["Prava na sadržaj",'<p>Tekstovi poziva pripadaju davaocima. Izbor, opis, razvrstavanje i baza poziva i izvora, izgled i program Pozivnika su naši. Smiješ ih koristiti za vlastiti rad, ali ne i kopirati u većem obimu.</p>'],
+  ["Dostupnost i odgovornost",'<p>Trudimo se da servis radi bez prekida, ali su mogući kraći prekidi zbog održavanja ili kvarova kod pružalaca usluga. Ukupna odgovornost prema tebi ograničena je na iznos koji si platio za paket u posljednjih 12 mjeseci, osim ako zakon ne propisuje drugačije, posebno kod namjere ili krajnje nepažnje.</p>'],
+  ["Izmjene uslova",'<p>Uslove možemo mijenjati. O bitnim izmjenama obavještavamo emailom najmanje 15 dana unaprijed. Plaćeni paket do isteka važi pod uslovima pod kojima je kupljen.</p>'],
+  ["Mjerodavno pravo",'<p>Na ove uslove primjenjuje se pravo Bosne i Hercegovine. Sporove nastojimo riješiti dogovorom. Ako to ne uspije, nadležan je stvarno nadležni sud u Bosni i Hercegovini, uz poštovanje prava potrošača da pokrene postupak pred sudom prema svom prebivalištu.</p>'],
+  ["Kontakt",'<p>'+VLASNIK+', Bosna i Hercegovina. Email: <a href="mailto:'+KONTAKT_EMAIL+'">'+KONTAKT_EMAIL+'</a>.</p>']
+  ]);
 }
 
 /* ---------- events ---------- */
@@ -1286,3 +1358,4 @@ start();
 </script>
 </body>
 </html>
+
