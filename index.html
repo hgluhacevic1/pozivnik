@@ -6,174 +6,389 @@
 <title>Pozivnik – javni pozivi u BiH</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#FFFFFF; --surface:#F4F4F6; --line:#E4E4E9; --ink:#0B0B0F; --ink2:#3A3A44; --muted:#5F5F69;
-  --accent:#0E7C5A; --accent-ink:#FFFFFF; --mint:#E7F5EF; --mint-ink:#0A4F3A;
-  --feature:#0B0B0F; --feature-ink:#FFFFFF; --feature-muted:#B8B8C2; --feature-num:#7EE2B8;
-  --warm:#FDEBD8; --warm-ink:#8A3A06; --grey:#E4E4E9; --grey-ink:#3A3A44; --danger:#B42318;
-  --focus:#0E7C5A; color-scheme: light;
-  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#FBFCFA; --surface:#F1F4F0; --surface2:#E8EDE7; --line:#DFE5DD; --ink:#0F1A14; --ink2:#34433A; --muted:#5B685F;
+  --accent:#0E7C5A; --accent-2:#0A6248; --accent-ink:#FFFFFF; --mint:#DDF2E8; --mint-ink:#0A4F3A;
+  --forest:#073D2D; --forest-2:#0B5640; --forest-ink:#FFFFFF; --forest-muted:#A9CFC0;
+  --feature:#073D2D; --feature-ink:#FFFFFF; --feature-muted:#A9CFC0; --feature-num:#7EE2B8;
+  --amber:#F59E0B; --warm:#FFF0D2; --warm-ink:#874A00; --red:#C2331F; --red-bg:#FDE6E1;
+  --sky:#E2ECF7; --sky-ink:#264E7A; --grey:#E8EDE7; --grey-ink:#34433A; --danger:#B42318;
+  --focus:#0E7C5A; --shadow:0 1px 2px rgba(15,26,20,.06),0 8px 24px -12px rgba(15,26,20,.18);
+  --shadow-hi:0 2px 4px rgba(15,26,20,.06),0 22px 44px -18px rgba(7,61,45,.35);
+  --ease:cubic-bezier(.2,.7,.2,1); color-scheme: light;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#101114; --surface:#1A1B20; --line:#2C2D33; --ink:#F2F2F5; --ink2:#D0D0D8; --muted:#A3A3AE;
-    --accent:#37B487; --accent-ink:#06140F; --mint:#173A2D; --mint-ink:#9BE7C6;
-    --feature:#16352A; --feature-ink:#FFFFFF; --feature-muted:#B9D5C9; --feature-num:#8EF0C6;
-    --warm:#3D2614; --warm-ink:#F7C08F; --grey:#2C2D33; --grey-ink:#D0D0D8; --danger:#F97066;
-    --focus:#37B487; color-scheme: dark;
+    --bg:#0D1310; --surface:#151D19; --surface2:#1C2621; --line:#26322C; --ink:#EEF3EF; --ink2:#C9D4CD; --muted:#98A69D;
+    --accent:#3CC08F; --accent-2:#5BD3A5; --accent-ink:#04140D; --mint:#14382A; --mint-ink:#9BE7C6;
+    --forest:#0B2E23; --forest-2:#114535; --forest-ink:#FFFFFF; --forest-muted:#A9CFC0;
+    --feature:#0F3E2F; --feature-ink:#FFFFFF; --feature-muted:#B9D5C9; --feature-num:#8EF0C6;
+    --warm:#3A2A10; --warm-ink:#F7C98A; --red:#FF7A63; --red-bg:#3A1914; --sky:#16273A; --sky-ink:#A8C7EA;
+    --grey:#26322C; --grey-ink:#C9D4CD; --danger:#F97066; --focus:#3CC08F;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6); --shadow-hi:0 2px 4px rgba(0,0,0,.4),0 22px 44px -18px rgba(0,0,0,.7);
+    color-scheme: dark;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#101114; --surface:#1A1B20; --line:#2C2D33; --ink:#F2F2F5; --ink2:#D0D0D8; --muted:#A3A3AE;
-  --accent:#37B487; --accent-ink:#06140F; --mint:#173A2D; --mint-ink:#9BE7C6;
-  --feature:#16352A; --feature-ink:#FFFFFF; --feature-muted:#B9D5C9; --feature-num:#8EF0C6;
-  --warm:#3D2614; --warm-ink:#F7C08F; --grey:#2C2D33; --grey-ink:#D0D0D8; --danger:#F97066;
-  --focus:#37B487; color-scheme: dark;
+  --bg:#0D1310; --surface:#151D19; --surface2:#1C2621; --line:#26322C; --ink:#EEF3EF; --ink2:#C9D4CD; --muted:#98A69D;
+  --accent:#3CC08F; --accent-2:#5BD3A5; --accent-ink:#04140D; --mint:#14382A; --mint-ink:#9BE7C6;
+  --forest:#0B2E23; --forest-2:#114535; --forest-ink:#FFFFFF; --forest-muted:#A9CFC0;
+  --feature:#0F3E2F; --feature-ink:#FFFFFF; --feature-muted:#B9D5C9; --feature-num:#8EF0C6;
+  --warm:#3A2A10; --warm-ink:#F7C98A; --red:#FF7A63; --red-bg:#3A1914; --sky:#16273A; --sky-ink:#A8C7EA;
+  --grey:#26322C; --grey-ink:#C9D4CD; --danger:#F97066; --focus:#3CC08F;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6); --shadow-hi:0 2px 4px rgba(0,0,0,.4),0 22px 44px -18px rgba(0,0,0,.7);
+  color-scheme: dark;
 }
-*{box-sizing:border-box}
+*,*::before,*::after{box-sizing:border-box}
 html{height:100%;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px)}
-body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
 a{color:var(--accent)}
 button,input,select,textarea{font:inherit;color:inherit}
 :focus-visible{outline:3px solid var(--focus);outline-offset:2px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.ic{width:18px;height:18px;flex:0 0 auto;display:inline-block;vertical-align:middle}
 
-header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
-.top-in{max-width:1180px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-.logo{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:22px;letter-spacing:-.03em;color:var(--ink);text-decoration:none;margin-right:auto}
+/* header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid transparent;transition:border-color .25s,box-shadow .25s}
+header.top.scrolled{border-bottom-color:var(--line);box-shadow:0 8px 24px -20px rgba(15,26,20,.5)}
+.top-in{max-width:1220px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{display:inline-flex;align-items:center;gap:10px;font-family:"Bricolage Grotesque","Plus Jakarta Sans",sans-serif;font-weight:800;font-size:23px;letter-spacing:-.04em;color:var(--ink);text-decoration:none;margin-right:auto}
 .logo .word span{color:var(--accent)}
-nav.tabs{display:flex;gap:4px;overflow-x:auto;max-width:100%;scrollbar-width:none}
-nav.tabs a{flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 14px;border-radius:999px;color:var(--ink2);text-decoration:none;font-size:15px;font-weight:600}
-nav.tabs a[aria-current="page"]{background:var(--ink);color:var(--bg)}
-.badge{display:inline-flex;min-width:22px;height:22px;padding:0 6px;align-items:center;justify-content:center;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-size:12px;font-weight:800}
+.logo .mark{transition:transform .5s var(--ease)}
+.logo:hover .mark{transform:rotate(-8deg) scale(1.06)}
+nav.tabs{position:relative;display:flex;gap:2px;overflow-x:auto;max-width:100%;scrollbar-width:none;padding:4px;border-radius:999px;background:var(--surface)}
+nav.tabs::-webkit-scrollbar{display:none}
+nav.tabs a{position:relative;z-index:1;flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 14px;border-radius:999px;color:var(--ink2);text-decoration:none;font-size:14.5px;font-weight:600;transition:color .2s}
+nav.tabs a:hover{color:var(--ink)}
+nav.tabs a[aria-current="page"]{color:var(--bg)}
+nav.tabs .thumb{position:absolute;z-index:0;top:4px;left:0;height:40px;border-radius:999px;background:var(--ink);transition:transform .42s var(--ease),width .42s var(--ease);pointer-events:none}
+nav.tabs a.cta{background:var(--accent);color:var(--accent-ink);margin-left:4px}
+nav.tabs a.cta[aria-current="page"]{background:transparent}
+.badge{display:inline-flex;min-width:20px;height:20px;padding:0 6px;align-items:center;justify-content:center;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-size:11.5px;font-weight:800}
 nav.tabs a[aria-current="page"] .badge{background:var(--bg);color:var(--ink)}
 
-main{max-width:1180px;margin:0 auto;padding:36px 20px 72px}
-h1{font-size:clamp(30px,5vw,46px);line-height:1.08;letter-spacing:-.04em;font-weight:800;margin:0}
-h2{font-size:24px;letter-spacing:-.02em;font-weight:800;margin:0}
-.lead{font-size:18px;color:var(--muted);margin:10px 0 0;max-width:62ch}
+main{max-width:1220px;margin:0 auto;padding:40px 20px 80px}
+h1,h2,h3,.display{font-family:"Bricolage Grotesque","Plus Jakarta Sans",sans-serif}
+h1{font-size:clamp(34px,5.4vw,58px);line-height:1.02;letter-spacing:-.045em;font-weight:800;margin:0}
+h2{font-size:clamp(22px,2.4vw,28px);letter-spacing:-.03em;font-weight:700;margin:0;line-height:1.15}
+.lead{font-size:18px;color:var(--muted);margin:12px 0 0;max-width:60ch}
 .row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
 .between{justify-content:space-between}
 .section{margin-top:40px}
+.count{font-variant-numeric:tabular-nums}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 18px;border-radius:999px;border:1px solid var(--ink);background:transparent;color:var(--ink);font-weight:700;font-size:15px;cursor:pointer;text-decoration:none}
-.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+/* buttons */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 20px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font-weight:700;font-size:15px;cursor:pointer;text-decoration:none;transition:transform .18s var(--ease),background-color .2s,border-color .2s,box-shadow .25s,color .2s;-webkit-tap-highlight-color:transparent}
+.btn:hover{border-color:var(--ink2)}
+.btn:active{transform:scale(.97)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);box-shadow:0 10px 24px -14px var(--accent)}
+.btn.primary:hover{background:var(--accent-2);border-color:var(--accent-2);box-shadow:0 14px 28px -14px var(--accent)}
 .btn.dark{background:var(--ink);border-color:var(--ink);color:var(--bg)}
-.btn.ghost{border-color:var(--line)}
+.btn.ghost{background:transparent}
 .btn.danger{border-color:var(--danger);color:var(--danger)}
-.btn[disabled]{opacity:.5;cursor:not-allowed}
+.btn[disabled]{opacity:.55;cursor:not-allowed;transform:none}
+.btn .ic{transition:transform .25s var(--ease)}
+.btn:hover .ic.go{transform:translateX(3px)}
+.btn.loading{color:transparent!important}
+.btn.loading::after{content:"";position:absolute;width:18px;height:18px;border-radius:50%;border:2.5px solid currentColor;border-color:var(--accent-ink) var(--accent-ink) transparent transparent;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
 
-.chip{min-height:40px;padding:0 15px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink2);font-size:14px;font-weight:600;cursor:pointer}
+/* status dot */
+.st{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;color:var(--ink2);white-space:nowrap}
+.st i{position:relative;width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.st-otvoren i{background:#16A34A}
+.st-otvoren i::after{content:"";position:absolute;inset:-4px;border-radius:50%;background:#16A34A;opacity:.35;animation:ping 1.8s var(--ease) infinite}
+.st-stalni i{background:#3B82C4}
+.st-ocekuje i,.st-provjeriti i{background:var(--amber)}
+.st-zatvoren{color:var(--muted)}
+.st-zatvoren i{background:var(--line);box-shadow:inset 0 0 0 1.5px var(--muted)}
+@keyframes ping{0%{transform:scale(.6);opacity:.5}80%,100%{transform:scale(1.9);opacity:0}}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:999px;font-size:12.5px;font-weight:700;white-space:nowrap;background:var(--surface);color:var(--ink2)}
+.pill.st-otvoren{background:var(--mint);color:var(--mint-ink)}
+.pill.st-ocekuje,.pill.st-provjeriti{background:var(--warm);color:var(--warm-ink)}
+.pill.st-stalni{background:var(--sky);color:var(--sky-ink)}
+
+/* filter bar */
+.fbar{display:flex;flex-direction:column;gap:14px;margin-top:28px}
+.fbar-top{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.seg{position:relative;display:inline-flex;padding:4px;border-radius:999px;background:var(--surface);overflow-x:auto;max-width:100%;scrollbar-width:none}
+.seg::-webkit-scrollbar{display:none}
+.seg button{position:relative;z-index:1;flex:0 0 auto;min-height:40px;padding:0 16px;border:0;border-radius:999px;background:transparent;color:var(--ink2);font-weight:700;font-size:14px;cursor:pointer;transition:color .25s}
+.seg button[aria-pressed="true"]{color:var(--ink)}
+.seg button .n{margin-left:6px;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}
+.seg .thumb{position:absolute;z-index:0;top:4px;left:0;height:40px;border-radius:999px;background:var(--bg);box-shadow:var(--shadow);transition:transform .42s var(--ease),width .42s var(--ease)}
+.cats{display:flex;gap:10px;overflow-x:auto;padding:2px 2px 10px;margin:0 -2px;scrollbar-width:thin;scroll-snap-type:x proximity}
+.cat{flex:0 0 auto;scroll-snap-align:start;display:flex;align-items:center;gap:10px;min-height:52px;padding:6px 16px 6px 6px;border-radius:18px;border:1px solid var(--line);background:var(--bg);color:var(--ink2);font-weight:700;font-size:14px;cursor:pointer;transition:transform .2s var(--ease),border-color .2s,background-color .2s,color .2s}
+.cat:hover{transform:translateY(-2px);border-color:var(--ink2)}
+.cat .ico{width:40px;height:40px;border-radius:13px;display:grid;place-items:center;background:var(--surface);color:var(--ink2);transition:background-color .2s,color .2s}
+.cat .n{font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}
+.cat[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.cat[aria-pressed="true"] .ico{background:var(--accent);color:var(--accent-ink)}
+.cat[aria-pressed="true"] .n{color:color-mix(in srgb,var(--bg) 70%,transparent)}
+.search{position:relative;display:flex;align-items:center;flex:0 1 440px;min-width:240px}
+.search .ic{position:absolute;left:16px;color:var(--muted);pointer-events:none}
+.search input{width:100%;height:52px;border:1px solid var(--line);border-radius:999px;background:var(--bg);padding:0 18px 0 46px;font-size:15.5px;transition:border-color .2s,box-shadow .2s}
+.search input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 18%,transparent)}
+.chip{min-height:40px;padding:0 15px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink2);font-size:14px;font-weight:600;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s}
 .chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
-.filter-label{font-size:13px;font-weight:700;color:var(--muted);width:72px}
 
-.pill{display:inline-flex;align-items:center;padding:5px 11px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap}
-.st-otvoren{background:var(--mint);color:var(--mint-ink)}
-.st-stalni{background:var(--grey);color:var(--grey-ink)}
-.st-ocekuje{background:var(--warm);color:var(--warm-ink)}
-.st-provjeriti{background:var(--warm);color:var(--warm-ink)}
-.st-zatvoren{background:var(--surface);color:var(--muted);border:1px solid var(--line)}
+/* call cards */
+.cgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:18px}
+.pcard{position:relative;display:flex;flex-direction:column;gap:14px;padding:22px;border-radius:26px;background:var(--bg);border:1px solid var(--line);box-shadow:var(--shadow);transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .3s;cursor:pointer;min-width:0;isolation:isolate}
+.pcard:hover{transform:translateY(-4px);box-shadow:var(--shadow-hi);border-color:color-mix(in srgb,var(--accent) 35%,var(--line))}
+.pcard::before{content:"";position:absolute;inset:0;border-radius:inherit;z-index:-1;background:radial-gradient(120% 80% at 100% 0%,color-mix(in srgb,var(--u,var(--accent)) 10%,transparent),transparent 55%);opacity:0;transition:opacity .4s}
+.pcard:hover::before{opacity:1}
+.ph{display:flex;align-items:center;gap:12px;min-width:0}
+.av{flex:0 0 auto;width:42px;height:42px;border-radius:14px;display:grid;place-items:center;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:15px;letter-spacing:-.02em;color:#fff;background:var(--av,#0E7C5A)}
+.ph .who{min-width:0;flex:1}
+.ph .who b{display:block;font-size:13.5px;font-weight:700;color:var(--ink2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ph .who small{display:block;font-size:12.5px;color:var(--muted)}
+.pcard h3{margin:0;font-size:20px;line-height:1.22;letter-spacing:-.02em;font-weight:700;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.facts-row{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:14px;color:var(--ink2)}
+.facts-row span{display:inline-flex;align-items:center;gap:6px;min-width:0}
+.facts-row .ic{width:16px;height:16px;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{display:inline-flex;align-items:center;gap:5px;padding:4px 10px 4px 7px;border-radius:999px;background:var(--surface);color:var(--ink2);font-size:12.5px;font-weight:600}
+.tag .ic{width:14px;height:14px;color:var(--accent)}
+.dl{margin-top:auto;display:flex;align-items:flex-end;gap:14px;padding-top:14px;border-top:1px dashed var(--line)}
+.dl .num{display:flex;align-items:baseline;gap:6px;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;line-height:1;color:var(--u,var(--accent))}
+.dl .num strong{font-size:40px;letter-spacing:-.04em}
+.dl .num em{font-style:normal;font-size:15px;font-weight:700}
+.dl .when{flex:1;min-width:0}
+.dl .when small{display:block;font-size:12.5px;color:var(--muted);margin-bottom:6px}
+.bar{height:6px;border-radius:999px;background:var(--surface2);overflow:hidden}
+.bar i{display:block;height:100%;border-radius:inherit;background:var(--u,var(--accent));transform-origin:left;animation:grow 1s var(--ease) both;animation-delay:calc(var(--d,0) * 60ms + 200ms)}
+@keyframes grow{from{transform:scaleX(0)}}
+.dl .nodate{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:18px;color:var(--ink2)}
+.go-btn{flex:0 0 auto;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer;transition:background-color .25s,color .25s,border-color .25s,transform .3s var(--ease)}
+.pcard:hover .go-btn{background:var(--ink);color:var(--bg);border-color:var(--ink);transform:rotate(-45deg)}
+.u-red{--u:var(--red)} .u-amber{--u:#D97706} .u-green{--u:var(--accent)} .u-none{--u:var(--muted)}
+.pcard.hero{background:var(--forest);border-color:var(--forest);color:var(--forest-ink)}
+.pcard.hero .ph .who b,.pcard.hero .facts-row{color:var(--forest-ink)}
+.pcard.hero .ph .who small,.pcard.hero .facts-row .ic,.pcard.hero .dl .when small{color:var(--forest-muted)}
+.pcard.hero .tag{background:rgba(255,255,255,.1);color:var(--forest-ink)}
+.pcard.hero .tag .ic{color:var(--feature-num)}
+.pcard.hero .dl{border-top-color:rgba(255,255,255,.18)}
+.pcard.hero .bar{background:rgba(255,255,255,.14)}
+.pcard.hero.u-green{--u:var(--feature-num)}
+.pcard.hero.u-red{--u:#FF8A73}
+.pcard.hero.u-amber{--u:#FCD34D}
+.pcard.hero .st{color:var(--forest-ink)}
+.pcard.hero .go-btn{background:transparent;color:var(--forest-ink);border-color:rgba(255,255,255,.35)}
+.pcard.hero:hover .go-btn{background:var(--feature-num);color:#04140D;border-color:var(--feature-num)}
 
-.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
-.card{background:var(--surface);border-radius:24px;padding:24px;display:flex;flex-direction:column;gap:12px;min-height:250px}
-.card.feature{background:var(--feature);color:var(--feature-ink)}
-.card.feature .donor,.card.feature .meta{color:var(--feature-muted)}
-.donor{font-size:13px;color:var(--muted)}
-.card h3{margin:0;font-size:21px;line-height:1.25;font-weight:700}
-.meta{font-size:15px;color:var(--ink2);margin:0}
-.big{font-size:44px;font-weight:800;letter-spacing:-.03em;line-height:1;margin:0;color:var(--accent)}
-.card.feature .big{color:var(--feature-num)}
-.small{font-size:13px;color:var(--muted);margin:4px 0 0}
-.card.feature .small{color:var(--feature-muted)}
-.card .foot{margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
-.card.feature .btn{border-color:var(--feature-ink);color:var(--feature-ink)}
-
-.search{display:flex;gap:6px;padding:6px;border:1px solid var(--line);border-radius:999px;background:var(--bg);flex:0 1 420px;min-width:240px}
-.search input{flex:1;min-width:0;border:none;outline:none;background:transparent;padding:0 14px;height:40px;font-size:15px}
-.search:focus-within{outline:3px solid var(--focus);outline-offset:2px}
-
+/* compact rows (rokovi, očekuje se) */
 .list{display:flex;flex-direction:column;gap:10px}
-.item{display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding:18px 20px;border-radius:20px;background:var(--surface)}
+.item{display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding:16px 18px;border-radius:20px;background:var(--bg);border:1px solid var(--line);transition:transform .25s var(--ease),box-shadow .25s,border-color .25s}
+.item:hover{box-shadow:var(--shadow);border-color:color-mix(in srgb,var(--accent) 30%,var(--line))}
 .item .main{flex:1 1 300px;min-width:0}
 .item h3{margin:2px 0;font-size:17px;line-height:1.3;font-weight:700}
-.item .side{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.days{font-weight:800;font-size:15px;white-space:nowrap}
-.empty{border:1px dashed var(--line);border-radius:20px;padding:32px;text-align:center;color:var(--muted)}
+.item .side{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.days{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:17px;white-space:nowrap;color:var(--u,var(--ink))}
+.donor{font-size:13px;color:var(--muted)}
+.meta{font-size:15px;color:var(--ink2);margin:0}
+.big{font-family:"Bricolage Grotesque",sans-serif;font-size:46px;font-weight:800;letter-spacing:-.04em;line-height:1;margin:0;color:var(--accent)}
+.small{font-size:13px;color:var(--muted);margin:4px 0 0}
+.empty{border:1.5px dashed var(--line);border-radius:24px;padding:40px 24px;text-align:center;color:var(--muted)}
+.empty .ic{width:36px;height:36px;color:var(--accent);margin-bottom:10px}
 .note{background:var(--surface);border-radius:16px;padding:14px 16px;color:var(--ink2);font-size:14px}
 .err{color:var(--danger);font-weight:600}
 
-.drawer-back{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:20;display:flex;justify-content:flex-end}
-.drawer{width:min(480px,100%);height:100%;background:var(--bg);overflow-y:auto;padding:calc(env(safe-area-inset-top,0px) + 20px) 24px calc(env(safe-area-inset-bottom,0px) + 24px);display:flex;flex-direction:column;gap:16px}
-.drawer .feature-box{background:var(--feature);color:var(--feature-ink);border-radius:22px;padding:20px}
+/* generic cards kept for izvori/cijene */
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:16px}
+.card{background:var(--surface);border-radius:24px;padding:24px;display:flex;flex-direction:column;gap:12px;min-height:0}
+.card h3{margin:0;font-size:21px;line-height:1.25;font-weight:700}
+
+/* donor cards */
+.dcard{position:relative;display:flex;flex-direction:column;gap:12px;padding:22px;border-radius:26px;background:var(--bg);border:1px solid var(--line);box-shadow:var(--shadow);transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .3s;min-width:0}
+.dcard:hover{transform:translateY(-4px);box-shadow:var(--shadow-hi);border-color:color-mix(in srgb,var(--av,var(--accent)) 40%,var(--line))}
+.dcard h3{margin:0;font-size:19px;line-height:1.25;letter-spacing:-.02em}
+.dcard .desc{margin:0;font-size:14.5px;color:var(--ink2);display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.dcard.open .desc{-webkit-line-clamp:unset;display:block}
+.dcard .kome{display:flex;gap:8px;align-items:flex-start;font-size:14px;color:var(--ink2);margin:0}
+.dcard .kome .ic{color:var(--accent);margin-top:2px}
+.dcard .more{align-self:flex-start;border:0;background:none;padding:0;color:var(--accent);font-weight:700;font-size:14px;cursor:pointer}
+.acts{margin-top:auto;display:flex;flex-wrap:wrap;gap:8px;padding-top:14px;border-top:1px dashed var(--line)}
+.act{display:inline-flex;align-items:center;gap:7px;min-height:40px;padding:0 14px;border-radius:999px;background:var(--surface);color:var(--ink);text-decoration:none;font-size:13.5px;font-weight:700;transition:background-color .2s,color .2s,transform .2s var(--ease);max-width:100%}
+.act span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.act:hover{background:var(--ink);color:var(--bg);transform:translateY(-1px)}
+.act.main-act{background:var(--accent);color:var(--accent-ink)}
+.act.main-act:hover{background:var(--accent-2);color:var(--accent-ink)}
+.trust{font-size:12.5px;color:var(--muted);margin:0}
+
+/* drawer */
+.drawer-back{position:fixed;inset:0;background:rgba(7,20,14,.5);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);z-index:20;display:flex;justify-content:flex-end;animation:fade .25s ease-out both}
+.drawer{width:min(520px,100%);height:100%;background:var(--bg);overflow-y:auto;padding:calc(env(safe-area-inset-top,0px) + 20px) 26px calc(env(safe-area-inset-bottom,0px) + 26px);display:flex;flex-direction:column;gap:16px;animation:slidein .45s var(--ease) both;box-shadow:-30px 0 60px -30px rgba(0,0,0,.4)}
+.drawer>*{flex-shrink:0;animation:rise .5s var(--ease) both}
+.drawer>*:nth-child(2){animation-delay:.04s}.drawer>*:nth-child(3){animation-delay:.08s}.drawer>*:nth-child(4){animation-delay:.12s}.drawer>*:nth-child(5){animation-delay:.16s}.drawer>*:nth-child(n+6){animation-delay:.2s}
+.drawer .feature-box{background:var(--forest);color:var(--forest-ink);border-radius:24px;padding:22px;position:relative;overflow:hidden}
 .drawer .feature-box .big{color:var(--feature-num)}
-.drawer .feature-box .small{color:var(--feature-muted)}
+.drawer .feature-box .small{color:var(--forest-muted)}
+.drawer .feature-box .bar{background:rgba(255,255,255,.14);margin-top:14px}
+.drawer .feature-box .st{color:var(--forest-ink)}
 dl.facts{margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;background:var(--surface);border-radius:20px;padding:18px}
 dl.facts dt{font-size:12px;color:var(--muted)}
 dl.facts dd{margin:2px 0 0;font-weight:600;font-size:15px;overflow-wrap:anywhere}
 dl.facts .wide{grid-column:1/-1}
+.x-btn{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--bg);display:grid;place-items:center;cursor:pointer;transition:transform .3s var(--ease),background-color .2s}
+.x-btn:hover{transform:rotate(90deg);background:var(--surface)}
+@keyframes slidein{from{transform:translateX(60px);opacity:0}to{transform:none;opacity:1}}
+@keyframes fade{from{opacity:0}}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 
+/* forms */
 form.panel{display:flex;flex-direction:column;gap:18px;max-width:720px}
 .field{display:flex;flex-direction:column;gap:6px}
 .field label,.field legend{font-size:14px;font-weight:700}
-.field input,.field select,.field textarea{min-height:46px;border:1px solid var(--line);border-radius:14px;padding:10px 14px;background:var(--bg);font-size:16px}
+.field input,.field select,.field textarea{width:100%;min-height:48px;border:1px solid var(--line);border-radius:14px;padding:10px 14px;background:var(--bg);font-size:16px;transition:border-color .2s,box-shadow .2s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 16%,transparent)}
 .field textarea{min-height:90px;resize:vertical}
 fieldset{border:none;padding:0;margin:0}
 .hint{font-size:13px;color:var(--muted);margin:0}
 .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.admin-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:14px 16px;border:1px solid var(--line);border-radius:16px}
+.admin-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:var(--bg)}
 .admin-row .main{flex:1 1 280px;min-width:0}
-.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(env(safe-area-inset-bottom,0px) + 20px);background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:999px;font-weight:600;z-index:30}
-.price{border:1px solid var(--line);border-radius:24px;padding:26px;display:flex;flex-direction:column;gap:10px}
-.price.hl{border:2px solid var(--accent)}
-.price .amt{font-size:40px;font-weight:800;letter-spacing:-.03em;margin:0}
-.price .amt small{font-size:16px;font-weight:500;color:var(--muted)}
-.price ul{margin:0;padding-left:18px;color:var(--ink2);line-height:1.7}
-.service{background:var(--feature);color:var(--feature-ink);border-radius:28px;padding:30px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
-.service p,.service li{color:var(--feature-muted)}
-.service h2{color:var(--feature-ink)}
-.service .btn.primary{background:var(--feature-num);border-color:var(--feature-num);color:#06140F}
+.toast{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 22px);transform:translateX(-50%);display:flex;align-items:center;gap:10px;background:var(--ink);color:var(--bg);padding:13px 20px;border-radius:999px;font-weight:600;z-index:30;box-shadow:var(--shadow-hi);animation:toastin .45s var(--ease) both;max-width:calc(100% - 32px)}
+.toast .ic{color:var(--feature-num)}
+@keyframes toastin{from{opacity:0;transform:translate(-50%,16px) scale(.96)}to{opacity:1;transform:translate(-50%,0)}}
+
+/* pricing */
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px;align-items:stretch}
+.price{position:relative;border:1px solid var(--line);border-radius:28px;padding:28px;display:flex;flex-direction:column;gap:12px;background:var(--bg);box-shadow:var(--shadow);transition:transform .35s var(--ease),box-shadow .35s}
+.price:hover{transform:translateY(-4px);box-shadow:var(--shadow-hi)}
+.price.hl{background:var(--forest);border-color:var(--forest);color:var(--forest-ink)}
+.price.hl .donor,.price.hl .trust,.price.hl li{color:var(--forest-muted)}
+.price.hl .amt small{color:var(--forest-muted)}
+.price .flag{position:absolute;top:-12px;right:22px;padding:5px 12px;border-radius:999px;background:var(--amber);color:#3A2200;font-size:12.5px;font-weight:800}
+.price .pname{font-family:"Bricolage Grotesque",sans-serif;font-size:21px;font-weight:700;margin:0;letter-spacing:-.02em}
+.price .amt{font-family:"Bricolage Grotesque",sans-serif;font-size:52px;font-weight:800;letter-spacing:-.05em;margin:4px 0 0;line-height:1}
+.price .amt small{font-family:"Plus Jakarta Sans",sans-serif;font-size:15px;font-weight:600;letter-spacing:0;color:var(--muted)}
+.price ul{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column;gap:10px;color:var(--ink2);font-size:15px}
+.price li{display:flex;gap:10px;align-items:flex-start}
+.price li .ic{color:var(--accent);margin-top:3px}
+.price.hl li .ic{color:var(--feature-num)}
+.price li.no{color:var(--muted)}
+.price li.no .ic{color:var(--muted)}
+.price .btn{margin-top:auto}
+.price.hl .btn.primary{background:var(--feature-num);border-color:var(--feature-num);color:#04140D}
+.service{background:var(--surface);border-radius:30px;padding:32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:28px}
+.service h2{font-size:30px}
 .contact{display:flex;flex-direction:column;gap:4px;font-size:14px}
-.contact a{overflow-wrap:anywhere}
 .checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px}
-.checks label{display:flex;gap:10px;align-items:center;min-height:44px;padding:0 12px;border:1px solid var(--line);border-radius:12px;font-weight:500;font-size:15px}
+.checks label{display:flex;gap:10px;align-items:center;min-height:46px;padding:0 12px;border:1px solid var(--line);border-radius:12px;font-weight:500;font-size:15px;background:var(--bg)}
 .checks input{width:18px;height:18px;accent-color:var(--accent)}
-.trust{font-size:13px;color:var(--muted);margin:0}
-footer{max-width:1180px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font-size:13px}
-@media (prefers-reduced-motion: no-preference){.drawer{animation:slide .18s ease-out}@keyframes slide{from{transform:translateX(24px);opacity:.6}to{transform:none;opacity:1}}}
-.auth-wrap{display:grid;grid-template-columns:1fr;gap:24px;max-width:1000px;margin:0 auto}
-@media (min-width:880px){.auth-wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:start}}
-.auth-card{background:var(--bg);border:1px solid var(--line);border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:16px;min-width:0}
-.auth-card h1{font-size:clamp(28px,4vw,38px)}
-.auth-form{display:flex;flex-direction:column;gap:16px}
-.auth-side{background:var(--feature);color:var(--feature-ink);border-radius:24px;padding:28px}
-.auth-side h2{color:var(--feature-ink);font-size:22px}
-.ticks{list-style:none;padding:0;margin:18px 0;display:flex;flex-direction:column;gap:10px;color:var(--feature-ink)}
-.ticks li{display:flex;gap:10px;align-items:flex-start}
-.ticks li::before{content:"";flex:0 0 18px;height:18px;margin-top:3px;border-radius:50%;background:var(--feature-num) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.5l2.5 2.5L12 5.5' fill='none' stroke='%2306140F' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center/14px no-repeat}
-.field input{width:100%}
-.pw{position:relative}
-.pw input{padding-right:92px}
-.pw button{position:absolute;right:6px;top:50%;transform:translateY(-50%);min-height:36px;padding:0 12px;border:0;border-radius:10px;background:transparent;color:var(--accent);font-weight:700;font-size:14px;cursor:pointer}
-.meter{height:6px;border-radius:999px;background:var(--line);overflow:hidden;margin-top:2px}
-.meter i{display:block;height:100%;width:0;transition:width .2s}
-.btn.wide{width:100%}
-.auth-card .err:empty,#auth-extra:empty{display:none}
-.ok-box{background:var(--mint);color:var(--mint-ink);border-radius:16px;padding:14px 16px;font-weight:600;margin:0}
-.auth-links{display:flex;justify-content:space-between;gap:8px;font-size:14px;font-weight:600;margin-top:-6px}
+footer{max-width:1220px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font-size:13px}
+
+/* auth */
+.auth-shell{display:grid;grid-template-columns:1fr;min-height:calc(100vh - 140px);border-radius:32px;overflow:hidden;background:var(--bg);border:1px solid var(--line);box-shadow:var(--shadow-hi);max-width:1120px;margin:0 auto}
+@media (min-width:900px){.auth-shell{grid-template-columns:1.02fr 1fr}}
+.auth-art{position:relative;overflow:hidden;background:var(--forest);color:var(--forest-ink);padding:36px;display:flex;flex-direction:column;gap:22px;isolation:isolate}
+.auth-art::before{content:"";position:absolute;z-index:-1;width:520px;height:520px;right:-180px;top:-200px;border-radius:50%;background:radial-gradient(circle,rgba(126,226,184,.38),transparent 65%);animation:drift 14s ease-in-out infinite alternate}
+.auth-art::after{content:"";position:absolute;z-index:-1;width:420px;height:420px;left:-160px;bottom:-180px;border-radius:50%;background:radial-gradient(circle,rgba(245,158,11,.22),transparent 65%);animation:drift 18s ease-in-out infinite alternate-reverse}
+@keyframes drift{to{transform:translate(-60px,50px) scale(1.12)}}
+.auth-art h2{color:var(--forest-ink);font-size:clamp(28px,3.4vw,40px);line-height:1.05;letter-spacing:-.04em;font-weight:800;max-width:16ch}
+.auth-art p{color:var(--forest-muted);margin:0;max-width:44ch}
+.stream{position:relative;flex:1 1 0;min-height:280px;overflow:hidden;mask-image:linear-gradient(180deg,transparent,#000 14%,#000 86%,transparent);-webkit-mask-image:linear-gradient(180deg,transparent,#000 14%,#000 86%,transparent)}
+.stream-in{display:flex;flex-direction:column;gap:12px;animation:scrollup var(--dur,40s) linear infinite}
+.stream:hover .stream-in{animation-play-state:paused}
+@keyframes scrollup{to{transform:translateY(-50%)}}
+.mini{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(6px)}
+.mini .av{width:36px;height:36px;border-radius:11px;font-size:13px}
+.mini .t{flex:1;min-width:0}
+.mini .t b{display:block;font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mini .t small{display:block;font-size:12px;color:var(--forest-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mini .d{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:18px;color:var(--feature-num);white-space:nowrap}
+.mini .d.red{color:#FF9B85}.mini .d.amber{color:#FCD34D}
+.astats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.astats div{padding:12px 14px;border-radius:16px;background:rgba(255,255,255,.06)}
+.astats strong{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:28px;font-weight:800;letter-spacing:-.03em;line-height:1.05}
+.astats span{font-size:12.5px;color:var(--forest-muted)}
+.auth-panel{padding:40px clamp(22px,5vw,56px);display:flex;flex-direction:column;justify-content:center;gap:20px;min-width:0}
+.auth-panel h1{font-size:clamp(32px,4vw,44px)}
+.auth-panel .lead{font-size:16px;margin-top:6px}
+.auth-switch{position:relative;display:grid;grid-template-columns:1fr 1fr;padding:4px;border-radius:999px;background:var(--surface);max-width:360px}
+.auth-switch a{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;min-height:42px;border-radius:999px;font-weight:700;font-size:14.5px;color:var(--ink2);text-decoration:none;transition:color .3s}
+.auth-switch a[aria-current="page"]{color:var(--ink)}
+.auth-switch::before{content:"";position:absolute;top:4px;bottom:4px;left:4px;width:calc(50% - 4px);border-radius:999px;background:var(--bg);box-shadow:var(--shadow);transition:transform .45s var(--ease)}
+.auth-switch.reg::before{transform:translateX(100%)}
+.auth-form{display:flex;flex-direction:column;gap:14px}
+.auth-form>*{animation:rise .5s var(--ease) both}
+.auth-form>*:nth-child(2){animation-delay:.05s}.auth-form>*:nth-child(3){animation-delay:.1s}.auth-form>*:nth-child(4){animation-delay:.15s}.auth-form>*:nth-child(5){animation-delay:.2s}.auth-form>*:nth-child(n+6){animation-delay:.25s}
+.fl{position:relative}
+.fl .ic.lead-ic{position:absolute;left:16px;top:18px;color:var(--muted);pointer-events:none;transition:color .2s}
+.fl input{width:100%;height:58px;border:1.5px solid var(--line);border-radius:16px;background:var(--surface);padding:22px 16px 6px 46px;font-size:16px;transition:border-color .2s,background-color .2s,box-shadow .2s}
+.fl label{position:absolute;left:46px;top:18px;font-size:15.5px;color:var(--muted);pointer-events:none;transform-origin:left top;transition:transform .2s var(--ease),color .2s}
+.fl input:focus,.fl input:not(:placeholder-shown){background:var(--bg)}
+.fl input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 16%,transparent)}
+.fl input:focus+label,.fl input:not(:placeholder-shown)+label{transform:translateY(-11px) scale(.78);color:var(--accent);font-weight:700}
+.fl input:focus~.ic.lead-ic{color:var(--accent)}
+.fl.pw input{padding-right:56px}
+.eye{position:absolute;right:8px;top:8px;width:42px;height:42px;border:0;border-radius:12px;background:transparent;color:var(--muted);display:grid;place-items:center;cursor:pointer;transition:background-color .2s,color .2s}
+.eye:hover{background:var(--surface2);color:var(--ink)}
+.meter{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:8px}
+.meter i{height:5px;border-radius:999px;background:var(--line);transition:background-color .3s}
+.meter-t{font-size:12.5px;color:var(--muted);margin:6px 0 0}
+.btn.wide{width:100%;min-height:54px;font-size:16px}
+.auth-panel .err:empty,#auth-extra:empty{display:none}
+.ok-box{display:flex;gap:12px;align-items:flex-start;background:var(--mint);color:var(--mint-ink);border-radius:18px;padding:16px 18px;font-weight:600;margin:0}
+.ok-box .ic{flex:0 0 auto;margin-top:2px}
+.mailart{width:76px;height:76px;border-radius:24px;display:grid;place-items:center;background:var(--mint);color:var(--accent);animation:pop .6s var(--ease) both}
+.mailart .ic{width:36px;height:36px}
+@keyframes pop{0%{transform:scale(.6);opacity:0}60%{transform:scale(1.08)}100%{transform:none;opacity:1}}
+.auth-links{display:flex;justify-content:flex-end;font-size:14px;font-weight:700;margin-top:-4px}
+.auth-links a{text-decoration:none}
 .divider{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:13px}
 .divider::before,.divider::after{content:"";flex:1;height:1px;background:var(--line)}
 .check{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--ink2)}
 .check input{flex:0 0 20px;width:20px;height:20px;margin-top:2px;accent-color:var(--accent)}
 .acc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px}
-.acc-grid h2{font-size:20px}
-.lock{max-width:600px;margin:24px auto;text-align:center;padding:40px 24px;border:1px solid var(--line);border-radius:28px}
-.lock-ic{width:64px;height:64px;margin:0 auto 18px;border-radius:20px;display:grid;place-items:center;background:var(--mint);color:var(--mint-ink)}
-.lock h1{font-size:clamp(26px,4vw,36px)}
-nav.tabs a.cta{background:var(--accent);color:var(--accent-ink)}
-nav.tabs a.cta[aria-current="page"]{background:var(--ink);color:var(--bg)}
+.acc-card{background:var(--bg);border:1px solid var(--line);border-radius:24px;padding:24px;display:flex;flex-direction:column;gap:14px;box-shadow:var(--shadow)}
+.acc-card h2{font-size:20px}
+.acc-card .fl input{height:54px}
+.lock{max-width:620px;margin:24px auto;text-align:center;padding:48px 28px;border-radius:32px;background:var(--bg);border:1px solid var(--line);box-shadow:var(--shadow-hi)}
+.lock-ic{width:72px;height:72px;margin:0 auto 18px;border-radius:24px;display:grid;place-items:center;background:var(--mint);color:var(--accent);animation:pop .6s var(--ease) both}
+.lock h1{font-size:clamp(28px,4vw,40px)}
+.plan-badge{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;background:var(--mint);color:var(--mint-ink);font-weight:700;font-size:13px}
+.plan-badge.free{background:var(--surface);color:var(--ink2)}
+.quota{display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:16px;background:var(--warm);color:var(--warm-ink);font-size:14px;font-weight:600}
+
+/* hero on Za tebe */
+.intro{position:relative;padding:8px 0 4px}
+.intro h1{max-width:16ch}
+.intro .lead{font-size:19px}
+.kpis{display:flex;flex-wrap:wrap;gap:28px;margin-top:26px}
+.kpis div{min-width:110px}
+.kpis strong{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:40px;font-weight:800;letter-spacing:-.04em;line-height:1}
+.kpis span{font-size:13.5px;color:var(--muted)}
+
+/* skeleton */
+.sk{border-radius:26px;background:linear-gradient(100deg,var(--surface) 30%,var(--surface2) 50%,var(--surface) 70%);background-size:300% 100%;animation:shimmer 1.4s linear infinite;min-height:260px}
+@keyframes shimmer{to{background-position:-150% 0}}
+
+/* view enter + staggered items */
+.v-enter{animation:viewin .55s var(--ease) both}
+@keyframes viewin{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.stag>*{animation:rise .6s var(--ease) both;animation-delay:calc(min(var(--d,0),12) * 55ms)}
+.word-in{display:inline-block;animation:rise .7s var(--ease) both}
+
+@media (max-width:640px){
+  main{padding:28px 16px 64px}
+  .top-in{padding:10px 16px}
+  .pcard,.dcard{padding:18px;border-radius:22px}
+  .dl .num strong{font-size:34px}
+  .auth-shell{border-radius:24px;min-height:0}
+  .auth-art{padding:24px}
+  .stream{min-height:0;max-height:150px}
+  .astats strong{font-size:22px}
+  .price .amt{font-size:44px}
+}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .stream-in{animation:none!important}
+}
 </style>
 </head>
 <body>
@@ -239,116 +454,19 @@ function myTags(){var t=(S.profil.teme||[]).slice();if(S.profil.tip)t.push(S.pro
 function matches(p){var t=myTags();var tags=p.teme||[];var tagOk=!t.length||tags.some(function(x){return t.indexOf(x)!==-1;});return tagOk&&areaMatch(p.podrucje,S.profil.podrucje);}
 function tracked(id){return !!(S.profil.pracenje&&S.profil.pracenje[id]);}
 function trackedCount(){var c=0;S.pozivi.forEach(function(p){if(tracked(p.id))c++;});return c;}
-function statusPill(s){return '<span class="pill st-'+esc(s)+'">'+esc(STATUS[s]||s)+'</span>';}
 function profileDone(){return !!(S.profil.tip||S.profil.podrucje||(S.profil.teme||[]).length);}
 
 /* ---------- routing ---------- */
 var VIEWS=["prijava","registracija","zaboravljena-lozinka","nova-lozinka","nalog","za-tebe","pozivi","donatori","izvori","rokovi","cijene","naruci","profil","uredi","zahtjevi"];
 function view(){var h=(location.hash||"").replace(/^#/,"");return VIEWS.indexOf(h)!==-1?h:"za-tebe";}
-window.addEventListener("hashchange",function(){S.open=null;render();window.scrollTo(0,0);});
+window.addEventListener("hashchange",function(){S.open=null;S.paywall=null;render();window.scrollTo(0,0);});
 
 /* ---------- writes (one at a time) ---------- */
 var chain=Promise.resolve();
 function queue(fn){chain=chain.then(fn).catch(function(e){toast(e&&e.code==="quota_exceeded"?"Baza je puna. Obriši stare pozive pa pokušaj ponovo.":"Promjena nije sačuvana. Pokušaj ponovo.");});return chain;}
-function saveProfil(){
-  if(!S.db||!S.uid){toast("Prijavi se da bi se profil sačuvao.");location.hash="#prijava";return;}
-  var body={tip:S.profil.tip||"",teme:(S.profil.teme||[]).slice(),podrucje:S.profil.podrucje||"",pracenje:Object.assign({},S.profil.pracenje||{})};
-  return queue(function(){return S.db.doc("data/users/"+S.uid+"/profil").set(body);});
-}
-function toast(msg){S.toast=msg;var r=document.getElementById("toast-root");r.innerHTML='<div class="toast">'+esc(msg)+'</div>';clearTimeout(toast.t);toast.t=setTimeout(function(){r.innerHTML="";},2600);}
-
 /* ---------- render ---------- */
-function renderTabs(){
-  var v=view(), n=trackedCount();
-  var t=[["za-tebe","Za tebe"],["pozivi","Svi pozivi"],["donatori","Davaoci"],["izvori","Izvori"],["rokovi","Moji rokovi"+(n?' <span class="badge">'+n+'</span>':"")],["cijene","Cijene"],["profil","Profil"]];
-  if(S.uid)t.push(["nalog","Moj nalog"]);else{t.push(["prijava","Prijava"]);t.push(["registracija","Registracija","cta"]);}
-  if(S.canEdit){t.push(["uredi","Uredi"]);var nz=S.sviUpiti.reduce(function(a,u){return a+(u.zahtjevi||[]).filter(function(z){return z.status==="novo";}).length;},0);t.push(["zahtjevi","Zahtjevi"+(nz?' <span class="badge">'+nz+'</span>':"")]);}
-  var cur=(v==="zaboravljena-lozinka"||v==="nova-lozinka")?(S.uid?"nalog":"prijava"):(v==="prijava"&&S.uid?"nalog":v);
-  document.getElementById("tabs").innerHTML=t.map(function(x){return '<a href="#'+x[0]+'"'+(x[2]?' class="'+x[2]+'"':"")+(cur===x[0]?' aria-current="page"':"")+'>'+x[1]+'</a>';}).join("");
-}
-function render(){
-  renderTabs();
-  var app=document.getElementById("app"), v=view();
-  if(!S.ready&&AUTH_VIEWS.indexOf(v)!==-1&&S.started&&!S.offline){app.innerHTML=v==="prijava"?prijavaView():v==="registracija"?registracijaView():v==="zaboravljena-lozinka"?zaboravljenaView():v==="nova-lozinka"?novaLozinkaView():nalogView();return;}
-  if(!S.ready){app.innerHTML=S.offline?offlineHtml():'<p class="lead">Učitavanje poziva…</p>'+(S.loadErr?'<p class="err">'+esc(S.loadErr)+'</p>':"");renderDrawer();return;}
-  if(ZAKLJUCANO[v]&&!S.uid){app.innerHTML=lockView(v);renderDrawer();return;}
-  if(v==="za-tebe")app.innerHTML=zaTebe();
-  else if(v==="registracija")app.innerHTML=registracijaView();
-  else if(v==="zaboravljena-lozinka")app.innerHTML=zaboravljenaView();
-  else if(v==="nova-lozinka")app.innerHTML=novaLozinkaView();
-  else if(v==="nalog")app.innerHTML=nalogView();
-  else if(v==="pozivi")app.innerHTML=sviPozivi();
-  else if(v==="rokovi")app.innerHTML=rokovi();
-  else if(v==="donatori")app.innerHTML=donatoriView();
-  else if(v==="prijava")app.innerHTML=prijavaView();
-  else if(v==="izvori")app.innerHTML=izvoriView();
-  else if(v==="cijene")app.innerHTML=cijeneView();
-  else if(v==="naruci")app.innerHTML=naruciView();
-  else if(v==="zahtjevi")app.innerHTML=S.canEdit?zahtjeviView():'<p class="lead">Ovo vide samo urednici.</p>';
-  else if(v==="profil")app.innerHTML=profilView();
-  else if(v==="uredi")app.innerHTML=S.canEdit?urediView():'<p class="lead">Samo urednici mogu mijenjati pozive.</p>';
-  renderDrawer();
-  var oi=document.getElementById("opq");if(oi&&S.focusOp){oi.focus();var ol=oi.value.length;oi.setSelectionRange(ol,ol);S.focusOp=false;}
-  var si=document.getElementById("q");if(si&&document.activeElement!==si&&S.focusQ){si.focus();var l=si.value.length;si.setSelectionRange(l,l);S.focusQ=false;}
-}
 function offlineHtml(){return '<h1>Pozivnik</h1><p class="lead">Baza nije podešena. U fajlu index.html upiši Supabase adresu i javni (anon) ključ u POZIVNIK_CONFIG.</p>';}
 
-function cardHtml(p,feature){
-  var r=rokInfo(p);
-  var right=r.has&&!r.past?'<div><p class="big">'+esc(r.label)+'</p><p class="small">'+esc(r.sub)+'</p></div>':'<div>'+statusPill(p.status)+(r.has&&r.past?'<p class="small">'+esc(r.label)+'</p>':'')+'</div>';
-  return '<article class="card'+(feature?" feature":"")+'"><span class="donor">'+esc(p.davalac)+'</span><h3>'+esc(p.naslov)+'</h3><p class="meta">'+esc(p.iznos||"")+(p.iznos&&p.podrucje?", ":"")+esc(POD[p.podrucje]||"")+'</p><div class="foot">'+right+'<button class="btn" data-act="open" data-id="'+esc(p.id)+'">Otvori</button></div></article>';
-}
-function zaTebe(){
-  var aktivni=S.pozivi.filter(function(p){return p.status!=="zatvoren"&&p._odobren!==false;});
-  var moji=aktivni.filter(matches).sort(function(a,b){return sortKey(a)-sortKey(b);});
-  var h='<h1>'+(profileDone()?"Za tebe ove sedmice":"Svi javni pozivi u BiH, na jednom mjestu.")+'</h1>';
-  h+='<p class="lead">'+(profileDone()?(moji.length?("Imaš "+moji.length+" "+(moji.length===1?"poziv koji odgovara":"poziva koji odgovaraju")+" tvom profilu."):"Trenutno nema aktivnih poziva za tvoj profil. Pogledaj sve pozive ili proširi teme u profilu."):"Popuni profil i vidjet ćeš samo pozive za koje tvoja organizacija ispunjava uslove.")+'</p>';
-  if(!profileDone())h+='<div class="row section" style="margin-top:20px"><a class="btn primary" href="#profil">Popuni profil</a><a class="btn ghost" href="#pozivi">Pogledaj sve pozive</a></div>';
-  var list=profileDone()?moji:aktivni.sort(function(a,b){return sortKey(a)-sortKey(b);});
-  if(!S.pozivi.length){h+='<div class="section empty">Baza poziva je još prazna.'+(S.canEdit?' <a href="#uredi">Dodaj prvi poziv</a>.':'')+'</div>';return h;}
-  if(list.length){
-    h+='<div class="section grid3">'+list.slice(0,3).map(function(p,i){return cardHtml(p,i===0&&rokInfo(p).has&&!rokInfo(p).past);}).join("")+'</div>';
-    if(list.length>3)h+='<div class="row" style="margin-top:16px"><a class="btn ghost" href="#pozivi">Još '+(list.length-3)+' u svim pozivima</a></div>';
-  }
-  var ocek=S.pozivi.filter(function(p){return p.status==="ocekuje"&&(!profileDone()||matches(p));});
-  if(ocek.length){h+='<div class="section"><h2>Uskoro se očekuje</h2><div class="list" style="margin-top:14px">'+ocek.map(itemHtml).join("")+'</div></div>';}
-  return h;
-}
-function itemHtml(p){
-  var r=rokInfo(p);
-  var d=r.has&&!r.past?'<span class="days">'+esc(r.label)+'</span>':"";
-  return '<div class="item"><div class="main"><span class="donor">'+esc(p.davalac)+'</span><h3>'+esc(p.naslov)+'</h3><span class="meta">'+esc(p.iznos||"")+(p.iznos?", ":"")+esc(POD[p.podrucje]||"")+'</span></div><div class="side">'+d+statusPill(p.status)+'<button class="btn" data-act="open" data-id="'+esc(p.id)+'">Detalji</button></div></div>';
-}
-function filtered(){
-  var q=S.q.trim().toLowerCase();
-  return S.pozivi.filter(function(p){
-    if(p._odobren===false)return false;
-    if(S.filterTag==="moji"&&!matches(p))return false;
-    if(S.filterTag!=="svi"&&S.filterTag!=="moji"&&(p.teme||[]).indexOf(S.filterTag)===-1)return false;
-    if(S.filterStatus==="aktivni"&&p.status==="zatvoren")return false;
-    if(S.filterStatus!=="aktivni"&&S.filterStatus!=="svi"&&p.status!==S.filterStatus)return false;
-    if(q){var hay=(p.naslov+" "+p.davalac+" "+(p.napomena||"")+" "+(p.ko||"")+" "+(POD[p.podrucje]||"")).toLowerCase();if(hay.indexOf(q)===-1)return false;}
-    return true;
-  }).sort(function(a,b){return sortKey(a)-sortKey(b);});
-}
-function sviPozivi(){
-  var list=filtered();
-  var tagChips=[["svi","Svi"]];if(profileDone())tagChips.push(["moji","Za moj profil"]);tagChips=tagChips.concat(TAGS);
-  var st=[["aktivni","Aktivni"],["otvoren","Otvoreni"],["stalni","Stalni"],["ocekuje","Očekuju se"],["zatvoren","Zatvoreni"],["svi","Svi"]];
-  var h='<div class="row between"><div><h1>Svi pozivi</h1><p class="lead" style="margin-top:6px">'+list.length+" "+(list.length===1?"poziv":"poziva")+'</p></div>';
-  h+='<form class="search" role="search" data-act="search-form"><label for="q" class="sr">Pretraži pozive</label><input id="q" type="search" placeholder="Pretraži po nazivu, davaocu ili mjestu" value="'+esc(S.q)+'" autocomplete="off"></form></div>';
-  h+='<div class="section" style="margin-top:24px;display:flex;flex-direction:column;gap:10px">';
-  h+='<div class="row" role="group" aria-label="Za koga"><span class="filter-label">Za koga</span>'+tagChips.map(function(c){return '<button class="chip" data-act="ftag" data-v="'+c[0]+'" aria-pressed="'+(S.filterTag===c[0])+'">'+esc(c[1])+'</button>';}).join("")+'</div>';
-  h+='<div class="row" role="group" aria-label="Status"><span class="filter-label">Status</span>'+st.map(function(c){return '<button class="chip" data-act="fst" data-v="'+c[0]+'" aria-pressed="'+(S.filterStatus===c[0])+'">'+esc(c[1])+'</button>';}).join("")+'</div></div>';
-  h+='<div class="section list" style="margin-top:24px">'+(list.length?list.map(itemHtml).join(""):'<div class="empty">Nema poziva za ovaj izbor. Promijeni filter ili pretragu.</div>')+'</div>';
-  return h;
-}
-function rokovi(){
-  var list=S.pozivi.filter(function(p){return tracked(p.id);}).sort(function(a,b){return sortKey(a)-sortKey(b);});
-  var h='<h1>Moji rokovi</h1><p class="lead">Pozivi koje pratiš, poredani po roku.</p>';
-  if(!list.length)return h+'<div class="section empty">Još ne pratiš nijedan poziv. Otvori poziv i klikni „Prati rok“.<div class="row" style="justify-content:center;margin-top:14px"><a class="btn primary" href="#pozivi">Pogledaj pozive</a></div></div>';
-  return h+'<div class="section list">'+list.map(itemHtml).join("")+'</div>';
-}
 function profilView(){
   var p=S.profil;
   var h='<h1>Profil organizacije</h1><p class="lead">Na osnovu profila biramo pozive koji ti odgovaraju. Profil vidiš samo ti.</p>';
@@ -380,26 +498,6 @@ function formHtml(e){
   h+='<fieldset class="field"><legend>Za koga je poziv</legend><div class="row" style="margin-top:6px">'+TAGS.map(function(t){var on=(e.teme||[]).indexOf(t[0])!==-1;return '<button type="button" class="chip" data-act="etema" data-v="'+t[0]+'" aria-pressed="'+on+'">'+esc(t[1])+'</button>';}).join("")+'</div></fieldset>';
   h+=ta("ko","Ko može aplicirati",e.ko)+ta("napomena","Napomena",e.napomena)+ta("osnova","Na čemu se zasniva procjena (za „Očekuje se“ i procijenjene rokove)",e.osnova)+inp("izvor","Link na originalni poziv",e.izvor,"url")+inp("provjereno","Datum provjere",e.provjereno,"date","Kada si zadnji put provjerio poziv u izvoru");
   h+='<p class="err" id="form-err" role="alert"></p><div class="row"><button class="btn primary" type="submit">Sačuvaj poziv</button><button class="btn ghost" type="button" data-act="cancel">Odustani</button>'+(e.id?'<button class="btn danger" type="button" data-act="delete" style="margin-left:auto">Obriši poziv</button>':'')+'</div></form>';
-  return h;
-}
-function donatoriView(){
-  var vr=[["sve","Sve"]].concat(VRSTE);
-  var list=S.donatori.filter(function(d){return S.filterVrsta==="sve"||d.vrsta===S.filterVrsta;}).sort(function(a,b){return (a.naziv||"").localeCompare(b.naziv||"","bs");});
-  var h='<div class="row between"><div><h1>Ko raspisuje javne pozive</h1><p class="lead">Institucije, fondovi, međunarodne organizacije, ambasade, fondacije i kompanije koje u BiH dodjeljuju sredstva. Neke nemaju javne pozive nego biraju partnere, pa im se možeš obratiti direktno. U bazi: '+S.donatori.length+' davalaca.</p></div>'+(S.canEdit?'<button class="btn primary" data-act="new-don">Dodaj organizaciju</button>':'')+'</div>';
-  if(S.editDon)return h+donFormHtml(S.editDon);
-  h+='<div class="row section" style="margin-top:20px" role="group" aria-label="Vrsta organizacije">'+vr.map(function(c){return '<button class="chip" data-act="fvr" data-v="'+c[0]+'" aria-pressed="'+(S.filterVrsta===c[0])+'">'+esc(c[1])+'</button>';}).join("")+'</div>';
-  if(!list.length)return h+'<div class="section empty">Još nema organizacija u ovoj kategoriji.</div>';
-  h+='<div class="section grid3" style="margin-top:20px">'+list.map(function(d){
-    var c='';
-    var web=safeUrl(d.web), fb=safeUrl(d.facebook);
-    if(web)c+='<a href="'+esc(web)+'" target="_blank" rel="noopener noreferrer">'+esc(host(web))+'</a>';
-    if(fb)c+='<a href="'+esc(fb)+'" target="_blank" rel="noopener noreferrer">Facebook stranica</a>';
-    if(d.email)c+='<a href="mailto:'+esc(d.email)+'">'+esc(d.email)+'</a>';
-    if(d.telefon)c+='<a href="tel:'+esc(d.telefon.replace(/\s/g,""))+'">'+esc(d.telefon)+'</a>';
-    if(d.adresa)c+='<span>'+esc(d.adresa)+'</span>';
-    if(d.osobe)c+='<span>'+esc(d.osobe)+'</span>';
-    return '<article class="card" style="min-height:0"><span class="donor">'+esc(VRSTA[d.vrsta]||"")+'</span><h3>'+esc(d.naziv)+'</h3>'+(d.opis?'<p class="meta">'+esc(d.opis)+'</p>':'')+(d.kome?'<p class="meta"><strong>Kome pomažu:</strong> '+esc(d.kome)+'</p>':'')+(d.napomena?'<p class="note" style="margin:0">'+esc(d.napomena)+'</p>':'')+'<div class="contact">'+(c||'<span class="trust">Kontakt još nije provjeren.</span>')+'</div>'+(d.provjereno?'<p class="trust">Provjereno '+esc(fmtDate(d.provjereno))+'</p>':'')+(S.canEdit?'<button class="btn ghost" data-act="edit-don" data-id="'+esc(d.id)+'">Uredi</button>':'')+'</article>';
-  }).join("")+'</div>';
   return h;
 }
 function donFormHtml(e){
@@ -449,18 +547,6 @@ function izvoriView(){
   }).join("")+'</div></div>';
   return h;
 }
-function cijeneView(){
-  var h='<h1>Cijene</h1><p class="lead">Kreni besplatno. Plaćeni paketi se plaćaju karticom ili po fakturi na račun, mjesečno ili godišnje.</p>';
-  h+='<div class="section grid3">';
-  h+='<div class="price"><span class="donor">Besplatno</span><p class="amt">0 KM</p><ul><li>Pregled svih javnih poziva</li><li>Pretraga i filteri</li><li>Praćenje rokova na stranici</li></ul><a class="btn ghost" href="#profil" style="margin-top:auto">Popuni profil</a></div>';
-  h+='<div class="price hl"><span class="donor">Udruženja i klubovi</span><p class="amt">15 KM <small>/ mjesečno</small></p><p class="trust">ili 150 KM godišnje (dva mjeseca gratis)</p><ul><li>Pozivi prema tvom profilu čim izađu</li><li>Podsjetnici prije roka na email i Viber</li><li>Spisak dokumentacije za svaki poziv</li><li>Neograničeno praćenje rokova</li></ul><a class="btn primary" href="#naruci" data-act="order" data-id="" data-paket="Udruženja i klubovi" style="margin-top:auto">Odaberi paket</a></div>';
-  h+='<div class="price"><span class="donor">Firme i konsultanti</span><p class="amt">39 KM <small>/ mjesečno</small></p><p class="trust">ili 390 KM godišnje</p><ul><li>Sve iz paketa za udruženja</li><li>Poticaji za privredu i obrte</li><li>Do 10 profila klijenata</li><li>AI nacrt prijave</li></ul><a class="btn" href="#naruci" data-act="order" data-id="" data-paket="Firme i konsultanti" style="margin-top:auto">Odaberi paket</a></div>';
-  h+='</div>';
-  h+='<div class="section service"><div><h2 style="font-size:28px">Mi pišemo projekat umjesto vas</h2><p style="margin-top:10px">Vi pripremite dokumentaciju organizacije, a mi napišemo cijelu prijavu: projektnu ideju, opis aktivnosti, budžet i obrasce davaoca. Prije predaje sve pregledate i potpišete.</p><p class="amt" style="font-size:34px;font-weight:800;color:var(--feature-num);margin:14px 0 0">od 150 KM</p><p style="margin:0">po prijavi, zavisno od veličine poziva. Konačna cijena se dogovara prije početka rada.</p><a class="btn primary" href="#naruci" data-act="order" data-id="" style="margin-top:18px">Pošalji upit</a></div>';
-  h+='<div><p style="font-weight:700;color:var(--feature-ink);margin:0 0 8px">Šta obično pripremate vi</p><ul style="margin:0;padding-left:18px;line-height:1.8">'+DOKUMENTI.map(function(d){return '<li>'+esc(d)+'</li>';}).join("")+'</ul><p style="margin:12px 0 0;font-size:14px">Tačan spisak zavisi od poziva. Nakon upita šaljemo listu za vaš konkretan poziv.</p></div></div>';
-  h+='<p class="trust section">Pisanje prijave ne garantuje dobijanje sredstava; odluku donosi davalac. Ako donator ne dozvoljava plaćanje izrade prijave iz budžeta projekta, usluga se plaća iz vlastitih sredstava.</p>';
-  return h;
-}
 function naruciView(){
   var p=S.pozivi.filter(function(x){return x.id===S.orderFor;})[0];
   var h='<h1>Pošalji upit</h1><p class="lead">Javit ćemo ti se u roku od jednog radnog dana s ponudom i spiskom dokumentacije.</p>';
@@ -479,45 +565,12 @@ function naruciView(){
 }
 var UPIT_ST={novo:"Primljeno","u-radu":"U obradi",zavrseno:"Završeno"};
 function fmtTs(s){var d=new Date(s);if(isNaN(d))return "";return d.getDate()+". "+(d.getMonth()+1)+". "+d.getFullYear()+".";}
-function zahtjeviView(){
-  var rows=[];S.sviUpiti.forEach(function(u){(u.zahtjevi||[]).forEach(function(z,i){rows.push({u:u.id,i:i,z:z});});});
-  rows.sort(function(a,b){return String(b.z.kreirano).localeCompare(String(a.z.kreirano));});
-  var h='<h1>Zahtjevi</h1><p class="lead">Upiti za pisanje prijava i pakete. Vidiš ih samo ti.</p>';
-  if(!rows.length)return h+'<div class="section empty">Još nema upita.</div>';
-  return h+'<div class="section list">'+rows.map(function(r){var z=r.z;return '<div class="item" style="align-items:flex-start"><div class="main"><span class="donor">'+esc(fmtTs(z.kreirano))+'</span><h3>'+esc(z.organizacija)+' · '+esc(z.sta==="pisanje"?"Pisanje prijave":"Paket: "+z.sta)+'</h3><p class="meta" style="margin:4px 0">'+esc(z.osoba)+', <a href="mailto:'+esc(z.email)+'">'+esc(z.email)+'</a>'+(z.telefon?', '+esc(z.telefon):'')+'</p><p class="meta" style="margin:4px 0">'+esc(z.pozivNaslov||"Bez izabranog poziva")+'</p>'+(z.opis?'<p class="note" style="margin:6px 0">'+esc(z.opis)+'</p>':'')+((z.dokumenti||[]).length?'<p class="trust">Imaju: '+esc(z.dokumenti.join(", "))+'</p>':'')+'</div><div class="side"><label class="sr" for="st-'+r.u+'-'+r.i+'">Status</label><select id="st-'+r.u+'-'+r.i+'" data-act="upit-status" data-u="'+esc(r.u)+'" data-i="'+r.i+'" style="min-height:44px;border:1px solid var(--line);border-radius:12px;padding:0 10px;background:var(--bg)">'+Object.keys(UPIT_ST).map(function(k){return '<option value="'+k+'"'+(z.status===k?" selected":"")+'>'+UPIT_ST[k]+'</option>';}).join("")+'</select></div></div>';}).join("")+'</div>';
-}
-function renderDrawer(){
-  var root=document.getElementById("drawer-root");
-  if(!S.open){root.innerHTML="";return;}
-  var p=S.pozivi.filter(function(x){return x.id===S.open;})[0];
-  if(!p){S.open=null;root.innerHTML="";return;}
-  var r=rokInfo(p), on=tracked(p.id), url=safeUrl(p.izvor);
-  var h='<div class="drawer-back" data-act="close-back"><div class="drawer" role="dialog" aria-modal="true" aria-labelledby="dr-title">';
-  h+='<div class="row between"><span class="donor">'+esc(p.davalac)+'</span><button class="btn ghost" data-act="close" aria-label="Zatvori">Zatvori</button></div>';
-  h+='<h2 id="dr-title" style="font-size:26px;line-height:1.2">'+esc(p.naslov)+'</h2>';
-  h+='<div class="feature-box">'+(r.has&&!r.past?'<p class="big">'+esc(r.label)+'</p><p class="small">'+esc(r.sub)+'</p>':'<p class="big" style="font-size:26px">'+esc(r.label)+'</p>'+(r.sub?'<p class="small">'+esc(r.sub)+'</p>':''))+'<div class="row" style="margin-top:14px">'+statusPill(p.status)+'</div></div>';
-  h+='<button class="btn '+(on?"primary":"dark")+'" data-act="track" data-id="'+esc(p.id)+'" aria-pressed="'+on+'">'+(on?"Pratiš ovaj rok":"Prati rok")+'</button>';
-  h+='<dl class="facts"><div><dt>Iznos</dt><dd>'+esc(p.iznos||"Nije navedeno")+'</dd></div><div><dt>Područje</dt><dd>'+esc(POD[p.podrucje]||"")+'</dd></div>';
-  if(p.objavljeno)h+='<div><dt>Objavljeno</dt><dd>'+esc(p.objavljeno)+'</dd></div>';
-  if((p.teme||[]).length)h+='<div><dt>Za koga</dt><dd>'+esc(p.teme.map(function(t){return TAG[t]||t;}).join(", "))+'</dd></div>';
-  if(p.ko)h+='<div class="wide"><dt>Ko može aplicirati</dt><dd>'+esc(p.ko)+'</dd></div>';
-  if(p.napomena)h+='<div class="wide"><dt>Napomena</dt><dd style="font-weight:500">'+esc(p.napomena)+'</dd></div>';
-  if(p.osnova)h+='<div class="wide"><dt>Na čemu se zasniva procjena</dt><dd style="font-weight:500">'+esc(p.osnova)+'</dd></div>';
-  h+='</dl>';
-  if(p.provjereno)h+='<p class="trust">Podaci provjereni '+esc(fmtDate(p.provjereno))+' u originalnom izvoru ili medijskoj objavi.</p>';
-  if(p.status!=="zatvoren")h+='<a class="btn dark" href="#naruci" data-act="order" data-id="'+esc(p.id)+'">Naruči pisanje prijave</a>';
-  if(url)h+='<a class="btn primary" href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">Originalni poziv ('+esc(host(url))+')</a>';
-  if(S.canEdit)h+='<button class="btn ghost" data-act="edit-from" data-id="'+esc(p.id)+'">Uredi ovaj poziv</button>';
-  h+='</div></div>';
-  root.innerHTML=h;
-  var c=root.querySelector('[data-act="close"]');if(c&&!root.contains(document.activeElement))c.focus();
-}
-
 /* ---------- prijava, registracija, lozinke ---------- */
 var AUTH_VIEWS=["prijava","registracija","zaboravljena-lozinka","nova-lozinka","nalog"];
 var ZAKLJUCANO={rokovi:["Moji rokovi","Prati rokove poziva koji te zanimaju i dobij podsjetnik prije isteka."],profil:["Profil organizacije","Popuni profil i Pozivnik ti pokazuje samo pozive za koje ispunjavaš uslove."],naruci:["Naruči pisanje prijave","Pošalji upit i mi pišemo projekat umjesto tebe."]};
 function ss(k,v){try{if(v===undefined)return sessionStorage.getItem(k);if(v===null)sessionStorage.removeItem(k);else sessionStorage.setItem(k,v);}catch(e){return null;}}
 function trebaPrijava(poruka,cilj){
+  S.forceAuth=true;
   S.loginMsg=poruka||"Za ovaj korak se prijavi ili napravi besplatan nalog.";
   ss("pozivnik_posle",cilj||location.hash||"#za-tebe");
   S.open=null;renderDrawer();
@@ -542,81 +595,17 @@ function jacina(p){var s=0;if(p.length>=8)s++;if(p.length>=12)s++;if(/[a-zšđč
 var JACINA=[["Preslaba","var(--danger)"],["Slaba","var(--danger)"],["Srednja","var(--warm-ink)"],["Dobra","var(--accent)"],["Jaka","var(--accent)"]];
 function lozinkaOk(p){return p.length>=8&&/[A-Za-zšđčćžŠĐČĆŽ]/.test(p)&&/\d/.test(p);}
 function redirectUrl(){return location.origin+location.pathname;}
-function pwPolje(id,label,ac,meter){
-  return '<div class="field"><label for="'+id+'">'+label+'</label><div class="pw"><input id="'+id+'" name="'+id.replace(/^a-/,"")+'" type="password" required autocomplete="'+ac+'"'+(meter?' data-meter="'+id+'-m"':'')+'><button type="button" data-act="pw-toggle" data-v="'+id+'" aria-label="Prikaži lozinku" aria-pressed="false">Prikaži</button></div>'+
-  (meter?'<div class="meter" aria-hidden="true"><i id="'+id+'-m"></i></div><p class="hint" id="'+id+'-mt">Najmanje 8 znakova, slova i bar jedan broj.</p>':'')+'</div>';
-}
-function strana(){
-  return '<aside class="auth-side"><span class="donor" style="color:var(--feature-muted)">Zašto nalog</span><h2 style="margin-top:8px">Svi javni pozivi u BiH, samo oni koji su za tebe.</h2><ul class="ticks">'+
-  '<li>Detalji svakog poziva i link na original</li><li>Profil organizacije i pozivi po mjeri</li><li>Praćenje rokova i podsjetnici</li><li>Narudžba pisanja projekta</li></ul><p class="small" style="color:var(--feature-muted)">Registracija je besplatna. Pretplata ti treba tek za napredne mogućnosti.</p></aside>';
-}
-function authOkvir(kartica){return '<div class="auth-wrap"><section class="auth-card">'+kartica+'</section>'+strana()+'</div>';}
-function prijavaView(){
-  if(S.uid)return nalogView();
-  var h='<h1>Prijava</h1><p class="lead" style="font-size:16px">Dobro došao nazad.</p>';
-  if(S.loginMsg)h+='<p class="note" role="status">'+esc(S.loginMsg)+'</p>';
-  if(S.authErr)h+='<p class="err" role="alert">'+esc(S.authErr)+'</p>';
-  h+='<form class="auth-form" data-act="login-form" novalidate><div class="field"><label for="a-email">Email</label><input id="a-email" name="email" type="email" required autocomplete="email" inputmode="email" value="'+esc(S.zadnjiEmail||"")+'"></div>'+
-     pwPolje("a-lozinka","Lozinka","current-password",false)+
-     '<div class="auth-links"><span></span><a href="#zaboravljena-lozinka">Zaboravljena lozinka?</a></div>'+
-     '<p class="err" id="auth-err" role="alert"></p><div id="auth-extra"></div>'+
-     '<button class="btn primary wide" type="submit">Prijavi se</button></form>'+
-     '<div class="divider">ili</div><button class="btn ghost wide" type="button" data-act="magic">Pošalji mi link za prijavu na email</button>'+
-     '<p class="small" style="text-align:center">Nemaš nalog? <a href="#registracija">Registruj se besplatno</a></p>';
-  return authOkvir(h);
-}
-function registracijaView(){
-  if(S.uid)return nalogView();
-  if(S.regSent)return authOkvir('<h1>Provjeri email</h1><p class="ok-box" role="status">Poslali smo link za potvrdu na <strong>'+esc(S.regSent)+'</strong>. Otvori ga i nalog je aktivan.</p><p class="hint">Nije stiglo? Provjeri i folder Spam/Promocije. Link važi 24 sata.</p><p class="err" id="auth-err" role="alert"></p><div class="row"><button class="btn dark" data-act="resend" data-v="signup">Pošalji ponovo</button><button class="btn ghost" data-act="reg-reset">Promijeni email</button></div><p class="small"><a href="#prijava">Nazad na prijavu</a></p>');
-  var h='<h1>Napravi nalog</h1><p class="lead" style="font-size:16px">Besplatno, za minutu.</p>'+
-    '<form class="auth-form" data-act="reg-form" novalidate>'+
-    '<div class="field"><label for="a-ime">Ime i prezime</label><input id="a-ime" name="ime" required autocomplete="name" maxlength="80"></div>'+
-    '<div class="field"><label for="a-org">Organizacija <span class="hint" style="display:inline">(nije obavezno)</span></label><input id="a-org" name="org" autocomplete="organization" maxlength="120" placeholder="npr. Udruženje žena …"></div>'+
-    '<div class="field"><label for="a-email">Email</label><input id="a-email" name="email" type="email" required autocomplete="email" inputmode="email"></div>'+
-    pwPolje("a-lozinka","Lozinka","new-password",true)+pwPolje("a-lozinka2","Ponovi lozinku","new-password",false)+
-    '<label class="check"><input type="checkbox" name="uslovi" required><span>Slažem se s <a href="#cijene">uslovima korištenja</a> i obradom podataka radi rada Pozivnika.</span></label>'+
-    '<p class="err" id="auth-err" role="alert"></p><button class="btn primary wide" type="submit">Napravi nalog</button></form>'+
-    '<p class="small" style="text-align:center">Već imaš nalog? <a href="#prijava">Prijavi se</a></p>';
-  return authOkvir(h);
-}
-function zaboravljenaView(){
-  if(S.resetSent)return authOkvir('<h1>Provjeri email</h1><p class="ok-box" role="status">Ako postoji nalog za <strong>'+esc(S.resetSent)+'</strong>, poslali smo link za novu lozinku.</p><p class="hint">Link važi 1 sat. Provjeri i folder Spam.</p><div class="row"><button class="btn ghost" data-act="reset-again">Pošalji na drugi email</button><a class="btn dark" href="#prijava">Nazad na prijavu</a></div>');
-  return authOkvir('<h1>Zaboravljena lozinka</h1><p class="lead" style="font-size:16px">Upiši email naloga i poslat ćemo ti link za postavljanje nove lozinke.</p>'+
-    '<form class="auth-form" data-act="forgot-form" novalidate><div class="field"><label for="a-email">Email</label><input id="a-email" name="email" type="email" required autocomplete="email" inputmode="email" value="'+esc(S.zadnjiEmail||"")+'"></div><p class="err" id="auth-err" role="alert"></p><button class="btn primary wide" type="submit">Pošalji link</button></form>'+
-    '<p class="small" style="text-align:center"><a href="#prijava">Nazad na prijavu</a></p>');
-}
-function novaLozinkaView(){
-  if(!S.uid)return authOkvir('<h1>Link nije važeći</h1><p class="lead" style="font-size:16px">Link za novu lozinku je istekao ili je već iskorišten.</p><a class="btn primary" href="#zaboravljena-lozinka">Zatraži novi link</a>');
-  return authOkvir('<h1>'+(S.invite?'Postavi lozinku':'Nova lozinka')+'</h1><p class="lead" style="font-size:16px">Za nalog '+esc(S.email||"")+'.</p>'+
-    '<form class="auth-form" data-act="newpw-form" novalidate>'+pwPolje("a-lozinka","Nova lozinka","new-password",true)+pwPolje("a-lozinka2","Ponovi lozinku","new-password",false)+
-    '<p class="err" id="auth-err" role="alert"></p><button class="btn primary wide" type="submit">Sačuvaj lozinku</button></form>');
-}
-function nalogView(){
-  if(!S.uid)return prijavaView();
-  var md=S.meta||{};
-  var h='<div class="row between"><div><h1>Moj nalog</h1><p class="lead">'+esc(S.email||"")+(S.canEdit?' · urednik':'')+'</p></div><button class="btn" data-act="odjava">Odjava</button></div>';
-  h+='<div class="acc-grid section">';
-  h+='<form class="auth-card" data-act="meta-form"><h2>Lični podaci</h2><div class="field"><label for="m-ime">Ime i prezime</label><input id="m-ime" name="ime" autocomplete="name" maxlength="80" value="'+esc(md.ime||"")+'"></div><div class="field"><label for="m-org">Organizacija</label><input id="m-org" name="org" autocomplete="organization" maxlength="120" value="'+esc(md.organizacija||"")+'"></div><button class="btn dark" type="submit">Sačuvaj</button></form>';
-  h+='<form class="auth-card" data-act="chpw-form" novalidate><h2>Promjena lozinke</h2>'+pwPolje("a-lozinka","Nova lozinka","new-password",true)+pwPolje("a-lozinka2","Ponovi lozinku","new-password",false)+'<p class="err" id="pw-err" role="alert"></p><button class="btn dark" type="submit">Promijeni lozinku</button></form>';
-  h+='<form class="auth-card" data-act="chmail-form" novalidate><h2>Promjena emaila</h2><p class="hint">Poslat ćemo link za potvrdu na novi email. Do potvrde ostaje stari.</p><div class="field"><label for="m-mail">Novi email</label><input id="m-mail" name="email" type="email" required autocomplete="email"></div><p class="err" id="mail-err" role="alert"></p><button class="btn dark" type="submit">Promijeni email</button></form>';
-  h+='<div class="auth-card"><h2>Sigurnost</h2><p class="hint">Odjavi se na svim uređajima na kojima si prijavljen, npr. ako si zaboravio odjavu na tuđem računaru.</p><div class="row"><a class="btn ghost" href="#profil">Profil organizacije</a><button class="btn danger" data-act="odjava-sve">Odjava sa svih uređaja</button></div></div>';
-  return h+'</div>';
-}
-function lockView(v){
-  var t=ZAKLJUCANO[v]||["Prijava potrebna","Za ovaj korak se prijavi."];
-  return '<div class="lock"><div class="lock-ic" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="10" width="16" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h1>'+esc(t[0])+'</h1><p class="lead" style="margin-left:auto;margin-right:auto">'+esc(t[1])+' Prijavi se ili napravi besplatan nalog.</p><div class="row" style="justify-content:center;margin-top:24px"><button class="btn primary" data-act="go-auth" data-v="#prijava">Prijavi se</button><button class="btn dark" data-act="go-auth" data-v="#registracija">Registruj se besplatno</button></div></div>';
-}
 function setBusy(f,on,txt){var b=f.querySelector('button[type="submit"]');if(!b)return;if(on){b.setAttribute("data-t",b.textContent);b.textContent=txt||"Sačekaj…";b.disabled=true;}else{b.textContent=b.getAttribute("data-t")||b.textContent;b.disabled=false;}}
 function authErr(msg,id){var e=document.getElementById(id||"auth-err");if(e)e.textContent=msg||"";}
 function cooldown(btn,s){if(!btn)return;var t0=btn.textContent;btn.disabled=true;(function tick(){if(s<=0){btn.disabled=false;btn.textContent=t0;return;}btn.textContent=t0+" ("+s+")";s--;setTimeout(tick,1000);})();}
 document.addEventListener("input",function(ev){
   var el=ev.target;if(!el||!el.getAttribute)return;var m=el.getAttribute("data-meter");if(!m)return;
   var j=el.value?jacina(el.value):0,bar=document.getElementById(m),txt=document.getElementById(m+"t");
-  if(bar){bar.style.width=(el.value?(j+1)*20:0)+"%";bar.style.background=JACINA[j][1];}
+  if(bar){var k=el.value?Math.max(1,j):0,boja=j<=1?"var(--red)":j===2?"#D97706":"var(--accent)";[].forEach.call(bar.children,function(x,ix){x.style.background=ix<k?boja:"";});}
   if(txt)txt.textContent=el.value?("Jačina: "+JACINA[j][0]+(lozinkaOk(el.value)?"":" · treba bar 8 znakova, slova i broj")):"Najmanje 8 znakova, slova i bar jedan broj.";
 });
 function authKlik(a,el){
-  if(a==="pw-toggle"){var i=document.getElementById(el.getAttribute("data-v"));if(!i)return true;var show=i.type==="password";i.type=show?"text":"password";el.textContent=show?"Sakrij":"Prikaži";el.setAttribute("aria-pressed",String(show));el.setAttribute("aria-label",show?"Sakrij lozinku":"Prikaži lozinku");return true;}
+  if(a==="pw-toggle"){var i=document.getElementById(el.getAttribute("data-v"));if(!i)return true;var show=i.type==="password";i.type=show?"text":"password";el.innerHTML=ic(show?"eyeoff":"eye");el.setAttribute("aria-pressed",String(show));el.setAttribute("aria-label",show?"Sakrij lozinku":"Prikaži lozinku");return true;}
   if(a==="go-auth"){ss("pozivnik_posle",location.hash||"#za-tebe");location.hash=el.getAttribute("data-v");return true;}
   if(a==="magic"){
     var em=(document.getElementById("a-email")||{}).value||"";em=em.trim();
@@ -719,6 +708,384 @@ function authSubmit(a,f){
 /* stanje iz linka u emailu (potvrda, nova lozinka, poziv, greška) – pročitati PRIJE nego što ga Supabase obriše */
 var POC_HASH=(function(){var h=location.hash.replace(/^#/,"");if(h.indexOf("access_token=")===-1&&h.indexOf("error")===-1)return null;var p={};h.split("&").forEach(function(x){var i=x.indexOf("=");if(i>0)p[decodeURIComponent(x.slice(0,i))]=decodeURIComponent(x.slice(i+1).replace(/\+/g," "));});return p;})();
 
+/* ---------- ikone, avatari, rok ---------- */
+var IC={
+  search:'<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
+  coin:'<circle cx="12" cy="12" r="8.5"/><path d="M14.8 9.2c-.6-.8-1.6-1.2-2.8-1.2-1.7 0-2.8.8-2.8 2s1.1 1.7 2.8 2 2.8.9 2.8 2.1-1.2 1.9-2.8 1.9c-1.3 0-2.3-.5-2.9-1.3M12 6.5V8m0 8v1.5"/>',
+  pin:'<path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/>',
+  arrow:'<path d="M5 12h14M13 6l6 6-6 6"/>',
+  check:'<path d="m5 12.5 4.5 4.5L19 7.5"/>',
+  x:'<path d="M6 6l12 12M18 6 6 18"/>',
+  minus:'<path d="M6 12h12"/>',
+  eye:'<path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/>',
+  eyeoff:'<path d="M3 3l18 18M10.6 6c.5-.1.9-.1 1.4-.1 6 0 9.5 6.1 9.5 6.1a17 17 0 0 1-2.9 3.6M6.4 6.9C3.9 8.6 2.5 12 2.5 12s3.5 6.5 9.5 6.5c1.7 0 3.2-.5 4.5-1.2M9.9 9.9a3 3 0 0 0 4.2 4.2"/>',
+  mail:'<rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="m4 7 8 6 8-6"/>',
+  lock:'<rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/>',
+  user:'<circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20c1.2-3.6 4-5.4 7.5-5.4s6.3 1.8 7.5 5.4"/>',
+  org:'<path d="M4 20V8l8-4 8 4v12"/><path d="M9 20v-5h6v5M8 11h.01M12 11h.01M16 11h.01"/>',
+  globe:'<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.3 2.4 3.5 5.2 3.5 8.5s-1.2 6.1-3.5 8.5c-2.3-2.4-3.5-5.2-3.5-8.5S9.7 5.9 12 3.5z"/>',
+  fb:'<path d="M14 8.5h2.5V5H14c-2.2 0-3.5 1.5-3.5 3.6V11H8v3.4h2.5V21H14v-6.6h2.4l.6-3.4h-3V9.2c0-.4.3-.7.7-.7z"/>',
+  phone:'<path d="M6.6 3.5h3l1.4 4-2 1.4a12 12 0 0 0 6.1 6.1l1.4-2 4 1.4v3c0 1-.8 1.8-1.8 1.8C10.3 19.2 4.8 13.7 4.8 5.3c0-1 .8-1.8 1.8-1.8z"/>',
+  cal:'<rect x="4" y="5.5" width="16" height="15" rx="2.5"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"/>',
+  bell:'<path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/>',
+  grid:'<rect x="4" y="4" width="6.5" height="6.5" rx="1.8"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.8"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.8"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.8"/>',
+  star:'<path d="m12 4 2.4 5 5.4.6-4 3.7 1.1 5.4L12 16l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/>',
+  hands:'<path d="M12 7.5c1.6-2.6 6-2.4 6.6.8.5 2.6-2 5.2-6.6 8.9-4.6-3.7-7.1-6.3-6.6-8.9.6-3.2 5-3.4 6.6-.8z"/>',
+  ball:'<circle cx="12" cy="12" r="8.5"/><path d="m12 7.5 3.6 2.6-1.4 4.2H9.8l-1.4-4.2zM12 3.5v4M20.2 9.4l-4.6.7M17 19l-2.8-4.7M7 19l2.8-4.7M3.8 9.4l4.6.7"/>',
+  sprout:'<path d="M12 20v-8M12 12c0-4 2.8-6.5 7-6.5 0 4-2.8 6.5-7 6.5zM12 14c0-3.2-2.3-5.2-6-5.2 0 3.2 2.3 5.2 6 5.2z"/>',
+  venus:'<circle cx="12" cy="9" r="5"/><path d="M12 14v7M9 18h6"/>',
+  palette:'<path d="M12 3.5a8.5 8.5 0 0 0 0 17c1.2 0 1.8-.8 1.8-1.7 0-1.2-1-1.6-1-2.6 0-.9.7-1.5 1.7-1.5h2.2a3.8 3.8 0 0 0 3.8-3.9c0-4.2-3.8-7.3-8.5-7.3z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7.5" r="1"/><circle cx="14.5" cy="7.5" r="1"/>',
+  heart:'<path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z"/>',
+  mic:'<rect x="9" y="3.5" width="6" height="11" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v2.5"/>',
+  map:'<path d="m9 5-5 2v13l5-2 6 2 5-2V5l-5 2z"/><path d="M9 5v13M15 7v13"/>',
+  building:'<rect x="5" y="3.5" width="14" height="17" rx="1.5"/><path d="M9 7.5h.01M15 7.5h.01M9 11.5h.01M15 11.5h.01M9 15.5h.01M15 15.5h.01M10 20.5v-2.5h4v2.5"/>',
+  brief:'<rect x="3.5" y="7.5" width="17" height="12" rx="2.5"/><path d="M9 7.5V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1.5M3.5 13h17"/>',
+  landmark:'<path d="M3.5 9.5 12 4l8.5 5.5zM5.5 10v8M9.5 10v8M14.5 10v8M18.5 10v8M3.5 20.5h17"/>',
+  flag:'<path d="M5 21V4.5M5 4.5h11l-1.8 3.5L16 11.5H5"/>',
+  coins:'<ellipse cx="9" cy="7" rx="5.5" ry="2.5"/><path d="M3.5 7v4c0 1.4 2.5 2.5 5.5 2.5s5.5-1.1 5.5-2.5V7M9.5 16.4c.9.1 1.8.1 2.5.1 3 0 5.5-1.1 5.5-2.5v-1.6M14.5 11.6c1.8.2 3 .8 3 1.8"/><path d="M14.5 16v2.5c0 1.4 2.5 2.5 5.5 2.5"/>',
+  sparkle:'<path d="M12 3.5 13.8 10l6.7 2-6.7 2L12 20.5 10.2 14l-6.7-2 6.7-2z"/>',
+  inbox:'<path d="M3.5 13.5 6 5.5h12l2.5 8v5a1.5 1.5 0 0 1-1.5 1.5H5a1.5 1.5 0 0 1-1.5-1.5z"/><path d="M3.5 13.5H8l1.5 2.5h5l1.5-2.5h4.5"/>',
+  logout:'<path d="M14 4.5h4a1.5 1.5 0 0 1 1.5 1.5v12a1.5 1.5 0 0 1-1.5 1.5h-4M10 16.5 5.5 12 10 7.5M5.5 12h10"/>'
+};
+function ic(n,cls){return '<svg class="ic'+(cls?" "+cls:"")+'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+(IC[n]||"")+'</svg>';}
+var TAG_IC={udruzenja:"hands",sport:"ball",mladi:"sprout",zene:"venus",kultura:"palette",socijala:"heart",mediji:"mic",turizam:"map",ustanove:"building",firme:"brief"};
+var VRSTA_IC={drzava:"landmark",fbih:"flag",rs:"flag",kanton:"pin",brcko:"pin",javnifond:"coins",medjunarodna:"globe",ambasada:"flag",humanitarna:"heart",fondacija:"sprout",kompanija:"brief",institucija:"building"};
+var AV_BOJE=["#0E7C5A","#2F6FB0","#B4541A","#7A4EB3","#0F7E8C","#A63D6B","#4D7A1F","#B98A0B","#3F5068"];
+function hashStr(s){var h=0;s=String(s||"");for(var i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))|0;return Math.abs(h);}
+var STOP={"za":1,"i":1,"u":1,"od":1,"na":1,"o":1,"the":1,"of":1,"and":1,"in":1,"opcina":1,"općina":1,"opština":1,"grad":1,"ministarstvo":1,"federalno":1,"federalni":1,"kantona":1,"kanton":1,"bih":0};
+function inicijali(n){var w=String(n||"").replace(/[()„“"’,.]/g," ").split(/\s+/).filter(function(x){return x&&!STOP[x.toLowerCase()];});if(!w.length)return "P";var a=w[0].charAt(0)+(w[1]?w[1].charAt(0):w[0].charAt(1)||"");return a.toUpperCase();}
+function avatar(n,key){return '<span class="av" style="--av:'+AV_BOJE[hashStr(key||n)%AV_BOJE.length]+'" aria-hidden="true">'+esc(inicijali(n))+'</span>';}
+function hitnost(r){if(!r.has||r.past)return "u-none";if(r.n<=7)return "u-red";if(r.n<=21)return "u-amber";return "u-green";}
+function barPct(r){if(!r.has||r.past)return 0;return Math.max(5,Math.min(100,Math.round(r.n/60*100)));}
+function statusPill(s){return '<span class="pill st-'+esc(s)+'">'+esc(STATUS[s]||s)+'</span>';}
+function statusDot(s){return '<span class="st st-'+esc(s)+'"><i></i>'+esc(STATUS[s]||s)+'</span>';}
+function rokBlok(p,r){
+  if(r.has&&!r.past)return '<div class="num"><strong>'+(r.est?"≈":"")+r.n+'</strong><em>'+danRijec(r.n)+'</em></div><div class="when"><small>'+esc(r.est?"procjena: "+fmtDate(p.rokProcjena):"rok "+fmtDate(p.rok))+'</small><div class="bar"><i style="width:'+barPct(r)+'%"></i></div></div>';
+  return '<div class="when"><small>'+(r.has&&r.past?esc(r.sub):"Rok")+'</small><span class="nodate">'+esc(r.has&&r.past?"Rok je prošao":r.label)+'</span></div>';
+}
+
+/* ---------- kartice poziva ---------- */
+function cardHtml(p,i,hero){
+  var r=rokInfo(p), u=hitnost(r);
+  var tags=(p.teme||[]).slice(0,3).map(function(t){return '<span class="tag">'+ic(TAG_IC[t]||"star")+esc(TAG[t]||t)+'</span>';}).join("");
+  var fr=(p.iznos?'<span>'+ic("coin")+esc(p.iznos)+'</span>':'');
+  return '<article class="pcard '+u+(hero?" hero":"")+'" style="--d:'+(i||0)+'" data-act="open" data-id="'+esc(p.id)+'">'+
+    '<div class="ph">'+avatar(p.davalac)+'<div class="who"><b>'+esc(p.davalac)+'</b><small>'+esc(POD[p.podrucje]||"")+'</small></div>'+statusDot(p.status)+'</div>'+
+    '<h3>'+esc(p.naslov)+'</h3>'+(fr?'<div class="facts-row">'+fr+'</div>':'')+(tags?'<div class="tags">'+tags+'</div>':'')+
+    '<div class="dl">'+rokBlok(p,r)+'<button class="go-btn" data-act="open" data-id="'+esc(p.id)+'" aria-label="Detalji: '+esc(p.naslov)+'">'+ic("arrow")+'</button></div></article>';
+}
+function itemHtml(p,i){
+  var r=rokInfo(p);
+  var d=r.has&&!r.past?'<span class="days '+hitnost(r)+'">'+esc(r.label)+'</span>':"";
+  return '<div class="item" style="--d:'+(i||0)+'">'+avatar(p.davalac)+'<div class="main"><span class="donor">'+esc(p.davalac)+'</span><h3>'+esc(p.naslov)+'</h3><span class="meta">'+esc(p.iznos||"")+(p.iznos&&POD[p.podrucje]?", ":"")+esc(POD[p.podrucje]||"")+'</span></div><div class="side">'+d+statusDot(p.status)+'<button class="btn" data-act="open" data-id="'+esc(p.id)+'">Detalji</button></div></div>';
+}
+function grid(list,heroFirst){return '<div class="cgrid'+(S.anim?" stag":"")+'">'+list.map(function(p,i){return cardHtml(p,i,heroFirst&&i===0&&rokInfo(p).has&&!rokInfo(p).past);}).join("")+'</div>';}
+function prazno(t,akcija){return '<div class="empty">'+ic("inbox")+'<p style="margin:0 0 4px;font-weight:700;color:var(--ink)">'+esc(t)+'</p>'+(akcija||"")+'</div>';}
+function zaTebe(){
+  var aktivni=S.pozivi.filter(function(p){return p.status!=="zatvoren"&&p._odobren!==false;});
+  var moji=aktivni.filter(matches).sort(function(a,b){return sortKey(a)-sortKey(b);});
+  var naslov=profileDone()?"Za tebe ove sedmice":"Svi javni pozivi u BiH, na jednom mjestu.";
+  var h='<section class="intro"><h1>'+naslov.split(" ").map(function(w,i){return '<span class="word-in" style="animation-delay:'+(i*45)+'ms">'+esc(w)+'</span>';}).join(" ")+'</h1>';
+  h+='<p class="lead">'+(profileDone()?(moji.length?("Imaš "+moji.length+" "+(moji.length===1?"poziv koji odgovara":"poziva koji odgovaraju")+" tvom profilu."):"Trenutno nema aktivnih poziva za tvoj profil. Pogledaj sve pozive ili proširi teme u profilu."):"Popuni profil i vidjet ćeš samo pozive za koje tvoja organizacija ispunjava uslove.")+'</p>';
+  if(!profileDone())h+='<div class="row" style="margin-top:24px"><a class="btn primary" href="#profil">Popuni profil '+ic("arrow","go")+'</a><a class="btn ghost" href="#pozivi">Pogledaj sve pozive</a></div>';
+  var otv=aktivni.filter(function(p){var r=rokInfo(p);return r.has&&!r.past;}).length;
+  h+='<div class="kpis"><div><strong data-count="'+aktivni.length+'">'+aktivni.length+'</strong><span>aktivnih poziva</span></div><div><strong data-count="'+otv+'">'+otv+'</strong><span>s poznatim rokom</span></div><div><strong data-count="'+S.donatori.length+'">'+S.donatori.length+'</strong><span>davalaca sredstava</span></div><div><strong data-count="'+S.opcine.length+'">'+S.opcine.length+'</strong><span>općina koje pratimo</span></div></div></section>';
+  var list=profileDone()?moji:aktivni.sort(function(a,b){return sortKey(a)-sortKey(b);});
+  if(!S.pozivi.length){h+='<div class="section">'+prazno("Baza poziva je još prazna.",S.canEdit?'<a class="btn primary" href="#uredi" style="margin-top:12px">Dodaj prvi poziv</a>':"")+'</div>';return h;}
+  if(list.length){
+    h+='<div class="section">'+grid(list.slice(0,6),true)+'</div>';
+    if(list.length>6)h+='<div class="row" style="margin-top:20px"><a class="btn ghost" href="#pozivi">Još '+(list.length-6)+' u svim pozivima '+ic("arrow","go")+'</a></div>';
+  }
+  var ocek=S.pozivi.filter(function(p){return p.status==="ocekuje"&&p._odobren!==false&&(!profileDone()||matches(p));});
+  if(ocek.length){h+='<div class="section"><h2>Uskoro se očekuje</h2><div class="list'+(S.anim?" stag":"")+'" style="margin-top:16px">'+ocek.map(itemHtml).join("")+'</div></div>';}
+  return h;
+}
+function osnovniFilter(p){
+  if(p._odobren===false)return false;
+  var q=S.q.trim().toLowerCase();
+  if(q){var hay=(p.naslov+" "+p.davalac+" "+(p.napomena||"")+" "+(p.ko||"")+" "+(POD[p.podrucje]||"")).toLowerCase();if(hay.indexOf(q)===-1)return false;}
+  return true;
+}
+function tagOk(p,t){if(t==="svi")return true;if(t==="moji")return matches(p);return (p.teme||[]).indexOf(t)!==-1;}
+function stOk(p,s){if(s==="aktivni")return p.status!=="zatvoren";if(s==="svi")return true;return p.status===s;}
+function filtered(){return S.pozivi.filter(function(p){return osnovniFilter(p)&&tagOk(p,S.filterTag)&&stOk(p,S.filterStatus);}).sort(function(a,b){return sortKey(a)-sortKey(b);});}
+function sviPozivi(){
+  var list=filtered(), baza=S.pozivi.filter(osnovniFilter);
+  var tagChips=[["svi","Svi","grid"]];if(profileDone())tagChips.push(["moji","Za moj profil","star"]);tagChips=tagChips.concat(TAGS.map(function(t){return [t[0],t[1],TAG_IC[t[0]]];}));
+  var st=[["aktivni","Aktivni"],["otvoren","Otvoreni"],["stalni","Stalni"],["ocekuje","Očekuju se"],["zatvoren","Zatvoreni"],["svi","Svi"]];
+  var h='<div class="row between" style="align-items:flex-end"><div><h1>Svi pozivi</h1><p class="lead" style="margin-top:8px"><strong class="count" data-count="'+list.length+'">'+list.length+'</strong> '+(list.length===1?"poziv":"poziva")+' za ovaj izbor</p></div>';
+  h+='<form class="search" role="search" data-act="search-form">'+ic("search")+'<label for="q" class="sr">Pretraži pozive</label><input id="q" type="search" placeholder="Naziv, davalac ili mjesto" value="'+esc(S.q)+'" autocomplete="off"></form></div>';
+  h+='<div class="fbar"><div class="seg" data-seg="status" role="group" aria-label="Status poziva">'+st.map(function(c){var n=baza.filter(function(p){return tagOk(p,S.filterTag)&&stOk(p,c[0]);}).length;return '<button data-act="fst" data-v="'+c[0]+'" aria-pressed="'+(S.filterStatus===c[0])+'">'+esc(c[1])+'<span class="n">'+n+'</span></button>';}).join("")+'</div>';
+  h+='<div class="cats" role="group" aria-label="Za koga je poziv">'+tagChips.map(function(c){var n=baza.filter(function(p){return stOk(p,S.filterStatus)&&tagOk(p,c[0]);}).length;if(!n&&c[0]!=="svi"&&c[0]!=="moji"&&S.filterTag!==c[0])return "";return '<button class="cat" data-act="ftag" data-v="'+c[0]+'" aria-pressed="'+(S.filterTag===c[0])+'"><span class="ico">'+ic(c[2])+'</span>'+esc(c[1])+' <span class="n">'+n+'</span></button>';}).join("")+'</div></div>';
+  h+='<div class="section" style="margin-top:22px">'+(list.length?grid(list,false):prazno("Nema poziva za ovaj izbor.",'<p class="hint">Promijeni filter ili pretragu.</p>'))+'</div>';
+  return h;
+}
+function rokovi(){
+  var list=S.pozivi.filter(function(p){return tracked(p.id);}).sort(function(a,b){return sortKey(a)-sortKey(b);});
+  var h='<h1>Moji rokovi</h1><p class="lead">Pozivi koje pratiš, poredani po roku.</p>';
+  if(!list.length)return h+'<div class="section">'+prazno("Još ne pratiš nijedan poziv.",'<p class="hint">Otvori poziv i klikni „Prati rok“.</p><a class="btn primary" href="#pozivi" style="margin-top:14px">Pogledaj pozive</a>')+'</div>';
+  return h+'<div class="section">'+grid(list,false)+'</div>';
+}
+
+/* ---------- davaoci ---------- */
+function donatoriView(){
+  var dq=(S.dq||"").trim().toLowerCase();
+  var baza=S.donatori.filter(function(d){if(!dq)return true;return ((d.naziv||"")+" "+(d.opis||"")+" "+(d.kome||"")).toLowerCase().indexOf(dq)!==-1;});
+  var list=baza.filter(function(d){return S.filterVrsta==="sve"||d.vrsta===S.filterVrsta;}).sort(function(a,b){return (a.naziv||"").localeCompare(b.naziv||"","bs");});
+  var h='<div class="row between" style="align-items:flex-end"><div><h1>Davaoci sredstava</h1><p class="lead">Institucije, fondovi, međunarodne organizacije, ambasade, fondacije i kompanije koje u BiH dodjeljuju sredstva. Neke nemaju javne pozive nego biraju partnere, pa im se možeš obratiti direktno.</p></div>';
+  h+='<div class="row">'+(S.canEdit?'<button class="btn primary" data-act="new-don">Dodaj organizaciju</button>':'')+'<form class="search" role="search" data-act="search-form">'+ic("search")+'<label for="dq" class="sr">Pretraži davaoce</label><input id="dq" type="search" placeholder="Naziv ili kome pomažu" value="'+esc(S.dq||"")+'" autocomplete="off"></form></div></div>';
+  if(S.editDon)return h+donFormHtml(S.editDon);
+  var vr=[["sve","Sve","grid"]].concat(VRSTE.map(function(v){return [v[0],v[1],VRSTA_IC[v[0]]];}));
+  h+='<div class="fbar"><div class="cats" role="group" aria-label="Vrsta organizacije">'+vr.map(function(c){var n=baza.filter(function(d){return c[0]==="sve"||d.vrsta===c[0];}).length;if(!n&&c[0]!=="sve"&&S.filterVrsta!==c[0])return "";return '<button class="cat" data-act="fvr" data-v="'+c[0]+'" aria-pressed="'+(S.filterVrsta===c[0])+'"><span class="ico">'+ic(c[2])+'</span>'+esc(c[1])+' <span class="n">'+n+'</span></button>';}).join("")+'</div></div>';
+  if(!list.length)return h+'<div class="section">'+prazno("Nema organizacija za ovaj izbor.","")+'</div>';
+  h+='<div class="section cgrid'+(S.anim?" stag":"")+'" style="margin-top:22px">'+list.map(function(d,i){
+    var web=safeUrl(d.web), fb=safeUrl(d.facebook), a='';
+    if(web)a+='<a class="act main-act" href="'+esc(web)+'" target="_blank" rel="noopener noreferrer">'+ic("globe")+'<span>'+esc(host(web))+'</span></a>';
+    if(fb)a+='<a class="act" href="'+esc(fb)+'" target="_blank" rel="noopener noreferrer" aria-label="Facebook stranica">'+ic("fb")+'<span>Facebook</span></a>';
+    if(d.email)a+='<a class="act" href="mailto:'+esc(d.email)+'">'+ic("mail")+'<span>'+esc(d.email)+'</span></a>';
+    if(d.telefon)a+='<a class="act" href="tel:'+esc(d.telefon.replace(/[^\d+]/g,""))+'">'+ic("phone")+'<span>'+esc(d.telefon)+'</span></a>';
+    var col=AV_BOJE[hashStr(d.naziv)%AV_BOJE.length], dug=(d.opis||"").length>220, otv=S.donOpen===d.id;
+    return '<article class="dcard'+(otv?" open":"")+'" style="--d:'+i+';--av:'+col+'"><div class="ph">'+avatar(d.naziv)+'<div class="who"><b>'+esc(VRSTA[d.vrsta]||"")+'</b>'+(d.adresa?'<small>'+esc(d.adresa)+'</small>':'')+'</div></div>'+
+      '<h3>'+esc(d.naziv)+'</h3>'+(d.opis?'<p class="desc">'+esc(d.opis)+'</p>':'')+(dug?'<button class="more" data-act="dmore" data-id="'+esc(d.id)+'" aria-expanded="'+otv+'">'+(otv?"Manje":"Više")+'</button>':'')+
+      (d.kome?'<p class="kome">'+ic("users")+'<span><strong>Kome pomažu:</strong> '+esc(d.kome)+'</span></p>':'')+(d.osobe&&otv?'<p class="kome">'+ic("user")+'<span>'+esc(d.osobe)+'</span></p>':'')+
+      (d.napomena?'<p class="note" style="margin:0">'+esc(d.napomena)+'</p>':'')+
+      '<div class="acts">'+(a||'<span class="trust">Kontakt još nije provjeren.</span>')+(S.canEdit?'<button class="act" data-act="edit-don" data-id="'+esc(d.id)+'">Uredi</button>':'')+'</div>'+(d.provjereno?'<p class="trust">Provjereno '+esc(fmtDate(d.provjereno))+'</p>':'')+'</article>';
+  }).join("")+'</div>';
+  return h;
+}
+IC.users='<circle cx="9" cy="9" r="3.3"/><path d="M3 19c.9-3 3.2-4.6 6-4.6s5.1 1.6 6 4.6M15.5 5.9a3.3 3.3 0 0 1 0 6.3M17.5 14.6c1.8.5 3 1.9 3.6 4.4"/>';
+
+/* ---------- cijene i paketi ---------- */
+var BESPLATNO_DETALJA=3, BESPLATNO_PRACENJA=1;
+var PAKETI={udruzenja:{naziv:"Udruženja i klubovi",mj:30,god:300},firme:{naziv:"Firme i poduzetnici",mj:49,god:490}};
+function jePro(){if(S.canEdit)return true;var p=S.paket;if(!p||!p.vazi_do)return false;var d=parseDate(p.vazi_do);return !!d&&d>=today();}
+function mjesec(){var d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0");}
+function otvorenoOvajMj(){var o=S.profil.otvoreno||{};return o.mj===mjesec()&&Array.isArray(o.ids)?o.ids.slice():[];}
+function preostaloDetalja(){return Math.max(0,BESPLATNO_DETALJA-otvorenoOvajMj().length);}
+function cijeneView(){
+  var g=!!S.godisnje;
+  function li(t,ok){return '<li class="'+(ok?"":"no")+'">'+ic(ok?"check":"minus")+'<span>'+t+'</span></li>';}
+  function cijena(k){var p=PAKETI[k];return g?('<p class="amt">'+p.god+' KM <small>/ godišnje</small></p><p class="trust">'+(p.mj*12-p.god)+' KM uštede, dva mjeseca gratis</p>'):('<p class="amt">'+p.mj+' KM <small>/ mjesečno</small></p><p class="trust">ili '+p.god+' KM godišnje</p>');}
+  var h='<div style="text-align:center;max-width:720px;margin:0 auto"><h1>Cijene</h1><p class="lead" style="margin-left:auto;margin-right:auto">Pogledaj sve pozive besplatno. Kad ti zatreba više, izaberi paket. Plaćanje po fakturi na račun, mjesečno ili godišnje.</p>';
+  h+='<div class="seg" data-seg="period" role="group" aria-label="Period plaćanja" style="margin-top:24px"><button data-act="period" data-v="mj" aria-pressed="'+(!g)+'">Mjesečno</button><button data-act="period" data-v="god" aria-pressed="'+g+'">Godišnje <span class="n">−2 mjeseca</span></button></div></div>';
+  h+='<div class="section plans'+(S.anim?" stag":"")+'">';
+  h+='<div class="price" style="--d:0"><p class="pname">Besplatno</p><p class="amt">0 KM</p><p class="trust">zauvijek, za upoznavanje</p><ul>'+li("Lista svih javnih poziva i rokova",1)+li("Detalji i link na original za "+BESPLATNO_DETALJA+" poziva mjesečno",1)+li("Praćenje "+BESPLATNO_PRACENJA+" roka",1)+li("Pozivi prema profilu organizacije",0)+li("Podsjetnici na email prije roka",0)+li("Spisak dokumentacije za poziv",0)+'</ul><a class="btn ghost" href="#registracija">Napravi besplatan nalog</a></div>';
+  h+='<div class="price hl" style="--d:1"><span class="flag">Najčešći izbor</span><p class="pname">'+PAKETI.udruzenja.naziv+'</p>'+cijena("udruzenja")+'<ul>'+li("Neograničeno: detalji i linkovi na originalne pozive",1)+li("Pozivi prema profilu organizacije",1)+li("Neograničeno praćenje rokova",1)+li("Podsjetnici na email 7 i 2 dana prije roka",1)+li("Spisak dokumentacije za svaki poziv",1)+li("10% popusta na pisanje prijava",1)+'</ul><a class="btn primary" href="#naruci" data-act="order" data-id="" data-paket="'+PAKETI.udruzenja.naziv+'">Izaberi paket '+ic("arrow","go")+'</a></div>';
+  h+='<div class="price" style="--d:2"><p class="pname">'+PAKETI.firme.naziv+'</p>'+cijena("firme")+'<ul>'+li("Sve iz paketa za udruženja i klubove",1)+li("Poticaji za privredu, poljoprivredu i obrte",1)+li("Pozivi EU i međunarodnih fondova za firme",1)+li("Prioritetna podrška",1)+li("15% popusta na pisanje prijava",1)+'</ul><a class="btn dark" href="#naruci" data-act="order" data-id="" data-paket="'+PAKETI.firme.naziv+'">Izaberi paket '+ic("arrow","go")+'</a></div>';
+  h+='</div>';
+  h+='<div class="section service"><div><h2>Mi pišemo projekat umjesto vas</h2><p class="lead" style="font-size:16px">Vi pripremite dokumentaciju organizacije, a mi napišemo cijelu prijavu: projektnu ideju, opis aktivnosti, budžet i obrasce davaoca. Prije predaje sve pregledate i potpišete.</p><p class="big" style="margin-top:18px">od 150 KM</p><p class="small">po prijavi, zavisno od veličine poziva. Konačna cijena se dogovara prije početka rada.</p><a class="btn primary" href="#naruci" data-act="order" data-id="" style="margin-top:18px">Pošalji upit '+ic("arrow","go")+'</a></div>';
+  h+='<div><p style="font-weight:700;margin:0 0 10px">Šta obično pripremate vi</p><ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px">'+DOKUMENTI.map(function(d){return '<li style="display:flex;gap:10px">'+ic("check")+'<span>'+esc(d)+'</span></li>';}).join("")+'</ul><p class="hint" style="margin-top:12px">Tačan spisak zavisi od poziva. Nakon upita šaljemo listu za vaš konkretan poziv.</p></div></div>';
+  h+='<p class="trust section">Pisanje prijave ne garantuje dobijanje sredstava; odluku donosi davalac. Ako donator ne dozvoljava plaćanje izrade prijave iz budžeta projekta, usluga se plaća iz vlastitih sredstava.</p>';
+  return h;
+}
+function paywallHtml(razlog){
+  var t=razlog==="pracenje"?["Pratiš već "+BESPLATNO_PRACENJA+" rok","U besplatnom paketu možeš pratiti "+BESPLATNO_PRACENJA+" rok. Za neograničeno praćenje i podsjetnike izaberi paket."]:["Iskoristio si "+BESPLATNO_DETALJA+" besplatna poziva ovaj mjesec","Detalji i linkovi na originale za još poziva su u paketu. Brojač se resetuje 1. u mjesecu."];
+  return '<div class="drawer-back" data-act="close-back"><div class="drawer" role="dialog" aria-modal="true" aria-labelledby="pw-title"><div class="row between"><span class="plan-badge free">Besplatni paket</span><button class="x-btn" data-act="close" aria-label="Zatvori">'+ic("x")+'</button></div><div class="lock-ic" style="margin:8px 0 0">'+ic("lock")+'</div><h2 id="pw-title" style="font-size:28px">'+esc(t[0])+'</h2><p class="lead" style="font-size:16px;margin:0">'+esc(t[1])+'</p>'+
+    '<div class="price hl" style="box-shadow:none"><p class="pname">'+PAKETI.udruzenja.naziv+'</p><p class="amt">'+PAKETI.udruzenja.mj+' KM <small>/ mjesečno</small></p><ul><li>'+ic("check")+'<span>Neograničeno detalja i linkova</span></li><li>'+ic("check")+'<span>Neograničeno praćenje i podsjetnici</span></li><li>'+ic("check")+'<span>Pozivi prema profilu</span></li></ul><a class="btn primary" href="#naruci" data-act="order" data-id="" data-paket="'+PAKETI.udruzenja.naziv+'">Izaberi paket</a></div>'+
+    '<a class="btn ghost" href="#cijene" data-act="close">Uporedi sve pakete</a></div></div>';
+}
+
+/* ---------- detalji poziva ---------- */
+function renderDrawer(){
+  var root=document.getElementById("drawer-root");
+  if(S.paywall){root.innerHTML=paywallHtml(S.paywall);var pc=root.querySelector('[data-act="close"]');if(pc)pc.focus();return;}
+  if(!S.open){root.innerHTML="";return;}
+  var p=S.pozivi.filter(function(x){return x.id===S.open;})[0];
+  if(!p){S.open=null;root.innerHTML="";return;}
+  if(root.querySelector('.drawer[data-id="'+p.id+'"]')&&S.drawerSoft){S.drawerSoft=false;var tb=root.querySelector('[data-act="track"]');if(tb){var on2=tracked(p.id);tb.className="btn "+(on2?"primary":"dark");tb.setAttribute("aria-pressed",String(on2));tb.innerHTML=ic(on2?"check":"bell")+(on2?"Pratiš ovaj rok":"Prati rok");}return;}
+  var r=rokInfo(p), on=tracked(p.id), url=safeUrl(p.izvor), u=hitnost(r);
+  var h='<div class="drawer-back" data-act="close-back"><div class="drawer" data-id="'+esc(p.id)+'" role="dialog" aria-modal="true" aria-labelledby="dr-title">';
+  h+='<div class="row between" style="flex-wrap:nowrap"><div class="ph">'+avatar(p.davalac)+'<div class="who"><b>'+esc(p.davalac)+'</b><small>'+esc(POD[p.podrucje]||"")+'</small></div></div><button class="x-btn" data-act="close" aria-label="Zatvori">'+ic("x")+'</button></div>';
+  h+='<h2 id="dr-title" style="font-size:28px;line-height:1.15">'+esc(p.naslov)+'</h2>';
+  h+='<div class="feature-box '+u+'"><div class="row between">'+statusDot(p.status)+(r.has&&!r.past?'<span class="small" style="margin:0">'+esc(r.sub)+'</span>':'')+'</div>'+(r.has&&!r.past?'<p class="big" style="margin-top:12px">'+esc(r.label)+'</p><div class="bar"><i style="width:'+barPct(r)+'%;background:var(--feature-num)"></i></div>':'<p class="big" style="font-size:28px;margin-top:12px">'+esc(r.has&&r.past?"Rok je prošao":r.label)+'</p>'+(r.sub?'<p class="small">'+esc(r.sub)+'</p>':''))+'</div>';
+  if(!jePro())h+='<div class="quota">'+ic("sparkle")+'<span>Besplatni paket: još '+preostaloDetalja()+' od '+BESPLATNO_DETALJA+' poziva ovaj mjesec. <a href="#cijene" data-act="close">Paketi</a></span></div>';
+  h+='<button class="btn '+(on?"primary":"dark")+'" data-act="track" data-id="'+esc(p.id)+'" aria-pressed="'+on+'">'+ic(on?"check":"bell")+(on?"Pratiš ovaj rok":"Prati rok")+'</button>';
+  h+='<dl class="facts"><div><dt>Iznos</dt><dd>'+esc(p.iznos||"Nije navedeno")+'</dd></div><div><dt>Područje</dt><dd>'+esc(POD[p.podrucje]||"")+'</dd></div>';
+  if(p.objavljeno)h+='<div><dt>Objavljeno</dt><dd>'+esc(p.objavljeno)+'</dd></div>';
+  if((p.teme||[]).length)h+='<div><dt>Za koga</dt><dd>'+esc(p.teme.map(function(t){return TAG[t]||t;}).join(", "))+'</dd></div>';
+  if(p.ko)h+='<div class="wide"><dt>Ko može aplicirati</dt><dd>'+esc(p.ko)+'</dd></div>';
+  if(p.napomena)h+='<div class="wide"><dt>Napomena</dt><dd style="font-weight:500">'+esc(p.napomena)+'</dd></div>';
+  if(p.osnova)h+='<div class="wide"><dt>Na čemu se zasniva procjena</dt><dd style="font-weight:500">'+esc(p.osnova)+'</dd></div>';
+  h+='</dl>';
+  if(url)h+='<a class="btn primary" href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">'+ic("globe")+'Originalni poziv ('+esc(host(url))+')</a>';
+  if(p.status!=="zatvoren")h+='<a class="btn dark" href="#naruci" data-act="order" data-id="'+esc(p.id)+'">Naruči pisanje prijave</a>';
+  if(p.provjereno)h+='<p class="trust">Podaci provjereni '+esc(fmtDate(p.provjereno))+' u originalnom izvoru ili medijskoj objavi.</p>';
+  if(S.canEdit)h+='<button class="btn ghost" data-act="edit-from" data-id="'+esc(p.id)+'">Uredi ovaj poziv</button>';
+  h+='</div></div>';
+  root.innerHTML=h;
+  var c=root.querySelector('[data-act="close"]');if(c&&!root.contains(document.activeElement))c.focus();
+}
+
+/* ---------- meni, prikaz, animacije ---------- */
+function renderTabs(){
+  var v=view(), n=trackedCount(), nav=document.getElementById("tabs");
+  var t=[["za-tebe","Za tebe"],["pozivi","Svi pozivi"],["donatori","Davaoci"],["izvori","Izvori"],["rokovi","Moji rokovi"+(n?' <span class="badge">'+n+'</span>':"")],["cijene","Cijene"],["profil","Profil"]];
+  if(S.uid)t.push(["nalog","Moj nalog"]);else{t.push(["prijava","Prijava"]);t.push(["registracija","Registracija","cta"]);}
+  if(S.canEdit){t.push(["uredi","Uredi"]);var nz=S.sviUpiti.reduce(function(a,u){return a+(u.zahtjevi||[]).filter(function(z){return z.status==="novo";}).length;},0);t.push(["zahtjevi","Zahtjevi"+(nz?' <span class="badge">'+nz+'</span>':"")]);}
+  var cur=(v==="zaboravljena-lozinka"||v==="nova-lozinka")?(S.uid?"nalog":"prijava"):(v==="prijava"&&S.uid?"nalog":v);
+  nav.innerHTML='<span class="thumb" aria-hidden="true"></span>'+t.map(function(x){return '<a href="#'+x[0]+'"'+(x[2]?' class="'+x[2]+'"':"")+(cur===x[0]?' aria-current="page"':"")+'>'+x[1]+'</a>';}).join("");
+  pomjeriThumb(nav,nav.querySelector('[aria-current="page"]'),"tabs");
+}
+var THUMB={};
+function pomjeriThumb(box,el,key){
+  var th=box&&box.querySelector(".thumb");if(!th)return;
+  if(!el){th.style.opacity="0";return;}
+  var x=el.offsetLeft, w=el.offsetWidth, prev=THUMB[key];
+  th.style.opacity="1";
+  if(prev){th.style.transition="none";th.style.width=prev.w+"px";th.style.transform="translateX("+prev.x+"px)";void th.offsetWidth;th.style.transition="";}
+  th.style.width=w+"px";th.style.transform="translateX("+x+"px)";
+  THUMB[key]={x:x,w:w};
+  if(key==="tabs"&&el.scrollIntoView&&(el.offsetLeft<box.scrollLeft||el.offsetLeft+w>box.scrollLeft+box.clientWidth))box.scrollTo({left:el.offsetLeft-24,behavior:"smooth"});
+}
+function segThumbs(){
+  [].forEach.call(document.querySelectorAll("#app .seg"),function(s){
+    if(!s.querySelector(".thumb"))s.insertAdjacentHTML("afterbegin",'<span class="thumb" aria-hidden="true"></span>');
+    pomjeriThumb(s,s.querySelector('[aria-pressed="true"]'),"seg-"+(s.getAttribute("data-seg")||""));
+  });
+}
+var raf=window.requestAnimationFrame?window.requestAnimationFrame.bind(window):function(f){return setTimeout(function(){f(Date.now());},16);};
+var reduceMotion=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+function brojanje(){
+  if(reduceMotion)return;
+  [].forEach.call(document.querySelectorAll("#app [data-count]"),function(el){
+    var to=+el.getAttribute("data-count");if(!(to>0))return;var t0=null,dur=Math.min(1200,500+to*8);
+    function f(ts){if(!t0)t0=ts;var k=Math.min(1,(ts-t0)/dur),e=1-Math.pow(1-k,3);el.textContent=Math.round(to*e);if(k<1)raf(f);}
+    el.textContent="0";raf(f);
+  });
+}
+function skeleton(){return '<div class="row" style="flex-direction:column;align-items:flex-start;gap:14px"><div class="sk" style="min-height:58px;width:min(560px,90%);border-radius:18px"></div><div class="sk" style="min-height:22px;width:min(420px,70%);border-radius:10px"></div></div><div class="section cgrid"><div class="sk"></div><div class="sk"></div><div class="sk"></div></div>';}
+function render(){
+  renderTabs();
+  var app=document.getElementById("app"), v=view(), novo=S.lastView!==v;
+  if(novo)S.anim=true;
+  /* prijava: dok korisnik kuca, osvježi samo lijevu stranu */
+  var ocek=v==="registracija"&&S.regSent?"registracija-ok":v==="zaboravljena-lozinka"&&S.resetSent?"zaboravljena-ok":v;
+  var postoji=app.querySelector('.auth-shell[data-v="'+ocek+'"]');
+  if(postoji&&AUTH_VIEWS.indexOf(v)!==-1&&!S.uid&&!S.forceAuth){var art=postoji.querySelector(".auth-art");if(art)art.outerHTML=authArt();renderDrawer();return;}
+  S.forceAuth=false;
+  if(!S.ready&&AUTH_VIEWS.indexOf(v)!==-1&&S.started&&!S.offline){app.innerHTML=v==="prijava"?prijavaView():v==="registracija"?registracijaView():v==="zaboravljena-lozinka"?zaboravljenaView():v==="nova-lozinka"?novaLozinkaView():nalogView();zavrsi(app,novo,v);return;}
+  if(!S.ready){app.innerHTML=S.offline?offlineHtml():skeleton()+(S.loadErr?'<p class="err">'+esc(S.loadErr)+'</p>':"");renderDrawer();return;}
+  if(ZAKLJUCANO[v]&&!S.uid){app.innerHTML=lockView(v);renderDrawer();zavrsi(app,novo,v);return;}
+  if(v==="za-tebe")app.innerHTML=zaTebe();
+  else if(v==="registracija")app.innerHTML=registracijaView();
+  else if(v==="zaboravljena-lozinka")app.innerHTML=zaboravljenaView();
+  else if(v==="nova-lozinka")app.innerHTML=novaLozinkaView();
+  else if(v==="nalog")app.innerHTML=nalogView();
+  else if(v==="pozivi")app.innerHTML=sviPozivi();
+  else if(v==="rokovi")app.innerHTML=rokovi();
+  else if(v==="donatori")app.innerHTML=donatoriView();
+  else if(v==="prijava")app.innerHTML=prijavaView();
+  else if(v==="izvori")app.innerHTML=izvoriView();
+  else if(v==="cijene")app.innerHTML=cijeneView();
+  else if(v==="naruci")app.innerHTML=naruciView();
+  else if(v==="zahtjevi")app.innerHTML=S.canEdit?zahtjeviView():'<p class="lead">Ovo vide samo urednici.</p>';
+  else if(v==="profil")app.innerHTML=profilView();
+  else if(v==="uredi")app.innerHTML=S.canEdit?urediView():'<p class="lead">Samo urednici mogu mijenjati pozive.</p>';
+  renderDrawer();
+  zavrsi(app,novo,v);
+  var oi=document.getElementById("opq");if(oi&&S.focusOp){oi.focus();var ol=oi.value.length;oi.setSelectionRange(ol,ol);S.focusOp=false;}
+  var si=document.getElementById("q");if(si&&document.activeElement!==si&&S.focusQ){si.focus();var l=si.value.length;si.setSelectionRange(l,l);S.focusQ=false;}
+  var di=document.getElementById("dq");if(di&&document.activeElement!==di&&S.focusD){di.focus();var dl=di.value.length;di.setSelectionRange(dl,dl);S.focusD=false;}
+}
+function zavrsi(app,novo,v){
+  if(novo){app.classList.remove("v-enter");void app.offsetWidth;app.classList.add("v-enter");brojanje();}
+  else if(S.anim)brojanje();
+  segThumbs();
+  var sw=app.querySelector(".auth-switch");if(sw){var reg=v==="registracija";if(S.prevAuth&&S.prevAuth!==v)raf(function(){sw.classList.toggle("reg",reg);});else sw.classList.toggle("reg",reg);}
+  if(AUTH_VIEWS.indexOf(v)!==-1)S.prevAuth=v;
+  S.lastView=v;S.anim=false;
+}
+function toast(msg){S.toast=msg;var r=document.getElementById("toast-root");r.innerHTML='<div class="toast" role="status">'+ic("check")+esc(msg)+'</div>';clearTimeout(toast.t);toast.t=setTimeout(function(){r.innerHTML="";},2800);}
+function saveProfil(){
+  if(!S.db||!S.uid){toast("Prijavi se da bi se profil sačuvao.");location.hash="#prijava";return;}
+  var body={tip:S.profil.tip||"",teme:(S.profil.teme||[]).slice(),podrucje:S.profil.podrucje||"",pracenje:Object.assign({},S.profil.pracenje||{}),otvoreno:S.profil.otvoreno||{mj:"",ids:[]}};
+  return queue(function(){return S.db.doc("data/users/"+S.uid+"/profil").set(body);});
+}
+window.addEventListener("scroll",function(){var h=document.querySelector("header.top");if(h)h.classList.toggle("scrolled",window.scrollY>8);},{passive:true});
+window.addEventListener("resize",function(){THUMB={};renderTabs();segThumbs();});
+
+/* ---------- prijava: izgled ---------- */
+function fl(id,name,label,type,ac,ikona,extra){
+  return '<div class="fl"><input id="'+id+'" name="'+name+'" type="'+type+'" placeholder=" " autocomplete="'+ac+'"'+(extra||"")+'><label for="'+id+'">'+label+'</label>'+ic(ikona,"lead-ic")+'</div>';
+}
+function pwPolje(id,label,ac,meter){
+  return '<div><div class="fl pw"><input id="'+id+'" name="'+id.replace(/^a-/,"")+'" type="password" placeholder=" " required autocomplete="'+ac+'"'+(meter?' data-meter="'+id+'-m"':'')+'><label for="'+id+'">'+label+'</label>'+ic("lock","lead-ic")+'<button type="button" class="eye" data-act="pw-toggle" data-v="'+id+'" aria-label="Prikaži lozinku" aria-pressed="false">'+ic("eye")+'</button></div>'+
+  (meter?'<div class="meter" id="'+id+'-m" aria-hidden="true"><i></i><i></i><i></i><i></i></div><p class="meter-t" id="'+id+'-mt">Najmanje 8 znakova, slova i bar jedan broj.</p>':'')+'</div>';
+}
+function authArt(){
+  var akt=S.pozivi.filter(function(p){return p.status!=="zatvoren"&&p._odobren!==false;}).sort(function(a,b){return sortKey(a)-sortKey(b);}).slice(0,12);
+  var mini=akt.map(function(p){var r=rokInfo(p),u=hitnost(r);return '<div class="mini">'+avatar(p.davalac)+'<div class="t"><b>'+esc(p.naslov)+'</b><small>'+esc(p.davalac)+'</small></div><span class="d '+(u==="u-red"?"red":u==="u-amber"?"amber":"")+'">'+(r.has&&!r.past?esc(r.label):"")+'</span></div>';}).join("");
+  return '<aside class="auth-art"><h2>Svaki javni poziv u BiH. Na vrijeme.</h2><p>Općine, kantoni, ministarstva, ambasade i fondacije na jednom mjestu, s rokom koji odbrojava.</p>'+
+    (mini?'<div class="stream" aria-hidden="true"><div class="stream-in" style="--dur:'+Math.max(24,akt.length*5)+'s">'+mini+mini+'</div></div>':'<div class="stream"></div>')+
+    '<div class="astats"><div><strong>'+akt.length+'</strong><span>aktivnih poziva</span></div><div><strong>'+S.donatori.length+'</strong><span>davalaca</span></div><div><strong>'+(S.opcine.length||145)+'</strong><span>općina</span></div></div></aside>';
+}
+function authOkvir(kartica,v){
+  var sw=(v==="prijava"||v==="registracija")?'<nav class="auth-switch'+((S.prevAuth||v)==="registracija"?" reg":"")+'" aria-label="Prijava ili registracija"><a href="#prijava"'+(v==="prijava"?' aria-current="page"':'')+'>Prijava</a><a href="#registracija"'+(v==="registracija"?' aria-current="page"':'')+'>Registracija</a></nav>':'';
+  return '<div class="auth-shell" data-v="'+v+'">'+authArt()+'<section class="auth-panel">'+sw+kartica+'</section></div>';
+}
+function strana(){return "";}
+function prijavaView(){
+  if(S.uid)return nalogView();
+  var h='<div><h1>Dobro došao nazad</h1><p class="lead">Prijavi se i nastavi gdje si stao.</p></div>';
+  if(S.loginMsg)h+='<p class="note" role="status" style="margin:0">'+esc(S.loginMsg)+'</p>';
+  if(S.authErr)h+='<p class="err" role="alert" style="margin:0">'+esc(S.authErr)+'</p>';
+  h+='<form class="auth-form" data-act="login-form" novalidate>'+fl("a-email","email","Email adresa","email","email","mail",' required inputmode="email" value="'+esc(S.zadnjiEmail||"")+'"')+
+     pwPolje("a-lozinka","Lozinka","current-password",false)+
+     '<div class="auth-links"><a href="#zaboravljena-lozinka">Zaboravljena lozinka?</a></div>'+
+     '<p class="err" id="auth-err" role="alert"></p><div id="auth-extra"></div>'+
+     '<button class="btn primary wide" type="submit">Prijavi se '+ic("arrow","go")+'</button>'+
+     '<div class="divider">ili</div><button class="btn ghost wide" type="button" data-act="magic">'+ic("mail")+'Pošalji mi link za prijavu bez lozinke</button></form>';
+  return authOkvir(h,"prijava");
+}
+function registracijaView(){
+  if(S.uid)return nalogView();
+  if(S.regSent)return authOkvir('<div class="mailart">'+ic("mail")+'</div><div><h1>Provjeri email</h1><p class="lead">Poslali smo link za potvrdu na <strong style="color:var(--ink)">'+esc(S.regSent)+'</strong>. Otvori ga i nalog je aktivan.</p></div><p class="hint">Nije stiglo? Provjeri folder Spam ili Promocije. Link važi 24 sata.</p><p class="err" id="auth-err" role="alert"></p><div class="row"><button class="btn dark" data-act="resend" data-v="signup">Pošalji ponovo</button><button class="btn ghost" data-act="reg-reset">Promijeni email</button></div>',"registracija-ok");
+  var h='<div><h1>Napravi nalog</h1><p class="lead">Besplatno, za minutu. Bez kartice.</p></div>'+
+    '<form class="auth-form" data-act="reg-form" novalidate>'+
+    '<div class="two" style="gap:14px">'+fl("a-ime","ime","Ime i prezime","text","name","user",' required maxlength="80"')+fl("a-org","org","Organizacija (nije obavezno)","text","organization","org",' maxlength="120"')+'</div>'+
+    fl("a-email","email","Email adresa","email","email","mail",' required inputmode="email"')+
+    pwPolje("a-lozinka","Lozinka","new-password",true)+pwPolje("a-lozinka2","Ponovi lozinku","new-password",false)+
+    '<label class="check"><input type="checkbox" name="uslovi" required><span>Slažem se s <a href="#cijene">uslovima korištenja</a> i obradom podataka radi rada Pozivnika.</span></label>'+
+    '<p class="err" id="auth-err" role="alert"></p><button class="btn primary wide" type="submit">Napravi besplatan nalog '+ic("arrow","go")+'</button></form>';
+  return authOkvir(h,"registracija");
+}
+function zaboravljenaView(){
+  if(S.resetSent)return authOkvir('<div class="mailart">'+ic("mail")+'</div><div><h1>Provjeri email</h1><p class="lead">Ako postoji nalog za <strong style="color:var(--ink)">'+esc(S.resetSent)+'</strong>, poslali smo link za novu lozinku.</p></div><p class="hint">Link važi 1 sat. Provjeri i folder Spam.</p><div class="row"><button class="btn ghost" data-act="reset-again">Pošalji na drugi email</button><a class="btn dark" href="#prijava">Nazad na prijavu</a></div>',"zaboravljena-ok");
+  return authOkvir('<div><h1>Zaboravljena lozinka</h1><p class="lead">Upiši email naloga. Poslat ćemo ti link za novu lozinku.</p></div>'+
+    '<form class="auth-form" data-act="forgot-form" novalidate>'+fl("a-email","email","Email adresa","email","email","mail",' required inputmode="email" value="'+esc(S.zadnjiEmail||"")+'"')+'<p class="err" id="auth-err" role="alert"></p><button class="btn primary wide" type="submit">Pošalji link</button><a class="btn ghost wide" href="#prijava">Nazad na prijavu</a></form>',"zaboravljena-lozinka");
+}
+function novaLozinkaView(){
+  if(!S.uid)return authOkvir('<div class="mailart">'+ic("lock")+'</div><div><h1>Link nije važeći</h1><p class="lead">Link za novu lozinku je istekao ili je već iskorišten.</p></div><a class="btn primary wide" href="#zaboravljena-lozinka">Zatraži novi link</a>',"nova-lozinka");
+  return authOkvir('<div><h1>'+(S.invite?'Postavi lozinku':'Nova lozinka')+'</h1><p class="lead">Za nalog '+esc(S.email||"")+'.</p></div>'+
+    '<form class="auth-form" data-act="newpw-form" novalidate>'+pwPolje("a-lozinka","Nova lozinka","new-password",true)+pwPolje("a-lozinka2","Ponovi lozinku","new-password",false)+
+    '<p class="err" id="auth-err" role="alert"></p><button class="btn primary wide" type="submit">Sačuvaj lozinku</button></form>',"nova-lozinka");
+}
+function nalogView(){
+  if(!S.uid)return prijavaView();
+  var md=S.meta||{}, pro=jePro();
+  var plan=S.canEdit?'<span class="plan-badge">'+ic("star")+'Urednik, sve otključano</span>':pro?'<span class="plan-badge">'+ic("check")+'Paket '+esc(S.paket.paket)+', važi do '+esc(fmtDate(S.paket.vazi_do))+'</span>':'<span class="plan-badge free">Besplatni paket: '+otvorenoOvajMj().length+' od '+BESPLATNO_DETALJA+' poziva ovaj mjesec</span>';
+  var h='<div class="row between" style="align-items:flex-end"><div><h1>Moj nalog</h1><p class="lead">'+esc(md.ime?md.ime+", ":"")+esc(S.email||"")+'</p><div class="row" style="margin-top:14px">'+plan+(pro?'':'<a class="btn primary" href="#cijene">Izaberi paket</a>')+'</div></div><button class="btn" data-act="odjava">'+ic("logout")+'Odjava</button></div>';
+  h+='<div class="acc-grid section'+(S.anim?" stag":"")+'">';
+  h+='<form class="acc-card" data-act="meta-form" style="--d:0"><h2>Lični podaci</h2>'+fl("m-ime","ime","Ime i prezime","text","name","user",' maxlength="80" value="'+esc(md.ime||"")+'"')+fl("m-org","org","Organizacija","text","organization","org",' maxlength="120" value="'+esc(md.organizacija||"")+'"')+'<button class="btn dark" type="submit">Sačuvaj</button></form>';
+  h+='<form class="acc-card" data-act="chpw-form" novalidate style="--d:1"><h2>Promjena lozinke</h2>'+pwPolje("a-lozinka","Nova lozinka","new-password",true)+pwPolje("a-lozinka2","Ponovi lozinku","new-password",false)+'<p class="err" id="pw-err" role="alert"></p><button class="btn dark" type="submit">Promijeni lozinku</button></form>';
+  h+='<form class="acc-card" data-act="chmail-form" novalidate style="--d:2"><h2>Promjena emaila</h2><p class="hint">Poslat ćemo link za potvrdu na novi email. Do potvrde ostaje stari.</p>'+fl("m-mail","email","Novi email","email","email","mail",' required')+'<p class="err" id="mail-err" role="alert"></p><button class="btn dark" type="submit">Promijeni email</button></form>';
+  h+='<div class="acc-card" style="--d:3"><h2>Sigurnost</h2><p class="hint">Odjavi se na svim uređajima na kojima si prijavljen, npr. ako si zaboravio odjavu na tuđem računaru.</p><div class="row"><a class="btn ghost" href="#profil">Profil organizacije</a><button class="btn danger" data-act="odjava-sve">Odjava sa svih uređaja</button></div></div>';
+  return h+'</div>';
+}
+function lockView(v){
+  var t=ZAKLJUCANO[v]||["Prijava potrebna","Za ovaj korak se prijavi."];
+  return '<div class="lock"><div class="lock-ic">'+ic("lock")+'</div><h1>'+esc(t[0])+'</h1><p class="lead" style="margin-left:auto;margin-right:auto">'+esc(t[1])+' Prijavi se ili napravi besplatan nalog.</p><div class="row" style="justify-content:center;margin-top:26px"><button class="btn primary" data-act="go-auth" data-v="#registracija">Napravi besplatan nalog</button><button class="btn" data-act="go-auth" data-v="#prijava">Prijavi se</button></div></div>';
+}
+function zahtjeviView(){
+  var rows=[];S.sviUpiti.forEach(function(u){(u.zahtjevi||[]).forEach(function(z,i){rows.push({u:u.id,i:i,z:z});});});
+  rows.sort(function(a,b){return String(b.z.kreirano).localeCompare(String(a.z.kreirano));});
+  var h='<h1>Zahtjevi</h1><p class="lead">Upiti za pisanje prijava i pakete. Kad korisnik plati paket, aktiviraj ga ovdje.</p>';
+  if(!rows.length)return h+'<div class="section">'+prazno("Još nema upita.","")+'</div>';
+  return h+'<div class="section list">'+rows.map(function(r){var z=r.z, pr=(S.pretplate||{})[r.u], paket=z.sta!=="pisanje";
+    var akt=paket?'<div class="row" style="margin-top:8px">'+(pr?'<span class="plan-badge">'+ic("check")+esc(pr.paket)+' do '+esc(fmtDate(pr.vazi_do))+'</span>':'<span class="plan-badge free">Paket nije aktivan</span>')+'<button class="btn" data-act="aktiviraj" data-u="'+esc(r.u)+'" data-paket="'+esc(z.sta)+'" data-v="1">Aktiviraj 1 mjesec</button><button class="btn" data-act="aktiviraj" data-u="'+esc(r.u)+'" data-paket="'+esc(z.sta)+'" data-v="12">Aktiviraj 1 godinu</button></div>':'';
+    return '<div class="item" style="align-items:flex-start"><div class="main"><span class="donor">'+esc(fmtTs(z.kreirano))+'</span><h3>'+esc(z.organizacija)+', '+esc(z.sta==="pisanje"?"pisanje prijave":"paket "+z.sta)+'</h3><p class="meta" style="margin:4px 0">'+esc(z.osoba)+', <a href="mailto:'+esc(z.email)+'">'+esc(z.email)+'</a>'+(z.telefon?', '+esc(z.telefon):'')+'</p><p class="meta" style="margin:4px 0">'+esc(z.pozivNaslov||"Bez izabranog poziva")+'</p>'+(z.opis?'<p class="note" style="margin:6px 0">'+esc(z.opis)+'</p>':'')+((z.dokumenti||[]).length?'<p class="trust">Imaju: '+esc(z.dokumenti.join(", "))+'</p>':'')+akt+'</div><div class="side"><label class="sr" for="st-'+r.u+'-'+r.i+'">Status</label><select id="st-'+r.u+'-'+r.i+'" data-act="upit-status" data-u="'+esc(r.u)+'" data-i="'+r.i+'" style="min-height:44px;border:1px solid var(--line);border-radius:12px;padding:0 10px;background:var(--bg)">'+Object.keys(UPIT_ST).map(function(k){return '<option value="'+k+'"'+(z.status===k?" selected":"")+'>'+UPIT_ST[k]+'</option>';}).join("")+'</select></div></div>';}).join("")+'</div>';
+}
+
 /* ---------- events ---------- */
 document.addEventListener("click",function(ev){
   var el=ev.target.closest("[data-act]");if(!el)return;
@@ -726,18 +1093,27 @@ document.addEventListener("click",function(ev){
   if(a==="close-back"&&ev.target!==el)return;
   if(authKlik(a,el)){ev.preventDefault();return;}
   if(!S.uid&&(a==="open"||a==="track"||a==="order")){ev.preventDefault();trebaPrijava(a==="open"?"Prijavi se da vidiš detalje poziva, uslove i link na original.":a==="track"?"Prijavi se da pratiš rokove.":"Prijavi se da naručiš pisanje prijave.",a==="open"?location.hash:"#naruci");return;}
-  if(a==="open"){S.open=id;S.lastFocus=el;renderDrawer();}
-  else if(a==="close"||a==="close-back"){S.open=null;renderDrawer();if(S.lastFocus&&document.contains(S.lastFocus))S.lastFocus.focus();}
-  else if(a==="track"){var pr=Object.assign({},S.profil.pracenje||{});if(pr[id])delete pr[id];else pr[id]=true;S.profil.pracenje=pr;renderTabs();renderDrawer();if(view()==="rokovi")render();saveProfil();toast(pr[id]?"Pratiš ovaj rok":"Više ne pratiš ovaj rok");}
-  else if(a==="ftag"){S.filterTag=v;render();}
-  else if(a==="fst"){S.filterStatus=v;render();}
+  if(a==="open"){
+    if(ev.target.closest("a")&&ev.target.closest("a")!==el)return;
+    if(!jePro()){var ids=otvorenoOvajMj();if(ids.indexOf(id)===-1){if(ids.length>=BESPLATNO_DETALJA){S.paywall="detalji";S.lastFocus=el;renderDrawer();return;}ids.push(id);S.profil.otvoreno={mj:mjesec(),ids:ids};saveProfil();}}
+    S.open=id;S.lastFocus=el;renderDrawer();
+  }
+  else if(a==="close"||a==="close-back"){S.open=null;S.paywall=null;renderDrawer();if(S.lastFocus&&document.contains(S.lastFocus))S.lastFocus.focus();}
+  else if(a==="track"){var pr=Object.assign({},S.profil.pracenje||{});if(!pr[id]&&!jePro()&&trackedCount()>=BESPLATNO_PRACENJA){S.open=null;S.paywall="pracenje";renderDrawer();return;}if(pr[id])delete pr[id];else pr[id]=true;S.profil.pracenje=pr;renderTabs();S.drawerSoft=true;renderDrawer();if(view()==="rokovi")render();saveProfil();toast(pr[id]?"Pratiš ovaj rok":"Više ne pratiš ovaj rok");}
+  else if(a==="ftag"){S.filterTag=v;S.anim=true;render();}
+  else if(a==="fst"){S.filterStatus=v;S.anim=true;render();}
+  else if(a==="period"){S.godisnje=v==="god";render();}
+  else if(a==="dmore"){S.donOpen=S.donOpen===id?null:id;render();}
+  else if(a==="aktiviraj"&&S.canEdit){var uu=el.getAttribute("data-u"),mj=+v||1,dd=new Date();dd.setMonth(dd.getMonth()+mj);var vd=dd.toISOString().slice(0,10),pk=el.getAttribute("data-paket");
+    if(!confirm("Aktivirati paket "+pk+" do "+fmtDate(vd)+"?"))return;
+    S.sb.from("pretplate").upsert({user_id:uu,paket:pk,vazi_do:vd,azurirano:new Date().toISOString()}).then(function(r){if(r.error){toast("Aktivacija nije uspjela.");return;}S.pretplate=S.pretplate||{};S.pretplate[uu]={paket:pk,vazi_do:vd};toast("Paket aktiviran do "+fmtDate(vd));render();});}
   else if(a==="ptema"){var t=(S.profil.teme||[]).slice(),i=t.indexOf(v);if(i===-1)t.push(v);else t.splice(i,1);S.profil.teme=t;el.setAttribute("aria-pressed",String(i===-1));}
   else if(a==="etema"&&S.edit){var e=(S.edit.teme||[]).slice(),j=e.indexOf(v);if(j===-1)e.push(v);else e.splice(j,1);S.edit.teme=e;el.setAttribute("aria-pressed",String(j===-1));}
   else if(a==="new"){S.edit={status:"otvoren",podrucje:"bih",teme:[]};render();}
   else if(a==="edit"||a==="edit-from"){var p=S.pozivi.filter(function(x){return x.id===id;})[0];if(p){S.edit=JSON.parse(JSON.stringify(p));S.open=null;if(view()!=="uredi")location.hash="#uredi";else render();}}
   else if(a==="cancel"){S.edit=null;render();}
   else if(a==="order"){S.orderFor=id||"";S.orderPaket=el.getAttribute("data-paket")||"";S.open=null;renderDrawer();if(view()==="naruci")render();}
-  else if(a==="fvr"){S.filterVrsta=v;render();}
+  else if(a==="fvr"){S.filterVrsta=v;S.anim=true;render();}
   else if(a==="opst"){S.opStatus=v;render();}
   else if(a==="odjava"){S.sb.auth.signOut().then(function(){location.hash="#za-tebe";location.reload();});}
   else if(a==="op-edit"){S.editOp=id;render();}
@@ -748,7 +1124,7 @@ document.addEventListener("click",function(ev){
   else if(a==="delete-don"&&S.editDon&&S.editDon.id){if(!confirm("Obrisati ovu organizaciju?"))return;var ddid=S.editDon.id;queue(function(){return S.db.collection("donatori").doc(ddid).delete();}).then(function(){toast("Organizacija obrisana");});S.editDon=null;render();}
   else if(a==="delete"&&S.edit&&S.edit.id){if(!confirm("Obrisati ovaj poziv iz baze?"))return;var did=S.edit.id;queue(function(){return S.db.collection("pozivi").doc(did).delete();}).then(function(){toast("Poziv obrisan");});S.edit=null;render();}
 });
-document.addEventListener("keydown",function(ev){if(ev.key==="Escape"&&S.open){S.open=null;renderDrawer();if(S.lastFocus&&document.contains(S.lastFocus))S.lastFocus.focus();}});
+document.addEventListener("keydown",function(ev){if(ev.key==="Escape"&&(S.open||S.paywall)){S.open=null;S.paywall=null;renderDrawer();if(S.lastFocus&&document.contains(S.lastFocus))S.lastFocus.focus();}});
 document.addEventListener("change",function(ev){
   var el=ev.target;if(el&&el.id==="opk"){S.opKanton=el.value;render();return;}
   if(!el||el.getAttribute("data-act")!=="upit-status")return;
@@ -756,7 +1132,7 @@ document.addEventListener("change",function(ev){
   if(!doc)return;var arr=JSON.parse(JSON.stringify(doc.zahtjevi||[]));if(!arr[i])return;arr[i].status=el.value;
   queue(function(){return S.db.collection("upiti").doc(uid).update({zahtjevi:arr});}).then(function(){toast("Status promijenjen");});
 });
-document.addEventListener("input",function(ev){if(ev.target&&ev.target.id==="q"){S.q=ev.target.value;S.focusQ=true;render();}if(ev.target&&ev.target.id==="opq"){S.opQ=ev.target.value;S.focusOp=true;render();}});
+document.addEventListener("input",function(ev){if(ev.target&&ev.target.id==="q"){S.q=ev.target.value;S.focusQ=true;render();}if(ev.target&&ev.target.id==="opq"){S.opQ=ev.target.value;S.focusOp=true;render();}if(ev.target&&ev.target.id==="dq"){S.dq=ev.target.value;S.focusD=true;render();}});
 document.addEventListener("submit",function(ev){
   var f=ev.target, a=f.getAttribute("data-act");ev.preventDefault();
   if(a==="search-form")return;
@@ -886,16 +1262,18 @@ function start(){
     },function(){});
     S.db.collection("donatori").onSnapshot(function(snap){
       S.donatori=snap.docs.map(function(d){var x=Object.assign({},d.data());x.id=d.id;return x;});
-      if(S.ready&&view()==="donatori"&&!S.editDon)render();
+      if(S.ready&&(view()==="donatori"||view()==="za-tebe"||AUTH_VIEWS.indexOf(view())!==-1)&&!S.editDon)render();
     },function(){});
     if(!S.uid){render();return;}
+    sb.from("pretplate").select("paket,vazi_do").eq("user_id",S.uid).maybeSingle().then(function(r){if(r&&r.data){S.paket=r.data;render();}});
     sb.from("admini").select("user_id").eq("user_id",S.uid).maybeSingle().then(function(r){
       S.canEdit=!!(r&&r.data);render();
+      if(S.canEdit)sb.from("pretplate").select("user_id,paket,vazi_do").then(function(q){S.pretplate={};(q.data||[]).forEach(function(x){S.pretplate[x.user_id]=x;});if(view()==="zahtjevi")render();});
       if(S.canEdit)S.db.collection("upiti").onSnapshot(function(snap){S.sviUpiti=snap.docs.map(function(d){var x=Object.assign({},d.data());x.id=d.id;return x;});if(view()==="zahtjevi")render();else renderTabs();},function(){});
     });
     S.db.doc("upiti/"+S.uid).onSnapshot(function(snap){S.mojiUpiti=snap.exists&&Array.isArray((snap.data()||{}).zahtjevi)?snap.data().zahtjevi.slice():[];if(view()==="naruci")render();},function(){});
     S.db.doc("data/users/"+S.uid+"/profil").onSnapshot(function(snap){
-      if(snap.exists){var d=snap.data()||{};S.profil={tip:d.tip||"",teme:Array.isArray(d.teme)?d.teme.slice():[],podrucje:d.podrucje||"",pracenje:Object.assign({},d.pracenje||{})};}
+      if(snap.exists){var d=snap.data()||{};S.profil={tip:d.tip||"",teme:Array.isArray(d.teme)?d.teme.slice():[],podrucje:d.podrucje||"",pracenje:Object.assign({},d.pracenje||{}),otvoreno:d.otvoreno&&typeof d.otvoreno==="object"?d.otvoreno:{mj:"",ids:[]}};}
       S.profilLoaded=true;
       if(view()!=="profil")render();else renderTabs();
     },function(){});
