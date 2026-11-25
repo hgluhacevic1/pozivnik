@@ -143,6 +143,36 @@ fieldset{border:none;padding:0;margin:0}
 .trust{font-size:13px;color:var(--muted);margin:0}
 footer{max-width:1180px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font-size:13px}
 @media (prefers-reduced-motion: no-preference){.drawer{animation:slide .18s ease-out}@keyframes slide{from{transform:translateX(24px);opacity:.6}to{transform:none;opacity:1}}}
+.auth-wrap{display:grid;grid-template-columns:1fr;gap:24px;max-width:1000px;margin:0 auto}
+@media (min-width:880px){.auth-wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:start}}
+.auth-card{background:var(--bg);border:1px solid var(--line);border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.auth-card h1{font-size:clamp(28px,4vw,38px)}
+.auth-form{display:flex;flex-direction:column;gap:16px}
+.auth-side{background:var(--feature);color:var(--feature-ink);border-radius:24px;padding:28px}
+.auth-side h2{color:var(--feature-ink);font-size:22px}
+.ticks{list-style:none;padding:0;margin:18px 0;display:flex;flex-direction:column;gap:10px;color:var(--feature-ink)}
+.ticks li{display:flex;gap:10px;align-items:flex-start}
+.ticks li::before{content:"";flex:0 0 18px;height:18px;margin-top:3px;border-radius:50%;background:var(--feature-num) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.5l2.5 2.5L12 5.5' fill='none' stroke='%2306140F' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center/14px no-repeat}
+.field input{width:100%}
+.pw{position:relative}
+.pw input{padding-right:92px}
+.pw button{position:absolute;right:6px;top:50%;transform:translateY(-50%);min-height:36px;padding:0 12px;border:0;border-radius:10px;background:transparent;color:var(--accent);font-weight:700;font-size:14px;cursor:pointer}
+.meter{height:6px;border-radius:999px;background:var(--line);overflow:hidden;margin-top:2px}
+.meter i{display:block;height:100%;width:0;transition:width .2s}
+.btn.wide{width:100%}
+.ok-box{background:var(--mint);color:var(--mint-ink);border-radius:16px;padding:14px 16px;font-weight:600;margin:0}
+.auth-links{display:flex;justify-content:space-between;gap:8px;font-size:14px;font-weight:600;margin-top:-6px}
+.divider{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:13px}
+.divider::before,.divider::after{content:"";flex:1;height:1px;background:var(--line)}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--ink2)}
+.check input{flex:0 0 20px;width:20px;height:20px;margin-top:2px;accent-color:var(--accent)}
+.acc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px}
+.acc-grid h2{font-size:20px}
+.lock{max-width:600px;margin:24px auto;text-align:center;padding:40px 24px;border:1px solid var(--line);border-radius:28px}
+.lock-ic{width:64px;height:64px;margin:0 auto 18px;border-radius:20px;display:grid;place-items:center;background:var(--mint);color:var(--mint-ink)}
+.lock h1{font-size:clamp(26px,4vw,36px)}
+nav.tabs a.cta{background:var(--accent);color:var(--accent-ink)}
+nav.tabs a.cta[aria-current="page"]{background:var(--ink);color:var(--bg)}
 </style>
 </head>
 <body>
@@ -212,7 +242,7 @@ function statusPill(s){return '<span class="pill st-'+esc(s)+'">'+esc(STATUS[s]|
 function profileDone(){return !!(S.profil.tip||S.profil.podrucje||(S.profil.teme||[]).length);}
 
 /* ---------- routing ---------- */
-var VIEWS=["prijava","za-tebe","pozivi","donatori","izvori","rokovi","cijene","naruci","profil","uredi","zahtjevi"];
+var VIEWS=["prijava","registracija","zaboravljena-lozinka","nova-lozinka","nalog","za-tebe","pozivi","donatori","izvori","rokovi","cijene","naruci","profil","uredi","zahtjevi"];
 function view(){var h=(location.hash||"").replace(/^#/,"");return VIEWS.indexOf(h)!==-1?h:"za-tebe";}
 window.addEventListener("hashchange",function(){S.open=null;render();window.scrollTo(0,0);});
 
@@ -230,15 +260,22 @@ function toast(msg){S.toast=msg;var r=document.getElementById("toast-root");r.in
 function renderTabs(){
   var v=view(), n=trackedCount();
   var t=[["za-tebe","Za tebe"],["pozivi","Svi pozivi"],["donatori","Davaoci"],["izvori","Izvori"],["rokovi","Moji rokovi"+(n?' <span class="badge">'+n+'</span>':"")],["cijene","Cijene"],["profil","Profil"]];
-  t.push(["prijava",S.uid?"Moj nalog":"Prijava"]);
+  if(S.uid)t.push(["nalog","Moj nalog"]);else{t.push(["prijava","Prijava"]);t.push(["registracija","Registracija","cta"]);}
   if(S.canEdit){t.push(["uredi","Uredi"]);var nz=S.sviUpiti.reduce(function(a,u){return a+(u.zahtjevi||[]).filter(function(z){return z.status==="novo";}).length;},0);t.push(["zahtjevi","Zahtjevi"+(nz?' <span class="badge">'+nz+'</span>':"")]);}
-  document.getElementById("tabs").innerHTML=t.map(function(x){return '<a href="#'+x[0]+'"'+(v===x[0]?' aria-current="page"':"")+'>'+x[1]+'</a>';}).join("");
+  var cur=(v==="zaboravljena-lozinka"||v==="nova-lozinka")?(S.uid?"nalog":"prijava"):(v==="prijava"&&S.uid?"nalog":v);
+  document.getElementById("tabs").innerHTML=t.map(function(x){return '<a href="#'+x[0]+'"'+(x[2]?' class="'+x[2]+'"':"")+(cur===x[0]?' aria-current="page"':"")+'>'+x[1]+'</a>';}).join("");
 }
 function render(){
   renderTabs();
   var app=document.getElementById("app"), v=view();
+  if(!S.ready&&AUTH_VIEWS.indexOf(v)!==-1&&S.started&&!S.offline){app.innerHTML=v==="prijava"?prijavaView():v==="registracija"?registracijaView():v==="zaboravljena-lozinka"?zaboravljenaView():v==="nova-lozinka"?novaLozinkaView():nalogView();return;}
   if(!S.ready){app.innerHTML=S.offline?offlineHtml():'<p class="lead">Učitavanje poziva…</p>'+(S.loadErr?'<p class="err">'+esc(S.loadErr)+'</p>':"");renderDrawer();return;}
+  if(ZAKLJUCANO[v]&&!S.uid){app.innerHTML=lockView(v);renderDrawer();return;}
   if(v==="za-tebe")app.innerHTML=zaTebe();
+  else if(v==="registracija")app.innerHTML=registracijaView();
+  else if(v==="zaboravljena-lozinka")app.innerHTML=zaboravljenaView();
+  else if(v==="nova-lozinka")app.innerHTML=novaLozinkaView();
+  else if(v==="nalog")app.innerHTML=nalogView();
   else if(v==="pozivi")app.innerHTML=sviPozivi();
   else if(v==="rokovi")app.innerHTML=rokovi();
   else if(v==="donatori")app.innerHTML=donatoriView();
@@ -254,10 +291,6 @@ function render(){
   var si=document.getElementById("q");if(si&&document.activeElement!==si&&S.focusQ){si.focus();var l=si.value.length;si.setSelectionRange(l,l);S.focusQ=false;}
 }
 function offlineHtml(){return '<h1>Pozivnik</h1><p class="lead">Baza nije podešena. U fajlu index.html upiši Supabase adresu i javni (anon) ključ u POZIVNIK_CONFIG.</p>';}
-function prijavaView(){
-  if(S.uid)return '<h1>Moj nalog</h1><p class="lead">Prijavljen si kao '+esc(S.email||"")+(S.canEdit?' (urednik)':'')+'.</p><div class="row section"><a class="btn ghost" href="#profil">Profil organizacije</a><button class="btn" data-act="odjava">Odjava</button></div>';
-  return '<h1>Prijava</h1><p class="lead">Upiši email i poslat ćemo ti link za prijavu. Bez lozinke.</p><form class="panel section" data-act="login-form"><div class="field"><label for="l-email">Email</label><input id="l-email" name="email" type="email" required autocomplete="email"></div><p class="err" id="login-err" role="alert"></p><div class="row"><button class="btn primary" type="submit">Pošalji link za prijavu</button></div></form>';
-}
 
 function cardHtml(p,feature){
   var r=rokInfo(p);
@@ -479,11 +512,219 @@ function renderDrawer(){
   var c=root.querySelector('[data-act="close"]');if(c&&!root.contains(document.activeElement))c.focus();
 }
 
+/* ---------- prijava, registracija, lozinke ---------- */
+var AUTH_VIEWS=["prijava","registracija","zaboravljena-lozinka","nova-lozinka","nalog"];
+var ZAKLJUCANO={rokovi:["Moji rokovi","Prati rokove poziva koji te zanimaju i dobij podsjetnik prije isteka."],profil:["Profil organizacije","Popuni profil i Pozivnik ti pokazuje samo pozive za koje ispunjavaš uslove."],naruci:["Naruči pisanje prijave","Pošalji upit i mi pišemo projekat umjesto tebe."]};
+function ss(k,v){try{if(v===undefined)return sessionStorage.getItem(k);if(v===null)sessionStorage.removeItem(k);else sessionStorage.setItem(k,v);}catch(e){return null;}}
+function trebaPrijava(poruka,cilj){
+  S.loginMsg=poruka||"Za ovaj korak se prijavi ili napravi besplatan nalog.";
+  ss("pozivnik_posle",cilj||location.hash||"#za-tebe");
+  S.open=null;renderDrawer();
+  if(view()==="prijava")render();else location.hash="#prijava";
+}
+function authPoruka(e){
+  var m=String(e&&e.message||"").toLowerCase(),st=e&&e.status;
+  if(m.indexOf("invalid login")!==-1)return "Pogrešan email ili lozinka.";
+  if(m.indexOf("email not confirmed")!==-1)return "Email još nije potvrđen. Otvori link koji smo ti poslali ili zatraži novi ispod.";
+  if(m.indexOf("already")!==-1&&m.indexOf("regist")!==-1)return "Ovaj email je već registrovan. Prijavi se ili obnovi lozinku.";
+  if(m.indexOf("same")!==-1&&m.indexOf("password")!==-1)return "Nova lozinka mora biti drugačija od stare.";
+  if(m.indexOf("password")!==-1&&(m.indexOf("should")!==-1||m.indexOf("weak")!==-1||m.indexOf("least")!==-1))return "Lozinka je preslaba. Koristi bar 8 znakova, slova i brojeve.";
+  if(st===429||m.indexOf("rate limit")!==-1||m.indexOf("security purposes")!==-1)return "Previše pokušaja zaredom. Sačekaj minutu pa pokušaj ponovo.";
+  if(m.indexOf("signups not allowed")!==-1||m.indexOf("signup is disabled")!==-1)return "Registracija je trenutno zatvorena.";
+  if(m.indexOf("sending")!==-1&&m.indexOf("email")!==-1)return "Email trenutno ne može biti poslan. Pokušaj malo kasnije.";
+  if(m.indexOf("fetch")!==-1||m.indexOf("network")!==-1)return "Nema veze sa serverom. Provjeri internet pa pokušaj ponovo.";
+  if(m.indexOf("expired")!==-1||m.indexOf("invalid")!==-1)return "Link je istekao ili je već iskorišten. Zatraži novi.";
+  return "Nije uspjelo. Pokušaj ponovo.";
+}
+function emailOk(e){return /^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(e);}
+function jacina(p){var s=0;if(p.length>=8)s++;if(p.length>=12)s++;if(/[a-zšđčćž]/.test(p)&&/[A-ZŠĐČĆŽ]/.test(p))s++;if(/\d/.test(p))s++;if(/[^A-Za-z0-9šđčćžŠĐČĆŽ]/.test(p))s++;return Math.min(4,s);}
+var JACINA=[["Preslaba","var(--danger)"],["Slaba","var(--danger)"],["Srednja","var(--warm-ink)"],["Dobra","var(--accent)"],["Jaka","var(--accent)"]];
+function lozinkaOk(p){return p.length>=8&&/[A-Za-zšđčćžŠĐČĆŽ]/.test(p)&&/\d/.test(p);}
+function redirectUrl(){return location.origin+location.pathname;}
+function pwPolje(id,label,ac,meter){
+  return '<div class="field"><label for="'+id+'">'+label+'</label><div class="pw"><input id="'+id+'" name="'+id.replace(/^a-/,"")+'" type="password" required autocomplete="'+ac+'"'+(meter?' data-meter="'+id+'-m"':'')+'><button type="button" data-act="pw-toggle" data-v="'+id+'" aria-label="Prikaži lozinku" aria-pressed="false">Prikaži</button></div>'+
+  (meter?'<div class="meter" aria-hidden="true"><i id="'+id+'-m"></i></div><p class="hint" id="'+id+'-mt">Najmanje 8 znakova, slova i bar jedan broj.</p>':'')+'</div>';
+}
+function strana(){
+  return '<aside class="auth-side"><span class="donor" style="color:var(--feature-muted)">Zašto nalog</span><h2 style="margin-top:8px">Svi javni pozivi u BiH, samo oni koji su za tebe.</h2><ul class="ticks">'+
+  '<li>Detalji svakog poziva i link na original</li><li>Profil organizacije i pozivi po mjeri</li><li>Praćenje rokova i podsjetnici</li><li>Narudžba pisanja projekta</li></ul><p class="small" style="color:var(--feature-muted)">Registracija je besplatna. Pretplata ti treba tek za napredne mogućnosti.</p></aside>';
+}
+function authOkvir(kartica){return '<div class="auth-wrap"><section class="auth-card">'+kartica+'</section>'+strana()+'</div>';}
+function prijavaView(){
+  if(S.uid)return nalogView();
+  var h='<h1>Prijava</h1><p class="lead" style="font-size:16px">Dobro došao nazad.</p>';
+  if(S.loginMsg)h+='<p class="note" role="status">'+esc(S.loginMsg)+'</p>';
+  if(S.authErr)h+='<p class="err" role="alert">'+esc(S.authErr)+'</p>';
+  h+='<form class="auth-form" data-act="login-form" novalidate><div class="field"><label for="a-email">Email</label><input id="a-email" name="email" type="email" required autocomplete="email" inputmode="email" value="'+esc(S.zadnjiEmail||"")+'"></div>'+
+     pwPolje("a-lozinka","Lozinka","current-password",false)+
+     '<div class="auth-links"><span></span><a href="#zaboravljena-lozinka">Zaboravljena lozinka?</a></div>'+
+     '<p class="err" id="auth-err" role="alert"></p><div id="auth-extra"></div>'+
+     '<button class="btn primary wide" type="submit">Prijavi se</button></form>'+
+     '<div class="divider">ili</div><button class="btn ghost wide" type="button" data-act="magic">Pošalji mi link za prijavu na email</button>'+
+     '<p class="small" style="text-align:center">Nemaš nalog? <a href="#registracija">Registruj se besplatno</a></p>';
+  return authOkvir(h);
+}
+function registracijaView(){
+  if(S.uid)return nalogView();
+  if(S.regSent)return authOkvir('<h1>Provjeri email</h1><p class="ok-box" role="status">Poslali smo link za potvrdu na <strong>'+esc(S.regSent)+'</strong>. Otvori ga i nalog je aktivan.</p><p class="hint">Nije stiglo? Provjeri i folder Spam/Promocije. Link važi 24 sata.</p><p class="err" id="auth-err" role="alert"></p><div class="row"><button class="btn dark" data-act="resend" data-v="signup">Pošalji ponovo</button><button class="btn ghost" data-act="reg-reset">Promijeni email</button></div><p class="small"><a href="#prijava">Nazad na prijavu</a></p>');
+  var h='<h1>Napravi nalog</h1><p class="lead" style="font-size:16px">Besplatno, za minutu.</p>'+
+    '<form class="auth-form" data-act="reg-form" novalidate>'+
+    '<div class="field"><label for="a-ime">Ime i prezime</label><input id="a-ime" name="ime" required autocomplete="name" maxlength="80"></div>'+
+    '<div class="field"><label for="a-org">Organizacija <span class="hint" style="display:inline">(nije obavezno)</span></label><input id="a-org" name="org" autocomplete="organization" maxlength="120" placeholder="npr. Udruženje žena …"></div>'+
+    '<div class="field"><label for="a-email">Email</label><input id="a-email" name="email" type="email" required autocomplete="email" inputmode="email"></div>'+
+    pwPolje("a-lozinka","Lozinka","new-password",true)+pwPolje("a-lozinka2","Ponovi lozinku","new-password",false)+
+    '<label class="check"><input type="checkbox" name="uslovi" required><span>Slažem se s <a href="#cijene">uslovima korištenja</a> i obradom podataka radi rada Pozivnika.</span></label>'+
+    '<p class="err" id="auth-err" role="alert"></p><button class="btn primary wide" type="submit">Napravi nalog</button></form>'+
+    '<p class="small" style="text-align:center">Već imaš nalog? <a href="#prijava">Prijavi se</a></p>';
+  return authOkvir(h);
+}
+function zaboravljenaView(){
+  if(S.resetSent)return authOkvir('<h1>Provjeri email</h1><p class="ok-box" role="status">Ako postoji nalog za <strong>'+esc(S.resetSent)+'</strong>, poslali smo link za novu lozinku.</p><p class="hint">Link važi 1 sat. Provjeri i folder Spam.</p><div class="row"><button class="btn ghost" data-act="reset-again">Pošalji na drugi email</button><a class="btn dark" href="#prijava">Nazad na prijavu</a></div>');
+  return authOkvir('<h1>Zaboravljena lozinka</h1><p class="lead" style="font-size:16px">Upiši email naloga i poslat ćemo ti link za postavljanje nove lozinke.</p>'+
+    '<form class="auth-form" data-act="forgot-form" novalidate><div class="field"><label for="a-email">Email</label><input id="a-email" name="email" type="email" required autocomplete="email" inputmode="email" value="'+esc(S.zadnjiEmail||"")+'"></div><p class="err" id="auth-err" role="alert"></p><button class="btn primary wide" type="submit">Pošalji link</button></form>'+
+    '<p class="small" style="text-align:center"><a href="#prijava">Nazad na prijavu</a></p>');
+}
+function novaLozinkaView(){
+  if(!S.uid)return authOkvir('<h1>Link nije važeći</h1><p class="lead" style="font-size:16px">Link za novu lozinku je istekao ili je već iskorišten.</p><a class="btn primary" href="#zaboravljena-lozinka">Zatraži novi link</a>');
+  return authOkvir('<h1>'+(S.invite?'Postavi lozinku':'Nova lozinka')+'</h1><p class="lead" style="font-size:16px">Za nalog '+esc(S.email||"")+'.</p>'+
+    '<form class="auth-form" data-act="newpw-form" novalidate>'+pwPolje("a-lozinka","Nova lozinka","new-password",true)+pwPolje("a-lozinka2","Ponovi lozinku","new-password",false)+
+    '<p class="err" id="auth-err" role="alert"></p><button class="btn primary wide" type="submit">Sačuvaj lozinku</button></form>');
+}
+function nalogView(){
+  if(!S.uid)return prijavaView();
+  var md=S.meta||{};
+  var h='<div class="row between"><div><h1>Moj nalog</h1><p class="lead">'+esc(S.email||"")+(S.canEdit?' · urednik':'')+'</p></div><button class="btn" data-act="odjava">Odjava</button></div>';
+  h+='<div class="acc-grid section">';
+  h+='<form class="auth-card" data-act="meta-form"><h2>Lični podaci</h2><div class="field"><label for="m-ime">Ime i prezime</label><input id="m-ime" name="ime" autocomplete="name" maxlength="80" value="'+esc(md.ime||"")+'"></div><div class="field"><label for="m-org">Organizacija</label><input id="m-org" name="org" autocomplete="organization" maxlength="120" value="'+esc(md.organizacija||"")+'"></div><button class="btn dark" type="submit">Sačuvaj</button></form>';
+  h+='<form class="auth-card" data-act="chpw-form" novalidate><h2>Promjena lozinke</h2>'+pwPolje("a-lozinka","Nova lozinka","new-password",true)+pwPolje("a-lozinka2","Ponovi lozinku","new-password",false)+'<p class="err" id="pw-err" role="alert"></p><button class="btn dark" type="submit">Promijeni lozinku</button></form>';
+  h+='<form class="auth-card" data-act="chmail-form" novalidate><h2>Promjena emaila</h2><p class="hint">Poslat ćemo link za potvrdu na novi email. Do potvrde ostaje stari.</p><div class="field"><label for="m-mail">Novi email</label><input id="m-mail" name="email" type="email" required autocomplete="email"></div><p class="err" id="mail-err" role="alert"></p><button class="btn dark" type="submit">Promijeni email</button></form>';
+  h+='<div class="auth-card"><h2>Sigurnost</h2><p class="hint">Odjavi se na svim uređajima na kojima si prijavljen, npr. ako si zaboravio odjavu na tuđem računaru.</p><div class="row"><a class="btn ghost" href="#profil">Profil organizacije</a><button class="btn danger" data-act="odjava-sve">Odjava sa svih uređaja</button></div></div>';
+  return h+'</div>';
+}
+function lockView(v){
+  var t=ZAKLJUCANO[v]||["Prijava potrebna","Za ovaj korak se prijavi."];
+  return '<div class="lock"><div class="lock-ic" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="10" width="16" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h1>'+esc(t[0])+'</h1><p class="lead" style="margin-left:auto;margin-right:auto">'+esc(t[1])+' Prijavi se ili napravi besplatan nalog.</p><div class="row" style="justify-content:center;margin-top:24px"><button class="btn primary" data-act="go-auth" data-v="#prijava">Prijavi se</button><button class="btn dark" data-act="go-auth" data-v="#registracija">Registruj se besplatno</button></div></div>';
+}
+function setBusy(f,on,txt){var b=f.querySelector('button[type="submit"]');if(!b)return;if(on){b.setAttribute("data-t",b.textContent);b.textContent=txt||"Sačekaj…";b.disabled=true;}else{b.textContent=b.getAttribute("data-t")||b.textContent;b.disabled=false;}}
+function authErr(msg,id){var e=document.getElementById(id||"auth-err");if(e)e.textContent=msg||"";}
+function cooldown(btn,s){if(!btn)return;var t0=btn.textContent;btn.disabled=true;(function tick(){if(s<=0){btn.disabled=false;btn.textContent=t0;return;}btn.textContent=t0+" ("+s+")";s--;setTimeout(tick,1000);})();}
+document.addEventListener("input",function(ev){
+  var el=ev.target;if(!el||!el.getAttribute)return;var m=el.getAttribute("data-meter");if(!m)return;
+  var j=el.value?jacina(el.value):0,bar=document.getElementById(m),txt=document.getElementById(m+"t");
+  if(bar){bar.style.width=(el.value?(j+1)*20:0)+"%";bar.style.background=JACINA[j][1];}
+  if(txt)txt.textContent=el.value?("Jačina: "+JACINA[j][0]+(lozinkaOk(el.value)?"":" · treba bar 8 znakova, slova i broj")):"Najmanje 8 znakova, slova i bar jedan broj.";
+});
+function authKlik(a,el){
+  if(a==="pw-toggle"){var i=document.getElementById(el.getAttribute("data-v"));if(!i)return true;var show=i.type==="password";i.type=show?"text":"password";el.textContent=show?"Sakrij":"Prikaži";el.setAttribute("aria-pressed",String(show));el.setAttribute("aria-label",show?"Sakrij lozinku":"Prikaži lozinku");return true;}
+  if(a==="go-auth"){ss("pozivnik_posle",location.hash||"#za-tebe");location.hash=el.getAttribute("data-v");return true;}
+  if(a==="magic"){
+    var em=(document.getElementById("a-email")||{}).value||"";em=em.trim();
+    if(!emailOk(em)){authErr("Upiši email pa klikni ponovo.");var x=document.getElementById("a-email");if(x)x.focus();return true;}
+    el.disabled=true;
+    S.sb.auth.signInWithOtp({email:em,options:{emailRedirectTo:redirectUrl(),shouldCreateUser:false}}).then(function(r){
+      if(r.error){el.disabled=false;var msg=String(r.error.message||"").toLowerCase();authErr(msg.indexOf("signups not allowed")!==-1||msg.indexOf("not found")!==-1?"Za ovaj email nema naloga. Registruj se.":authPoruka(r.error));return;}
+      authErr("");S.zadnjiEmail=em;var ex=document.getElementById("auth-extra");if(ex)ex.innerHTML='<p class="ok-box" role="status">Link za prijavu je poslan na '+esc(em)+'.</p>';cooldown(el,60);
+    });
+    return true;
+  }
+  if(a==="resend"){
+    var em2=S.regSent||S.zadnjiEmail;if(!em2)return true;
+    S.sb.auth.resend({type:"signup",email:em2,options:{emailRedirectTo:redirectUrl()}}).then(function(r){if(r.error){authErr(authPoruka(r.error));return;}authErr("");toast("Poslano ponovo na "+em2);});
+    cooldown(el,60);return true;
+  }
+  if(a==="reg-reset"){S.regSent="";render();return true;}
+  if(a==="reset-again"){S.resetSent="";render();return true;}
+  if(a==="odjava-sve"){if(!confirm("Odjaviti se sa svih uređaja?"))return true;S.sb.auth.signOut({scope:"global"}).then(function(){location.hash="#za-tebe";location.reload();});return true;}
+  return false;
+}
+function authSubmit(a,f){
+  if(a==="login-form"){
+    var em=f.email.value.trim(),pw=f.lozinka.value;S.zadnjiEmail=em;
+    if(!emailOk(em)){authErr("Upiši ispravan email.");f.email.focus();return true;}
+    if(!pw){authErr("Upiši lozinku.");f.lozinka.focus();return true;}
+    setBusy(f,true,"Prijavljivanje…");
+    S.sb.auth.signInWithPassword({email:em,password:pw}).then(function(r){
+      if(r.error){setBusy(f,false);authErr(authPoruka(r.error));
+        if(String(r.error.message||"").toLowerCase().indexOf("not confirmed")!==-1){S.regSent=em;var ex=document.getElementById("auth-extra");if(ex)ex.innerHTML='<button class="btn ghost" type="button" data-act="resend">Pošalji link za potvrdu ponovo</button>';}
+        return;}
+      S.loginMsg="";location.hash=ss("pozivnik_posle")||"#za-tebe";ss("pozivnik_posle",null);location.reload();
+    });
+    return true;
+  }
+  if(a==="reg-form"){
+    var ime=f.ime.value.trim(),org=f.org.value.trim(),em3=f.email.value.trim(),p1=f.lozinka.value,p2=f.lozinka2.value;
+    if(ime.length<2){authErr("Upiši ime i prezime.");f.ime.focus();return true;}
+    if(!emailOk(em3)){authErr("Upiši ispravan email.");f.email.focus();return true;}
+    if(!lozinkaOk(p1)){authErr("Lozinka treba imati bar 8 znakova, slova i bar jedan broj.");f.lozinka.focus();return true;}
+    if(p1!==p2){authErr("Lozinke se ne poklapaju.");f.lozinka2.focus();return true;}
+    if(!f.uslovi.checked){authErr("Potvrdi da se slažeš s uslovima korištenja.");return true;}
+    setBusy(f,true,"Pravim nalog…");
+    S.sb.auth.signUp({email:em3,password:p1,options:{emailRedirectTo:redirectUrl(),data:{ime:ime,organizacija:org}}}).then(function(r){
+      setBusy(f,false);
+      if(r.error){authErr(authPoruka(r.error));return;}
+      var u=r.data&&r.data.user;
+      if(u&&Array.isArray(u.identities)&&u.identities.length===0){authErr("Ovaj email je već registrovan. Prijavi se ili obnovi lozinku.");return;}
+      if(r.data&&r.data.session){location.hash=ss("pozivnik_posle")||"#profil";ss("pozivnik_posle",null);location.reload();return;}
+      S.regSent=em3;S.zadnjiEmail=em3;render();
+    });
+    return true;
+  }
+  if(a==="forgot-form"){
+    var em4=f.email.value.trim();
+    if(!emailOk(em4)){authErr("Upiši ispravan email.");f.email.focus();return true;}
+    setBusy(f,true,"Šaljem…");
+    S.sb.auth.resetPasswordForEmail(em4,{redirectTo:redirectUrl()}).then(function(r){
+      setBusy(f,false);
+      if(r.error&&(r.error.status===429||/rate|security purposes|fetch|network/i.test(r.error.message||""))){authErr(authPoruka(r.error));return;}
+      S.resetSent=em4;S.zadnjiEmail=em4;render();
+    });
+    return true;
+  }
+  if(a==="newpw-form"||a==="chpw-form"){
+    var errId=a==="chpw-form"?"pw-err":"auth-err",q1=f.lozinka.value,q2=f.lozinka2.value;
+    if(!lozinkaOk(q1)){authErr("Lozinka treba imati bar 8 znakova, slova i bar jedan broj.",errId);f.lozinka.focus();return true;}
+    if(q1!==q2){authErr("Lozinke se ne poklapaju.",errId);f.lozinka2.focus();return true;}
+    setBusy(f,true,"Čuvam…");
+    S.sb.auth.updateUser({password:q1}).then(function(r){
+      setBusy(f,false);
+      if(r.error){authErr(authPoruka(r.error),errId);return;}
+      f.reset();authErr("",errId);toast("Lozinka je sačuvana.");
+      if(a==="newpw-form"){S.recovery=false;S.invite=false;location.hash="#za-tebe";}
+    });
+    return true;
+  }
+  if(a==="chmail-form"){
+    var nm=f.email.value.trim();
+    if(!emailOk(nm)){authErr("Upiši ispravan email.","mail-err");return true;}
+    if(nm.toLowerCase()===String(S.email||"").toLowerCase()){authErr("To je već tvoj email.","mail-err");return true;}
+    setBusy(f,true,"Šaljem…");
+    S.sb.auth.updateUser({email:nm},{emailRedirectTo:redirectUrl()}).then(function(r){
+      setBusy(f,false);
+      if(r.error){authErr(authPoruka(r.error),"mail-err");return;}
+      f.reset();authErr("","mail-err");toast("Poslali smo link za potvrdu na "+nm+".");
+    });
+    return true;
+  }
+  if(a==="meta-form"){
+    setBusy(f,true,"Čuvam…");
+    S.sb.auth.updateUser({data:{ime:f.ime.value.trim(),organizacija:f.org.value.trim()}}).then(function(r){
+      setBusy(f,false);if(r.error){toast(authPoruka(r.error));return;}
+      S.meta=(r.data&&r.data.user&&r.data.user.user_metadata)||S.meta;toast("Podaci sačuvani.");
+    });
+    return true;
+  }
+  return false;
+}
+/* stanje iz linka u emailu (potvrda, nova lozinka, poziv, greška) – pročitati PRIJE nego što ga Supabase obriše */
+var POC_HASH=(function(){var h=location.hash.replace(/^#/,"");if(h.indexOf("access_token=")===-1&&h.indexOf("error")===-1)return null;var p={};h.split("&").forEach(function(x){var i=x.indexOf("=");if(i>0)p[decodeURIComponent(x.slice(0,i))]=decodeURIComponent(x.slice(i+1).replace(/\+/g," "));});return p;})();
+
 /* ---------- events ---------- */
 document.addEventListener("click",function(ev){
   var el=ev.target.closest("[data-act]");if(!el)return;
   var a=el.getAttribute("data-act"), id=el.getAttribute("data-id"), v=el.getAttribute("data-v");
   if(a==="close-back"&&ev.target!==el)return;
+  if(authKlik(a,el)){ev.preventDefault();return;}
+  if(!S.uid&&(a==="open"||a==="track"||a==="order")){ev.preventDefault();trebaPrijava(a==="open"?"Prijavi se da vidiš detalje poziva, uslove i link na original.":a==="track"?"Prijavi se da pratiš rokove.":"Prijavi se da naručiš pisanje prijave.",a==="open"?location.hash:"#naruci");return;}
   if(a==="open"){S.open=id;S.lastFocus=el;renderDrawer();}
   else if(a==="close"||a==="close-back"){S.open=null;renderDrawer();if(S.lastFocus&&document.contains(S.lastFocus))S.lastFocus.focus();}
   else if(a==="track"){var pr=Object.assign({},S.profil.pracenje||{});if(pr[id])delete pr[id];else pr[id]=true;S.profil.pracenje=pr;renderTabs();renderDrawer();if(view()==="rokovi")render();saveProfil();toast(pr[id]?"Pratiš ovaj rok":"Više ne pratiš ovaj rok");}
@@ -519,17 +760,7 @@ document.addEventListener("submit",function(ev){
   var f=ev.target, a=f.getAttribute("data-act");ev.preventDefault();
   if(a==="search-form")return;
   if(a==="profil-form"){S.profil.tip=f.tip.value;S.profil.podrucje=f.podrucje.value;var pr=saveProfil();toast("Profil sačuvan");if(pr)pr.then(function(){});location.hash="#za-tebe";}
-  if(a==="login-form"){
-    var le=document.getElementById("login-err"), em2=f.email.value.trim();
-    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em2)){le.textContent="Upiši ispravan email.";return;}
-    var lb=f.querySelector('button[type="submit"]');lb.disabled=true;
-    S.sb.auth.signInWithOtp({email:em2,options:{emailRedirectTo:location.origin+location.pathname}}).then(function(r){
-      lb.disabled=false;
-      if(r.error){le.textContent="Slanje nije uspjelo: "+r.error.message;return;}
-      le.textContent="";toast("Provjeri email i klikni na link za prijavu.");
-    });
-    return;
-  }
+  if(authSubmit(a,f))return;
   if(a==="op-form"){
     var oid=f.getAttribute("data-id"), ow=(f.web.value||"").trim(), orb=(f.rubrika.value||"").trim();
     if((ow&&!safeUrl(ow))||(orb&&!safeUrl(orb))){toast("Link nije ispravan.");return;}
@@ -621,12 +852,26 @@ function start(){
   S.sb=sb;S.db=SupaDB(sb);
   sb.auth.onAuthStateChange(function(ev,session){
     var nu=session&&session.user?session.user.id:null;
-    if(ev==="SIGNED_IN"&&nu&&nu!==S.uid&&S.started){location.reload();}
+    if(ev==="PASSWORD_RECOVERY"){S.recovery=true;if(S.started){S.uid=nu;S.email=session.user.email;location.hash="#nova-lozinka";}return;}
+    if(ev==="USER_UPDATED"&&session){S.email=session.user.email;S.meta=session.user.user_metadata||{};if(view()==="nalog")render();return;}
+    if(ev==="SIGNED_OUT"&&S.started&&S.uid){location.hash="#za-tebe";location.reload();return;}
+    if(ev==="SIGNED_IN"&&nu&&nu!==S.uid&&S.started&&!S.recovery){location.reload();}
   });
   sb.auth.getSession().then(function(res){
     var u=res.data&&res.data.session?res.data.session.user:null;
-    S.started=true;S.uid=u?u.id:null;S.email=u?u.email:"";
-    if(location.hash.indexOf("access_token")!==-1)history.replaceState(null,"",location.pathname+"#za-tebe");
+    S.started=true;S.uid=u?u.id:null;S.email=u?u.email:"";S.meta=u?(u.user_metadata||{}):{};
+    var cilj=null,P=POC_HASH;
+    if(P){
+      if(P.error||P.error_code){S.authErr=(P.error_code==="otp_expired"||/expired|invalid/i.test(P.error_description||""))?"Link iz emaila je istekao ili je već iskorišten. Zatraži novi.":"Prijava preko linka nije uspjela. Pokušaj ponovo.";cilj="#prijava";}
+      else if(P.type==="recovery"||S.recovery){S.recovery=true;cilj="#nova-lozinka";}
+      else if(P.type==="invite"){S.invite=true;cilj="#nova-lozinka";}
+      else if(P.type==="signup"){cilj=ss("pozivnik_posle")||"#profil";ss("pozivnik_posle",null);setTimeout(function(){toast("Email je potvrđen. Dobro došao u Pozivnik!");},400);}
+      else if(P.type==="email_change"){cilj="#nalog";setTimeout(function(){toast("Email je promijenjen.");},400);}
+      else{cilj=ss("pozivnik_posle")||"#za-tebe";ss("pozivnik_posle",null);}
+    }else if(S.uid&&ss("pozivnik_posle")){cilj=ss("pozivnik_posle");ss("pozivnik_posle",null);}
+    if(!cilj&&S.uid&&["prijava","registracija","zaboravljena-lozinka"].indexOf(view())!==-1)cilj="#za-tebe";
+    if(cilj)history.replaceState(null,"",location.pathname+cilj);
+    render();
     var timer=setTimeout(function(){if(!S.ready){S.loadErr="Baza se još ne javlja. Provjeri vezu.";render();}},10000);
     S.db.collection("pozivi").onSnapshot(function(snap){
       S.pozivi=snap.docs.map(function(d){var x=Object.assign({},d.data());x.id=d.id;if(!Array.isArray(x.teme))x.teme=[];return x;});
