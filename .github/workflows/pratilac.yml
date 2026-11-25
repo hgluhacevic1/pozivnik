@@ -5,6 +5,9 @@ on:
   workflow_dispatch: {}
 permissions:
   contents: write
+concurrency:
+  group: pratilac
+  cancel-in-progress: false
 jobs:
   prati:
     runs-on: ubuntu-latest
@@ -36,5 +39,10 @@ jobs:
           git config user.email "bot@users.noreply.github.com"
           git add stanje.sqlite
           git add izlaz/ 2>/dev/null || true
-          git commit -m "Dnevno praćenje $(date +%F)" || echo "Nema promjena"
-          git push
+          git commit -m "Dnevno praćenje $(date +%F)" || { echo "Nema promjena"; exit 0; }
+          # ako je neko u međuvremenu mijenjao repozitorij, spoji pa pošalji (do 3 pokušaja)
+          for i in 1 2 3; do
+            git pull --rebase -X theirs origin main && git push && exit 0
+            sleep 5
+          done
+          exit 1
