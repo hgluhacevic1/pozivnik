@@ -29,10 +29,12 @@ jobs:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: |
           if [ ! -f stanje.sqlite ]; then python pratilac.py --baseline; else python pratilac.py; fi
+      # Supabase svaki dan sam preuzme izlaz/novi_pozivi_DATUM.json odavde (pg_cron + pg_net)
       - name: Sačuvaj stanje i izvještaje
         run: |
           git config user.name "pozivnik-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add stanje.sqlite izlaz/ || true
+          git add stanje.sqlite
+          git add izlaz/ 2>/dev/null || true
           git commit -m "Dnevno praćenje $(date +%F)" || echo "Nema promjena"
           git push
