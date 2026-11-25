@@ -414,5 +414,18 @@ def main():
         posalji_email(f"Pozivnik: {len(pozivi)} novih objava ({danas})", izvj)
 
 
+def odrzi_supabase():
+    """Besplatni Supabase pauzira projekat nakon 7 dana bez aktivnosti; jedan mali upit dnevno to sprječava."""
+    try:
+        t = open(os.path.join(OSNOVA, "index.html"), encoding="utf-8").read()
+        u = re.search(r'supabaseUrl:\s*"([^"]+)"', t).group(1)
+        k = re.search(r'supabaseAnonKey:\s*"([^"]+)"', t).group(1)
+        r = requests.get(u + "/rest/v1/pozivi?select=id&limit=1", headers={"apikey": k, "Authorization": "Bearer " + k}, timeout=20)
+        print("Supabase:", r.status_code)
+    except Exception as e:
+        print("Supabase nije dostupan:", e)
+
+
 if __name__ == "__main__":
     main()
+    odrzi_supabase()
