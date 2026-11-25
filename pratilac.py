@@ -308,6 +308,11 @@ def main():
         izvori = [i for i in izvori if a.samo.lower() in i["naziv"].lower()]
     os.makedirs(IZLAZ, exist_ok=True)
     db = baza()
+    if not a.samo:  # izvori koji su izbačeni ili im je promijenjen link više se ne vode kao greška
+        sve = {i["url"] for i in json.load(open(os.path.join(OSNOVA, "izvori.json"), encoding="utf-8"))}
+        for (u,) in db.execute("select izvor from greske").fetchall():
+            if u not in sve:
+                db.execute("delete from greske where izvor=?", (u,))
     danas = dt.date.today().isoformat()
     novi, greske, rezerve = [], [], []
 
