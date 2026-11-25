@@ -1,0 +1,1703 @@
+[
+ {
+  "naziv": "Banja Luka (vijesti)",
+  "url": "news:\"Opština Banja Luka\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Banovići",
+  "url": "https://banovici.gov.ba",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Banovići (vijesti)",
+  "url": "news:\"Općina Banovići\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Berkovići (vijesti)",
+  "url": "news:\"Opština Berkovići\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Bihać (vijesti)",
+  "url": "news:\"Općina Bihać\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "usk"
+ },
+ {
+  "naziv": "Bijeljina (vijesti)",
+  "url": "news:\"Opština Bijeljina\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Bileća (vijesti)",
+  "url": "news:\"Opština Bileća\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Bosanska Krupa (vijesti)",
+  "url": "news:\"Općina Bosanska Krupa\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "usk"
+ },
+ {
+  "naziv": "Bosanski Petrovac (vijesti)",
+  "url": "news:\"Općina Bosanski Petrovac\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "usk"
+ },
+ {
+  "naziv": "Bosansko Grahovo (vijesti)",
+  "url": "news:\"Općina Bosansko Grahovo\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "k10"
+ },
+ {
+  "naziv": "Bratunac (vijesti)",
+  "url": "news:\"Opština Bratunac\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Brčko distrikt BiH (vijesti)",
+  "url": "news:\"Brčko distrikt BiH\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "brcko"
+ },
+ {
+  "naziv": "Breza (vijesti)",
+  "url": "news:\"Općina Breza\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "zdk"
+ },
+ {
+  "naziv": "Brod (vijesti)",
+  "url": "news:\"Opština Brod\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Bugojno (vijesti)",
+  "url": "news:\"Općina Bugojno\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "sbk"
+ },
+ {
+  "naziv": "Busovača (vijesti)",
+  "url": "news:\"Općina Busovača\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "sbk"
+ },
+ {
+  "naziv": "Bužim (vijesti)",
+  "url": "news:\"Općina Bužim\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "usk"
+ },
+ {
+  "naziv": "Čajniče (vijesti)",
+  "url": "news:\"Opština Čajniče\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Čapljina (vijesti)",
+  "url": "news:\"Općina Čapljina\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "hnk"
+ },
+ {
+  "naziv": "Cazin (vijesti)",
+  "url": "news:\"Općina Cazin\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "usk"
+ },
+ {
+  "naziv": "Čelić (vijesti)",
+  "url": "news:\"Općina Čelić\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Čelinac (vijesti)",
+  "url": "news:\"Opština Čelinac\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Centar",
+  "url": "https://www.centar.ba",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Centar (vijesti)",
+  "url": "news:\"Općina Centar\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Čitluk (vijesti)",
+  "url": "news:\"Općina Čitluk\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "hnk"
+ },
+ {
+  "naziv": "Derventa (vijesti)",
+  "url": "news:\"Opština Derventa\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Doboj Istok (vijesti)",
+  "url": "news:\"Općina Doboj Istok\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Doboj Jug (vijesti)",
+  "url": "news:\"Općina Doboj Jug\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "zdk"
+ },
+ {
+  "naziv": "Doboj (vijesti)",
+  "url": "news:\"Opština Doboj\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Dobretići (vijesti)",
+  "url": "news:\"Općina Dobretići\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "sbk"
+ },
+ {
+  "naziv": "Domaljevac-Šamac (vijesti)",
+  "url": "news:\"Općina Domaljevac-Šamac\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "pk"
+ },
+ {
+  "naziv": "Donji Vakuf (vijesti)",
+  "url": "news:\"Općina Donji Vakuf\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "sbk"
+ },
+ {
+  "naziv": "Donji Žabar (vijesti)",
+  "url": "news:\"Opština Donji Žabar\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Drvar (vijesti)",
+  "url": "news:\"Općina Drvar\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "k10"
+ },
+ {
+  "naziv": "Foča-Ustikolina (vijesti)",
+  "url": "news:\"Općina Foča-Ustikolina\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "bpk"
+ },
+ {
+  "naziv": "Foča (vijesti)",
+  "url": "news:\"Opština Foča\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Fojnica (vijesti)",
+  "url": "news:\"Općina Fojnica\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "sbk"
+ },
+ {
+  "naziv": "Gacko (vijesti)",
+  "url": "news:\"Opština Gacko\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Glamoč (vijesti)",
+  "url": "news:\"Općina Glamoč\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "k10"
+ },
+ {
+  "naziv": "Goražde (vijesti)",
+  "url": "news:\"Općina Goražde\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "bpk"
+ },
+ {
+  "naziv": "Gornji Vakuf-Uskoplje (vijesti)",
+  "url": "news:\"Općina Gornji Vakuf-Uskoplje\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "sbk"
+ },
+ {
+  "naziv": "Gračanica",
+  "url": "https://gracanica.gov.ba",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Gračanica (vijesti)",
+  "url": "news:\"Općina Gračanica\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Grad Istočno Sarajevo (vijesti)",
+  "url": "news:\"Grad Istočno Sarajevo\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Grad Sarajevo (vijesti)",
+  "url": "news:\"Grad Sarajevo\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Gradačac (vijesti)",
+  "url": "news:\"Gradačac\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Gradiška",
+  "url": "https://www.gradgradiska.com",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Gradiška (vijesti)",
+  "url": "news:\"Gradiška\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Grude (vijesti)",
+  "url": "news:\"Općina Grude\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "zhk"
+ },
+ {
+  "naziv": "Hadžići (vijesti)",
+  "url": "news:\"Općina Hadžići\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Han Pijesak",
+  "url": "https://hanpijesak.org",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Han Pijesak (vijesti)",
+  "url": "news:\"Opština Han Pijesak\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Ilidža (vijesti)",
+  "url": "news:\"Općina Ilidža\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Ilijaš",
+  "url": "https://ilijas.ba/index.php/javni-pozivi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Ilijaš (vijesti)",
+  "url": "news:\"Općina Ilijaš\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Istočna Ilidža (vijesti)",
+  "url": "news:\"Opština Istočna Ilidža\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Istočni Drvar (vijesti)",
+  "url": "news:\"Opština Istočni Drvar\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Istočni Mostar (vijesti)",
+  "url": "news:\"Opština Istočni Mostar\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Istočni Stari Grad (vijesti)",
+  "url": "news:\"Opština Istočni Stari Grad\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Istočno Novo Sarajevo (vijesti)",
+  "url": "news:\"Opština Istočno Novo Sarajevo\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Jablanica (vijesti)",
+  "url": "news:\"Općina Jablanica\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "hnk"
+ },
+ {
+  "naziv": "Jajce (vijesti)",
+  "url": "news:\"Općina Jajce\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "sbk"
+ },
+ {
+  "naziv": "Jezero (vijesti)",
+  "url": "news:\"Opština Jezero\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Kakanj (vijesti)",
+  "url": "news:\"Općina Kakanj\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "zdk"
+ },
+ {
+  "naziv": "Kalesija",
+  "url": "https://kalesija.ba",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Kalesija (vijesti)",
+  "url": "news:\"Općina Kalesija\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Kalinovik (vijesti)",
+  "url": "news:\"Opština Kalinovik\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Kiseljak (vijesti)",
+  "url": "news:\"Općina Kiseljak\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "sbk"
+ },
+ {
+  "naziv": "Kladanj (vijesti)",
+  "url": "news:\"Općina Kladanj\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Ključ (vijesti)",
+  "url": "news:\"Općina Ključ\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "usk"
+ },
+ {
+  "naziv": "Kneževo (vijesti)",
+  "url": "news:\"Opština Kneževo\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Konjic (vijesti)",
+  "url": "news:\"Općina Konjic\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "hnk"
+ },
+ {
+  "naziv": "Kostajnica (vijesti)",
+  "url": "news:\"Opština Kostajnica\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Kotor Varoš (vijesti)",
+  "url": "news:\"Opština Kotor Varoš\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Kozarska Dubica (vijesti)",
+  "url": "news:\"Opština Kozarska Dubica\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Kreševo (vijesti)",
+  "url": "news:\"Općina Kreševo\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "sbk"
+ },
+ {
+  "naziv": "Krupa na Uni (vijesti)",
+  "url": "news:\"Opština Krupa na Uni\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Kupres (RS) (vijesti)",
+  "url": "news:\"Opština Kupres (RS)\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Kupres",
+  "url": "https://www.opcinakupres.ba",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "k10"
+ },
+ {
+  "naziv": "Kupres (vijesti)",
+  "url": "news:\"Općina Kupres\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "k10"
+ },
+ {
+  "naziv": "Laktaši (vijesti)",
+  "url": "news:\"Opština Laktaši\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Livno (vijesti)",
+  "url": "news:\"Općina Livno\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "k10"
+ },
+ {
+  "naziv": "Ljubinje (vijesti)",
+  "url": "news:\"Opština Ljubinje\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Ljubuški (vijesti)",
+  "url": "news:\"Općina Ljubuški\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "zhk"
+ },
+ {
+  "naziv": "Lopare (vijesti)",
+  "url": "news:\"Opština Lopare\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Lukavac",
+  "url": "https://lukavac.ba",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Lukavac (vijesti)",
+  "url": "news:\"Općina Lukavac\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Maglaj (vijesti)",
+  "url": "news:\"Općina Maglaj\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "zdk"
+ },
+ {
+  "naziv": "Milići (vijesti)",
+  "url": "news:\"Opština Milići\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Modriča (vijesti)",
+  "url": "news:\"Opština Modriča\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Mostar (vijesti)",
+  "url": "news:\"Općina Mostar\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "hnk"
+ },
+ {
+  "naziv": "Mrkonjić Grad (vijesti)",
+  "url": "news:\"Opština Mrkonjić Grad\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Neum (vijesti)",
+  "url": "news:\"Općina Neum\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "hnk"
+ },
+ {
+  "naziv": "Nevesinje (vijesti)",
+  "url": "news:\"Opština Nevesinje\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Novi Grad Sarajevo",
+  "url": "https://www.novigradsarajevo.ba",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Novi Grad Sarajevo (vijesti)",
+  "url": "news:\"Općina Novi Grad Sarajevo\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Novi Grad (vijesti)",
+  "url": "news:\"Opština Novi Grad\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Novi Travnik (vijesti)",
+  "url": "news:\"Općina Novi Travnik\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "sbk"
+ },
+ {
+  "naziv": "Novo Goražde (vijesti)",
+  "url": "news:\"Opština Novo Goražde\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Novo Sarajevo (vijesti)",
+  "url": "news:\"Općina Novo Sarajevo\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Odžak (vijesti)",
+  "url": "news:\"Općina Odžak\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "pk"
+ },
+ {
+  "naziv": "Olovo (vijesti)",
+  "url": "news:\"Općina Olovo\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "zdk"
+ },
+ {
+  "naziv": "Orašje (vijesti)",
+  "url": "news:\"Općina Orašje\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "pk"
+ },
+ {
+  "naziv": "Osmaci (vijesti)",
+  "url": "news:\"Opština Osmaci\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Oštra Luka (vijesti)",
+  "url": "news:\"Opština Oštra Luka\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Pale-Prača (vijesti)",
+  "url": "news:\"Općina Pale-Prača\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "bpk"
+ },
+ {
+  "naziv": "Pale (vijesti)",
+  "url": "news:\"Opština Pale\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Pelagićevo (vijesti)",
+  "url": "news:\"Opština Pelagićevo\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Petrovac (vijesti)",
+  "url": "news:\"Opština Petrovac\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Petrovo (vijesti)",
+  "url": "news:\"Opština Petrovo\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Posušje (vijesti)",
+  "url": "news:\"Općina Posušje\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "zhk"
+ },
+ {
+  "naziv": "Prijedor (vijesti)",
+  "url": "news:\"Opština Prijedor\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Prnjavor (vijesti)",
+  "url": "news:\"Opština Prnjavor\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Prozor-Rama (vijesti)",
+  "url": "news:\"Općina Prozor-Rama\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "hnk"
+ },
+ {
+  "naziv": "Ravno (vijesti)",
+  "url": "news:\"Općina Ravno\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "hnk"
+ },
+ {
+  "naziv": "Ribnik (vijesti)",
+  "url": "news:\"Opština Ribnik\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Rogatica",
+  "url": "https://www.rogatica.ba",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Rogatica (vijesti)",
+  "url": "news:\"Opština Rogatica\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Rudo (vijesti)",
+  "url": "news:\"Opština Rudo\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Šamac (vijesti)",
+  "url": "news:\"Opština Šamac\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Sanski Most (vijesti)",
+  "url": "news:\"Općina Sanski Most\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "usk"
+ },
+ {
+  "naziv": "Sapna (vijesti)",
+  "url": "news:\"Općina Sapna\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Šekovići (vijesti)",
+  "url": "news:\"Opština Šekovići\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Šipovo (vijesti)",
+  "url": "news:\"Opština Šipovo\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Široki Brijeg (vijesti)",
+  "url": "news:\"Općina Široki Brijeg\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "zhk"
+ },
+ {
+  "naziv": "Sokolac (vijesti)",
+  "url": "news:\"Opština Sokolac\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Srbac (vijesti)",
+  "url": "news:\"Opština Srbac\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Srebrenica",
+  "url": "https://srebrenica.gov.ba",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Srebrenica (vijesti)",
+  "url": "news:\"Opština Srebrenica\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Srebrenik (vijesti)",
+  "url": "news:\"Općina Srebrenik\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Stanari (vijesti)",
+  "url": "news:\"Opština Stanari\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Stari Grad (vijesti)",
+  "url": "news:\"Općina Stari Grad\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Stolac (vijesti)",
+  "url": "news:\"Općina Stolac\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "hnk"
+ },
+ {
+  "naziv": "Teočak (vijesti)",
+  "url": "news:\"Općina Teočak\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Tešanj (vijesti)",
+  "url": "news:\"Općina Tešanj\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "zdk"
+ },
+ {
+  "naziv": "Teslić (vijesti)",
+  "url": "news:\"Opština Teslić\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Tomislavgrad (vijesti)",
+  "url": "news:\"Općina Tomislavgrad\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "k10"
+ },
+ {
+  "naziv": "Travnik",
+  "url": "https://opcinatravnik.com.ba",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "sbk"
+ },
+ {
+  "naziv": "Travnik (vijesti)",
+  "url": "news:\"Općina Travnik\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "sbk"
+ },
+ {
+  "naziv": "Trebinje (vijesti)",
+  "url": "news:\"Opština Trebinje\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Trnovo (RS) (vijesti)",
+  "url": "news:\"Opština Trnovo (RS)\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Trnovo (vijesti)",
+  "url": "news:\"Općina Trnovo\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Tuzla",
+  "url": "https://grad.tuzla.ba/jp/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Tuzla (vijesti)",
+  "url": "news:\"Općina Tuzla\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Ugljevik (vijesti)",
+  "url": "news:\"Opština Ugljevik\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Usora (vijesti)",
+  "url": "news:\"Općina Usora\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "zdk"
+ },
+ {
+  "naziv": "Vareš (vijesti)",
+  "url": "news:\"Općina Vareš\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "zdk"
+ },
+ {
+  "naziv": "Velika Kladuša (vijesti)",
+  "url": "news:\"Općina Velika Kladuša\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "usk"
+ },
+ {
+  "naziv": "Višegrad (vijesti)",
+  "url": "news:\"Opština Višegrad\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Visoko (vijesti)",
+  "url": "news:\"Općina Visoko\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "zdk"
+ },
+ {
+  "naziv": "Vitez (vijesti)",
+  "url": "news:\"Općina Vitez\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "sbk"
+ },
+ {
+  "naziv": "Vlasenica (vijesti)",
+  "url": "news:\"Opština Vlasenica\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Vogošća",
+  "url": "https://vogosca.ba",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Vogošća (vijesti)",
+  "url": "news:\"Općina Vogošća\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Vukosavlje (vijesti)",
+  "url": "news:\"Opština Vukosavlje\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Zavidovići (vijesti)",
+  "url": "news:\"Općina Zavidovići\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "zdk"
+ },
+ {
+  "naziv": "Zenica (vijesti)",
+  "url": "news:\"Općina Zenica\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "zdk"
+ },
+ {
+  "naziv": "Žepče (vijesti)",
+  "url": "news:\"Općina Žepče\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "zdk"
+ },
+ {
+  "naziv": "Živinice",
+  "url": "https://gradzivinice.ba",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Živinice (vijesti)",
+  "url": "news:\"Općina Živinice\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Zvornik (vijesti)",
+  "url": "news:\"Opština Zvornik\" javni poziv",
+  "tip": "vijesti",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Ambasada Kraljevine Holandije – MATRA",
+  "url": "https://www.netherlandsandyou.nl/documents/d/bosnia-and-herzegovina/call-for-proposals-matra-2026",
+  "tip": "stranica",
+  "grupa": "ambasada",
+  "podrucje": ""
+ },
+ {
+  "naziv": "BH Telecom",
+  "url": "https://www.bhtelecom.ba",
+  "tip": "stranica",
+  "grupa": "kompanija",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ministarstvo za boračka pitanja BPK Goražde",
+  "url": "https://mb.bpkg.gov.ba",
+  "tip": "stranica",
+  "grupa": "kanton",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ministarstvo za urbanizam, prostorno uređenje i zaštitu okoline BPK",
+  "url": "https://mu.bpkg.gov.ba",
+  "tip": "stranica",
+  "grupa": "kanton",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Vlada Bosansko-podrinjskog kantona Goražde",
+  "url": "https://bpkg.gov.ba",
+  "tip": "stranica",
+  "grupa": "kanton",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Vlada Brčko distrikta BiH",
+  "url": "https://www.bdcentral.net",
+  "tip": "stranica",
+  "grupa": "brcko",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Fond za zaštitu životne sredine i energetsku efikasnost RS",
+  "url": "https://www.ekofondrs.org",
+  "tip": "stranica",
+  "grupa": "javnifond",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Delegacija Evropske unije u BiH",
+  "url": "https://www.eeas.europa.eu/delegations/bosnia-and-herzegovina_bs",
+  "tip": "stranica",
+  "grupa": "medjunarodna",
+  "podrucje": ""
+ },
+ {
+  "naziv": "EU Resurs (portal javnih poziva)",
+  "url": "https://euresurs.ba/en/javni-pozivi/",
+  "tip": "stranica",
+  "grupa": "fondacija",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Federalno ministarstvo kulture i sporta",
+  "url": "https://fmks.gov.ba",
+  "tip": "stranica",
+  "grupa": "fbih",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Federalno ministarstvo okoliša i turizma",
+  "url": "https://www.fmoit.gov.ba",
+  "tip": "stranica",
+  "grupa": "fbih",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Federalno ministarstvo raseljenih osoba i izbjeglica",
+  "url": "https://fmroi.gov.ba",
+  "tip": "stranica",
+  "grupa": "fbih",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Federalno ministarstvo razvoja, poduzetništva i obrta",
+  "url": "https://www.kfbih.com/en/?p=29448",
+  "tip": "stranica",
+  "grupa": "fbih",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Fondacija za kinematografiju",
+  "url": "https://fondacijakinematografija.ba",
+  "tip": "stranica",
+  "grupa": "javnifond",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Vlada Hercegovačko-neretvanskog kantona",
+  "url": "https://www.vlada-hnz-k.ba",
+  "tip": "stranica",
+  "grupa": "kanton",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Republika Hrvatska – Ministarstvo demografije i useljeništva",
+  "url": "https://mdu.gov.hr/javni-pozivi/5923",
+  "tip": "stranica",
+  "grupa": "ambasada",
+  "podrucje": ""
+ },
+ {
+  "naziv": "ICMP – Međunarodna komisija za nestale osobe",
+  "url": "https://icmp.int",
+  "tip": "stranica",
+  "grupa": "medjunarodna",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Vlada Hercegbosanske županije (Kanton 10)",
+  "url": "https://www.vladahbz.com",
+  "tip": "stranica",
+  "grupa": "kanton",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ministarstvo za boračka pitanja KS",
+  "url": "https://mbp.ks.gov.ba",
+  "tip": "stranica",
+  "grupa": "kanton",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ministarstvo kulture i sporta Kantona Sarajevo",
+  "url": "https://mks.ks.gov.ba",
+  "tip": "stranica",
+  "grupa": "kanton",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ministarstvo za nauku, visoko obrazovanje i mlade KS",
+  "url": "https://mon.ks.gov.ba",
+  "tip": "stranica",
+  "grupa": "kanton",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ministarstvo privrede KS",
+  "url": "https://mp.ks.gov.ba",
+  "tip": "stranica",
+  "grupa": "kanton",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Vlada Kantona Sarajevo",
+  "url": "https://vlada.ks.gov.ba",
+  "tip": "stranica",
+  "grupa": "kanton",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ministarstvo civilnih poslova BiH",
+  "url": "https://mcp.gov.ba/hr/portal?categorySlug=konkurs",
+  "tip": "stranica",
+  "grupa": "drzava",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ministarstvo prosvjete i kulture RS",
+  "url": "https://vladars.rs",
+  "tip": "stranica",
+  "grupa": "rs",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ministarstvo porodice, omladine i sporta RS",
+  "url": "https://vladars.rs/sr-SP-Cyrl/Vlada/Ministarstva/mpos",
+  "tip": "stranica",
+  "grupa": "rs",
+  "podrucje": ""
+ },
+ {
+  "naziv": "m:tel",
+  "url": "https://mtel.ba",
+  "tip": "stranica",
+  "grupa": "kompanija",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Privredna komora Republike Srpske",
+  "url": "https://bl.komorars.ba",
+  "tip": "stranica",
+  "grupa": "rs",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Raiffeisen Bank BiH",
+  "url": "https://www.raiffeisenbank.ba",
+  "tip": "stranica",
+  "grupa": "kompanija",
+  "podrucje": ""
+ },
+ {
+  "naziv": "RYCO – Regionalni ured za saradnju mladih",
+  "url": "https://www.rycowb.org",
+  "tip": "stranica",
+  "grupa": "medjunarodna",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Vlada Srednjobosanskog kantona",
+  "url": "https://sbk-ksb.gov.ba",
+  "tip": "stranica",
+  "grupa": "kanton",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ministarstvo za kulturu, sport i mlade Tuzlanskog kantona",
+  "url": "https://mksmtk.gov.ba",
+  "tip": "stranica",
+  "grupa": "kanton",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ministarstvo trgovine, turizma i saobraćaja TK",
+  "url": "https://mttstk.gov.ba",
+  "tip": "stranica",
+  "grupa": "kanton",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Vlada Tuzlanskog kantona",
+  "url": "https://www.vladatk.kim.ba",
+  "tip": "stranica",
+  "grupa": "kanton",
+  "podrucje": ""
+ },
+ {
+  "naziv": "UNDP BiH – SCORE, DFF3, ReLOaD3",
+  "url": "https://procurement-notices.undp.org",
+  "tip": "stranica",
+  "grupa": "medjunarodna",
+  "podrucje": ""
+ },
+ {
+  "naziv": "UniCredit Fondacija i UniCredit u BiH",
+  "url": "https://unicredit.ba",
+  "tip": "stranica",
+  "grupa": "kompanija",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Vijeće Evrope – ured u Sarajevu",
+  "url": "https://www.coe.int/bs/web/sarajevo",
+  "tip": "stranica",
+  "grupa": "medjunarodna",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Vlada Federacije BiH",
+  "url": "https://fbihvlada.gov.ba/en/javni-pozivi",
+  "tip": "stranica",
+  "grupa": "fbih",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Western Balkans Fund",
+  "url": "https://westernbalkansfund.org",
+  "tip": "stranica",
+  "grupa": "medjunarodna",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Skupština Zeničko-dobojskog kantona",
+  "url": "https://kanton.zdk.ba/ostalo-iz-skupstine",
+  "tip": "stranica",
+  "grupa": "kanton",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Vlada Zeničko-dobojskog kantona",
+  "url": "https://zdk.ba",
+  "tip": "stranica",
+  "grupa": "kanton",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Zavod za zapošljavanje Republike Srpske",
+  "url": "https://zzzrs.net",
+  "tip": "stranica",
+  "grupa": "javnifond",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Balkan Civil Society Development Network (portal)",
+  "url": "https://balkancsd.net",
+  "tip": "stranica",
+  "grupa": "fondacija",
+  "podrucje": ""
+ },
+ {
+  "naziv": "British Council BiH – Culture Connects",
+  "url": "https://www.britishcouncil.ba/en/programmes/arts/culture-connects-grants-202526",
+  "tip": "stranica",
+  "grupa": "ambasada",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Federalno ministarstvo za pitanja boraca i invalida",
+  "url": "https://fmbi.gov.ba",
+  "tip": "stranica",
+  "grupa": "fbih",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Federalno ministarstvo zdravstva",
+  "url": "https://fmoh.gov.ba",
+  "tip": "stranica",
+  "grupa": "fbih",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Fondacija CURE",
+  "url": "https://fondacijacure.org",
+  "tip": "stranica",
+  "grupa": "fondacija",
+  "podrucje": ""
+ },
+ {
+  "naziv": "fundsforNGOs (portal)",
+  "url": "https://www2.fundsforngos.org/tag/bosnia-and-herzegovina/",
+  "tip": "stranica",
+  "grupa": "fondacija",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Goethe-Institut BiH",
+  "url": "https://www.goethe.de/ins/ba/de/kul/aus/ocz.html",
+  "tip": "stranica",
+  "grupa": "ambasada",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Privredna komora FBiH",
+  "url": "https://www.kfbih.com",
+  "tip": "stranica",
+  "grupa": "fbih",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ministarstvo za ljudska prava i izbjeglice BiH",
+  "url": "https://www.mhrr.gov.ba",
+  "tip": "stranica",
+  "grupa": "drzava",
+  "podrucje": ""
+ },
+ {
+  "naziv": "On the Move – mobilnost u kulturi (portal)",
+  "url": "https://on-the-move.org/regions/bosnia-and-herzegovina",
+  "tip": "stranica",
+  "grupa": "fondacija",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Paragraf – dnevne vijesti (rezervni signal)",
+  "url": "https://www.paragraf.ba",
+  "tip": "stranica",
+  "grupa": "fondacija",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Qatar Charity – ured u BiH",
+  "url": "https://www.qcharity.org/en/qa/qatar-charity-offices/Bosnia and Herzegovina/59",
+  "tip": "stranica",
+  "grupa": "humanitarna",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Sigrid Rausing Trust",
+  "url": "https://www.sigrid-rausing-trust.org",
+  "tip": "stranica",
+  "grupa": "fondacija",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Službeni glasnik RS – oglasni dio",
+  "url": "https://online.slglasnik.org",
+  "tip": "stranica",
+  "grupa": "rs",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ambasada Švicarske u BiH – mali grantovi",
+  "url": "https://www.eda.admin.ch/countries/bosnia-and-herzegovina/bs/home.html",
+  "tip": "stranica",
+  "grupa": "ambasada",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Turistička zajednica Grada Tuzle",
+  "url": "https://tztz.ba",
+  "tip": "stranica",
+  "grupa": "kanton",
+  "podrucje": ""
+ },
+ {
+  "naziv": "UN Women BiH",
+  "url": "https://eca.unwomen.org",
+  "tip": "stranica",
+  "grupa": "medjunarodna",
+  "podrucje": ""
+ },
+ {
+  "naziv": "UNDP / UN – Gender Equality Accelerator (GEA)",
+  "url": "https://www.undp.org/bosnia-herzegovina",
+  "tip": "stranica",
+  "grupa": "medjunarodna",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Mreža za izgradnju mira – pozivi",
+  "url": "https://www.mreza-mira.net/kategorija/vijesti/pozivi-za-projekte/",
+  "tip": "stranica",
+  "grupa": "portal",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Mreža za izgradnju mira – RSS",
+  "url": "https://www.mreza-mira.net/kategorija/vijesti/pozivi-za-projekte/feed/",
+  "tip": "stranica",
+  "grupa": "portal",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Portal civilnog društva",
+  "url": "https://civilnodrustvo.ba",
+  "tip": "stranica",
+  "grupa": "portal",
+  "podrucje": ""
+ },
+ {
+  "naziv": "UNDP – javni pozivi BiH",
+  "url": "https://procurement-notices.undp.org/search.cfm?cur_country=BIH",
+  "tip": "stranica",
+  "grupa": "portal",
+  "podrucje": ""
+ },
+ {
+  "naziv": "UNDP BiH vijesti",
+  "url": "https://www.undp.org/bs/bosnia-herzegovina/news",
+  "tip": "stranica",
+  "grupa": "portal",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ambasada SAD – grantovi",
+  "url": "https://ba.usembassy.gov/education/grant-opportunities/",
+  "tip": "stranica",
+  "grupa": "portal",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ambasada Japana",
+  "url": "https://www.bosnia.emb-japan.go.jp",
+  "tip": "stranica",
+  "grupa": "portal",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ambasada Češke",
+  "url": "https://mzv.gov.cz/sarajevo/bs/",
+  "tip": "stranica",
+  "grupa": "portal",
+  "podrucje": ""
+ },
+ {
+  "naziv": "CIN",
+  "url": "https://cin.ba/vijesti/",
+  "tip": "stranica",
+  "grupa": "portal",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Centri civilnih inicijativa",
+  "url": "https://www.cci.ba",
+  "tip": "stranica",
+  "grupa": "portal",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Mladi.org",
+  "url": "https://mladi.org",
+  "tip": "stranica",
+  "grupa": "portal",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Barakah Charity",
+  "url": "https://barakah.ch/en/",
+  "tip": "stranica",
+  "grupa": "portal",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Pretraga: \"javni poziv\" udruženjima",
+  "url": "news:\"javni poziv\" udruženjima",
+  "tip": "vijesti",
+  "grupa": "opca",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Pretraga: \"javni poziv\" sportskim klubovima",
+  "url": "news:\"javni poziv\" sportskim klubovima",
+  "tip": "vijesti",
+  "grupa": "opca",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Pretraga: \"javni konkurs\" udruženja Republika Srpska",
+  "url": "news:\"javni konkurs\" udruženja Republika Srpska",
+  "tip": "vijesti",
+  "grupa": "opca",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Pretraga: \"javni poziv\" nevladinim organizacijama",
+  "url": "news:\"javni poziv\" nevladinim organizacijama",
+  "tip": "vijesti",
+  "grupa": "opca",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Pretraga: \"javni natječaj\" udruge BiH",
+  "url": "news:\"javni natječaj\" udruge BiH",
+  "tip": "vijesti",
+  "grupa": "opca",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Pretraga: \"grantovi\" \"Bosni i Hercegovini\" poziv",
+  "url": "news:\"grantovi\" \"Bosni i Hercegovini\" poziv",
+  "tip": "vijesti",
+  "grupa": "opca",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Pretraga: \"јавни конкурс\" удружења",
+  "url": "news:\"јавни конкурс\" удружења",
+  "tip": "vijesti",
+  "grupa": "opca",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Pretraga: \"javni poziv\" mladi projekti",
+  "url": "news:\"javni poziv\" mladi projekti",
+  "tip": "vijesti",
+  "grupa": "opca",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Pretraga: \"javni poziv\" žene udruženja",
+  "url": "news:\"javni poziv\" žene udruženja",
+  "tip": "vijesti",
+  "grupa": "opca",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Pretraga: \"javni poziv\" poljoprivrednicima poticaji",
+  "url": "news:\"javni poziv\" poljoprivrednicima poticaji",
+  "tip": "vijesti",
+  "grupa": "opca",
+  "podrucje": ""
+ }
+]
