@@ -1,5 +1,1 @@
 ﻿Izvor,URL,Uzastopnih grešaka,Poruka
-,https://www.coe.int/bs/web/sarajevo,1,403 Client Error: Forbidden for url: https://www.coe.int/bs/web/sarajevo
-,https://eca.unwomen.org,1,403 Client Error: Forbidden for url: https://eca.unwomen.org/
-,https://www.undp.org/bosnia-herzegovina,1,403 Client Error: Forbidden for url: https://www.undp.org/bosnia-herzegovina
-,https://www.britishcouncil.ba/en/programmes/arts/culture-connects-grants-202526,1,"HTTPSConnectionPool(host='www.britishcouncil.ba', port=443): Read timed out. (read timeout=25)"
