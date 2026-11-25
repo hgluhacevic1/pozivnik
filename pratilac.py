@@ -18,7 +18,7 @@ Rezultat se upisuje u folder izlaz/:
     izvjestaj_YYYY-MM-DD.html     – pregled za čitanje
     izvori_s_greskom.csv          – izvori koji ne rade (treba popraviti link)
 """
-import argparse, csv, datetime as dt, hashlib, html, io, json, os, re, sqlite3, sys, time
+import argparse, csv, datetime as dt, hashlib, html, io, json, os, random, re, sqlite3, sys, threading, time
 import urllib.parse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -28,8 +28,9 @@ from bs4 import BeautifulSoup
 OSNOVA = os.path.dirname(os.path.abspath(__file__))
 IZLAZ = os.path.join(OSNOVA, "izlaz")
 BAZA = os.path.join(OSNOVA, "stanje.sqlite")
-UA = "Mozilla/5.0 (compatible; PozivnikBot/1.0; pracenje javnih poziva)"
-TIMEOUT = 25
+UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36")
+TIMEOUT = 30
 
 # Riječi koje označavaju javni poziv (latinica i ćirilica, bs/hr/sr/en)
 KLJUCNE = [
@@ -57,6 +58,16 @@ def baza():
         kljuc text primary key, izvor text, naslov text, url text, prvi_put text)""")
     c.execute("""create table if not exists greske(
         izvor text primary key, broj integer, zadnja text, poruka text)""")
+    # izvori koji su bar jednom uspješno pročitani; prvi uspjeh novog izvora = njegovo početno stanje
+    nova = not c.execute("select 1 from sqlite_master where name='izvori_ok'").fetchone()
+    c.execute("create table if not exists izvori_ok(izvor text primary key, prvi_put text)")
+    if nova and c.execute("select count(*) from vidjeno").fetchone()[0]:
+        # stara baza: izvori koji već imaju zapamćene objave imaju početno stanje
+        izv = json.load(open(os.path.join(OSNOVA, "izvori.json"), encoding="utf-8"))
+        imaju = {r[0] for r in c.execute("select distinct izvor from vidjeno")}
+        c.executemany("insert or ignore into izvori_ok values(?, date('now'))",
+                      [(i["url"],) for i in izv if i["naziv"] in imaju])
+        c.commit()
     return c
 
 
@@ -66,16 +77,53 @@ def kljuc(url, naslov):
 
 
 # ---------------------------------------------------------------- dohvat
-SESIJA = requests.Session()
-SESIJA.headers.update({"User-Agent": UA, "Accept-Language": "bs,hr,sr;q=0.9,en;q=0.6"})
+ZAGLAVLJA = {
+    "User-Agent": UA,
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "bs,hr;q=0.9,sr;q=0.8,en;q=0.7",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document", "Sec-Fetch-Mode": "navigate", "Sec-Fetch-Site": "none",
+}
+_lok = threading.local()
 
 
-def dohvati(url):
-    r = SESIJA.get(url, timeout=TIMEOUT, allow_redirects=True)
-    r.raise_for_status()
-    if not r.encoding or r.encoding.lower() == "iso-8859-1":
-        r.encoding = r.apparent_encoding
-    return r
+def sesija():
+    # requests.Session nije siguran za više niti; svaka nit dobije svoju
+    if not hasattr(_lok, "s"):
+        _lok.s = requests.Session()
+        _lok.s.headers.update(ZAGLAVLJA)
+    return _lok.s
+
+
+_vijesti_brava = threading.Lock()
+_vijesti_zadnje = [0.0]
+
+
+def dohvati(url, pokusaja=3):
+    """GET s ponavljanjem: timeout/prekid veze/5xx/429 pokuša ponovo uz čekanje."""
+    google = "news.google.com" in url
+    zadnja = None
+    for i in range(pokusaja):
+        if google:  # Google News odbija previše upita odjednom (429) – jedan po jedan, s razmakom
+            with _vijesti_brava:
+                cekaj = 1.5 - (time.time() - _vijesti_zadnje[0])
+                if cekaj > 0:
+                    time.sleep(cekaj)
+                _vijesti_zadnje[0] = time.time()
+        try:
+            r = sesija().get(url, timeout=TIMEOUT + 15 * i, allow_redirects=True)
+            if r.status_code in (429, 500, 502, 503, 504) and i < pokusaja - 1:
+                time.sleep((10 if r.status_code == 429 else 4) * (i + 1) + random.random() * 3)
+                continue
+            r.raise_for_status()
+            if not r.encoding or r.encoding.lower() == "iso-8859-1":
+                r.encoding = r.apparent_encoding
+            return r
+        except (requests.Timeout, requests.ConnectionError) as e:
+            zadnja = e
+            if i < pokusaja - 1:
+                time.sleep(3 * (i + 1))
+    raise zadnja
 
 
 def je_poziv(tekst):
@@ -125,10 +173,25 @@ def iz_vijesti(upit):
     return iz_rss(dohvati(url).content)
 
 
+def rezervni_upit(izvor):
+    """Ako stranica blokira automatske posjete, traži njene objave preko Google News."""
+    if izvor.get("rezerva"):
+        return izvor["rezerva"]
+    domena = urllib.parse.urlparse(izvor["url"]).netloc.removeprefix("www.").removeprefix("www2.")
+    return f'site:{domena} (poziv OR konkurs OR natječaj OR grant OR "call for")'
+
+
 def obradi_izvor(izvor):
     if izvor["tip"] == "vijesti":
         return izvor, iz_vijesti(izvor["url"][len("news:"):]), None
-    return izvor, linkovi_sa_stranice(izvor), None
+    try:
+        return izvor, linkovi_sa_stranice(izvor), None
+    except Exception as e:
+        # stranica ne radi ili nas blokira: probaj rezervu; ako i ona ne uspije, prijavi izvornu grešku
+        try:
+            return izvor, iz_vijesti(rezervni_upit(izvor)), f"rezerva ({str(e)[:80]})"
+        except Exception:
+            raise e
 
 
 # ---------------------------------------------------------------- AI izvlačenje
@@ -246,7 +309,7 @@ def main():
     os.makedirs(IZLAZ, exist_ok=True)
     db = baza()
     danas = dt.date.today().isoformat()
-    novi, greske = [], []
+    novi, greske, rezerve = [], [], []
 
     print(f"Obilazim {len(izvori)} izvora…")
     with ThreadPoolExecutor(max_workers=a.niti) as ex:
@@ -254,20 +317,25 @@ def main():
         for f in as_completed(futs):
             izv = futs[f]
             try:
-                _, nadjeno, _ = f.result()
+                _, nadjeno, napomena = f.result()
                 db.execute("delete from greske where izvor=?", (izv["url"],))
+                if napomena:
+                    rezerve.append((izv["naziv"], izv["url"], napomena))
             except Exception as e:
                 greske.append((izv["naziv"], izv["url"], str(e)[:200]))
                 db.execute("""insert into greske values(?,1,?,?) on conflict(izvor) do update
                               set broj=broj+1, zadnja=excluded.zadnja, poruka=excluded.poruka""",
                            (izv["url"], danas, str(e)[:200]))
                 continue
+            prvi = not db.execute("select 1 from izvori_ok where izvor=?", (izv["url"],)).fetchone()
+            if prvi:
+                db.execute("insert into izvori_ok values(?,?)", (izv["url"], danas))
             for naslov, url in nadjeno:
                 k = kljuc(url, naslov)
                 if db.execute("select 1 from vidjeno where kljuc=?", (k,)).fetchone():
                     continue
                 db.execute("insert into vidjeno values(?,?,?,?,?)", (k, izv["naziv"], naslov, url, danas))
-                if not a.baseline:
+                if not a.baseline and not prvi:  # prvi uspjeh izvora samo pamti, ne javlja
                     novi.append({"izvor": izv["naziv"], "grupa": izv["grupa"], "podrucje_izvora": izv.get("podrucje", ""),
                                  "naslov": naslov, "url": url})
     db.commit()
@@ -324,7 +392,7 @@ def main():
         f"<small>{html.escape(p['davalac'])}{' · rok ' + html.escape(p['rok']) if p['rok'] else ''}"
         f"{' · ' + html.escape(p['iznos']) if p['iznos'] else ''}</small></li>" for p in pozivi)
     izvj = (f"<h2>Pozivnik – novi pozivi {danas}</h2><p>Obiđeno izvora: {len(izvori)}. "
-            f"Novih objava: {len(pozivi)}. Izvora s greškom: {len(greske)}.</p><ol>{redovi or '<li>Nema novih objava.</li>'}</ol>"
+            f"Novih objava: {len(pozivi)}. Izvora s greškom: {len(greske)}. Čitano preko rezerve: {len(rezerve)}.</p><ol>{redovi or '<li>Nema novih objava.</li>'}</ol>"
             "<p><small>Sve objave su kandidati: u Pozivniku su u tabu Uredi, označene „Novo iz pratioca”. "
             "Prije odobravanja provjeri rok i uslove u originalu.</small></p>")
     open(os.path.join(IZLAZ, f"izvjestaj_{danas}.html"), "w", encoding="utf-8").write(izvj)
@@ -332,7 +400,7 @@ def main():
     upisano = upisi_u_supabase(pozivi)
     if upisano:
         print(f"Upisano u Supabase kao kandidati za pregled: {upisano}")
-    print(f"Gotovo: {len(pozivi)} novih objava, {len(greske)} izvora s greškom. Rezultati u {IZLAZ}")
+    print(f"Gotovo: {len(pozivi)} novih objava, {len(greske)} izvora s greškom, {len(rezerve)} preko rezerve (Google News). Rezultati u {IZLAZ}")
     if pozivi:
         txt = f"Pozivnik – {len(pozivi)} novih objava ({danas})\n\n" + "\n\n".join(
             f"• {p['naslov'][:180]}\n  {p['davalac']}{' · rok ' + p['rok'] if p['rok'] else ''}\n  {p['izvor']}"
