@@ -1721,5 +1721,740 @@
   "tip": "vijesti",
   "grupa": "medjunarodna",
   "podrucje": ""
+ },
+ {
+  "naziv": "Banovići – javni pozivi",
+  "url": "https://banovici.gov.ba/category/konkursi-oglasi-i-obavjestenja/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Bihać – javni pozivi",
+  "url": "https://www.bihac.org/javni-pozivi-za-ocd",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "usk"
+ },
+ {
+  "naziv": "Bijeljina – javni pozivi",
+  "url": "https://www.gradbijeljina.org/sr/news/obavjestenja/konkursi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Bileća – javni pozivi",
+  "url": "https://www.opstinabileca.ba/konkursi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Bosansko Grahovo – javni pozivi",
+  "url": "https://www.bosanskograhovo.ba/javni-pozivi-oglasi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "k10"
+ },
+ {
+  "naziv": "Breza – javni pozivi",
+  "url": "https://breza.gov.ba/konkursi",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "zdk"
+ },
+ {
+  "naziv": "Brod – javni pozivi",
+  "url": "https://opstina-brod.net/oglasi-arhiva",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Bugojno – javni pozivi",
+  "url": "https://opcina-bugojno.ba/category/javni-poziv/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "sbk"
+ },
+ {
+  "naziv": "Busovača – javni pozivi",
+  "url": "https://opcina-busovaca.com/javni-pozivi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "sbk"
+ },
+ {
+  "naziv": "Centar – javni pozivi",
+  "url": "https://www.centar.ba/mladi-u-opcini-centar/javni-pozivi-i-konkursi-za-mlade",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Doboj – javni pozivi",
+  "url": "https://doboj.gov.ba/javni-pozivi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Doboj Istok – javni pozivi",
+  "url": "https://opcinadobojistok.ba/konkursi-i-oglasi",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Domaljevac-Šamac – javni pozivi",
+  "url": "https://domaljevac.ba/category/javni-pozivi-i-natjecaji/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "pk"
+ },
+ {
+  "naziv": "Donji Vakuf – javni pozivi",
+  "url": "https://donji-vakuf.ba/category/vijesti/javni-pozivi-i-konkursi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "sbk"
+ },
+ {
+  "naziv": "Donji Žabar – javni pozivi",
+  "url": "https://www.opstinadonjizabar.com/konkursi.html",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Drvar – javni pozivi",
+  "url": "https://www.opstinadrvar.net/konkursi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "k10"
+ },
+ {
+  "naziv": "Glamoč – javni pozivi",
+  "url": "https://opstinaglamoc.ba/language/ci/javni-pozivi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "k10"
+ },
+ {
+  "naziv": "Goražde – javni pozivi",
+  "url": "https://gorazde.ba/konkursi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "bpk"
+ },
+ {
+  "naziv": "Grad Istočno Sarajevo – javni pozivi",
+  "url": "https://gradistocnosarajevo.net/category/javni-pozivi-i-konkursi",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Grad Sarajevo – javni pozivi",
+  "url": "https://www.sarajevo.ba/bs/pozivi",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Gradačac – javni pozivi",
+  "url": "https://www.gradacac.ba/javni-pozivi",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Gradiška – javni pozivi",
+  "url": "https://www.gradgradiska.com/kategorija/konkursi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Gračanica – javni pozivi",
+  "url": "https://gracanica.gov.ba/category/konkursi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Grude – javni pozivi",
+  "url": "https://grude.info/kategorija/oglasi-i-natjecaji/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "zhk"
+ },
+ {
+  "naziv": "Hadžići – javni pozivi",
+  "url": "https://hadzici.ba/javni-oglasi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Ilidža – javni pozivi",
+  "url": "https://opcinailidza.ba/konkursi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Jajce – javni pozivi",
+  "url": "http://www.opcina-jajce.ba/aktuelnosti/konkursi.html",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "sbk"
+ },
+ {
+  "naziv": "Kalesija – javni pozivi",
+  "url": "https://kalesija.ba/notice-category/konkursi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Konjic – javni pozivi",
+  "url": "https://www.konjic.ba/ba/vijesti/oglasi.html",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "hnk"
+ },
+ {
+  "naziv": "Kostajnica – javni pozivi",
+  "url": "https://www.opstina-kostajnica.com/index.php/javni-pozivi",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Krupa na Uni – javni pozivi",
+  "url": "https://www.krupanauni.org/konkursi-i-oglasi.html",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Livno – javni pozivi",
+  "url": "https://livno.ba/kategorija/natjecaji-i-pozivi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "k10"
+ },
+ {
+  "naziv": "Ljubuški – javni pozivi",
+  "url": "https://ljubuski.ba/obavijesti-kategorije/natjecaji-pozivi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "zhk"
+ },
+ {
+  "naziv": "Lopare – javni pozivi",
+  "url": "https://opstinalopare.com/document-category/javni-pozivi-i-konkursi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Mostar – javni pozivi",
+  "url": "https://www.mostar.ba/category/investicije-gospodarstvo/javni-pozivi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "hnk"
+ },
+ {
+  "naziv": "Neum – javni pozivi",
+  "url": "https://neum.ba/javni-oglasi-i-natjecaji/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "hnk"
+ },
+ {
+  "naziv": "Nevesinje – javni pozivi",
+  "url": "https://opstinanevesinje.rs.ba/category/info/konkursi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Novi Grad Sarajevo – javni pozivi",
+  "url": "https://www.novigradsarajevo.ba/cat/news/konkursi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Novi Travnik – javni pozivi",
+  "url": "https://www.novitravnik.gov.ba/index.php/novosti/oglasi-i-natjecaji",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "sbk"
+ },
+ {
+  "naziv": "Novo Sarajevo – javni pozivi",
+  "url": "https://www.novosarajevo.ba/konkursi.php?ind=2",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Odžak – javni pozivi",
+  "url": "https://www.odzak.ba/index.php/novosti/javni-pozivi",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "pk"
+ },
+ {
+  "naziv": "Olovo – javni pozivi",
+  "url": "http://olovo.gov.ba/?cat=64",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "zdk"
+ },
+ {
+  "naziv": "Orašje – javni pozivi",
+  "url": "https://www.orasje.ba/natjecaj/aktualno",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "pk"
+ },
+ {
+  "naziv": "Pale – javni pozivi",
+  "url": "https://www.pale.rs.ba/opstina-pale-2/konkursi-obrazci-opstina-pale/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Posušje – javni pozivi",
+  "url": "https://www.opcina-posusje.ba/category/aktualnosti/javni-natjecaji/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "zhk"
+ },
+ {
+  "naziv": "Prijedor – javni pozivi",
+  "url": "https://www.prijedorgrad.org/sr-BA/sr-BA/#konkursi",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Prozor-Rama – javni pozivi",
+  "url": "https://prozor-rama.org/press-centar/natjecaji",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "hnk"
+ },
+ {
+  "naziv": "Ravno – javni pozivi",
+  "url": "https://ravno.gov.ba/javni-pozivi-i-natjecaji/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "hnk"
+ },
+ {
+  "naziv": "Rudo – javni pozivi",
+  "url": "https://opstinarudo.com/kategorija/javni-pozivi-i-konkursi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Sanski Most – javni pozivi",
+  "url": "https://sanskimost.gov.ba/category/javni-pozivi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "usk"
+ },
+ {
+  "naziv": "Srebrenica – javni pozivi",
+  "url": "https://srebrenica.gov.ba/javni-pozivi-i-obavjestenja/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Stari Grad – javni pozivi",
+  "url": "https://starigrad.ba/javni-pozivi-konkursi-i-oglasi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Teočak – javni pozivi",
+  "url": "https://teocak.gov.ba/oglasna-ploca/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Teslić – javni pozivi",
+  "url": "https://www.gradteslic.com/kategorije/javni_pozivi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Tešanj – javni pozivi",
+  "url": "https://opcina-tesanj.ba/uprava/mladi/podrska-start-up-idejama-mladih/konkursi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "zdk"
+ },
+ {
+  "naziv": "Tomislavgrad – javni pozivi",
+  "url": "https://tomislavgrad.gov.ba/javni-pozivi-i-oglasi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "k10"
+ },
+ {
+  "naziv": "Travnik – javni pozivi",
+  "url": "https://opcinatravnik.com.ba/ba/aktuelno/konkursi",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "sbk"
+ },
+ {
+  "naziv": "Trebinje – javni pozivi",
+  "url": "https://trebinje.rs.ba/javni-pozivi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Trnovo – javni pozivi",
+  "url": "https://www.trnovo.ba/category/javni-pozivi-oglasi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Trnovo (RS) – javni pozivi",
+  "url": "https://trnovo-rs.com/pozivi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Velika Kladuša – javni pozivi",
+  "url": "https://velikakladusa.gov.ba/kategorija/konkursi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "usk"
+ },
+ {
+  "naziv": "Visoko – javni pozivi",
+  "url": "https://www.visoko.gov.ba/e-grad-visoko/javni-pozivi-konkursi-oglasi",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "zdk"
+ },
+ {
+  "naziv": "Vitez – javni pozivi",
+  "url": "https://vitez.ba/tag/javni-oglasi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "sbk"
+ },
+ {
+  "naziv": "Vogošća – javni pozivi",
+  "url": "https://vogosca.ba/category/javni_pozivi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "ks"
+ },
+ {
+  "naziv": "Zavidovići – javni pozivi",
+  "url": "https://zavidovici.ba/category/novosti/javni-pozivi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "zdk"
+ },
+ {
+  "naziv": "Zenica – javni pozivi",
+  "url": "https://zenica.ba/oglasi-i-konkursi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "zdk"
+ },
+ {
+  "naziv": "Čapljina – javni pozivi",
+  "url": "https://capljina.ba/category/natjecaji-i-oglasi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "hnk"
+ },
+ {
+  "naziv": "Čelić – javni pozivi",
+  "url": "https://opcinacelic.ba/javni-oglasi",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Čitluk – javni pozivi",
+  "url": "https://citluk.ba/natjecaji-i-oglasi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "hnk"
+ },
+ {
+  "naziv": "Šamac – javni pozivi",
+  "url": "https://www.opstinasamac.org/sr-BA/sr-BA/samac-konkursi.html",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "rs"
+ },
+ {
+  "naziv": "Široki Brijeg – javni pozivi",
+  "url": "http://www.sirokibrijeg.ba/index.php/gradska-uprava/javni-oglasi-i-natjecaji",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "zhk"
+ },
+ {
+  "naziv": "Žepče – javni pozivi",
+  "url": "http://www.opcina-zepce.com/javni-pozivi",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "zdk"
+ },
+ {
+  "naziv": "Živinice – javni pozivi",
+  "url": "https://gradzivinice.ba/konkursi/",
+  "tip": "stranica",
+  "grupa": "opcina",
+  "podrucje": "tk"
+ },
+ {
+  "naziv": "Centar za istraživačko novinarstvo (CIN) – javni pozivi",
+  "url": "https://cin.ba/kategorija/istrazivacke-price/poticaji/",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Delegacija Evropske unije u BiH – javni pozivi",
+  "url": "https://www.eeas.europa.eu/eeas/grants_bs?s=219&f%5B0%5D=grant_site%3ABosnia%20and%20Herzegovina",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "EU Resurs (portal javnih poziva) – javni pozivi",
+  "url": "https://euresurs.ba/en/javni-pozivi-arhiva/",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Federalno ministarstvo kulture i sporta – javni pozivi",
+  "url": "https://fmks.gov.ba/bs/javni-pozivi/",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Federalno ministarstvo rada i socijalne politike – javni pozivi",
+  "url": "https://fmrsp.gov.ba/javni-pozivi--transferi",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Federalno ministarstvo raseljenih osoba i izbjeglica – javni pozivi",
+  "url": "https://fmroi.gov.ba/category/odrzivi-povratak/projekti-zaposljavanja-povratnika/javni-pozivi-projekti-zaposljavanja-povratnika/",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Federalno ministarstvo razvoja, poduzetništva i obrta – javni pozivi",
+  "url": "https://fmrpo.gov.ba/category/javni-natjecajikonkursi/",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Federalno ministarstvo za pitanja boraca i invalida – javni pozivi",
+  "url": "https://fmbi.gov.ba/javni-pozivi/",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Fond za zaštitu životne sredine i energetsku efikasnost RS – javni pozivi",
+  "url": "https://www.ekofondrs.org/ofondu/konkursi.html",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Fondacija za kinematografiju – javni pozivi",
+  "url": "https://fondacijakinematografija.ba/konkursi-i-javni-pozivi/",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ministarstvo civilnih poslova BiH – javni pozivi",
+  "url": "https://mcp.gov.ba/hr/portal/natjecaj",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ministarstvo kulture i sporta Kantona Sarajevo – javni pozivi",
+  "url": "https://mks.ks.gov.ba/aktuelno/konkursi",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ministarstvo privrede KS – javni pozivi",
+  "url": "https://mp.ks.gov.ba/aktuelo/konkursi",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ministarstvo trgovine, turizma i saobraćaja TK – javni pozivi",
+  "url": "https://mttstk.gov.ba/konkursi-i-javni-pozivi",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ministarstvo za boračka pitanja BPK Goražde – javni pozivi",
+  "url": "https://mb.bpkg.gov.ba/kategorija/konkursi",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ministarstvo za boračka pitanja KS – javni pozivi",
+  "url": "https://mbp.ks.gov.ba/aktuelno/konkursi",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ministarstvo za kulturu, sport i mlade Tuzlanskog kantona – javni pozivi",
+  "url": "https://mksmtk.gov.ba/konkursi-i-javni-pozivi",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ministarstvo za ljudska prava i izbjeglice BiH – javni pozivi",
+  "url": "https://mhrr.gov.ba/bs/javni-pozivi",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ministarstvo za nauku, visoko obrazovanje i mlade KS – javni pozivi",
+  "url": "https://mon.ks.gov.ba/aktuelno/konkursi",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Ministarstvo za urbanizam, prostorno uređenje i zaštitu okoline BPK – javni pozivi",
+  "url": "https://mu.bpkg.gov.ba/kategorija/konkursi",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "On the Move – mobilnost u kulturi (portal) – javni pozivi",
+  "url": "https://on-the-move.org/resources/funding",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Privredna komora Republike Srpske – javni pozivi",
+  "url": "https://bl.komorars.ba/category/najave/",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Sigrid Rausing Trust – javni pozivi",
+  "url": "https://www.sigrid-rausing-trust.org/how-we-work/grantee-code-of-conduct/",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Skupština Zeničko-dobojskog kantona – javni pozivi",
+  "url": "https://kanton.zdk.ba/javni-pozivi-oglasi-konkursi",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Turistička zajednica Grada Tuzle – javni pozivi",
+  "url": "https://tztz.ba/ba/javni-pozivi/",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Vlada Bosansko-podrinjskog kantona Goražde – javni pozivi",
+  "url": "https://bpkg.gov.ba//kategorija/konkursi-oglasi-obavjestenja",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Vlada Hercegbosanske županije (Kanton 10) – javni pozivi",
+  "url": "https://www.vladahbz.com/javni-pozivi/",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Vlada Kantona Sarajevo – javni pozivi",
+  "url": "https://vlada.ks.gov.ba/aktuelno/konkursi",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Vlada Srednjobosanskog kantona – javni pozivi",
+  "url": "https://sbk-ksb.gov.ba/index.php/novosti",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Vlada Tuzlanskog kantona – javni pozivi",
+  "url": "https://www.vladatk.kim.ba/kategorija/ministarstvo-zdravstva-konkursi",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Vlada Zeničko-dobojskog kantona – javni pozivi",
+  "url": "https://zdk.ba/javni-pozivi-oglasi-konkursi",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
+ },
+ {
+  "naziv": "Zavod za zapošljavanje Republike Srpske – javni pozivi",
+  "url": "https://zzzrs.net/javni-pozivi",
+  "tip": "stranica",
+  "grupa": "davalac",
+  "podrucje": ""
  }
 ]
