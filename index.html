@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="bs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pozivnik – javni pozivi u BiH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFFFF; --surface:#F4F4F6; --line:#E4E4E9; --ink:#0B0B0F; --ink2:#3A3A44; --muted:#5F5F69;
+  --accent:#0E7C5A; --accent-ink:#FFFFFF; --mint:#E7F5EF; --mint-ink:#0A4F3A;
+  --feature:#0B0B0F; --feature-ink:#FFFFFF; --feature-muted:#B8B8C2; --feature-num:#7EE2B8;
+  --warm:#FDEBD8; --warm-ink:#8A3A06; --grey:#E4E4E9; --grey-ink:#3A3A44; --danger:#B42318;
+  --focus:#0E7C5A; color-scheme: light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#101114; --surface:#1A1B20; --line:#2C2D33; --ink:#F2F2F5; --ink2:#D0D0D8; --muted:#A3A3AE;
+    --accent:#37B487; --accent-ink:#06140F; --mint:#173A2D; --mint-ink:#9BE7C6;
+    --feature:#16352A; --feature-ink:#FFFFFF; --feature-muted:#B9D5C9; --feature-num:#8EF0C6;
+    --warm:#3D2614; --warm-ink:#F7C08F; --grey:#2C2D33; --grey-ink:#D0D0D8; --danger:#F97066;
+    --focus:#37B487; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#101114; --surface:#1A1B20; --line:#2C2D33; --ink:#F2F2F5; --ink2:#D0D0D8; --muted:#A3A3AE;
+  --accent:#37B487; --accent-ink:#06140F; --mint:#173A2D; --mint-ink:#9BE7C6;
+  --feature:#16352A; --feature-ink:#FFFFFF; --feature-muted:#B9D5C9; --feature-num:#8EF0C6;
+  --warm:#3D2614; --warm-ink:#F7C08F; --grey:#2C2D33; --grey-ink:#D0D0D8; --danger:#F97066;
+  --focus:#37B487; color-scheme: dark;
+}
+*{box-sizing:border-box}
+html{height:100%;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px)}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:var(--accent)}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.top-in{max-width:1180px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:22px;letter-spacing:-.03em;color:var(--ink);text-decoration:none;margin-right:auto}
+.logo .word span{color:var(--accent)}
+nav.tabs{display:flex;gap:4px;overflow-x:auto;max-width:100%;scrollbar-width:none}
+nav.tabs a{flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 14px;border-radius:999px;color:var(--ink2);text-decoration:none;font-size:15px;font-weight:600}
+nav.tabs a[aria-current="page"]{background:var(--ink);color:var(--bg)}
+.badge{display:inline-flex;min-width:22px;height:22px;padding:0 6px;align-items:center;justify-content:center;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-size:12px;font-weight:800}
+nav.tabs a[aria-current="page"] .badge{background:var(--bg);color:var(--ink)}
+
+main{max-width:1180px;margin:0 auto;padding:36px 20px 72px}
+h1{font-size:clamp(30px,5vw,46px);line-height:1.08;letter-spacing:-.04em;font-weight:800;margin:0}
+h2{font-size:24px;letter-spacing:-.02em;font-weight:800;margin:0}
+.lead{font-size:18px;color:var(--muted);margin:10px 0 0;max-width:62ch}
+.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.between{justify-content:space-between}
+.section{margin-top:40px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 18px;border-radius:999px;border:1px solid var(--ink);background:transparent;color:var(--ink);font-weight:700;font-size:15px;cursor:pointer;text-decoration:none}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.dark{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.btn.ghost{border-color:var(--line)}
+.btn.danger{border-color:var(--danger);color:var(--danger)}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+
+.chip{min-height:40px;padding:0 15px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink2);font-size:14px;font-weight:600;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.filter-label{font-size:13px;font-weight:700;color:var(--muted);width:72px}
+
+.pill{display:inline-flex;align-items:center;padding:5px 11px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap}
+.st-otvoren{background:var(--mint);color:var(--mint-ink)}
+.st-stalni{background:var(--grey);color:var(--grey-ink)}
+.st-ocekuje{background:var(--warm);color:var(--warm-ink)}
+.st-provjeriti{background:var(--warm);color:var(--warm-ink)}
+.st-zatvoren{background:var(--surface);color:var(--muted);border:1px solid var(--line)}
+
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+.card{background:var(--surface);border-radius:24px;padding:24px;display:flex;flex-direction:column;gap:12px;min-height:250px}
+.card.feature{background:var(--feature);color:var(--feature-ink)}
+.card.feature .donor,.card.feature .meta{color:var(--feature-muted)}
+.donor{font-size:13px;color:var(--muted)}
+.card h3{margin:0;font-size:21px;line-height:1.25;font-weight:700}
+.meta{font-size:15px;color:var(--ink2);margin:0}
+.big{font-size:44px;font-weight:800;letter-spacing:-.03em;line-height:1;margin:0;color:var(--accent)}
+.card.feature .big{color:var(--feature-num)}
+.small{font-size:13px;color:var(--muted);margin:4px 0 0}
+.card.feature .small{color:var(--feature-muted)}
+.card .foot{margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
+.card.feature .btn{border-color:var(--feature-ink);color:var(--feature-ink)}
+
+.search{display:flex;gap:6px;padding:6px;border:1px solid var(--line);border-radius:999px;background:var(--bg);flex:0 1 420px;min-width:240px}
+.search input{flex:1;min-width:0;border:none;outline:none;background:transparent;padding:0 14px;height:40px;font-size:15px}
+.search:focus-within{outline:3px solid var(--focus);outline-offset:2px}
+
+.list{display:flex;flex-direction:column;gap:10px}
+.item{display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding:18px 20px;border-radius:20px;background:var(--surface)}
+.item .main{flex:1 1 300px;min-width:0}
+.item h3{margin:2px 0;font-size:17px;line-height:1.3;font-weight:700}
+.item .side{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.days{font-weight:800;font-size:15px;white-space:nowrap}
+.empty{border:1px dashed var(--line);border-radius:20px;padding:32px;text-align:center;color:var(--muted)}
+.note{background:var(--surface);border-radius:16px;padding:14px 16px;color:var(--ink2);font-size:14px}
+.err{color:var(--danger);font-weight:600}
+
+.drawer-back{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:20;display:flex;justify-content:flex-end}
+.drawer{width:min(480px,100%);height:100%;background:var(--bg);overflow-y:auto;padding:calc(env(safe-area-inset-top,0px) + 20px) 24px calc(env(safe-area-inset-bottom,0px) + 24px);display:flex;flex-direction:column;gap:16px}
+.drawer .feature-box{background:var(--feature);color:var(--feature-ink);border-radius:22px;padding:20px}
+.drawer .feature-box .big{color:var(--feature-num)}
+.drawer .feature-box .small{color:var(--feature-muted)}
+dl.facts{margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;background:var(--surface);border-radius:20px;padding:18px}
+dl.facts dt{font-size:12px;color:var(--muted)}
+dl.facts dd{margin:2px 0 0;font-weight:600;font-size:15px;overflow-wrap:anywhere}
+dl.facts .wide{grid-column:1/-1}
+
+form.panel{display:flex;flex-direction:column;gap:18px;max-width:720px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field label,.field legend{font-size:14px;font-weight:700}
+.field input,.field select,.field textarea{min-height:46px;border:1px solid var(--line);border-radius:14px;padding:10px 14px;background:var(--bg);font-size:16px}
+.field textarea{min-height:90px;resize:vertical}
+fieldset{border:none;padding:0;margin:0}
+.hint{font-size:13px;color:var(--muted);margin:0}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.admin-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:14px 16px;border:1px solid var(--line);border-radius:16px}
+.admin-row .main{flex:1 1 280px;min-width:0}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(env(safe-area-inset-bottom,0px) + 20px);background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:999px;font-weight:600;z-index:30}
+.price{border:1px solid var(--line);border-radius:24px;padding:26px;display:flex;flex-direction:column;gap:10px}
+.price.hl{border:2px solid var(--accent)}
+.price .amt{font-size:40px;font-weight:800;letter-spacing:-.03em;margin:0}
+.price .amt small{font-size:16px;font-weight:500;color:var(--muted)}
+.price ul{margin:0;padding-left:18px;color:var(--ink2);line-height:1.7}
+.service{background:var(--feature);color:var(--feature-ink);border-radius:28px;padding:30px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.service p,.service li{color:var(--feature-muted)}
+.service h2{color:var(--feature-ink)}
+.service .btn.primary{background:var(--feature-num);border-color:var(--feature-num);color:#06140F}
+.contact{display:flex;flex-direction:column;gap:4px;font-size:14px}
+.contact a{overflow-wrap:anywhere}
+.checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px}
+.checks label{display:flex;gap:10px;align-items:center;min-height:44px;padding:0 12px;border:1px solid var(--line);border-radius:12px;font-weight:500;font-size:15px}
+.checks input{width:18px;height:18px;accent-color:var(--accent)}
+.trust{font-size:13px;color:var(--muted);margin:0}
+footer{max-width:1180px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font-size:13px}
+@media (prefers-reduced-motion: no-preference){.drawer{animation:slide .18s ease-out}@keyframes slide{from{transform:translateX(24px);opacity:.6}to{transform:none;opacity:1}}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <a class="logo" href="#za-tebe" aria-label="Pozivnik, početna"><svg class="mark" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><path d="M8 3h18a5 5 0 0 1 5 5v13a5 5 0 0 1-5 5H15l-6.5 5.2a.8.8 0 0 1-1.3-.6V26.6A5 5 0 0 1 3 21V8a5 5 0 0 1 5-5z" fill="var(--accent)"/><path d="M13 21V10h5.2a3.6 3.6 0 0 1 0 7.2H13" fill="none" stroke="var(--accent-ink)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="26.5" cy="7.5" r="4.2" fill="var(--bg)"/><circle cx="26.5" cy="7.5" r="2.6" fill="#F59E0B"/></svg><span class="word">pozivnik<span>.</span></span></a>
+    <nav class="tabs" id="tabs" aria-label="Glavni meni"></nav>
+  </div>
+</header>
+<main id="app" tabindex="-1"><p class="lead">Učitavanje…</p></main>
+<footer>Podaci iz javnih objava. Rokove uvijek provjeri u originalnom pozivu.</footer>
+<div id="drawer-root"></div>
+<div id="toast-root" aria-live="polite"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+/* ====== PODESI OVO: Supabase → Project Settings → API ====== */
+window.POZIVNIK_CONFIG = {
+  supabaseUrl: "https://fvczsrkqofqlfnsfobxk.supabase.co",
+  supabaseAnonKey: "sb_publishable_XigzpVb3kdkFplf75WNUfQ_3idba-EA"
+};
+</script>
+<script>
+(function(){
+"use strict";
+
+var TAGS = [["udruzenja","Udruženja"],["sport","Sport"],["mladi","Mladi"],["zene","Žene"],["kultura","Kultura"],["socijala","Socijala"],["mediji","Mediji"],["turizam","Turizam"],["ustanove","Ustanove i općine"],["firme","Firme i obrti"]];
+var TAG = {}; TAGS.forEach(function(t){TAG[t[0]]=t[1];});
+var TIPOVI = [["udruzenja","Udruženje"],["sport","Sportski klub"],["ustanove","Javna ustanova ili općina"],["firme","Firma ili obrt"],["mediji","Medij"]];
+var PODRUCJA = [["bih","Cijela BiH"],["fbih","Federacija BiH"],["usk","Unsko-sanski kanton"],["pk","Posavski kanton"],["tk","Tuzlanski kanton"],["zdk","Zeničko-dobojski kanton"],["bpk","Bosansko-podrinjski kanton Goražde"],["sbk","Srednjobosanski kanton"],["hnk","Hercegovačko-neretvanski kanton"],["zhk","Zapadnohercegovački kanton"],["ks","Kanton Sarajevo"],["k10","Kanton 10"],["rs","Republika Srpska"],["brcko","Brčko distrikt"],["vise","Više lokalnih zajednica"]];
+var POD = {}; PODRUCJA.forEach(function(p){POD[p[0]]=p[1];});
+var FBIH = ["usk","pk","tk","zdk","bpk","sbk","hnk","zhk","ks","k10"];
+var STATUS = {otvoren:"Otvoren",provjeriti:"Status se provjerava",stalni:"Stalni program",ocekuje:"Očekuje se",zatvoren:"Zatvoren"};
+var VRSTE = [["drzava","Država BiH"],["fbih","Federacija BiH"],["rs","Republika Srpska"],["kanton","Kantoni"],["brcko","Brčko distrikt"],["javnifond","Javni fondovi i zavodi"],["medjunarodna","Međunarodne organizacije"],["ambasada","Ambasade i strane vlade"],["humanitarna","Humanitarne organizacije"],["fondacija","Fondacije i mreže"],["kompanija","Kompanije i banke"],["institucija","Ostale institucije"]];
+var VRSTA = {}; VRSTE.forEach(function(v){VRSTA[v[0]]=v[1];});
+var DOKUMENTI = ["Rješenje o registraciji","Statut","ID broj (porezni broj)","Potvrda o bankovnom računu","Finansijski izvještaj za prošlu godinu","Izvještaj o radu","Uvjerenje o izmirenim porezima","CV osoba u timu"];
+
+var S = {
+  db:null, user:null, uid:null, canEdit:false, ready:false, offline:false, loadErr:"",
+  pozivi:[], profil:{tip:"",teme:[],podrucje:"",pracenje:{}}, profilLoaded:false,
+  filterTag:"svi", filterStatus:"aktivni", q:"", open:null, edit:null, toast:"",
+  donatori:[], opcine:[], editOp:null, opQ:"", opKanton:"", opStatus:"", editDon:null, filterVrsta:"sve", orderFor:"", mojiUpiti:[], sviUpiti:[]
+};
+
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c];});}
+function safeUrl(u){u=String(u||"").trim();if(!u)return "";if(!/^https?:\/\//i.test(u))u="https://"+u;try{var x=new URL(u);return (x.protocol==="http:"||x.protocol==="https:")?x.href:"";}catch(e){return "";}}
+function host(u){try{return new URL(u).hostname.replace(/^www\./,"");}catch(e){return "";}}
+function today(){var d=new Date();d.setHours(0,0,0,0);return d;}
+function parseDate(s){if(!s||!/^\d{4}-\d{2}-\d{2}$/.test(s))return null;var p=s.split("-");return new Date(+p[0],+p[1]-1,+p[2]);}
+function fmtDate(s){var d=parseDate(s);if(!d)return "";return d.getDate()+". "+(d.getMonth()+1)+". "+d.getFullYear()+".";}
+function danRijec(n){var a=Math.abs(n);return (a%10===1&&a%100!==11)?"dan":"dana";}
+function rokInfo(p){
+  var d=parseDate(p.rok), est=false;
+  if(!d&&p.rokProcjena){d=parseDate(p.rokProcjena);est=true;}
+  if(!d)return {has:false,label:p.rokNapomena||(p.status==="stalni"?"Stalni program":p.status==="ocekuje"?"Očekuje se":"Rok u smjernicama")};
+  var n=Math.round((d-today())/86400000);
+  if(n<0)return {has:true,n:n,past:true,label:"Rok je prošao",sub:"rok je bio "+fmtDate(est?p.rokProcjena:p.rok)};
+  return {has:true,n:n,est:est,label:(est?"≈":"")+n+" "+danRijec(n),sub:est?("procjena prema prošlom roku, "+fmtDate(p.rokProcjena)):("rok "+fmtDate(p.rok))};
+}
+function sortKey(p){var r=rokInfo(p);if(r.has&&!r.past)return r.n;if(p.status==="otvoren")return 5000;if(p.status==="stalni")return 6000;if(p.status==="ocekuje")return 7000;return 9000;}
+function areaMatch(pa,ua){if(!ua||!pa)return true;if(pa==="bih"||pa==="vise")return true;if(pa==="fbih")return FBIH.indexOf(ua)!==-1||ua==="fbih";if(ua==="bih")return true;return pa===ua;}
+function myTags(){var t=(S.profil.teme||[]).slice();if(S.profil.tip)t.push(S.profil.tip);return t;}
+function matches(p){var t=myTags();var tags=p.teme||[];var tagOk=!t.length||tags.some(function(x){return t.indexOf(x)!==-1;});return tagOk&&areaMatch(p.podrucje,S.profil.podrucje);}
+function tracked(id){return !!(S.profil.pracenje&&S.profil.pracenje[id]);}
+function trackedCount(){var c=0;S.pozivi.forEach(function(p){if(tracked(p.id))c++;});return c;}
+function statusPill(s){return '<span class="pill st-'+esc(s)+'">'+esc(STATUS[s]||s)+'</span>';}
+function profileDone(){return !!(S.profil.tip||S.profil.podrucje||(S.profil.teme||[]).length);}
+
+/* ---------- routing ---------- */
+var VIEWS=["prijava","za-tebe","pozivi","donatori","izvori","rokovi","cijene","naruci","profil","uredi","zahtjevi"];
+function view(){var h=(location.hash||"").replace(/^#/,"");return VIEWS.indexOf(h)!==-1?h:"za-tebe";}
+window.addEventListener("hashchange",function(){S.open=null;render();window.scrollTo(0,0);});
+
+/* ---------- writes (one at a time) ---------- */
+var chain=Promise.resolve();
+function queue(fn){chain=chain.then(fn).catch(function(e){toast(e&&e.code==="quota_exceeded"?"Baza je puna. Obriši stare pozive pa pokušaj ponovo.":"Promjena nije sačuvana. Pokušaj ponovo.");});return chain;}
+function saveProfil(){
+  if(!S.db||!S.uid){toast("Prijavi se da bi se profil sačuvao.");location.hash="#prijava";return;}
+  var body={tip:S.profil.tip||"",teme:(S.profil.teme||[]).slice(),podrucje:S.profil.podrucje||"",pracenje:Object.assign({},S.profil.pracenje||{})};
+  return queue(function(){return S.db.doc("data/users/"+S.uid+"/profil").set(body);});
+}
+function toast(msg){S.toast=msg;var r=document.getElementById("toast-root");r.innerHTML='<div class="toast">'+esc(msg)+'</div>';clearTimeout(toast.t);toast.t=setTimeout(function(){r.innerHTML="";},2600);}
+
+/* ---------- render ---------- */
+function renderTabs(){
+  var v=view(), n=trackedCount();
+  var t=[["za-tebe","Za tebe"],["pozivi","Svi pozivi"],["donatori","Davaoci"],["izvori","Izvori"],["rokovi","Moji rokovi"+(n?' <span class="badge">'+n+'</span>':"")],["cijene","Cijene"],["profil","Profil"]];
+  t.push(["prijava",S.uid?"Moj nalog":"Prijava"]);
+  if(S.canEdit){t.push(["uredi","Uredi"]);var nz=S.sviUpiti.reduce(function(a,u){return a+(u.zahtjevi||[]).filter(function(z){return z.status==="novo";}).length;},0);t.push(["zahtjevi","Zahtjevi"+(nz?' <span class="badge">'+nz+'</span>':"")]);}
+  document.getElementById("tabs").innerHTML=t.map(function(x){return '<a href="#'+x[0]+'"'+(v===x[0]?' aria-current="page"':"")+'>'+x[1]+'</a>';}).join("");
+}
+function render(){
+  renderTabs();
+  var app=document.getElementById("app"), v=view();
+  if(!S.ready){app.innerHTML=S.offline?offlineHtml():'<p class="lead">Učitavanje poziva…</p>'+(S.loadErr?'<p class="err">'+esc(S.loadErr)+'</p>':"");renderDrawer();return;}
+  if(v==="za-tebe")app.innerHTML=zaTebe();
+  else if(v==="pozivi")app.innerHTML=sviPozivi();
+  else if(v==="rokovi")app.innerHTML=rokovi();
+  else if(v==="donatori")app.innerHTML=donatoriView();
+  else if(v==="prijava")app.innerHTML=prijavaView();
+  else if(v==="izvori")app.innerHTML=izvoriView();
+  else if(v==="cijene")app.innerHTML=cijeneView();
+  else if(v==="naruci")app.innerHTML=naruciView();
+  else if(v==="zahtjevi")app.innerHTML=S.canEdit?zahtjeviView():'<p class="lead">Ovo vide samo urednici.</p>';
+  else if(v==="profil")app.innerHTML=profilView();
+  else if(v==="uredi")app.innerHTML=S.canEdit?urediView():'<p class="lead">Samo urednici mogu mijenjati pozive.</p>';
+  renderDrawer();
+  var oi=document.getElementById("opq");if(oi&&S.focusOp){oi.focus();var ol=oi.value.length;oi.setSelectionRange(ol,ol);S.focusOp=false;}
+  var si=document.getElementById("q");if(si&&document.activeElement!==si&&S.focusQ){si.focus();var l=si.value.length;si.setSelectionRange(l,l);S.focusQ=false;}
+}
+function offlineHtml(){return '<h1>Pozivnik</h1><p class="lead">Baza nije podešena. U fajlu index.html upiši Supabase adresu i javni (anon) ključ u POZIVNIK_CONFIG.</p>';}
+function prijavaView(){
+  if(S.uid)return '<h1>Moj nalog</h1><p class="lead">Prijavljen si kao '+esc(S.email||"")+(S.canEdit?' (urednik)':'')+'.</p><div class="row section"><a class="btn ghost" href="#profil">Profil organizacije</a><button class="btn" data-act="odjava">Odjava</button></div>';
+  return '<h1>Prijava</h1><p class="lead">Upiši email i poslat ćemo ti link za prijavu. Bez lozinke.</p><form class="panel section" data-act="login-form"><div class="field"><label for="l-email">Email</label><input id="l-email" name="email" type="email" required autocomplete="email"></div><p class="err" id="login-err" role="alert"></p><div class="row"><button class="btn primary" type="submit">Pošalji link za prijavu</button></div></form>';
+}
+
+function cardHtml(p,feature){
+  var r=rokInfo(p);
+  var right=r.has&&!r.past?'<div><p class="big">'+esc(r.label)+'</p><p class="small">'+esc(r.sub)+'</p></div>':'<div>'+statusPill(p.status)+(r.has&&r.past?'<p class="small">'+esc(r.label)+'</p>':'')+'</div>';
+  return '<article class="card'+(feature?" feature":"")+'"><span class="donor">'+esc(p.davalac)+'</span><h3>'+esc(p.naslov)+'</h3><p class="meta">'+esc(p.iznos||"")+(p.iznos&&p.podrucje?", ":"")+esc(POD[p.podrucje]||"")+'</p><div class="foot">'+right+'<button class="btn" data-act="open" data-id="'+esc(p.id)+'">Otvori</button></div></article>';
+}
+function zaTebe(){
+  var aktivni=S.pozivi.filter(function(p){return p.status!=="zatvoren"&&p._odobren!==false;});
+  var moji=aktivni.filter(matches).sort(function(a,b){return sortKey(a)-sortKey(b);});
+  var h='<h1>'+(profileDone()?"Za tebe ove sedmice":"Svi javni pozivi u BiH, na jednom mjestu.")+'</h1>';
+  h+='<p class="lead">'+(profileDone()?(moji.length?("Imaš "+moji.length+" "+(moji.length===1?"poziv koji odgovara":"poziva koji odgovaraju")+" tvom profilu."):"Trenutno nema aktivnih poziva za tvoj profil. Pogledaj sve pozive ili proširi teme u profilu."):"Popuni profil i vidjet ćeš samo pozive za koje tvoja organizacija ispunjava uslove.")+'</p>';
+  if(!profileDone())h+='<div class="row section" style="margin-top:20px"><a class="btn primary" href="#profil">Popuni profil</a><a class="btn ghost" href="#pozivi">Pogledaj sve pozive</a></div>';
+  var list=profileDone()?moji:aktivni.sort(function(a,b){return sortKey(a)-sortKey(b);});
+  if(!S.pozivi.length){h+='<div class="section empty">Baza poziva je još prazna.'+(S.canEdit?' <a href="#uredi">Dodaj prvi poziv</a>.':'')+'</div>';return h;}
+  if(list.length){
+    h+='<div class="section grid3">'+list.slice(0,3).map(function(p,i){return cardHtml(p,i===0&&rokInfo(p).has&&!rokInfo(p).past);}).join("")+'</div>';
+    if(list.length>3)h+='<div class="row" style="margin-top:16px"><a class="btn ghost" href="#pozivi">Još '+(list.length-3)+' u svim pozivima</a></div>';
+  }
+  var ocek=S.pozivi.filter(function(p){return p.status==="ocekuje"&&(!profileDone()||matches(p));});
+  if(ocek.length){h+='<div class="section"><h2>Uskoro se očekuje</h2><div class="list" style="margin-top:14px">'+ocek.map(itemHtml).join("")+'</div></div>';}
+  return h;
+}
+function itemHtml(p){
+  var r=rokInfo(p);
+  var d=r.has&&!r.past?'<span class="days">'+esc(r.label)+'</span>':"";
+  return '<div class="item"><div class="main"><span class="donor">'+esc(p.davalac)+'</span><h3>'+esc(p.naslov)+'</h3><span class="meta">'+esc(p.iznos||"")+(p.iznos?", ":"")+esc(POD[p.podrucje]||"")+'</span></div><div class="side">'+d+statusPill(p.status)+'<button class="btn" data-act="open" data-id="'+esc(p.id)+'">Detalji</button></div></div>';
+}
+function filtered(){
+  var q=S.q.trim().toLowerCase();
+  return S.pozivi.filter(function(p){
+    if(p._odobren===false)return false;
+    if(S.filterTag==="moji"&&!matches(p))return false;
+    if(S.filterTag!=="svi"&&S.filterTag!=="moji"&&(p.teme||[]).indexOf(S.filterTag)===-1)return false;
+    if(S.filterStatus==="aktivni"&&p.status==="zatvoren")return false;
+    if(S.filterStatus!=="aktivni"&&S.filterStatus!=="svi"&&p.status!==S.filterStatus)return false;
+    if(q){var hay=(p.naslov+" "+p.davalac+" "+(p.napomena||"")+" "+(p.ko||"")+" "+(POD[p.podrucje]||"")).toLowerCase();if(hay.indexOf(q)===-1)return false;}
+    return true;
+  }).sort(function(a,b){return sortKey(a)-sortKey(b);});
+}
+function sviPozivi(){
+  var list=filtered();
+  var tagChips=[["svi","Svi"]];if(profileDone())tagChips.push(["moji","Za moj profil"]);tagChips=tagChips.concat(TAGS);
+  var st=[["aktivni","Aktivni"],["otvoren","Otvoreni"],["stalni","Stalni"],["ocekuje","Očekuju se"],["zatvoren","Zatvoreni"],["svi","Svi"]];
+  var h='<div class="row between"><div><h1>Svi pozivi</h1><p class="lead" style="margin-top:6px">'+list.length+" "+(list.length===1?"poziv":"poziva")+'</p></div>';
+  h+='<form class="search" role="search" data-act="search-form"><label for="q" class="sr">Pretraži pozive</label><input id="q" type="search" placeholder="Pretraži po nazivu, davaocu ili mjestu" value="'+esc(S.q)+'" autocomplete="off"></form></div>';
+  h+='<div class="section" style="margin-top:24px;display:flex;flex-direction:column;gap:10px">';
+  h+='<div class="row" role="group" aria-label="Za koga"><span class="filter-label">Za koga</span>'+tagChips.map(function(c){return '<button class="chip" data-act="ftag" data-v="'+c[0]+'" aria-pressed="'+(S.filterTag===c[0])+'">'+esc(c[1])+'</button>';}).join("")+'</div>';
+  h+='<div class="row" role="group" aria-label="Status"><span class="filter-label">Status</span>'+st.map(function(c){return '<button class="chip" data-act="fst" data-v="'+c[0]+'" aria-pressed="'+(S.filterStatus===c[0])+'">'+esc(c[1])+'</button>';}).join("")+'</div></div>';
+  h+='<div class="section list" style="margin-top:24px">'+(list.length?list.map(itemHtml).join(""):'<div class="empty">Nema poziva za ovaj izbor. Promijeni filter ili pretragu.</div>')+'</div>';
+  return h;
+}
+function rokovi(){
+  var list=S.pozivi.filter(function(p){return tracked(p.id);}).sort(function(a,b){return sortKey(a)-sortKey(b);});
+  var h='<h1>Moji rokovi</h1><p class="lead">Pozivi koje pratiš, poredani po roku.</p>';
+  if(!list.length)return h+'<div class="section empty">Još ne pratiš nijedan poziv. Otvori poziv i klikni „Prati rok“.<div class="row" style="justify-content:center;margin-top:14px"><a class="btn primary" href="#pozivi">Pogledaj pozive</a></div></div>';
+  return h+'<div class="section list">'+list.map(itemHtml).join("")+'</div>';
+}
+function profilView(){
+  var p=S.profil;
+  var h='<h1>Profil organizacije</h1><p class="lead">Na osnovu profila biramo pozive koji ti odgovaraju. Profil vidiš samo ti.</p>';
+  if(!S.uid)h+='<p class="note section">Prijavi se da bi se profil sačuvao. <a href="#prijava">Prijava</a></p>';
+  h+='<form class="panel section" data-act="profil-form">';
+  h+='<div class="field"><label for="p-tip">Šta je tvoja organizacija?</label><select id="p-tip" name="tip"><option value="">Izaberi</option>'+TIPOVI.map(function(t){return '<option value="'+t[0]+'"'+(p.tip===t[0]?" selected":"")+'>'+esc(t[1])+'</option>';}).join("")+'</select></div>';
+  h+='<fieldset class="field"><legend>Čime se bavite?</legend><p class="hint">Izaberi sve što odgovara.</p><div class="row" style="margin-top:6px">'+TAGS.filter(function(t){return ["ustanove","firme","udruzenja"].indexOf(t[0])===-1;}).map(function(t){var on=(p.teme||[]).indexOf(t[0])!==-1;return '<button type="button" class="chip" data-act="ptema" data-v="'+t[0]+'" aria-pressed="'+on+'">'+esc(t[1])+'</button>';}).join("")+'</div></fieldset>';
+  h+='<div class="field"><label for="p-pod">Gdje djelujete?</label><select id="p-pod" name="podrucje"><option value="">Izaberi</option>'+PODRUCJA.filter(function(x){return x[0]!=="vise"&&x[0]!=="fbih";}).map(function(x){return '<option value="'+x[0]+'"'+(p.podrucje===x[0]?" selected":"")+'>'+esc(x[1])+'</option>';}).join("")+'</select></div>';
+  h+='<div class="row"><button class="btn primary" type="submit">Sačuvaj profil</button></div></form>';
+  return h;
+}
+function urediView(){
+  var e=S.edit;
+  var h='<div class="row between"><div><h1>Uredi pozive</h1><p class="lead">Dodaj nove pozive i ažuriraj postojeće. Ovo vide samo urednici.</p></div>'+(e?'':'<button class="btn primary" data-act="new">Dodaj poziv</button>')+'</div>';
+  if(e)return h+formHtml(e);
+  var list=S.pozivi.slice().sort(function(a,b){return ((a._odobren===false)?-1e6:0)+sortKey(a)-(((b._odobren===false)?-1e6:0)+sortKey(b));});
+  h+='<div class="section list">'+(list.length?list.map(function(p){return '<div class="admin-row"><div class="main"><span class="donor">'+esc(p.davalac)+'</span><div style="font-weight:700">'+esc(p.naslov)+'</div></div>'+(p._odobren===false?'<span class="pill st-ocekuje">Novo iz pratioca</span>':'')+statusPill(p.status)+'<button class="btn" data-act="edit" data-id="'+esc(p.id)+'">Uredi</button></div>';}).join(""):'<div class="empty">Nema poziva. Klikni „Dodaj poziv“.</div>')+'</div>';
+  return h;
+}
+function formHtml(e){
+  function inp(id,label,val,type,hint){return '<div class="field"><label for="f-'+id+'">'+label+'</label><input id="f-'+id+'" name="'+id+'" type="'+(type||"text")+'" value="'+esc(val||"")+'">'+(hint?'<p class="hint">'+hint+'</p>':'')+'</div>';}
+  function ta(id,label,val){return '<div class="field"><label for="f-'+id+'">'+label+'</label><textarea id="f-'+id+'" name="'+id+'">'+esc(val||"")+'</textarea></div>';}
+  var h='<form class="panel section" data-act="poziv-form">';
+  h+=inp("naslov","Naziv poziva *",e.naslov)+inp("davalac","Ko raspisuje *",e.davalac);
+  h+='<div class="two">'+inp("iznos","Iznos",e.iznos,"text","npr. do 20.000 KM")+'<div class="field"><label for="f-status">Status</label><select id="f-status" name="status">'+Object.keys(STATUS).map(function(k){return '<option value="'+k+'"'+(e.status===k?" selected":"")+'>'+STATUS[k]+'</option>';}).join("")+'</select></div></div>';
+  h+='<div class="two">'+inp("rok","Rok",e.rok,"date")+inp("rokProcjena","Procijenjeni rok",e.rokProcjena,"date","Ako tačan rok nije poznat, npr. prema prošloj godini")+'</div>';
+  h+=inp("rokNapomena","Napomena o roku",e.rokNapomena,"text","Prikazuje se kad nema datuma, npr. „Rok u smjernicama“");
+  h+='<div class="two"><div class="field"><label for="f-podrucje">Područje</label><select id="f-podrucje" name="podrucje">'+PODRUCJA.map(function(x){return '<option value="'+x[0]+'"'+(e.podrucje===x[0]?" selected":"")+'>'+esc(x[1])+'</option>';}).join("")+'</select></div>'+inp("objavljeno","Objavljeno",e.objavljeno,"text","npr. 21. 10. 2026.")+'</div>';
+  h+='<fieldset class="field"><legend>Za koga je poziv</legend><div class="row" style="margin-top:6px">'+TAGS.map(function(t){var on=(e.teme||[]).indexOf(t[0])!==-1;return '<button type="button" class="chip" data-act="etema" data-v="'+t[0]+'" aria-pressed="'+on+'">'+esc(t[1])+'</button>';}).join("")+'</div></fieldset>';
+  h+=ta("ko","Ko može aplicirati",e.ko)+ta("napomena","Napomena",e.napomena)+ta("osnova","Na čemu se zasniva procjena (za „Očekuje se“ i procijenjene rokove)",e.osnova)+inp("izvor","Link na originalni poziv",e.izvor,"url")+inp("provjereno","Datum provjere",e.provjereno,"date","Kada si zadnji put provjerio poziv u izvoru");
+  h+='<p class="err" id="form-err" role="alert"></p><div class="row"><button class="btn primary" type="submit">Sačuvaj poziv</button><button class="btn ghost" type="button" data-act="cancel">Odustani</button>'+(e.id?'<button class="btn danger" type="button" data-act="delete" style="margin-left:auto">Obriši poziv</button>':'')+'</div></form>';
+  return h;
+}
+function donatoriView(){
+  var vr=[["sve","Sve"]].concat(VRSTE);
+  var list=S.donatori.filter(function(d){return S.filterVrsta==="sve"||d.vrsta===S.filterVrsta;}).sort(function(a,b){return (a.naziv||"").localeCompare(b.naziv||"","bs");});
+  var h='<div class="row between"><div><h1>Ko raspisuje javne pozive</h1><p class="lead">Institucije, fondovi, međunarodne organizacije, ambasade, fondacije i kompanije koje u BiH dodjeljuju sredstva. Neke nemaju javne pozive nego biraju partnere, pa im se možeš obratiti direktno. U bazi: '+S.donatori.length+' davalaca.</p></div>'+(S.canEdit?'<button class="btn primary" data-act="new-don">Dodaj organizaciju</button>':'')+'</div>';
+  if(S.editDon)return h+donFormHtml(S.editDon);
+  h+='<div class="row section" style="margin-top:20px" role="group" aria-label="Vrsta organizacije">'+vr.map(function(c){return '<button class="chip" data-act="fvr" data-v="'+c[0]+'" aria-pressed="'+(S.filterVrsta===c[0])+'">'+esc(c[1])+'</button>';}).join("")+'</div>';
+  if(!list.length)return h+'<div class="section empty">Još nema organizacija u ovoj kategoriji.</div>';
+  h+='<div class="section grid3" style="margin-top:20px">'+list.map(function(d){
+    var c='';
+    var web=safeUrl(d.web), fb=safeUrl(d.facebook);
+    if(web)c+='<a href="'+esc(web)+'" target="_blank" rel="noopener noreferrer">'+esc(host(web))+'</a>';
+    if(fb)c+='<a href="'+esc(fb)+'" target="_blank" rel="noopener noreferrer">Facebook stranica</a>';
+    if(d.email)c+='<a href="mailto:'+esc(d.email)+'">'+esc(d.email)+'</a>';
+    if(d.telefon)c+='<a href="tel:'+esc(d.telefon.replace(/\s/g,""))+'">'+esc(d.telefon)+'</a>';
+    if(d.adresa)c+='<span>'+esc(d.adresa)+'</span>';
+    if(d.osobe)c+='<span>'+esc(d.osobe)+'</span>';
+    return '<article class="card" style="min-height:0"><span class="donor">'+esc(VRSTA[d.vrsta]||"")+'</span><h3>'+esc(d.naziv)+'</h3>'+(d.opis?'<p class="meta">'+esc(d.opis)+'</p>':'')+(d.kome?'<p class="meta"><strong>Kome pomažu:</strong> '+esc(d.kome)+'</p>':'')+(d.napomena?'<p class="note" style="margin:0">'+esc(d.napomena)+'</p>':'')+'<div class="contact">'+(c||'<span class="trust">Kontakt još nije provjeren.</span>')+'</div>'+(d.provjereno?'<p class="trust">Provjereno '+esc(fmtDate(d.provjereno))+'</p>':'')+(S.canEdit?'<button class="btn ghost" data-act="edit-don" data-id="'+esc(d.id)+'">Uredi</button>':'')+'</article>';
+  }).join("")+'</div>';
+  return h;
+}
+function donFormHtml(e){
+  function inp(id,label,val,type,hint){return '<div class="field"><label for="d-'+id+'">'+label+'</label><input id="d-'+id+'" name="'+id+'" type="'+(type||"text")+'" value="'+esc(val||"")+'">'+(hint?'<p class="hint">'+hint+'</p>':'')+'</div>';}
+  function ta(id,label,val){return '<div class="field"><label for="d-'+id+'">'+label+'</label><textarea id="d-'+id+'" name="'+id+'">'+esc(val||"")+'</textarea></div>';}
+  var h='<form class="panel section" data-act="don-form">'+inp("naziv","Naziv organizacije *",e.naziv);
+  h+='<div class="field"><label for="d-vrsta">Vrsta</label><select id="d-vrsta" name="vrsta">'+VRSTE.map(function(v){return '<option value="'+v[0]+'"'+(e.vrsta===v[0]?" selected":"")+'>'+esc(v[1])+'</option>';}).join("")+'</select></div>';
+  h+=ta("opis","Kako pomažu",e.opis)+inp("kome","Kome pomažu",e.kome);
+  h+='<div class="two">'+inp("web","Web stranica",e.web,"url")+inp("facebook","Facebook stranica",e.facebook,"url")+'</div>';
+  h+='<div class="two">'+inp("email","Email",e.email,"email")+inp("telefon","Telefon",e.telefon,"tel")+'</div>';
+  h+=inp("adresa","Adresa",e.adresa)+inp("osobe","Kontakt osobe",e.osobe)+ta("napomena","Napomena",e.napomena)+inp("provjereno","Datum provjere",e.provjereno,"date");
+  h+='<p class="err" id="don-err" role="alert"></p><div class="row"><button class="btn primary" type="submit">Sačuvaj organizaciju</button><button class="btn ghost" type="button" data-act="cancel-don">Odustani</button>'+(e.id?'<button class="btn danger" type="button" data-act="delete-don" style="margin-left:auto">Obriši</button>':'')+'</div></form>';
+  return h;
+}
+var PORTALI=[
+  ["Portal civilnog društva","https://civilnodrustvo.ba","Pozivi za udruženja i medije"],
+  ["Mreža za izgradnju mira – pozivi za projekte","https://www.mreza-mira.net","Dnevno objavljuje nove pozive"],
+  ["EU Resurs – javni pozivi","https://euresurs.ba/en/javni-pozivi/","Pozivi s datumom objave i rokom"],
+  ["UNDP – javni pozivi u BiH","https://procurement-notices.undp.org","Uključuje ReLOaD3 pozive općina"],
+  ["UNDP platforma za prijave","https://javnipoziv.undp.ba","Online prijave za UNDP i FMOIT pozive"],
+  ["Vlada FBiH – javni pozivi","https://fbihvlada.gov.ba/en/javni-pozivi","Pozivi za općine, sport i kulturu"],
+  ["Simpler Grants.gov","https://simpler.grants.gov","Pozivi Ambasade SAD"],
+  ["eKapija – grantovi","https://www.ekapija.com/bs/tender/grant","Plaćeni servis, korisno za provjeru"]
+];
+var OP_ST={rubrika:"Rubrika potvrđena",web:"Web potvrđen",nije:"Nije provjereno"};
+function izvoriView(){
+  var all=S.opcine, q=S.opQ.trim().toLowerCase();
+  var nR=all.filter(function(o){return o.status==="rubrika";}).length, nW=all.filter(function(o){return o.status==="web";}).length;
+  var list=all.filter(function(o){
+    if(S.opKanton&&o.kanton!==S.opKanton)return false;
+    if(S.opStatus&&o.status!==S.opStatus)return false;
+    if(q&&(o.naziv||"").toLowerCase().indexOf(q)===-1)return false;return true;
+  }).sort(function(a,b){return (a.naziv||"").localeCompare(b.naziv||"","bs");});
+  var h='<h1>Izvori koje pratimo</h1><p class="lead">Sve općine i gradovi u BiH i portali na kojima se objavljuju pozivi. Ovdje se vidi koliko je pokrivenost stvarno provjerena.</p>';
+  h+='<div class="section grid3" style="margin-top:20px">';
+  h+='<div class="card" style="min-height:0"><span class="donor">Općine i gradovi</span><p class="big" style="color:var(--ink)">'+all.length+'</p><p class="small">u bazi, od 145 u BiH</p></div>';
+  h+='<div class="card" style="min-height:0"><span class="donor">Rubrika s pozivima potvrđena</span><p class="big">'+nR+'</p><p class="small">tačan link na stranicu s javnim pozivima</p></div>';
+  h+='<div class="card" style="min-height:0"><span class="donor">Samo web potvrđen</span><p class="big" style="color:var(--warm-ink)">'+nW+'</p><p class="small">ostalo ('+(all.length-nR-nW)+') još treba provjeriti</p></div></div>';
+  h+='<div class="section"><h2>Portali</h2><div class="list" style="margin-top:12px">'+PORTALI.map(function(p){return '<div class="item"><div class="main"><h3>'+esc(p[0])+'</h3><span class="meta">'+esc(p[2])+'</span></div><a class="btn ghost" href="'+esc(p[1])+'" target="_blank" rel="noopener noreferrer">Otvori</a></div>';}).join("")+'</div></div>';
+  h+='<div class="section"><div class="row between"><h2>Općine i gradovi</h2><form class="search" role="search" data-act="search-form"><label for="opq" class="sr">Traži općinu</label><input id="opq" type="search" placeholder="Traži općinu ili grad" value="'+esc(S.opQ)+'" autocomplete="off"></form></div>';
+  h+='<div class="row" style="margin-top:14px"><label class="sr" for="opk">Kanton ili entitet</label><select id="opk" data-act="opk" style="min-height:44px;border:1px solid var(--line);border-radius:999px;padding:0 14px;background:var(--bg)"><option value="">Svi kantoni i entiteti</option>'+PODRUCJA.filter(function(x){return ["bih","fbih","vise"].indexOf(x[0])===-1;}).map(function(x){return '<option value="'+x[0]+'"'+(S.opKanton===x[0]?" selected":"")+'>'+esc(x[1])+'</option>';}).join("")+'</select>';
+  h+=[["","Svi"],["rubrika","Rubrika potvrđena"],["web","Samo web"],["nije","Nije provjereno"]].map(function(c){return '<button class="chip" data-act="opst" data-v="'+c[0]+'" aria-pressed="'+(S.opStatus===c[0])+'">'+esc(c[1])+'</button>';}).join("")+'</div>';
+  h+='<p class="trust" style="margin-top:10px">'+list.length+' prikazano</p><div class="list" style="margin-top:8px">'+list.map(function(o){
+    if(S.editOp===o.id)return '<form class="admin-row" data-act="op-form" data-id="'+esc(o.id)+'" style="flex-direction:column;align-items:stretch"><strong>'+esc(o.naziv)+'</strong><div class="two"><div class="field"><label for="ow-'+esc(o.id)+'">Web stranica</label><input id="ow-'+esc(o.id)+'" name="web" type="url" value="'+esc(o.web||"")+'"></div><div class="field"><label for="or-'+esc(o.id)+'">Link na rubriku s pozivima</label><input id="or-'+esc(o.id)+'" name="rubrika" type="url" value="'+esc(o.rubrika||"")+'"></div></div><div class="field"><label for="on-'+esc(o.id)+'">Napomena</label><input id="on-'+esc(o.id)+'" name="napomena" value="'+esc(o.napomena||"")+'"></div><div class="row"><button class="btn primary" type="submit">Sačuvaj</button><button class="btn ghost" type="button" data-act="op-cancel">Odustani</button></div></form>';
+    var web=safeUrl(o.web), rub=safeUrl(o.rubrika), g="https://www.google.com/search?q="+encodeURIComponent((o.naziv.indexOf("Grad")===0||o.naziv.indexOf("Brčko")===0?o.naziv:(o.entitet==="RS"?"Opština ":"Općina ")+o.naziv)+" javni poziv udruženja");
+    return '<div class="item"><div class="main"><span class="donor">'+esc(POD[o.kanton]||"")+'</span><h3>'+esc(o.naziv)+'</h3>'+(o.programi?'<span class="meta">'+esc(o.programi)+'</span>':'')+(o.napomena?'<p class="trust" style="margin-top:4px">'+esc(o.napomena)+'</p>':'')+'</div><div class="side"><span class="pill '+(o.status==="rubrika"?"st-otvoren":o.status==="web"?"st-ocekuje":"st-stalni")+'">'+esc(OP_ST[o.status]||"")+'</span>'+(rub?'<a class="btn primary" href="'+esc(rub)+'" target="_blank" rel="noopener noreferrer">Pozivi</a>':'')+(web?'<a class="btn ghost" href="'+esc(web)+'" target="_blank" rel="noopener noreferrer">Web</a>':'')+'<a class="btn ghost" href="'+esc(g)+'" target="_blank" rel="noopener noreferrer">Pretraži</a>'+(S.canEdit?'<button class="btn ghost" data-act="op-edit" data-id="'+esc(o.id)+'">Uredi</button>':'')+'</div></div>';
+  }).join("")+'</div></div>';
+  return h;
+}
+function cijeneView(){
+  var h='<h1>Cijene</h1><p class="lead">Kreni besplatno. Plaćeni paketi se plaćaju karticom ili po fakturi na račun, mjesečno ili godišnje.</p>';
+  h+='<div class="section grid3">';
+  h+='<div class="price"><span class="donor">Besplatno</span><p class="amt">0 KM</p><ul><li>Pregled svih javnih poziva</li><li>Pretraga i filteri</li><li>Praćenje rokova na stranici</li></ul><a class="btn ghost" href="#profil" style="margin-top:auto">Popuni profil</a></div>';
+  h+='<div class="price hl"><span class="donor">Udruženja i klubovi</span><p class="amt">15 KM <small>/ mjesečno</small></p><p class="trust">ili 150 KM godišnje (dva mjeseca gratis)</p><ul><li>Pozivi prema tvom profilu čim izađu</li><li>Podsjetnici prije roka na email i Viber</li><li>Spisak dokumentacije za svaki poziv</li><li>Neograničeno praćenje rokova</li></ul><a class="btn primary" href="#naruci" data-act="order" data-id="" data-paket="Udruženja i klubovi" style="margin-top:auto">Odaberi paket</a></div>';
+  h+='<div class="price"><span class="donor">Firme i konsultanti</span><p class="amt">39 KM <small>/ mjesečno</small></p><p class="trust">ili 390 KM godišnje</p><ul><li>Sve iz paketa za udruženja</li><li>Poticaji za privredu i obrte</li><li>Do 10 profila klijenata</li><li>AI nacrt prijave</li></ul><a class="btn" href="#naruci" data-act="order" data-id="" data-paket="Firme i konsultanti" style="margin-top:auto">Odaberi paket</a></div>';
+  h+='</div>';
+  h+='<div class="section service"><div><h2 style="font-size:28px">Mi pišemo projekat umjesto vas</h2><p style="margin-top:10px">Vi pripremite dokumentaciju organizacije, a mi napišemo cijelu prijavu: projektnu ideju, opis aktivnosti, budžet i obrasce davaoca. Prije predaje sve pregledate i potpišete.</p><p class="amt" style="font-size:34px;font-weight:800;color:var(--feature-num);margin:14px 0 0">od 150 KM</p><p style="margin:0">po prijavi, zavisno od veličine poziva. Konačna cijena se dogovara prije početka rada.</p><a class="btn primary" href="#naruci" data-act="order" data-id="" style="margin-top:18px">Pošalji upit</a></div>';
+  h+='<div><p style="font-weight:700;color:var(--feature-ink);margin:0 0 8px">Šta obično pripremate vi</p><ul style="margin:0;padding-left:18px;line-height:1.8">'+DOKUMENTI.map(function(d){return '<li>'+esc(d)+'</li>';}).join("")+'</ul><p style="margin:12px 0 0;font-size:14px">Tačan spisak zavisi od poziva. Nakon upita šaljemo listu za vaš konkretan poziv.</p></div></div>';
+  h+='<p class="trust section">Pisanje prijave ne garantuje dobijanje sredstava; odluku donosi davalac. Ako donator ne dozvoljava plaćanje izrade prijave iz budžeta projekta, usluga se plaća iz vlastitih sredstava.</p>';
+  return h;
+}
+function naruciView(){
+  var p=S.pozivi.filter(function(x){return x.id===S.orderFor;})[0];
+  var h='<h1>Pošalji upit</h1><p class="lead">Javit ćemo ti se u roku od jednog radnog dana s ponudom i spiskom dokumentacije.</p>';
+  if(!S.uid)return h+'<p class="note section">Za slanje upita se prijavi. <a href="#prijava">Prijava</a></p>';
+  h+='<form class="panel section" data-act="order-form">';
+  h+='<div class="field"><label for="o-sta">Šta te zanima</label><select id="o-sta" name="sta"><option value="pisanje"'+(S.orderPaket?"":" selected")+'>Pisanje prijave na poziv</option><option value="Udruženja i klubovi"'+(S.orderPaket==="Udruženja i klubovi"?" selected":"")+'>Paket za udruženja i klubove</option><option value="Firme i konsultanti"'+(S.orderPaket==="Firme i konsultanti"?" selected":"")+'>Paket za firme i konsultante</option></select></div>';
+  h+='<div class="field"><label for="o-poziv">Poziv</label><select id="o-poziv" name="poziv"><option value="">Još nisam izabrao poziv</option>'+S.pozivi.filter(function(x){return x.status!=="zatvoren";}).map(function(x){return '<option value="'+esc(x.id)+'"'+(p&&p.id===x.id?" selected":"")+'>'+esc(x.naslov)+' ('+esc(x.davalac)+')</option>';}).join("")+'</select></div>';
+  h+='<div class="two"><div class="field"><label for="o-org">Naziv organizacije *</label><input id="o-org" name="organizacija" required></div><div class="field"><label for="o-osoba">Kontakt osoba *</label><input id="o-osoba" name="osoba" required></div></div>';
+  h+='<div class="two"><div class="field"><label for="o-email">Email *</label><input id="o-email" name="email" type="email" required></div><div class="field"><label for="o-tel">Telefon ili Viber</label><input id="o-tel" name="telefon" type="tel"></div></div>';
+  h+='<div class="field"><label for="o-opis">Ukratko o projektu ili pitanju</label><textarea id="o-opis" name="opis" placeholder="Šta želite uraditi, za koga i koliko otprilike treba sredstava"></textarea></div>';
+  h+='<fieldset class="field"><legend>Šta već imate spremno</legend><div class="checks" style="margin-top:6px">'+DOKUMENTI.map(function(d,i){return '<label><input type="checkbox" name="dok" value="'+esc(d)+'"> '+esc(d)+'</label>';}).join("")+'</div></fieldset>';
+  h+='<p class="err" id="order-err" role="alert"></p><div class="row"><button class="btn primary" type="submit">Pošalji upit</button><a class="btn ghost" href="#cijene">Nazad na cijene</a></div></form>';
+  var moji=[];S.mojiUpiti.forEach(function(z){moji.push(z);});
+  if(moji.length){h+='<div class="section"><h2>Tvoji upiti</h2><div class="list" style="margin-top:12px">'+moji.slice().reverse().map(function(z){return '<div class="item"><div class="main"><span class="donor">'+esc(fmtTs(z.kreirano))+'</span><h3>'+esc(z.sta==="pisanje"?"Pisanje prijave":"Paket: "+z.sta)+'</h3><span class="meta">'+esc(z.pozivNaslov||"Bez izabranog poziva")+'</span></div><span class="pill '+(z.status==="zavrseno"?"st-otvoren":z.status==="u-radu"?"st-ocekuje":"st-stalni")+'">'+esc(UPIT_ST[z.status]||z.status)+'</span></div>';}).join("")+'</div></div>';}
+  return h;
+}
+var UPIT_ST={novo:"Primljeno","u-radu":"U obradi",zavrseno:"Završeno"};
+function fmtTs(s){var d=new Date(s);if(isNaN(d))return "";return d.getDate()+". "+(d.getMonth()+1)+". "+d.getFullYear()+".";}
+function zahtjeviView(){
+  var rows=[];S.sviUpiti.forEach(function(u){(u.zahtjevi||[]).forEach(function(z,i){rows.push({u:u.id,i:i,z:z});});});
+  rows.sort(function(a,b){return String(b.z.kreirano).localeCompare(String(a.z.kreirano));});
+  var h='<h1>Zahtjevi</h1><p class="lead">Upiti za pisanje prijava i pakete. Vidiš ih samo ti.</p>';
+  if(!rows.length)return h+'<div class="section empty">Još nema upita.</div>';
+  return h+'<div class="section list">'+rows.map(function(r){var z=r.z;return '<div class="item" style="align-items:flex-start"><div class="main"><span class="donor">'+esc(fmtTs(z.kreirano))+'</span><h3>'+esc(z.organizacija)+' · '+esc(z.sta==="pisanje"?"Pisanje prijave":"Paket: "+z.sta)+'</h3><p class="meta" style="margin:4px 0">'+esc(z.osoba)+', <a href="mailto:'+esc(z.email)+'">'+esc(z.email)+'</a>'+(z.telefon?', '+esc(z.telefon):'')+'</p><p class="meta" style="margin:4px 0">'+esc(z.pozivNaslov||"Bez izabranog poziva")+'</p>'+(z.opis?'<p class="note" style="margin:6px 0">'+esc(z.opis)+'</p>':'')+((z.dokumenti||[]).length?'<p class="trust">Imaju: '+esc(z.dokumenti.join(", "))+'</p>':'')+'</div><div class="side"><label class="sr" for="st-'+r.u+'-'+r.i+'">Status</label><select id="st-'+r.u+'-'+r.i+'" data-act="upit-status" data-u="'+esc(r.u)+'" data-i="'+r.i+'" style="min-height:44px;border:1px solid var(--line);border-radius:12px;padding:0 10px;background:var(--bg)">'+Object.keys(UPIT_ST).map(function(k){return '<option value="'+k+'"'+(z.status===k?" selected":"")+'>'+UPIT_ST[k]+'</option>';}).join("")+'</select></div></div>';}).join("")+'</div>';
+}
+function renderDrawer(){
+  var root=document.getElementById("drawer-root");
+  if(!S.open){root.innerHTML="";return;}
+  var p=S.pozivi.filter(function(x){return x.id===S.open;})[0];
+  if(!p){S.open=null;root.innerHTML="";return;}
+  var r=rokInfo(p), on=tracked(p.id), url=safeUrl(p.izvor);
+  var h='<div class="drawer-back" data-act="close-back"><div class="drawer" role="dialog" aria-modal="true" aria-labelledby="dr-title">';
+  h+='<div class="row between"><span class="donor">'+esc(p.davalac)+'</span><button class="btn ghost" data-act="close" aria-label="Zatvori">Zatvori</button></div>';
+  h+='<h2 id="dr-title" style="font-size:26px;line-height:1.2">'+esc(p.naslov)+'</h2>';
+  h+='<div class="feature-box">'+(r.has&&!r.past?'<p class="big">'+esc(r.label)+'</p><p class="small">'+esc(r.sub)+'</p>':'<p class="big" style="font-size:26px">'+esc(r.label)+'</p>'+(r.sub?'<p class="small">'+esc(r.sub)+'</p>':''))+'<div class="row" style="margin-top:14px">'+statusPill(p.status)+'</div></div>';
+  h+='<button class="btn '+(on?"primary":"dark")+'" data-act="track" data-id="'+esc(p.id)+'" aria-pressed="'+on+'">'+(on?"Pratiš ovaj rok":"Prati rok")+'</button>';
+  h+='<dl class="facts"><div><dt>Iznos</dt><dd>'+esc(p.iznos||"Nije navedeno")+'</dd></div><div><dt>Područje</dt><dd>'+esc(POD[p.podrucje]||"")+'</dd></div>';
+  if(p.objavljeno)h+='<div><dt>Objavljeno</dt><dd>'+esc(p.objavljeno)+'</dd></div>';
+  if((p.teme||[]).length)h+='<div><dt>Za koga</dt><dd>'+esc(p.teme.map(function(t){return TAG[t]||t;}).join(", "))+'</dd></div>';
+  if(p.ko)h+='<div class="wide"><dt>Ko može aplicirati</dt><dd>'+esc(p.ko)+'</dd></div>';
+  if(p.napomena)h+='<div class="wide"><dt>Napomena</dt><dd style="font-weight:500">'+esc(p.napomena)+'</dd></div>';
+  if(p.osnova)h+='<div class="wide"><dt>Na čemu se zasniva procjena</dt><dd style="font-weight:500">'+esc(p.osnova)+'</dd></div>';
+  h+='</dl>';
+  if(p.provjereno)h+='<p class="trust">Podaci provjereni '+esc(fmtDate(p.provjereno))+' u originalnom izvoru ili medijskoj objavi.</p>';
+  if(p.status!=="zatvoren")h+='<a class="btn dark" href="#naruci" data-act="order" data-id="'+esc(p.id)+'">Naruči pisanje prijave</a>';
+  if(url)h+='<a class="btn primary" href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">Originalni poziv ('+esc(host(url))+')</a>';
+  if(S.canEdit)h+='<button class="btn ghost" data-act="edit-from" data-id="'+esc(p.id)+'">Uredi ovaj poziv</button>';
+  h+='</div></div>';
+  root.innerHTML=h;
+  var c=root.querySelector('[data-act="close"]');if(c&&!root.contains(document.activeElement))c.focus();
+}
+
+/* ---------- events ---------- */
+document.addEventListener("click",function(ev){
+  var el=ev.target.closest("[data-act]");if(!el)return;
+  var a=el.getAttribute("data-act"), id=el.getAttribute("data-id"), v=el.getAttribute("data-v");
+  if(a==="close-back"&&ev.target!==el)return;
+  if(a==="open"){S.open=id;S.lastFocus=el;renderDrawer();}
+  else if(a==="close"||a==="close-back"){S.open=null;renderDrawer();if(S.lastFocus&&document.contains(S.lastFocus))S.lastFocus.focus();}
+  else if(a==="track"){var pr=Object.assign({},S.profil.pracenje||{});if(pr[id])delete pr[id];else pr[id]=true;S.profil.pracenje=pr;renderTabs();renderDrawer();if(view()==="rokovi")render();saveProfil();toast(pr[id]?"Pratiš ovaj rok":"Više ne pratiš ovaj rok");}
+  else if(a==="ftag"){S.filterTag=v;render();}
+  else if(a==="fst"){S.filterStatus=v;render();}
+  else if(a==="ptema"){var t=(S.profil.teme||[]).slice(),i=t.indexOf(v);if(i===-1)t.push(v);else t.splice(i,1);S.profil.teme=t;el.setAttribute("aria-pressed",String(i===-1));}
+  else if(a==="etema"&&S.edit){var e=(S.edit.teme||[]).slice(),j=e.indexOf(v);if(j===-1)e.push(v);else e.splice(j,1);S.edit.teme=e;el.setAttribute("aria-pressed",String(j===-1));}
+  else if(a==="new"){S.edit={status:"otvoren",podrucje:"bih",teme:[]};render();}
+  else if(a==="edit"||a==="edit-from"){var p=S.pozivi.filter(function(x){return x.id===id;})[0];if(p){S.edit=JSON.parse(JSON.stringify(p));S.open=null;if(view()!=="uredi")location.hash="#uredi";else render();}}
+  else if(a==="cancel"){S.edit=null;render();}
+  else if(a==="order"){S.orderFor=id||"";S.orderPaket=el.getAttribute("data-paket")||"";S.open=null;renderDrawer();if(view()==="naruci")render();}
+  else if(a==="fvr"){S.filterVrsta=v;render();}
+  else if(a==="opst"){S.opStatus=v;render();}
+  else if(a==="odjava"){S.sb.auth.signOut().then(function(){location.hash="#za-tebe";location.reload();});}
+  else if(a==="op-edit"){S.editOp=id;render();}
+  else if(a==="op-cancel"){S.editOp=null;render();}
+  else if(a==="new-don"){S.editDon={vrsta:"humanitarna"};render();}
+  else if(a==="edit-don"){var d=S.donatori.filter(function(x){return x.id===id;})[0];if(d){S.editDon=JSON.parse(JSON.stringify(d));render();window.scrollTo(0,0);}}
+  else if(a==="cancel-don"){S.editDon=null;render();}
+  else if(a==="delete-don"&&S.editDon&&S.editDon.id){if(!confirm("Obrisati ovu organizaciju?"))return;var ddid=S.editDon.id;queue(function(){return S.db.collection("donatori").doc(ddid).delete();}).then(function(){toast("Organizacija obrisana");});S.editDon=null;render();}
+  else if(a==="delete"&&S.edit&&S.edit.id){if(!confirm("Obrisati ovaj poziv iz baze?"))return;var did=S.edit.id;queue(function(){return S.db.collection("pozivi").doc(did).delete();}).then(function(){toast("Poziv obrisan");});S.edit=null;render();}
+});
+document.addEventListener("keydown",function(ev){if(ev.key==="Escape"&&S.open){S.open=null;renderDrawer();if(S.lastFocus&&document.contains(S.lastFocus))S.lastFocus.focus();}});
+document.addEventListener("change",function(ev){
+  var el=ev.target;if(el&&el.id==="opk"){S.opKanton=el.value;render();return;}
+  if(!el||el.getAttribute("data-act")!=="upit-status")return;
+  var uid=el.getAttribute("data-u"), i=+el.getAttribute("data-i"), doc=S.sviUpiti.filter(function(u){return u.id===uid;})[0];
+  if(!doc)return;var arr=JSON.parse(JSON.stringify(doc.zahtjevi||[]));if(!arr[i])return;arr[i].status=el.value;
+  queue(function(){return S.db.collection("upiti").doc(uid).update({zahtjevi:arr});}).then(function(){toast("Status promijenjen");});
+});
+document.addEventListener("input",function(ev){if(ev.target&&ev.target.id==="q"){S.q=ev.target.value;S.focusQ=true;render();}if(ev.target&&ev.target.id==="opq"){S.opQ=ev.target.value;S.focusOp=true;render();}});
+document.addEventListener("submit",function(ev){
+  var f=ev.target, a=f.getAttribute("data-act");ev.preventDefault();
+  if(a==="search-form")return;
+  if(a==="profil-form"){S.profil.tip=f.tip.value;S.profil.podrucje=f.podrucje.value;var pr=saveProfil();toast("Profil sačuvan");if(pr)pr.then(function(){});location.hash="#za-tebe";}
+  if(a==="login-form"){
+    var le=document.getElementById("login-err"), em2=f.email.value.trim();
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em2)){le.textContent="Upiši ispravan email.";return;}
+    var lb=f.querySelector('button[type="submit"]');lb.disabled=true;
+    S.sb.auth.signInWithOtp({email:em2,options:{emailRedirectTo:location.origin+location.pathname}}).then(function(r){
+      lb.disabled=false;
+      if(r.error){le.textContent="Slanje nije uspjelo: "+r.error.message;return;}
+      le.textContent="";toast("Provjeri email i klikni na link za prijavu.");
+    });
+    return;
+  }
+  if(a==="op-form"){
+    var oid=f.getAttribute("data-id"), ow=(f.web.value||"").trim(), orb=(f.rubrika.value||"").trim();
+    if((ow&&!safeUrl(ow))||(orb&&!safeUrl(orb))){toast("Link nije ispravan.");return;}
+    var ob={web:ow?safeUrl(ow):"",rubrika:orb?safeUrl(orb):"",napomena:(f.napomena.value||"").trim(),status:orb?"rubrika":(ow?"web":"nije"),provjereno:new Date().toISOString().slice(0,10)};
+    queue(function(){return S.db.collection("opcine").doc(oid).update(ob);}).then(function(){toast("Općina ažurirana");});
+    S.editOp=null;render();return;
+  }
+  if(a==="don-form"&&S.editDon){
+    var dn=S.editDon, fields=["naziv","vrsta","opis","kome","web","facebook","email","telefon","adresa","osobe","napomena","provjereno"];
+    fields.forEach(function(k){dn[k]=(f[k].value||"").trim();});
+    var de=document.getElementById("don-err");
+    if(!dn.naziv){de.textContent="Upiši naziv organizacije.";return;}
+    if(dn.web&&!safeUrl(dn.web)){de.textContent="Web adresa nije ispravna.";return;}
+    if(dn.facebook&&!safeUrl(dn.facebook)){de.textContent="Facebook link nije ispravan.";return;}
+    var dbody={};fields.forEach(function(k){dbody[k]=dn[k]||"";});dbody.web=dn.web?safeUrl(dn.web):"";dbody.facebook=dn.facebook?safeUrl(dn.facebook):"";
+    var dref=dn.id?S.db.collection("donatori").doc(dn.id):S.db.collection("donatori").doc();
+    queue(function(){return dref.set(dbody);}).then(function(){toast("Organizacija sačuvana");});
+    S.editDon=null;render();return;
+  }
+  if(a==="order-form"){
+    var oe=document.getElementById("order-err");
+    var org=f.organizacija.value.trim(), os=f.osoba.value.trim(), em=f.email.value.trim();
+    if(!org||!os||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){oe.textContent="Upiši naziv organizacije, kontakt osobu i ispravan email.";return;}
+    if(!S.db||!S.uid){oe.textContent="Upit se ne može poslati jer nisi prijavljen.";return;}
+    var pz=S.pozivi.filter(function(x){return x.id===f.poziv.value;})[0];
+    var dok=[].slice.call(f.querySelectorAll('input[name="dok"]:checked')).map(function(x){return x.value;});
+    var z={id:String(Date.now()),kreirano:new Date().toISOString(),sta:f.sta.value,pozivId:pz?pz.id:"",pozivNaslov:pz?pz.naslov:"",organizacija:org,osoba:os,email:em,telefon:f.telefon.value.trim(),opis:f.opis.value.trim().slice(0,2000),dokumenti:dok,status:"novo"};
+    var arr=S.mojiUpiti.slice(-49).concat([z]);
+    var btn=f.querySelector('button[type="submit"]');btn.disabled=true;
+    queue(function(){return S.db.collection("upiti").doc(S.uid).set({zahtjevi:arr});}).then(function(){toast("Upit poslan. Javit ćemo ti se uskoro.");S.orderFor="";S.orderPaket="";});
+    return;
+  }
+  if(a==="poziv-form"&&S.edit){
+    var e=S.edit;["naslov","davalac","iznos","status","rok","rokProcjena","rokNapomena","podrucje","objavljeno","ko","napomena","osnova","izvor","provjereno"].forEach(function(k){e[k]=(f[k].value||"").trim();});
+    var errEl=document.getElementById("form-err");
+    if(!e.naslov||!e.davalac){errEl.textContent="Upiši naziv poziva i ko ga raspisuje.";return;}
+    if(e.izvor&&!safeUrl(e.izvor)){errEl.textContent="Link na poziv nije ispravan.";return;}
+    e.izvor=e.izvor?safeUrl(e.izvor):"";
+    var body={};["naslov","davalac","iznos","status","rok","rokProcjena","rokNapomena","podrucje","objavljeno","ko","napomena","osnova","izvor","provjereno"].forEach(function(k){body[k]=e[k]||"";});body.teme=(e.teme||[]).slice();body.azurirano=new Date().toISOString();
+    var col=S.db.collection("pozivi"), ref=e.id?col.doc(e.id):col.doc();
+    queue(function(){return ref.set(body);}).then(function(){toast("Poziv sačuvan");});
+    S.edit=null;render();
+  }
+});
+
+/* ---------- data: Supabase adapter ---------- */
+function chk(r){if(r&&r.error)throw r.error;return r;}
+function SupaDB(sb){
+  var KEY={upiti:"user_id",profili:"user_id"};
+  function k(name){return KEY[name]||"id";}
+  var n=0;
+  function docRef(name,id){
+    var key=k(name);
+    function row(data){var r={data:data,azurirano:new Date().toISOString()};r[key]=id;if(name==="pozivi")r.odobren=true;return r;}
+    return {
+      id:id,
+      set:function(body){return sb.from(name).upsert(row(body)).then(chk);},
+      update:function(part){return sb.from(name).select("data").eq(key,id).maybeSingle().then(function(r){chk(r);return sb.from(name).upsert(row(Object.assign({},r.data&&r.data.data,part))).then(chk);});},
+      delete:function(){return sb.from(name).delete().eq(key,id).then(chk);},
+      onSnapshot:function(cb,err){
+        function load(){sb.from(name).select("data").eq(key,id).maybeSingle().then(function(r){if(r.error){if(err)err(r.error);return;}cb({exists:!!r.data,data:function(){return r.data?r.data.data:undefined;}});});}
+        load();
+        if(name!=="profili")sb.channel("d"+(n++)+"-"+name).on("postgres_changes",{event:"*",schema:"public",table:name,filter:key+"=eq."+id},load).subscribe();
+      }
+    };
+  }
+  function collection(name){
+    var key=k(name);
+    return {
+      doc:function(id){return docRef(name,id||(window.crypto&&crypto.randomUUID?crypto.randomUUID():String(Date.now())+Math.random().toString(36).slice(2)));},
+      onSnapshot:function(cb,err){
+        function load(){sb.from(name).select("*").limit(5000).then(function(r){
+          if(r.error){if(err)err(r.error);return;}
+          cb({metadata:{fromCache:false},docs:r.data.map(function(x){return {id:x[key],data:function(){var d=Object.assign({},x.data);if(name==="pozivi")d._odobren=x.odobren;return d;}};})});
+        });}
+        load();
+        sb.channel("c"+(n++)+"-"+name).on("postgres_changes",{event:"*",schema:"public",table:name},load).subscribe();
+      }
+    };
+  }
+  function doc(path){var p=path.split("/");return p[0]==="data"?docRef("profili",p[2]):docRef(p[0],p[1]);}
+  return {collection:collection,doc:doc};
+}
+function start(){
+  render();
+  var C=window.POZIVNIK_CONFIG||{};
+  if(!window.supabase||!C.supabaseUrl||C.supabaseUrl.indexOf("TVOJ-")!==-1){S.offline=true;render();return;}
+  var sb=window.supabase.createClient(C.supabaseUrl,C.supabaseAnonKey);
+  S.sb=sb;S.db=SupaDB(sb);
+  sb.auth.onAuthStateChange(function(ev,session){
+    var nu=session&&session.user?session.user.id:null;
+    if(ev==="SIGNED_IN"&&nu&&nu!==S.uid&&S.started){location.reload();}
+  });
+  sb.auth.getSession().then(function(res){
+    var u=res.data&&res.data.session?res.data.session.user:null;
+    S.started=true;S.uid=u?u.id:null;S.email=u?u.email:"";
+    if(location.hash.indexOf("access_token")!==-1)history.replaceState(null,"",location.pathname+"#za-tebe");
+    var timer=setTimeout(function(){if(!S.ready){S.loadErr="Baza se još ne javlja. Provjeri vezu.";render();}},10000);
+    S.db.collection("pozivi").onSnapshot(function(snap){
+      S.pozivi=snap.docs.map(function(d){var x=Object.assign({},d.data());x.id=d.id;if(!Array.isArray(x.teme))x.teme=[];return x;});
+      clearTimeout(timer);S.loadErr="";S.ready=true;
+      if(S.edit&&S.edit.id&&!S.pozivi.some(function(p){return p.id===S.edit.id;}))S.edit=null;
+      if(!S.edit)render();else renderTabs();
+    },function(){clearTimeout(timer);S.ready=true;S.pozivi=[];render();toast("Pozivi se ne mogu učitati.");});
+    S.db.collection("opcine").onSnapshot(function(snap){
+      S.opcine=snap.docs.map(function(d){var x=Object.assign({},d.data());x.id=d.id;return x;});
+      if(S.ready&&view()==="izvori"&&!S.editOp)render();
+    },function(){});
+    S.db.collection("donatori").onSnapshot(function(snap){
+      S.donatori=snap.docs.map(function(d){var x=Object.assign({},d.data());x.id=d.id;return x;});
+      if(S.ready&&view()==="donatori"&&!S.editDon)render();
+    },function(){});
+    if(!S.uid){render();return;}
+    sb.from("admini").select("user_id").eq("user_id",S.uid).maybeSingle().then(function(r){
+      S.canEdit=!!(r&&r.data);render();
+      if(S.canEdit)S.db.collection("upiti").onSnapshot(function(snap){S.sviUpiti=snap.docs.map(function(d){var x=Object.assign({},d.data());x.id=d.id;return x;});if(view()==="zahtjevi")render();else renderTabs();},function(){});
+    });
+    S.db.doc("upiti/"+S.uid).onSnapshot(function(snap){S.mojiUpiti=snap.exists&&Array.isArray((snap.data()||{}).zahtjevi)?snap.data().zahtjevi.slice():[];if(view()==="naruci")render();},function(){});
+    S.db.doc("data/users/"+S.uid+"/profil").onSnapshot(function(snap){
+      if(snap.exists){var d=snap.data()||{};S.profil={tip:d.tip||"",teme:Array.isArray(d.teme)?d.teme.slice():[],podrucje:d.podrucje||"",pracenje:Object.assign({},d.pracenje||{})};}
+      S.profilLoaded=true;
+      if(view()!=="profil")render();else renderTabs();
+    },function(){});
+  });
+}
+start();
+})();
+</script>
+</body>
+</html>
