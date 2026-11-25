@@ -1,0 +1,5096 @@
+[
+ {
+  "tip": "davalac",
+  "id": "ambasada-japana",
+  "naziv": "Ambasada Japana u BiH, grassroots projekti (GGP)",
+  "web_staro": "https://www.bosnia.emb-japan.go.jp",
+  "web": "",
+  "rubrike": [],
+  "napomena": "web ne radi ili blokira"
+ },
+ {
+  "tip": "davalac",
+  "id": "ambasada-holandije",
+  "naziv": "Ambasada Kraljevine Holandije – MATRA",
+  "web_staro": "https://www.netherlandsandyou.nl/documents/d/bosnia-and-herzegovina/call-for-proposals-matra-2026",
+  "web": "",
+  "rubrike": [],
+  "napomena": "web ne radi ili blokira"
+ },
+ {
+  "tip": "davalac",
+  "id": "ambasada-ceske",
+  "naziv": "Ambasada Republike Češke u BiH, razvojna saradnja",
+  "web_staro": "https://mzv.gov.cz/sarajevo/bs/",
+  "web": "https://mzv.gov.cz/sarajevo/bs/",
+  "rubrike": [
+   [
+    6,
+    "Javni poziv za podnošenje prijedloga malih lokalnih projekata za 2027. godinu",
+    "https://mzv.gov.cz/sarajevo/bs/Razvojna_saradnja/mali_lokalni_projekti/X2026_10_09_javni_poziv_za_podnosenje_prijedloga.html"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "ambasada-sad",
+  "naziv": "Ambasada SAD, grantovi",
+  "web_staro": "https://ba.usembassy.gov/education/grant-opportunities/",
+  "web": "",
+  "rubrike": [],
+  "napomena": "web ne radi ili blokira"
+ },
+ {
+  "tip": "davalac",
+  "id": "svicarska",
+  "naziv": "Ambasada Švicarske u BiH – mali grantovi",
+  "web_staro": "https://www.eda.admin.ch/countries/bosnia-and-herzegovina/bs/home.html",
+  "web": "",
+  "rubrike": [],
+  "napomena": "web ne radi ili blokira"
+ },
+ {
+  "tip": "davalac",
+  "id": "bh-telecom",
+  "naziv": "BH Telecom",
+  "web_staro": "https://www.bhtelecom.ba",
+  "web": "https://www.bhtelecom.ba/",
+  "rubrike": [
+   [
+    2,
+    "Nabavke i pozivi",
+    "https://bhtelecom.ba/nabavke-i-pozivi/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "balkancsd",
+  "naziv": "Balkan Civil Society Development Network (portal)",
+  "web_staro": "https://balkancsd.net",
+  "web": "https://balkancsd.net/",
+  "rubrike": [
+   [
+    6,
+    "BCSDN News 22 Oct 2026 BCSDN Calls for the Protection of Civic Space amid Protests in Albania and Democratic Accountabil",
+    "https://balkancsd.net/bcsdn-calls-for-the-protection-of-civic-space-amid-protests-in-albania-and-democratic-accountability-in-the-eu-accession-process/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "barakah-charity",
+  "naziv": "Barakah Charity BiH",
+  "web_staro": "https://barakah.ch/en/",
+  "web": "https://barakah.ch/en/",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "british-council",
+  "naziv": "British Council BiH – Culture Connects",
+  "web_staro": "https://www.britishcouncil.ba/en/programmes/arts/culture-connects-grants-202526",
+  "web": "",
+  "rubrike": [],
+  "napomena": "web ne radi ili blokira"
+ },
+ {
+  "tip": "davalac",
+  "id": "cin",
+  "naziv": "Centar za istraživačko novinarstvo (CIN)",
+  "web_staro": "https://cin.ba",
+  "web": "https://cin.ba/",
+  "rubrike": [
+   [
+    10,
+    "Javni poziv za evaluatore projekta",
+    "https://cin.ba/javni-poziv-za-evaluatore-projekta/"
+   ],
+   [
+    10,
+    "Javni poziv za evaluatore projekta",
+    "https://cin.ba/javni-poziv-za-evaluatore-projekta-2/"
+   ],
+   [
+    8,
+    "Javni poziv za dodjelu malih grantova civilnim organizacijama",
+    "https://cin.ba/javni-poziv-za-dodjelu-malih-grantova-civilnim-organizacijama/"
+   ],
+   [
+    4,
+    "Poticaji",
+    "https://cin.ba/kategorija/istrazivacke-price/poticaji/"
+   ],
+   [
+    2,
+    "",
+    "https://cin.ba/poticaji/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "eu-delegacija",
+  "naziv": "Delegacija Evropske unije u BiH",
+  "web_staro": "https://www.eeas.europa.eu/delegations/bosnia-and-herzegovina_bs",
+  "web": "https://www.eeas.europa.eu/delegations/bosnia-and-herzegovina_bs",
+  "rubrike": [
+   [
+    10,
+    "Grantovi",
+    "https://www.eeas.europa.eu/eeas/grants_bs?s=219&f%5B0%5D=grant_site%3ABosnia%20and%20Herzegovina"
+   ],
+   [
+    5,
+    "EU Chiefs of Defence call for faster delivery on European defence readiness",
+    "https://www.eeas.europa.eu/node/469810_bs?s=219"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "euresurs",
+  "naziv": "EU Resurs (portal javnih poziva)",
+  "web_staro": "https://euresurs.ba/en/javni-pozivi/",
+  "web": "https://euresurs.ba/en/javni-pozivi/",
+  "rubrike": [
+   [
+    7,
+    "Archive of public calls",
+    "https://euresurs.ba/en/javni-pozivi-arhiva/"
+   ],
+   [
+    5,
+    "Skip to content",
+    "https://euresurs.ba/en/javni-pozivi/#content"
+   ],
+   [
+    5,
+    "Page 9",
+    "https://euresurs.ba/en/javni-pozivi/9/"
+   ],
+   [
+    5,
+    "Page 8",
+    "https://euresurs.ba/en/javni-pozivi/8/"
+   ],
+   [
+    5,
+    "Page 7",
+    "https://euresurs.ba/en/javni-pozivi/7/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "fzz-fbih",
+  "naziv": "Federalni zavod za zapošljavanje",
+  "web_staro": "",
+  "web": "",
+  "rubrike": [],
+  "napomena": "nema weba u bazi"
+ },
+ {
+  "tip": "davalac",
+  "id": "fmks-fbih",
+  "naziv": "Federalno ministarstvo kulture i sporta",
+  "web_staro": "https://fmks.gov.ba",
+  "web": "https://fmks.gov.ba/",
+  "rubrike": [
+   [
+    10,
+    "Javni pozivi",
+    "https://fmks.gov.ba/bs/javni-pozivi/"
+   ],
+   [
+    6,
+    "Svečanost dodjele nagrada i diploma nagrađenim učesnicima konkursa “Mladi i naslijeđe 2026.” – u ponedjeljak, 23. 11. 20",
+    "https://fmks.gov.ba/bs/svecanost-dodjele-nagrada-i-diploma-nagradjenim-sudionicima-natjecaja-mladi-i-naslijedje-2026-u-ponedjeljak-23-11-2026-godine/"
+   ],
+   [
+    3,
+    "Poziv za učešće na Međunarodnom takmičenju mladih dirigenata u Japanu",
+    "https://fmks.gov.ba/bs/javni-pozivi/poziv-za-ucesce-na-medjunarodnom-takmicenju-mladih-dirigenata-u-japanu/"
+   ],
+   [
+    3,
+    "Odluka o izboru korisnika sredstava “Kapitalni transferi drugim nivoima vlasti i fondovima – Izgradnja, adaptacija i rek",
+    "https://fmks.gov.ba/bs/javni-pozivi/odluka-o-izboru-korisnika-sredstava-kapitalni-transferi-drugim-nivoima-vlasti-i-fondovima-izgradnja-adaptacija-i-rekonstrukcija-institucija-kulture-utvrdjenih-budzetom-fbih-za-2026-godinu-fede/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "fmon",
+  "naziv": "Federalno ministarstvo obrazovanja i nauke",
+  "web_staro": "",
+  "web": "",
+  "rubrike": [],
+  "napomena": "nema weba u bazi"
+ },
+ {
+  "tip": "davalac",
+  "id": "fmoit",
+  "naziv": "Federalno ministarstvo okoliša i turizma",
+  "web_staro": "https://www.fmoit.gov.ba",
+  "web": "https://fmoit.gov.ba/",
+  "rubrike": [
+   [
+    8,
+    "JAVNI POZIV za prikupljanje i odabir projekata za raspodjelu sredstava „Kapitalni transferi drugim nivoima vlasti i fond",
+    "https://fmoit.gov.ba/javni-poziv-za-prikupljanje-i-odabir-projekata-za-raspodjelu-sredstava-kapitalni-transferi-drugim-nivoima-vlasti-i-fondovima-transfer-za-razvoj-turizma-u-federaciji-bih-2/"
+   ],
+   [
+    6,
+    "Preliminarne liste sredstava po Javnom pozivu Kapitalni transfer za okoliš 2026 – Program 3",
+    "https://fmoit.gov.ba/preliminarne-liste-sredstava-po-javnom-pozivu-kapitalni-transfer-za-okolis-2026-program-3/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "fmrsp",
+  "naziv": "Federalno ministarstvo rada i socijalne politike",
+  "web_staro": "https://fmrsp.gov.ba",
+  "web": "https://fmrsp.gov.ba/",
+  "rubrike": [
+   [
+    10,
+    "Javni pozivi/transfer",
+    "https://fmrsp.gov.ba/javni-pozivi--transferi"
+   ],
+   [
+    10,
+    "Javni konkursi",
+    "https://fmrsp.gov.ba/javni-konkursi"
+   ],
+   [
+    6,
+    "Novosti JAVNI POZIV - Program sufinanciranja zapošljavanja bivših radnika Nove željezare Zenica 23.11.2026.",
+    "https://fmrsp.gov.ba/javni-poziv--program-sufinanciranja-zaposljavanja-bivsih-radnika-nove-zeljezare-zenica"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "fmroi",
+  "naziv": "Federalno ministarstvo raseljenih osoba i izbjeglica",
+  "web_staro": "https://fmroi.gov.ba",
+  "web": "https://fmroi.gov.ba/",
+  "rubrike": [
+   [
+    12,
+    "Javni pozivi",
+    "https://fmroi.gov.ba/category/odrzivi-povratak/projekti-zaposljavanja-povratnika/javni-pozivi-projekti-zaposljavanja-povratnika/"
+   ],
+   [
+    12,
+    "Javni pozivi",
+    "https://fmroi.gov.ba/category/odrzivi-povratak/projekti-u-poljoprivredi/javni-pozivi-projekti-u-poljoprivredi/"
+   ],
+   [
+    12,
+    "Javni pozivi",
+    "https://fmroi.gov.ba/category/odrzivi-povratak/infrastrukturni-projekti/javni-pozivi-infrastrukturni-projekti/"
+   ],
+   [
+    12,
+    "Javni pozivi",
+    "https://fmroi.gov.ba/category/izgradnja-i-rekonstrukcija-stambenih-objekata/sdf/javni-pozivi-sdf/"
+   ],
+   [
+    12,
+    "Javni pozivi",
+    "https://fmroi.gov.ba/category/izgradnja-i-rekonstrukcija-stambenih-objekata/rsp/javni-pozivi-rsp/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "fmrpo",
+  "naziv": "Federalno ministarstvo razvoja, poduzetništva i obrta",
+  "web_staro": "https://fmrpo.gov.ba",
+  "web": "https://fmrpo.gov.ba/",
+  "rubrike": [
+   [
+    12,
+    "Konkursi",
+    "https://fmrpo.gov.ba/category/javni-natjecajikonkursi/"
+   ],
+   [
+    12,
+    "Javni natječaji",
+    "https://fmrpo.gov.ba/docs-category/javni-natjecaji/"
+   ],
+   [
+    8,
+    "JAVNI KONKURS ZA ODABIR KORISNIKA KREDITNIH SREDSTAVA PO PROGRAMU “KREDITNI POTICAJ RAZVOJA, PODUZETNIŠTVA I OBRTA” ZA 2",
+    "https://fmrpo.gov.ba/javni-konkurs-za-odabir-korisnika-kreditnih-sredstava-po-programu-kreditni-poticaj-razvoja-poduzetnistva-i-obrta-za-2026-godinu/"
+   ],
+   [
+    4,
+    "Poticaji",
+    "https://fmrpo.gov.ba/category/poticaji-2/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "fmbi",
+  "naziv": "Federalno ministarstvo za pitanja boraca i invalida",
+  "web_staro": "https://fmbi.gov.ba",
+  "web": "https://fmbi.gov.ba/",
+  "rubrike": [
+   [
+    10,
+    "Javni pozivi",
+    "https://fmbi.gov.ba/javni-pozivi/"
+   ],
+   [
+    8,
+    "JAVNI POZIV- za prijem lica na stručno osposobljavanje bez zasnivanja radnog…",
+    "https://fmbi.gov.ba/javni-poziv-za-prijem-lica-na-strucno-osposobljavanje-bez-zasnivanja-radnog-odnosa-3/"
+   ],
+   [
+    7,
+    "Javni pozivi",
+    "https://fmbi.gov.ba/"
+   ],
+   [
+    2,
+    "",
+    "https://fmbi.gov.ba/ponistenje-javnog-oglasa-3/"
+   ],
+   [
+    2,
+    "",
+    "https://fmbi.gov.ba/javni-oglas-9/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "fmoh",
+  "naziv": "Federalno ministarstvo zdravstva",
+  "web_staro": "https://fmoh.gov.ba",
+  "web": "https://fmoh.gov.ba/",
+  "rubrike": [
+   [
+    5,
+    "Pročitaj više",
+    "https://fmoh.gov.ba/post/569/javni-poziv-za-raspodjelu-dijela-sredstava-tekuci-transfer-drugim-nivoima-vlasti-i-fondovima-transfer-za-sanaciju-zdravstvenih-ustanova-u-federaciji-bih"
+   ],
+   [
+    2,
+    "Oglasi",
+    "https://fmoh.gov.ba/stranica/10/oglasi"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "fond-osi-fbih",
+  "naziv": "Fond za profesionalnu rehabilitaciju i zapošljavanje osoba s invaliditetom FBiH",
+  "web_staro": "",
+  "web": "",
+  "rubrike": [],
+  "napomena": "nema weba u bazi"
+ },
+ {
+  "tip": "davalac",
+  "id": "fzo-fbih",
+  "naziv": "Fond za zaštitu okoliša FBiH",
+  "web_staro": "",
+  "web": "",
+  "rubrike": [],
+  "napomena": "nema weba u bazi"
+ },
+ {
+  "tip": "davalac",
+  "id": "ekofond-rs",
+  "naziv": "Fond za zaštitu životne sredine i energetsku efikasnost RS",
+  "web_staro": "https://www.ekofondrs.org",
+  "web": "https://www.ekofondrs.org/",
+  "rubrike": [
+   [
+    5,
+    "Конкурси",
+    "https://www.ekofondrs.org/ofondu/konkursi.html"
+   ],
+   [
+    5,
+    "Јавни конкурс - ЗАШТИТА ЖИВОТНЕ СРЕДИНЕ",
+    "https://www.ekofondrs.org/dodjelafinansijskihsredstava/javnikonkurs-zzs.html"
+   ],
+   [
+    5,
+    "",
+    "https://www.ekofondrs.org/konkurs/2026_index.html"
+   ],
+   [
+    1,
+    "Јавни конкурс - ЕНЕРГЕТСКА ЕФИКАСНОСТ - мала микро и средња предузећа 2025.",
+    "https://www.ekofondrs.org/konkurs/2025_index.html"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "fondacija-787",
+  "naziv": "Fondacija 787 – Impakt fond",
+  "web_staro": "",
+  "web": "",
+  "rubrike": [],
+  "napomena": "nema weba u bazi"
+ },
+ {
+  "tip": "davalac",
+  "id": "fondacija-cure",
+  "naziv": "Fondacija CURE",
+  "web_staro": "https://fondacijacure.org",
+  "web": "https://fondacijacure.org/",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "fondacija-mozaik",
+  "naziv": "Fondacija Mozaik, Omladinske banke",
+  "web_staro": "",
+  "web": "",
+  "rubrike": [],
+  "napomena": "nema weba u bazi"
+ },
+ {
+  "tip": "davalac",
+  "id": "fondacija-biblioteke",
+  "naziv": "Fondacija za bibliotečku djelatnost (FBiH)",
+  "web_staro": "",
+  "web": "",
+  "rubrike": [],
+  "napomena": "nema weba u bazi"
+ },
+ {
+  "tip": "davalac",
+  "id": "fondacija-kinematografija",
+  "naziv": "Fondacija za kinematografiju",
+  "web_staro": "https://fondacijakinematografija.ba",
+  "web": "https://fondacijakinematografija.ba/",
+  "rubrike": [
+   [
+    10,
+    "Konkursi i javni pozivi",
+    "https://fondacijakinematografija.ba/konkursi-i-javni-pozivi/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "fondacija-sport",
+  "naziv": "Fondacija za sport (FBiH)",
+  "web_staro": "",
+  "web": "",
+  "rubrike": [],
+  "napomena": "nema weba u bazi"
+ },
+ {
+  "tip": "davalac",
+  "id": "goethe",
+  "naziv": "Goethe-Institut BiH",
+  "web_staro": "https://www.goethe.de/ins/ba/de/kul/aus/ocz.html",
+  "web": "",
+  "rubrike": [],
+  "napomena": "web ne radi ili blokira"
+ },
+ {
+  "tip": "davalac",
+  "id": "icmp",
+  "naziv": "ICMP – Međunarodna komisija za nestale osobe",
+  "web_staro": "https://icmp.int",
+  "web": "",
+  "rubrike": [],
+  "napomena": "web ne radi ili blokira"
+ },
+ {
+  "tip": "davalac",
+  "id": "impakt",
+  "naziv": "Investicijska fondacija Impakt",
+  "web_staro": "",
+  "web": "",
+  "rubrike": [],
+  "napomena": "nema weba u bazi"
+ },
+ {
+  "tip": "davalac",
+  "id": "mcp-bih",
+  "naziv": "Ministarstvo civilnih poslova BiH",
+  "web_staro": "https://mcp.gov.ba/hr/portal?categorySlug=konkurs",
+  "web": "https://mcp.gov.ba/hr/portal?categorySlug=konkurs",
+  "rubrike": [
+   [
+    10,
+    "Grantovi i natječaji",
+    "https://mcp.gov.ba/hr/portal/natjecaj"
+   ],
+   [
+    8,
+    "Javni poziv za dodjelu sredstava iz tekućeg granta „Grant za financiranje Koordinacijskog deska Bosne i Hercegovine za p",
+    "https://mcp.gov.ba/hr/portal/objava/javni-poziv-za-dodjelu-sredstava-iz-tekuceg-granta-grant-za-financiranje-koordinacijskog-deska-bosne-i-hercegovine-za-program-eu-horizon-europe-za-2026-godinu-1795520468438"
+   ],
+   [
+    8,
+    "Javni natječaj za raspored sredstava iz tekućeg granta „Programi za pripremu projekata i potencijalnih kandidata za sred",
+    "https://mcp.gov.ba/hr/portal/objava/javni-natjecaj-za-raspored-sredstava-iz-tekuceg-granta-programi-za-pripremu-projekata-i-potencijalnih-kandidata-za-sredstva-iz-fonda-horizon-europa-i-potpora-inovatorstvu-za-2026-godinu-1793865112788"
+   ],
+   [
+    8,
+    "Javni natječaj za raspored sredstava iz tekućeg granta za realiziranje projekata bilateralne suradnje u području znanost",
+    "https://mcp.gov.ba/hr/portal/objava/javni-natjecaj-za-raspored-sredstava-iz-tekuceg-granta-za-realiziranje-projekata-bilateralne-suradnje-u-podrucju-znanosti-na-temelju-meunarodnih-sporazuma-za-2026-godinu-izmeu-bosne-i-hercegovine-i-republike-austrije--1790749366548"
+   ],
+   [
+    8,
+    "Javni natječaj za raspodjelu sredstava iz tekućeg granta „Sufinanciranje projekata nevladinih organizacija u području pr",
+    "https://mcp.gov.ba/hr/portal/objava/javni-natjecaj-za-raspodjelu-sredstava-iz-tekuceg-granta-sufinanciranje-projekata-nevladinih-organizacija-u-podrucju-prevencije-hiv-a-tuberkuloze-ovisnosti-i-podizanje-svijesti-o-donorstvu-u-bosni-i-hercegovini-za-2026-godinu-1786093006241"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "ks-mks",
+  "naziv": "Ministarstvo kulture i sporta Kantona Sarajevo",
+  "web_staro": "https://mks.ks.gov.ba",
+  "web": "https://mks.ks.gov.ba/",
+  "rubrike": [
+   [
+    10,
+    "Konkursi",
+    "https://mks.ks.gov.ba/aktuelno/konkursi"
+   ],
+   [
+    7,
+    "Javni poziv za FILMSKU PRODUKCIJU",
+    "https://mks.ks.gov.ba/obrasci/kultura/filmskaprodukcija"
+   ],
+   [
+    7,
+    "Javni poziv iz oblasti KULTURE",
+    "https://mks.ks.gov.ba/obrasci/kultura/oblastkultura"
+   ],
+   [
+    5,
+    "Javni poziv za iskazivanje interesa udruženja za partnersko učešće u realizaciji projekta „Sarajevo Link: Gdje se putevi",
+    "https://mks.ks.gov.ba/node/5634"
+   ],
+   [
+    5,
+    "Javni poziv POTICAJI - filmska produkcija",
+    "https://mks.ks.gov.ba/obrasci/kultura/poticajiprodukcija"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "mpos-rs",
+  "naziv": "Ministarstvo porodice, omladine i sporta RS",
+  "web_staro": "https://vladars.rs/sr-SP-Cyrl/Vlada/Ministarstva/mpos",
+  "web": "https://vladars.rs/sr-SP-Cyrl/Vlada/Ministarstva/mpos/Pages/default.aspx",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "ks-mp",
+  "naziv": "Ministarstvo privrede KS",
+  "web_staro": "https://mp.ks.gov.ba",
+  "web": "https://mp.ks.gov.ba/",
+  "rubrike": [
+   [
+    10,
+    "Konkursi / Javni pozivi",
+    "https://mp.ks.gov.ba/aktuelo/konkursi"
+   ],
+   [
+    8,
+    "Javni konkurs/poziv za dodjelu sportsko-privrednog lovišta na području Kantona Sarajevo u zakup na period od 10 lovnih g",
+    "https://mp.ks.gov.ba/aktuelno/konkursi-i-javni-pozivi/javni-konkurspoziv-za-dodjelu-sportsko-privrednog-lovista-na"
+   ],
+   [
+    7,
+    "Kalendar javnih poziva i poticaja",
+    "https://mp.ks.gov.ba/calendar-field_jp_datum_objave"
+   ],
+   [
+    6,
+    "Objavljen javni poziv za nastavak inkubacije poslovnih subjekata u 2026. godini",
+    "https://mp.ks.gov.ba/aktuelno/aktivnosti/objavljen-javni-poziv-za-nastavak-inkubacije-poslovnih-subjekata-u-2026-godini"
+   ],
+   [
+    5,
+    "Javni oglas za prijem namještenika",
+    "https://mp.ks.gov.ba/aktuelno/konkursi-i-javni-pozivi/javni-oglas-za-prijem-namjestenika"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "mpk-rs",
+  "naziv": "Ministarstvo prosvjete i kulture RS",
+  "web_staro": "https://vladars.rs",
+  "web": "https://vladars.rs/sr-sp-cyrl/Pages/default.aspx",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "tk-mtts",
+  "naziv": "Ministarstvo trgovine, turizma i saobraćaja TK",
+  "web_staro": "https://mttstk.gov.ba",
+  "web": "https://mttstk.gov.ba/",
+  "rubrike": [
+   [
+    10,
+    "PRELIMINARNA LISTA PO JAVNOM POZIVU za podnošenje prijava za sufinansiranje razvoja i unapređenje javne turističke infra",
+    "https://mttstk.gov.ba/view-more/preliminarna-lista-po-javnom-pozivu-za-podnosenje-prijava-za-sufinansiranje-razvoja-i-unapredenje-javne-turisticke-infrastrukture-na-podrucju-tuzlanskog-kantona-u-2026-godini/756"
+   ],
+   [
+    10,
+    "Konkursi i javni pozivi",
+    "https://mttstk.gov.ba/konkursi-i-javni-pozivi"
+   ],
+   [
+    10,
+    "Javni pozivi - Arhiva",
+    "https://mttstk.gov.ba/javni-pozivi"
+   ],
+   [
+    8,
+    "PRELIMINARNA LISTA PROJEKATA PO JAVNOM POZIVU IZ OBLASTI SAOBRAĆAJA I SAOBRAĆAJNE KULTURE 13.07.2026 15:28",
+    "https://mttstk.gov.ba/view-more/preliminarna-lista-projekata-po-javnom-pozivu-iz-oblasti-saobracaja-i-saobracajne-kulture/741"
+   ],
+   [
+    8,
+    "Odluka o poništenju Javnog poziva za dostavljanje ponuda za zakup skladišnog prostora za potrebe smještaja roba Kantonal",
+    "https://mttstk.gov.ba/view-more/odluka-o-ponistenju-javnog-poziva-za-dostavljanje-ponuda-za-zakup-skladisnog-prostora-za-potrebe-smjestaja-roba-kantonalne-direkcije-robnih-rezervi/755"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "mulsu-rs",
+  "naziv": "Ministarstvo uprave i lokalne samouprave RS",
+  "web_staro": "https://vladars.rs",
+  "web": "https://vladars.rs/sr-sp-cyrl/Pages/default.aspx",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "bpk-mb",
+  "naziv": "Ministarstvo za boračka pitanja BPK Goražde",
+  "web_staro": "https://mb.bpkg.gov.ba",
+  "web": "https://mb.bpkg.gov.ba/",
+  "rubrike": [
+   [
+    12,
+    "Konkursi i oglasi",
+    "https://mb.bpkg.gov.ba/kategorija/konkursi"
+   ],
+   [
+    12,
+    "Konkursi i oglasi",
+    "https://mb.bpkg.gov.ba//kategorija/konkursi"
+   ],
+   [
+    8,
+    "Javni poziv za odobravanje novčane pomoći na ime nabavke udžbenika učenicima srednjih škola čiji roditelji imaju status ",
+    "https://mb.bpkg.gov.ba/konkursi/158576/javni-poziv-za-odobravanje-novcane-pomoci-na-ime-nabavke-udzbenika-ucenicima-srednjih-skola-ciji-roditelji-imaju-status-pripadnika-boracke-populacije-na-prostoru-bpk-gorazde-za-budzetsku-2026-godinu"
+   ],
+   [
+    8,
+    "Javni poziv za finansiranje/sufinansiranje projekata i aktivnosti udruženja boračkih populacija i fondacija koje doprino",
+    "https://mb.bpkg.gov.ba/konkursi/6817/javni-poziv-za-finansiranje-sufinansiranje-projekata-i-aktivnosti-udruzenja-borackih-populacija-i-fondacija-koje-doprinose-poboljsanju-statusa-borackih-populacija-sa-prostora-bosansko"
+   ],
+   [
+    8,
+    "Javni poziv za dodjelu sredstava za osiguranje neometanog rada udruženja boračkih populacija sa prostora Bosansko-podrin",
+    "https://mb.bpkg.gov.ba/konkursi/6690/javni-poziv-za-dodjelu-sredstava-za-osiguranje-neometanog-rada-udruzenja-borackih-populacija-sa-prostora-bosansko-podrinjskog-kantona-gorazde-2"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "ks-mbp",
+  "naziv": "Ministarstvo za boračka pitanja KS",
+  "web_staro": "https://mbp.ks.gov.ba",
+  "web": "https://mbp.ks.gov.ba/",
+  "rubrike": [
+   [
+    10,
+    "Rezultati konkursa",
+    "https://mbp.ks.gov.ba/aktuelno/rezultati-konkursa"
+   ],
+   [
+    10,
+    "Konkursi",
+    "https://mbp.ks.gov.ba/aktuelno/konkursi"
+   ],
+   [
+    5,
+    "Javni poziv za prikupljanje ponuda za kupovinu stanova koje Ministarstvo za boračka pitanja KS dodjeljuje u vlasništvo p",
+    "https://mbp.ks.gov.ba/node/12586"
+   ],
+   [
+    3,
+    "KONKURS ZA DODJELU STIPENDIJA DJECI BORACA - BRANITELJA BiH SA PODRUČJA KANTONA SARAJEVO U ŠKOLSKOJ 2026/ 2027 GODINI",
+    "https://mbp.ks.gov.ba/node/13202"
+   ],
+   [
+    2,
+    "PONIŠTAVANJE OGLASA",
+    "https://mbp.ks.gov.ba/node/12886"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "tk-mksm",
+  "naziv": "Ministarstvo za kulturu, sport i mlade Tuzlanskog kantona",
+  "web_staro": "https://mksmtk.gov.ba",
+  "web": "https://mksmtk.gov.ba/",
+  "rubrike": [
+   [
+    10,
+    "Konkursi i javni pozivi",
+    "https://mksmtk.gov.ba/konkursi-i-javni-pozivi"
+   ],
+   [
+    8,
+    "Konačna rang lista korisnika sredstava za dodjelu sredstava po Javnom pozivu za sport 28.10.2026 15:25",
+    "https://mksmtk.gov.ba/view-more/konacna-rang-lista-korisnika-sredstava-za-dodjelu-sredstava-po-javnom-pozivu-za-sport/943"
+   ],
+   [
+    6,
+    "Rezultati Javnog poziva za odabir korisnika sredstava sa potrošačke jedinice 32010004-Podrška mladima u 2026. godini za ",
+    "https://mksmtk.gov.ba/view-more/rezultati-javnog-poziva-za-odabir-korisnika-sredstava-sa-potrosacke-jedinice-32010004-podrska-mladima-u-2026-godini-za-subvencioniranje-troskova-neformalnog-obrazovanja-mladih-u-svrhu-usavrsavanja-d/949"
+   ],
+   [
+    6,
+    "Rezultati Javnog poziva za odabir korisnika sredstava sa potrošačke jedinice 32010004-Podrška mladima u 2026. godini za ",
+    "https://mksmtk.gov.ba/view-more/rezultati-javnog-poziva-za-odabir-korisnika-sredstava-sa-potrosacke-jedinice-32010004-podrska-mladima-u-2026-godini-za-projekte-omladinskih-udruzenja-i-projekte-udruzenja-i-fondacija/948"
+   ],
+   [
+    6,
+    "PONIŠTENJE Javnog poziva za sufinansiranje projekata rekonstrukcije i opremanja sportskih objekata za 2026. godinu 21.10",
+    "https://mksmtk.gov.ba/view-more/ponistenje-javnog-poziva-za-sufinansiranje-projekata-rekonstrukcije-i-opremanja-sportskih-objekata-za-2026-godinu/941"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "mhrr-bih",
+  "naziv": "Ministarstvo za ljudska prava i izbjeglice BiH",
+  "web_staro": "https://www.mhrr.gov.ba",
+  "web": "https://www.mhrr.gov.ba/bs",
+  "rubrike": [
+   [
+    10,
+    "Javni pozivi",
+    "https://mhrr.gov.ba/bs/javni-pozivi"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "ks-mon",
+  "naziv": "Ministarstvo za nauku, visoko obrazovanje i mlade KS",
+  "web_staro": "https://mon.ks.gov.ba",
+  "web": "https://mon.ks.gov.ba/",
+  "rubrike": [
+   [
+    10,
+    "PRELIMINARNA LISTA DOBITNIKA SREDSTVA PO JAVNOM POZIVU ZA SUFINANSIRANJE NAUČNOISTRAŽIVAČKIH/UMJETNIČKOISTRAŽIVAČKIH I I",
+    "https://mon.ks.gov.ba/aktuelno/novosti/preliminarna-lista-dobitnika-sredstva-po-javnom-pozivu-za-sufinansiranje"
+   ],
+   [
+    10,
+    "Konkursi",
+    "https://mon.ks.gov.ba/aktuelno/konkursi"
+   ],
+   [
+    10,
+    "Konačna lista dobitnika sredstava po Javnom pozivu za sufinansiranje naučnoistraživačkih/umjetničkoistraživačkih i istra",
+    "https://mon.ks.gov.ba/aktuelno/novosti/konacna-lista-dobitnika-sredstava-po-javnom-pozivu-za-sufinansiranje-0"
+   ],
+   [
+    8,
+    "POZIV ZA POTPISIVANJE UGOVORA SA DOBITNICIMA SREDSTAVA PO JAVNOM POZIVU ZA SUFINANSIRANJE TROŠKOVA III CIKLUSA STUDIJA N",
+    "https://mon.ks.gov.ba/aktuelno/konkursi/poziv-za-potpisivanje-ugovora-sa-dobitnicima-sredstava-po-javnom-pozivu-za-0"
+   ],
+   [
+    8,
+    "OBAVJEŠTENJE O POTPISIVANJU UGOVORA ZA DOBITNIKE SREDSTAVA PO JAVNOM POZIVU ZA SUFINANSIRANJE NAUČNOISTRAŽIVAČKIH/UMJETN",
+    "https://mon.ks.gov.ba/aktuelno/novosti/obavjestenje-o-potpisivanju-ugovora-za-dobitnike-sredstava-po-javnom-pozivu-za"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "bpk-mu",
+  "naziv": "Ministarstvo za urbanizam, prostorno uređenje i zaštitu okoline BPK",
+  "web_staro": "https://mu.bpkg.gov.ba",
+  "web": "https://mu.bpkg.gov.ba/",
+  "rubrike": [
+   [
+    12,
+    "Konkursi i oglasi",
+    "https://mu.bpkg.gov.ba/kategorija/konkursi"
+   ],
+   [
+    12,
+    "Konkursi i oglasi",
+    "https://mu.bpkg.gov.ba//kategorija/konkursi"
+   ],
+   [
+    8,
+    "Javni poziv za dostavljanje prijedloga projekata udruženja koji će se finansirati/sufinansirati iz Budžeta Ministarstva ",
+    "https://mu.bpkg.gov.ba/konkursi/2540/javni-poziv-za-dostavljanje-prijedloga-projekata-udruzenja-koji-ce-se-finansirati-sufinansirati-iz-budzeta-ministarstva-za-urbanizam-prostorno-uredjenje-i-zastitu-okoline-bosansko-podrinjskog-kantona"
+   ],
+   [
+    8,
+    "Javni poziv za dostavljanje prijedloga projekata nižih nivoa vlasti koji će se finansirati/sufinansirati iz Budžeta Mini",
+    "https://mu.bpkg.gov.ba/obavjestenja/2713/javni-poziv-za-dostavljanje-prijedloga-projekata-nizih-nivoa-vlasti-koji-ce-se-finansirati-sufinansirati-iz-budzeta-ministarstva-za-urbanizam-prostorno-uredjenje-i-zastitu-okoline-bosansko-podrinjsk-2"
+   ],
+   [
+    8,
+    "Javni poziv za dostavljanje prijedloga projekata nižih nivoa vlasti Bosansko-podrinjskog kantona Goražde koji će se fina",
+    "https://mu.bpkg.gov.ba/konkursi/2553/j-a-v-n-i-p-o-z-i-v-za-dostavljanje-prijedloga-projekata-nizih-nivoa-vlasti-bosansko-podrinjskog-kantona-gorazde-koji-ce-se-finansirati-sufinansirati-iz-budzeta-ministarstva-za-urbanizam-prostorno"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "mreza-mira",
+  "naziv": "Mreža za izgradnju mira",
+  "web_staro": "https://www.mreza-mira.net",
+  "web": "https://www.mreza-mira.net/",
+  "rubrike": [
+   [
+    8,
+    "ReLOaD3: Javni poziv organizacijama civilnog društva za finansiranje projekata u općini Ilijaš",
+    "https://www.mreza-mira.net/vijesti/pozivi-za-projekte/reload3-javni-poziv-organizacijama-civilnog-drustva-za-finansiranje-projekata-u-opcini-ilijas/"
+   ],
+   [
+    8,
+    "Otvoren je javni poziv za organizacije civilnog društva u BiH za predaju prijedloga projekata na području općine Ilijaš.",
+    "https://www.mreza-mira.net/vijesti/pozivi-za-projekte/otvoren-je-javni-poziv-za-organizacije-civilnog-drustva-u-bih-za-predaju-prijedloga-projekata-na-podrucju-opcine-ilijas/"
+   ],
+   [
+    8,
+    "Mtel nagrađuje najbolje studente: Otvoren konkurs za stipendije od 300 do 400 KM mjesečno",
+    "https://www.mreza-mira.net/vijesti/stipendije/mtel-nagradjuje-najbolje-studente-otvoren-konkurs-za-stipendije-od-300-do-400-km-mjesecno/"
+   ],
+   [
+    8,
+    "Konkurs za Regionalnu novinarsku nagradu “Srđan Aleksić”",
+    "https://www.mreza-mira.net/izdvojenozaslajder/konkurs-za-regionalnu-novinarsku-nagradu-srdjan-aleksic/"
+   ],
+   [
+    8,
+    "Fond “Gazi Husrev-beg” raspisao konkurs za stipendije učenicima i studentima u BiH i Sandžaku",
+    "https://www.mreza-mira.net/vijesti/stipendije/fond-gazi-husrev-beg-raspisao-konkurs-za-stipendije-ucenicima-i-studentima-u-bih-i-sandzaku/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "muslim-aid",
+  "naziv": "Muslim Aid Association",
+  "web_staro": "",
+  "web": "",
+  "rubrike": [],
+  "napomena": "nema weba u bazi"
+ },
+ {
+  "tip": "davalac",
+  "id": "on-the-move",
+  "naziv": "On the Move – mobilnost u kulturi (portal)",
+  "web_staro": "https://on-the-move.org/regions/bosnia-and-herzegovina",
+  "web": "https://on-the-move.org/regions/bosnia-and-herzegovina",
+  "rubrike": [
+   [
+    5,
+    "",
+    "https://on-the-move.org/news/british-council-connections-through-culture-grants-2026"
+   ],
+   [
+    5,
+    "",
+    "https://on-the-move.org/news/balkan-transitional-justice-programme-grants-journalists-artists-historians-and-activists"
+   ],
+   [
+    2,
+    "Funding guides",
+    "https://on-the-move.org/resources/funding"
+   ],
+   [
+    2,
+    "Funding Guides (1)",
+    "https://on-the-move.org/regions/bosnia-and-herzegovina?f%5B0%5D=type%3Afunding_guide"
+   ],
+   [
+    2,
+    "",
+    "https://on-the-move.org/resources/funding/mobility-funding-guide-bosnia-and-herzegovina"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "paragraf",
+  "naziv": "Paragraf – dnevne vijesti (rezervni signal)",
+  "web_staro": "https://www.paragraf.ba",
+  "web": "https://www.paragraf.ba/",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "kfbih",
+  "naziv": "Privredna komora FBiH",
+  "web_staro": "https://www.kfbih.com",
+  "web": "https://www.kfbih.com/",
+  "rubrike": [
+   [
+    5,
+    "PRIJAVI SE",
+    "https://www.kfbih.com/edukacije-seminari-certificiranje/javni-poziv-za-dostavljanje-prijava-za-usavrsavanje-clanova-nadzornih-odbora-i-uprava-privrednih-drustava-sa-ucescem-drzavnog-kapitala-6/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "pkrs",
+  "naziv": "Privredna komora Republike Srpske",
+  "web_staro": "https://bl.komorars.ba",
+  "web": "https://bl.komorars.ba/",
+  "rubrike": [
+   [
+    4,
+    "Najave i pozivi",
+    "https://bl.komorars.ba/category/najave/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "qatar-charity",
+  "naziv": "Qatar Charity – ured u BiH",
+  "web_staro": "https://www.qcharity.org/en/qa/qatar-charity-offices/Bosnia and Herzegovina/59",
+  "web": "https://www.qcharity.org/en/global/q",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "ryco",
+  "naziv": "RYCO – Regionalni ured za saradnju mladih",
+  "web_staro": "https://www.rycowb.org",
+  "web": "https://www.rycowb.org/",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "raiffeisen",
+  "naziv": "Raiffeisen Bank BiH",
+  "web_staro": "https://www.raiffeisenbank.ba",
+  "web": "https://www.raiffeisenbank.ba/bs/stanovnistvo.html",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "hr-mdu",
+  "naziv": "Republika Hrvatska – Ministarstvo demografije i useljeništva",
+  "web_staro": "https://mdu.gov.hr/javni-pozivi/5923",
+  "web": "https://mdu.gov.hr/javni-pozivi/5923",
+  "rubrike": [
+   [
+    10,
+    "Javni pozivi",
+    "https://mdu.gov.hr/javni-pozivi/5923"
+   ],
+   [
+    8,
+    "Pilot projekt javnog poziva jedinicama lokalne samouprave za sufinanciranje provedbe edukativnih, kulturnih i sportskih ",
+    "https://mdu.gov.hr/pilot-projekt-javnog-poziva-jedinicama-lokalne-samouprave-za-sufinanciranje-provedbe-edukativnih-kulturnih-i-sportskih-aktivnosti-djece-predskolske-dobi-i-djece-od-i-do-iv-razreda-osnovne-skole/6994"
+   ],
+   [
+    8,
+    "Javni pozivi iz područja predškolskog odgoja i obrazovanja",
+    "https://mdu.gov.hr/javni-pozivi/javni-pozivi-iz-podrucja-predskolskog-odgoja-i-obrazovanja/5924"
+   ],
+   [
+    8,
+    "Javni pozivi iz područja podrške roditeljstvu",
+    "https://mdu.gov.hr/javni-pozivi/javni-pozivi-iz-podrucja-podrske-roditeljstvu/5927"
+   ],
+   [
+    8,
+    "Javni poziv za prijavu posebnih potreba i projekata od interesa za hrvatsko useljeništvo u svrhu ostvarenja financijske ",
+    "https://mdu.gov.hr/vijesti-4693/javni-poziv-za-prijavu-posebnih-potreba-i-projekata-od-interesa-za-hrvatsko-useljenistvo-u-svrhu-ostvarenja-financijske-potpore-za-2025-godinu/7200"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "hr-mingo",
+  "naziv": "Republika Hrvatska – Ministarstvo gospodarstva",
+  "web_staro": "",
+  "web": "",
+  "rubrike": [],
+  "napomena": "nema weba u bazi"
+ },
+ {
+  "tip": "davalac",
+  "id": "resursni-centar-ocd",
+  "naziv": "Resursni centar za OCD u BiH",
+  "web_staro": "",
+  "web": "",
+  "rubrike": [],
+  "napomena": "nema weba u bazi"
+ },
+ {
+  "tip": "davalac",
+  "id": "sigrid-rausing",
+  "naziv": "Sigrid Rausing Trust",
+  "web_staro": "https://www.sigrid-rausing-trust.org",
+  "web": "https://www.sigrid-rausing-trust.org/",
+  "rubrike": [
+   [
+    10,
+    "See more grantee stories",
+    "https://www.sigrid-rausing-trust.org/grantee-stories/"
+   ],
+   [
+    10,
+    "Grantee code of conduct",
+    "https://www.sigrid-rausing-trust.org/how-we-work/grantee-code-of-conduct/"
+   ],
+   [
+    5,
+    "Trustees' Gifts",
+    "https://www.sigrid-rausing-trust.org/programme/trustees-small-grants/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "zdk-skupstina",
+  "naziv": "Skupština Zeničko-dobojskog kantona",
+  "web_staro": "https://kanton.zdk.ba/ostalo-iz-skupstine",
+  "web": "https://kanton.zdk.ba/ostalo-iz-skupstine",
+  "rubrike": [
+   [
+    10,
+    "Javni Pozivi/Konkursi",
+    "https://kanton.zdk.ba/javni-pozivi-oglasi-konkursi"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "slglasnik-rs",
+  "naziv": "Službeni glasnik RS – oglasni dio",
+  "web_staro": "https://online.slglasnik.org",
+  "web": "https://online.slglasnik.org/sr/pregled",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "tz-tuzla",
+  "naziv": "Turistička zajednica Grada Tuzle",
+  "web_staro": "https://tztz.ba",
+  "web": "https://tztz.ba/ba/",
+  "rubrike": [
+   [
+    10,
+    "Javni pozivi",
+    "https://tztz.ba/ba/javni-pozivi/"
+   ],
+   [
+    10,
+    "Javni konkursi",
+    "https://tztz.ba/ba/javni-konkursi/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "tika",
+  "naziv": "TİKA, Turska agencija za saradnju i koordinaciju (ured Sarajevo)",
+  "web_staro": "https://tika.gov.tr",
+  "web": "https://tika.gov.tr/",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "un-women",
+  "naziv": "UN Women BiH",
+  "web_staro": "https://eca.unwomen.org",
+  "web": "",
+  "rubrike": [],
+  "napomena": "web ne radi ili blokira"
+ },
+ {
+  "tip": "davalac",
+  "id": "undp-gea",
+  "naziv": "UNDP / UN – Gender Equality Accelerator (GEA)",
+  "web_staro": "https://www.undp.org/bosnia-herzegovina",
+  "web": "",
+  "rubrike": [],
+  "napomena": "web ne radi ili blokira"
+ },
+ {
+  "tip": "davalac",
+  "id": "undp-bih",
+  "naziv": "UNDP BiH",
+  "web_staro": "https://www.undp.org/bosnia-herzegovina",
+  "web": "",
+  "rubrike": [],
+  "napomena": "web ne radi ili blokira"
+ },
+ {
+  "tip": "davalac",
+  "id": "undp-programi",
+  "naziv": "UNDP BiH – SCORE, DFF3, ReLOaD3",
+  "web_staro": "https://procurement-notices.undp.org",
+  "web": "https://procurement-notices.undp.org/",
+  "rubrike": [
+   [
+    5,
+    "Title JAVNI POZIV ZA ORGANIZACIJE CIVILNOG DRUŠTVA U BOSNI I HERCEGOVINI ZA PREDAJU PRIJEDLOGA PROJEKATA U SKLOPU REGION",
+    "https://procurement-notices.undp.org/view_notice.cfm?notice_id=98970"
+   ],
+   [
+    5,
+    "Title JAVNI POZIV ZA ORGANIZACIJE CIVILNOG DRUŠTVA U BOSNI I HERCEGOVINI ZA PREDAJU PRIJEDLOGA PROJEKATA U SKLOPU REGION",
+    "https://procurement-notices.undp.org/view_notice.cfm?notice_id=98969"
+   ],
+   [
+    5,
+    "Title JAVNI POZIV ZA ORGANIZACIJE CIVILNOG DRUŠTVA U BOSNI I HERCEGOVINI ZA PREDAJU PRIJEDLOGA PROJEKATA U SKLOPU REGION",
+    "https://procurement-notices.undp.org/view_notice.cfm?notice_id=98968"
+   ],
+   [
+    5,
+    "Title JAVNI POZIV ZA ORGANIZACIJE CIVILNOG DRUŠTVA U BOSNI I HERCEGOVINI ZA PREDAJU PRIJEDLOGA PROJEKATA U SKLOPU REGION",
+    "https://procurement-notices.undp.org/view_notice.cfm?notice_id=98966"
+   ],
+   [
+    3,
+    "Title Call for Project Proposals for the Selection of an NGO Ref No UNDP-BWA-00318 UNDP Office/Country UNDP-BWA/BOTSWANA",
+    "https://procurement-notices.undp.org/view_negotiation.cfm?nego_id=52097"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "pomozi-ba",
+  "naziv": "Udruženje Pomozi.ba",
+  "web_staro": "",
+  "web": "",
+  "rubrike": [],
+  "napomena": "nema weba u bazi"
+ },
+ {
+  "tip": "davalac",
+  "id": "unicredit",
+  "naziv": "UniCredit Fondacija i UniCredit u BiH",
+  "web_staro": "https://unicredit.ba",
+  "web": "https://www.unicredit.ba/ba/stanovnistvo.html",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "vijece-evrope",
+  "naziv": "Vijeće Evrope – ured u Sarajevu",
+  "web_staro": "https://www.coe.int/bs/web/sarajevo",
+  "web": "",
+  "rubrike": [],
+  "napomena": "web ne radi ili blokira"
+ },
+ {
+  "tip": "davalac",
+  "id": "bpk-vlada",
+  "naziv": "Vlada Bosansko-podrinjskog kantona Goražde",
+  "web_staro": "https://bpkg.gov.ba",
+  "web": "https://bpkg.gov.ba/",
+  "rubrike": [
+   [
+    12,
+    "Konkursi i oglasi",
+    "https://bpkg.gov.ba//kategorija/konkursi-oglasi-obavjestenja"
+   ],
+   [
+    3,
+    "Poništenje Javnog oglasa za prijem namještenika-Viši referent za cestovni promet u Ministarstvu za privredu",
+    "https://bpkg.gov.ba/konkursi-oglasi-obavjestenja/162515/ponistenje-javnog-oglasa-za-prijem-namjestenika-visi-referent-za-cestovni-promet-u-ministarstvu-za-privredu/"
+   ],
+   [
+    3,
+    "Poništenje Javnog oglas za prijem namještenika u Ministarstvu za privredu-Kantonalna uprava za šumarstvo BPK Goražde",
+    "https://bpkg.gov.ba/konkursi-oglasi-obavjestenja/162607/ponistenje-javnog-oglas-za-prijem-namjestenika-u-ministarstvu-za-privredu-kantonalna-uprava-za-sumarstvo-bpk-gorazde/"
+   ],
+   [
+    3,
+    "Poništava se Javni oglas za popunu upražnjenog radnog mjesta Referent za administrativne poslove u Ministarstvu za obraz",
+    "https://bpkg.gov.ba/konkursi-oglasi-obavjestenja/162496/ponistava-se-javni-oglas-za-popunu-upraznjenog-radnog-mjesta-referent-za-administrativne-poslove-u-ministarstvu-za-obrazovanje-mlade-nauku-kulturu-i-sport-bpk-gorazde/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "brcko-vlada",
+  "naziv": "Vlada Brčko distrikta BiH",
+  "web_staro": "https://www.bdcentral.net",
+  "web": "",
+  "rubrike": [],
+  "napomena": "web ne radi ili blokira"
+ },
+ {
+  "tip": "davalac",
+  "id": "vlada-fbih",
+  "naziv": "Vlada Federacije BiH",
+  "web_staro": "https://fbihvlada.gov.ba/en/javni-pozivi",
+  "web": "https://fbihvlada.gov.ba/en/javni-pozivi",
+  "rubrike": [
+   [
+    8,
+    "﻿Javni poziv za podnošenje prijava za finansiranje/sufinansiranje izgradnje, adaptacije i rekonstrukcije institucija kul",
+    "https://fbihvlada.gov.ba/en/javni-poziv-za-podnosenje-prijava-za-finansiranjesufinansiranje-izgradnje-adaptacije-i-rekonstrukcije-institucija-kulture-od-znacaja-za-kanton-grad-i-opstine-u-federaciji-bosne-i-hercego"
+   ],
+   [
+    8,
+    "Javni poziv za podnošenje prijava za finansiranje/sufinansiranje projekata/zahtjeva/inicijativa/ostalih aktivnosti od zn",
+    "https://fbihvlada.gov.ba/en/javni-poziv-za-podnosenje-prijava-za-finansiranjesufinansiranje-projekatazahtjevainicijativaostalih-aktivnosti-od-znacaja-za-jedinice-lokalne-samouprave-u-federaciji-bih-23536"
+   ],
+   [
+    8,
+    "Javni poziv za podnošenje prijava za finansiranje/sufinansiranje izgradnje, adaptacije i rekonstrukcije sportske infrast",
+    "https://fbihvlada.gov.ba/en/javni-poziv-za-podnosenje-prijava-za-finansiranjesufinansiranje-izgradnje-adaptacije-i-rekonstrukcije-sportske-infrastrukture-od-znacaja-za-kanton-grad-i-opstine-u-federaciji-bosne-i-herc"
+   ],
+   [
+    8,
+    "Javni poziv za podnošenje prijava po Programu - Stručna podrška Vladi FBiH i radnim tijelima na poziciji „Tekući transfe",
+    "https://fbihvlada.gov.ba/en/javni-poziv-za-podnosenje-prijava-za-dodjelu-sredstava-utvrdenih-budzetom-fbih-za-2026-godinu-vladi-fbih-po-programu-strucna-podrska-vladi-fbih-i-radnim-tijelima-na-poziciji-tekuci-transf"
+   ],
+   [
+    8,
+    "Javni konkurs za izbor i nominiranje kandidata za imenovanje jednog člana Upravnog odbora Uprave za indirektno oporeziva",
+    "https://fbihvlada.gov.ba/en/javni-konkurs-za-izbor-i-nominiranje-kandidata-za-imenovanje-jednog-clana-upravnog-odbora-uprave-za-indirektno-oporezivanje-bosne-i-hercegovine-iz-federacije-bih-iz-reda-strucnjaka"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "k10-vlada",
+  "naziv": "Vlada Hercegbosanske županije (Kanton 10)",
+  "web_staro": "https://www.vladahbz.com",
+  "web": "https://www.vladahbz.com/",
+  "rubrike": [
+   [
+    10,
+    "Javni pozivi",
+    "https://www.vladahbz.com/javni-pozivi/"
+   ],
+   [
+    10,
+    "Javni natječaji",
+    "https://www.vladahbz.com/javni-natjecaji/"
+   ],
+   [
+    6,
+    "Objavljen Javni poziv za prijavu projekata udruga građana za sufinanciranje iz Proračuna Hercegbosanske županije za 2026",
+    "https://www.vladahbz.com/objavljen-javni-poziv-za-prijavu-projekata-udruga-gradana-za-sufinanciranje-iz-proracuna-hercegbosanske-zupanije-za-2026-godinu/"
+   ],
+   [
+    2,
+    "Pozivi s viših razina vlasti",
+    "https://www.vladahbz.com/pozivi/"
+   ],
+   [
+    2,
+    "Poticaji",
+    "https://www.vladahbz.com/poticaji/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "hnk-vlada",
+  "naziv": "Vlada Hercegovačko-neretvanskog kantona",
+  "web_staro": "https://www.vlada-hnz-k.ba",
+  "web": "https://vlada.hnzk.ba/hr",
+  "rubrike": [
+   [
+    6,
+    "Natječaj za dodjelu stipendija za akademsku 2026./2027. godinu 23.11.2026",
+    "https://vlada.hnzk.ba/hr//portal/objava/natjecaj-za-dodjelu-stipendija-za-akademsku-20262027-godinu-1795422885597"
+   ],
+   [
+    6,
+    "Javni poziv udrugama za sufinanciranje festivala i sličnih aktivnosti od značaja za razvitak turizma 18.11.2026",
+    "https://vlada.hnzk.ba/hr//portal/objava/javni-poziv-udrugama-za-sufinanciranje-festivala-i-slicnih-aktivnosti-od-znacaja-za-razvitak-turizma-1795010428604"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "ks-vlada",
+  "naziv": "Vlada Kantona Sarajevo",
+  "web_staro": "https://vlada.ks.gov.ba",
+  "web": "https://vlada.ks.gov.ba/",
+  "rubrike": [
+   [
+    10,
+    "Konkursi",
+    "https://vlada.ks.gov.ba/aktuelno/konkursi"
+   ],
+   [
+    5,
+    "Preliminarna lista po javnom pozivu za podršku aktivnostima održivog povratka na području jedinice lokane samouprave Sre",
+    "https://vlada.ks.gov.ba/node/127179"
+   ],
+   [
+    5,
+    "Preliminarna lista po Javnom pozivu za podršku održivog povratka roditeljima, djeci i studentima na području jedinice lo",
+    "https://vlada.ks.gov.ba/node/127170"
+   ],
+   [
+    5,
+    "Odluka o utvrđivanju konačne liste po Javnom pozivu za podršku održivog povratka roditeljima, djeci, učenicima i student",
+    "https://vlada.ks.gov.ba/node/127233"
+   ],
+   [
+    5,
+    "Odluka o utvrđivanju konačne liste po Javnom pozivu za podršku investicijama",
+    "https://vlada.ks.gov.ba/node/127232"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "pk-vlada",
+  "naziv": "Vlada Posavskog kantona",
+  "web_staro": "",
+  "web": "",
+  "rubrike": [],
+  "napomena": "nema weba u bazi"
+ },
+ {
+  "tip": "davalac",
+  "id": "vlada-rs",
+  "naziv": "Vlada Republike Srpske",
+  "web_staro": "https://vladars.rs",
+  "web": "https://vladars.rs/sr-sp-cyrl/Pages/default.aspx",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "sbk-vlada",
+  "naziv": "Vlada Srednjobosanskog kantona",
+  "web_staro": "https://sbk-ksb.gov.ba",
+  "web": "https://sbk-ksb.gov.ba/",
+  "rubrike": [
+   [
+    8,
+    "JAVNI POZIV ZA IZBOR I IMENOVANJE PREDSJEDNIKA UPRAVNOG ODBORA JU BOLNICA TRAVNIK",
+    "https://sbk-ksb.gov.ba/index.php/novosti/javni-poziv-za-izbor-i-imenovanje-predsjednika-upravnog-odbora-ju-bolnica-travnik"
+   ],
+   [
+    7,
+    "Javni pozivi",
+    "https://sbk-ksb.gov.ba/index.php/novosti"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "tk-vlada",
+  "naziv": "Vlada Tuzlanskog kantona",
+  "web_staro": "https://www.vladatk.kim.ba",
+  "web": "https://www.vladatk.kim.ba/",
+  "rubrike": [
+   [
+    12,
+    "Svi konkursi",
+    "https://www.vladatk.kim.ba/kategorija/ministarstvo-zdravstva-konkursi"
+   ],
+   [
+    12,
+    "Svi konkursi",
+    "https://www.vladatk.kim.ba/kategorija/ministarstvo-za-rad-socijalnu-politiku-raseljena-lica-i-izbjeglice-konkursi"
+   ],
+   [
+    12,
+    "Svi konkursi",
+    "https://www.vladatk.kim.ba/kategorija/ministarstvo-za-kulturu-sport-i-mlade-konkursi"
+   ],
+   [
+    12,
+    "Svi konkursi",
+    "https://www.vladatk.kim.ba/kategorija/ministarstvo-za-boracka-pitanja-konkursi"
+   ],
+   [
+    12,
+    "Svi konkursi",
+    "https://www.vladatk.kim.ba/kategorija/ministarstvo-unutrasnjih-poslova-konkursi"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "usk-vlada",
+  "naziv": "Vlada Unsko-sanskog kantona",
+  "web_staro": "",
+  "web": "",
+  "rubrike": [],
+  "napomena": "nema weba u bazi"
+ },
+ {
+  "tip": "davalac",
+  "id": "zhk-vlada",
+  "naziv": "Vlada Zapadnohercegovačke županije",
+  "web_staro": "",
+  "web": "",
+  "rubrike": [],
+  "napomena": "nema weba u bazi"
+ },
+ {
+  "tip": "davalac",
+  "id": "zdk-vlada",
+  "naziv": "Vlada Zeničko-dobojskog kantona",
+  "web_staro": "https://zdk.ba",
+  "web": "https://zdk.ba/",
+  "rubrike": [
+   [
+    10,
+    "Odluka o dodjeli poticaja u vidu finansijske pomoći po Javnom konkursu za aktivnosti sakupljanja i reciklaže posebnih ka",
+    "https://zdk.ba/ministarstvo-za-prostorno-uredenje-promet-i-komunikacije-i-zastitu-okoline-zastita-okoline/14983-odluka-o-dodjeli-poticaja-u-vidu-finansijske-pomoci-po-javnom-konkursu-za-aktivnosti-sakupljanja-i-reciklaze-posebnih-kategorija-otpada-i-to-otpadnih-guma-akumulatora-i-baterija-otpadnih-ulja-i-otpadnih-vozila-2026"
+   ],
+   [
+    10,
+    "Javni Pozivi/Konkursi",
+    "https://zdk.ba/javni-pozivi-oglasi-konkursi"
+   ],
+   [
+    8,
+    "Treći javni poziv za odabir programa/projekata udruženja građana iz oblasti zdravstva–maligna oboljenja koji će se finan",
+    "https://zdk.ba/ministarstvo-zdravstva-javni-pozivi/15014-treci-javni-poziv-za-odabir-programa-projekata-udruzenja-gradana-iz-oblasti-zdravstva-maligna-oboljenja-koji-ce-se-finansirati-sufinansirati-iz-budzeta-zenicko-dobojskog-kantona-za-2026-godinu"
+   ],
+   [
+    8,
+    "Treći javni poziv za odabir programa/projekata udruženja građana iz oblasti zdravstva koji će se finansirati/sufinansira",
+    "https://zdk.ba/ministarstvo-zdravstva-javni-pozivi/15012-treci-javni-poziv-za-odabir-programa-projekata-udruzenja-gradana-iz-oblasti-zdravstva-koji-ce-se-finansirati-sufinansirati-iz-budzeta-zenicko-dobojskog-kantona-za-2026-godinu"
+   ],
+   [
+    8,
+    "Odluka o izmjeni i dopuni konačne rang liste uspješnih projekata su/finansiranja po Javnom pozivu za kandidovanje projek",
+    "https://zdk.ba/ministarstvo-za-poljoprivredu-sumarstovo-i-vodoprivredu-vodoprivreda/14969-odluka-o-izmjeni-i-dopuni-konacne-rang-liste-uspjesnih-projekata-su-finansiranja-po-javnom-pozivu-za-kandidovanje-projekata-za-dodjelu-sredstava-po-programu-utroska-sredstava-vodnih-naknada-za-2026-godinu"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "wbf",
+  "naziv": "Western Balkans Fund",
+  "web_staro": "https://westernbalkansfund.org",
+  "web": "https://westernbalkansfund.org/",
+  "rubrike": [
+   [
+    5,
+    "Winners Announced €15,000 max grant Grants for Grassroots Initiatives (GGI) Organisations Grant Supports young, emerging",
+    "https://westernbalkansfund.org/ggi/"
+   ],
+   [
+    5,
+    "Winners Announced Fellowship mobility grant WB6-V4 Fellowship Individuals Grant Short-term academic mobility between the",
+    "https://westernbalkansfund.org/visegrad-fellowship/"
+   ],
+   [
+    5,
+    "Under evaluation €25,000 max grant Empowering Regional Cooperation (ERC) Organisations Grant Larger EU co-funded grants ",
+    "https://westernbalkansfund.org/erc/"
+   ],
+   [
+    5,
+    "Under evaluation People to people MOVE Grants Individuals Grant Short-term, people-to-people funding for researchers, st",
+    "https://westernbalkansfund.org/move/"
+   ],
+   [
+    5,
+    "Story How a cross-border youth network reconnected three Balkan cities A grantee story from the GGI Call No. 7, three CS",
+    "https://westernbalkansfund.org/news/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "zzz-rs",
+  "naziv": "Zavod za zapošljavanje Republike Srpske",
+  "web_staro": "https://zzzrs.net",
+  "web": "https://zzzrs.net/",
+  "rubrike": [
+   [
+    5,
+    "Јавни позиви",
+    "https://zzzrs.net/javni-pozivi"
+   ],
+   [
+    2,
+    "Прегледај све огласе за посао",
+    "https://zzzrs.net/oglasi/search"
+   ],
+   [
+    2,
+    "Огласи за посао",
+    "https://zzzrs.net/oglasi"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "davalac",
+  "id": "fundsforngos",
+  "naziv": "fundsforNGOs (portal)",
+  "web_staro": "https://www2.fundsforngos.org/tag/bosnia-and-herzegovina/",
+  "web": "",
+  "rubrike": [],
+  "napomena": "web ne radi ili blokira"
+ },
+ {
+  "tip": "davalac",
+  "id": "mtel",
+  "naziv": "m:tel",
+  "web_staro": "https://mtel.ba",
+  "web": "https://mtel.ba/",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "banja-luka",
+  "naziv": "Banja Luka",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.banjaluka.rs.ba:443/",
+  "izvor_weba": "wikidata",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "banovici",
+  "naziv": "Banovići",
+  "kanton": "tk",
+  "web_staro": "https://banovici.gov.ba",
+  "rubrika_staro": "",
+  "web": "https://banovici.gov.ba/",
+  "izvor_weba": "baza",
+  "rubrike": [
+   [
+    12,
+    "Pregledajte sve javne pozive",
+    "https://banovici.gov.ba/category/konkursi-oglasi-i-obavjestenja/"
+   ],
+   [
+    8,
+    "Javni poziv za predlaganje programa/projekata nevladinih organizacija sa područja općine Banovići",
+    "https://banovici.gov.ba/javni-poziv-za-predlaganje-programa-projekata-nevladinih-organizacija-sa-podrucja-opcine-banovici-7/"
+   ],
+   [
+    8,
+    "Javni poziv za predlaganje programa za obilježavanje 07. novembra, Izgradnja Omladinske pruge „Brčko -Banovići“",
+    "https://banovici.gov.ba/javni-poziv-za-predlaganje-programa-za-obiljezavanje-07-novembra-izgradnja-omladinske-pruge-brcko-banovici/"
+   ],
+   [
+    8,
+    "Javni poziv za dostavljanje prijedloga za dodjelu Općinskih priznanja u povodu Dana općine Banovići",
+    "https://banovici.gov.ba/javni-poziv-za-dostavljanje-prijedloga-za-dodjelu-opcinskih-priznanja-u-povodu-dana-opcine-banovici/"
+   ],
+   [
+    7,
+    "Javni pozivi Javni pozivi drugih institucija",
+    "https://banovici.gov.ba/category/obavjestenja-drugih-institucija/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "berkovici",
+  "naziv": "Berkovići",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://opstinaberkovici.com/",
+  "izvor_weba": "wikidata",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "bihac",
+  "naziv": "Bihać",
+  "kanton": "usk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://bihac.org/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "Javni pozivi za OCD",
+    "https://www.bihac.org/javni-pozivi-za-ocd"
+   ],
+   [
+    10,
+    "Javni pozivi",
+    "https://www.bihac.org/javni-pozivi"
+   ],
+   [
+    10,
+    "Javni poziv sportskim udruženjima za sufinansiranje troškova izgradnje sportskih dječijih igrališta na području grada Bi",
+    "https://www.bihac.org/clanak/javni-poziv-sportskim-udruzenjima-za-sufinansiranje-troskova-izgradnje-sportskih-djecijih-igralista-na-podrucju-grada-bihaca/2104"
+   ],
+   [
+    8,
+    "Saopćenje za javnost o detaljima Javnog konkursa za prijavu kandidata za predsjednike/zamjenike predsjednika biračkih od",
+    "https://www.bihac.org/clanak/saopcenje-za-javnost-o-detaljima-javnog-konkursa-za-prijavu-kandidata-za-predsjednike-zamjenike-predsjednika-birackih-odbora/2069"
+   ],
+   [
+    8,
+    "Obavještenje kandidatima o polaganju pismenog ispita u sklopu konkursne procedure za poziciju: Stručni savjetnik za upra",
+    "https://www.bihac.org/clanak/obavjestenje-kandidatima-o-polaganju-pismenog-ispita-u-sklopu-konkursne-procedure-za-poziciju-strucni-savjetnik-za-upravno-pravne-poslove-u-oblasti-urbanog-uredenja-i-gradenja/2131"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "bijeljina",
+  "naziv": "Bijeljina",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.gradbijeljina.org/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    7,
+    "",
+    "https://www.gradbijeljina.org/sr/news/novosti//7333.objavljena-rang-lista-korisnika-koji-ispunjavaju-uslove-javnog-poziva-za-sufinansiranje-mjera-poboljsanja-energetske-efikasnosti-u-zajednicama-etaznih-vlasnika,-koje-su-ranije-koristile-sistem-daljinskog-grijanja.html"
+   ],
+   [
+    5,
+    "Објављена коначна ранг-листа Јавног позива за бањско лијечење и рехабилитацију",
+    "https://www.gradbijeljina.org/sr/news/obavjestenja/javni-pozivi/7320.objavljena-konacna-rang-lista-javnog-poziva-za-banjsko-lijecenje-i-rehabilitaciju.html"
+   ],
+   [
+    5,
+    "Конкурси",
+    "https://www.gradbijeljina.org/sr/news/obavjestenja/konkursi/"
+   ],
+   [
+    5,
+    "Јавни позиви и обавјештења",
+    "https://www.gradbijeljina.org/sr/2026.javni-pozivi-i-obavjestenja.html"
+   ],
+   [
+    3,
+    "ЈАВНИ ПОЗИВ ЗА ПРИЈАВУ НЕПРОПИСНОГ ОДЛАГАЊА ОТПАДА УЗ ДОДЈЕЛУ ФИНАНСИЈСКЕ НАГРАДЕ",
+    "https://www.gradbijeljina.org/sr/news/obavjestenja//7201.javni-poziv-za-prijavu-nepropisnog-odlaganja-otpada-uz-dodjelu-finansijske-nagrade.html"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "bileca",
+  "naziv": "Bileća",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.opstinabileca.ba/",
+  "izvor_weba": "pogodak",
+  "rubrike": [
+   [
+    5,
+    "КОНКУРСИ",
+    "https://www.opstinabileca.ba/konkursi/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "bosanska-krupa",
+  "naziv": "Bosanska Krupa",
+  "kanton": "usk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "",
+  "izvor_weba": "",
+  "rubrike": [],
+  "napomena": "web nije pronađen"
+ },
+ {
+  "tip": "opcina",
+  "id": "bosanski-petrovac",
+  "naziv": "Bosanski Petrovac",
+  "kanton": "usk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.bosanskipetrovac.gov.ba/",
+  "izvor_weba": "pogodak",
+  "rubrike": [
+   [
+    10,
+    "JAVNI POZIV",
+    "https://www.bosanskipetrovac.gov.ba/index.php/vijesti/1947-javni-poziv-59"
+   ],
+   [
+    6,
+    "JAVNI POZIV za dodjelu sredstava tekućeg transfera za odgoj i obrazovanje 2026. godine",
+    "https://www.bosanskipetrovac.gov.ba/index.php/vijesti/1946-javni-poziv-za-dodjelu-sredstava-tekuceg-transfera-za-odgoj-i-obrazovanje-2026-godine"
+   ],
+   [
+    6,
+    "JAVNI POZIV ZA ODABIR KORISNIKA SREDSTAVA PO PROGRAMU „PODRŠKA NOVOOSNOVANIM SUBJETIMA MALE PRIVREDE“ U 2026. GODINI",
+    "https://www.bosanskipetrovac.gov.ba/index.php/vijesti/1942-javni-poziv-za-odabir-korisnika-sredstava-po-programu-podrska-novoosnovanim-subjetima-male-privrede-u-2026-godini"
+   ],
+   [
+    2,
+    "PONIŠTENJE JAVNOG OGLASA",
+    "https://www.bosanskipetrovac.gov.ba/index.php/vijesti/1941-ponistenje-javnog-oglasa-2"
+   ],
+   [
+    2,
+    "JAVNI OGLAS",
+    "https://www.bosanskipetrovac.gov.ba/index.php/vijesti/1940-javni-oglas-30"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "bosansko-grahovo",
+  "naziv": "Bosansko Grahovo",
+  "kanton": "k10",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.bosanskograhovo.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "Javni pozivi i oglasi",
+    "https://www.bosanskograhovo.ba/javni-pozivi-oglasi/"
+   ],
+   [
+    8,
+    "Konkurs za dodjelu studentskih stipendija",
+    "https://www.bosanskograhovo.ba/konkurs-za-dodjelu-studentskih-stipendija-3/"
+   ],
+   [
+    8,
+    "Javni poziv za podnošenje prijava za sudjelovanje u radu povjerenstva za tehnički pregled građevina",
+    "https://www.bosanskograhovo.ba/javni-poziv-za-podnosenje-prijava-za-sudjelovanje-u-radu-povjerenstva-za-tehnicki-pregled-gradjevina/"
+   ],
+   [
+    8,
+    "Javni natječaj za prijavu kandidata za angažman operatera na biračkim mjestima u Bosni i Hercegovini",
+    "https://www.bosanskograhovo.ba/javni-natjecaj-za-prijavu-kandidata-za-angazman-operatera-na-birackim-mjestima-u-bosni-i-hercegovini/"
+   ],
+   [
+    8,
+    "Javni konkurs za prijavu kandidata za imenovanje predsjednika/zamjenika predsjednika biračkog odbora u osnovnim izbornim",
+    "https://www.bosanskograhovo.ba/javni-konkurs-za-prijavu-kandidata-za-imenovanje-predsjednika-zamjenika-predsjednika-birackog-odbora-u-osnovnim-izbornim-jedinicama-u-bosni-i-hercegovini/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "bratunac",
+  "naziv": "Bratunac",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "http://bratunacopstina.com/",
+  "izvor_weba": "wikidata",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "breza",
+  "naziv": "Breza",
+  "kanton": "zdk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://breza.gov.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "Konkursi za izradu idejnog rješenja",
+    "https://breza.gov.ba/konkursi-za-izradu-idejnog-rjesenja"
+   ],
+   [
+    10,
+    "Konkursi",
+    "https://breza.gov.ba/konkursi"
+   ],
+   [
+    10,
+    "Javni pozivi",
+    "https://breza.gov.ba/javni-pozivi"
+   ],
+   [
+    8,
+    "Javni konkurs za izbor i imenovanje direktora Javnog preduzeća „Komunalno” d.o.o. Breza Na osnovu čl. 257. tačka f) i 26",
+    "https://breza.gov.ba/view-more/javni-konkurs-za-izbor-i-imenovanje-direktora-javnog-preduzeca-bdquo-komunalno-rdquo-d-o-o-breza/2399"
+   ],
+   [
+    2,
+    "Oglasna ploča",
+    "https://breza.gov.ba/oglasna-ploca"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "brod",
+  "naziv": "Brod",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://opstina-brod.net/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    4,
+    "Огласи и обавјештења",
+    "https://opstina-brod.net/oglasi-arhiva"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "brcko-distrikt-bih",
+  "naziv": "Brčko distrikt BiH",
+  "kanton": "brcko",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "",
+  "izvor_weba": "",
+  "rubrike": [],
+  "napomena": "web nije pronađen"
+ },
+ {
+  "tip": "opcina",
+  "id": "bugojno",
+  "naziv": "Bugojno",
+  "kanton": "sbk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://opcina-bugojno.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    12,
+    "Javni poziv",
+    "https://opcina-bugojno.ba/category/javni-poziv/"
+   ],
+   [
+    10,
+    "Javni pozivi",
+    "https://opcina-bugojno.ba/javni-pozivi/"
+   ],
+   [
+    10,
+    "JAVNI POZIV",
+    "https://opcina-bugojno.ba/javni-poziv-2/"
+   ],
+   [
+    5,
+    "",
+    "https://opcina-bugojno.ba/v2/javni-pozivi/"
+   ],
+   [
+    2,
+    "Javni oglasi",
+    "https://opcina-bugojno.ba/javni-oglasi/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "busovaca",
+  "naziv": "Busovača",
+  "kanton": "sbk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://opcina-busovaca.com/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "Javni pozivi",
+    "https://opcina-busovaca.com/javni-pozivi/"
+   ],
+   [
+    6,
+    "JAVNI POZIV: Javna rasprava o Nacrtu proračuna/budžeta Općine Busovača za 2027. godinu",
+    "https://opcina-busovaca.com/2026/11/02/javni-poziv-javna-rasprava-o-nacrtu-proracuna-budzeta-opcine-busovaca-za-2027-godinu/"
+   ],
+   [
+    5,
+    "0 Comments",
+    "https://opcina-busovaca.com/2026/11/02/javni-poziv-javna-rasprava-o-nacrtu-proracuna-budzeta-opcine-busovaca-za-2027-godinu/#comments"
+   ],
+   [
+    2,
+    "0 Comments",
+    "https://opcina-busovaca.com/2026/11/24/javni-oglas-treca-ponovljena-javna-licitacija-za-prodaju-vatrogasnog-vozila-dvd-busovaca/#comments"
+   ],
+   [
+    2,
+    "",
+    "https://opcina-busovaca.com/2026/11/24/javni-oglas-treca-ponovljena-javna-licitacija-za-prodaju-vatrogasnog-vozila-dvd-busovaca/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "buzim",
+  "naziv": "Bužim",
+  "kanton": "usk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://opcinabuzim.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    6,
+    "31. Marta 2023 1 min JAVNI POZIV NA RADIONICU ZA IZRADU STRATEGIJE RAZVOJA TURIZMA USK Ovim putem vas pozivamo na radion",
+    "https://opcinabuzim.ba/2023/javni-poziv-na-radionicu-za-izradu-strategije-razvoja-turizma-usk/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "cazin",
+  "naziv": "Cazin",
+  "kanton": "usk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://gradcazin.gov.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    8,
+    "Javni poziv za nabavku usluga kreditnog zaduženja Grada Cazin",
+    "https://gradcazin.gov.ba/javni-poziv-za-nabavku-usluga-kreditnog-zaduzenja-grada-cazin"
+   ],
+   [
+    8,
+    "JAVNI KONKURS za prijem državnog službenika na određeno vrijeme u Jedinstveni gradski organ uprave Grada Cazin",
+    "https://gradcazin.gov.ba/javni-konkurs-za-prijem-drzavnog-sluzbenika-na-odredeno-vrijeme-u-jedinstveni-gradski-organ-uprave"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "centar",
+  "naziv": "Centar",
+  "kanton": "ks",
+  "web_staro": "https://www.centar.ba",
+  "rubrika_staro": "",
+  "web": "https://www.centar.ba/",
+  "izvor_weba": "baza",
+  "rubrike": [
+   [
+    10,
+    "Javni pozivi i konkursi za mlade",
+    "https://www.centar.ba/mladi-u-opcini-centar/javni-pozivi-i-konkursi-za-mlade"
+   ],
+   [
+    10,
+    "Javni pozivi i konkursi",
+    "https://www.centar.ba/jp-centar/javni-pozivi-i-konkursi"
+   ],
+   [
+    10,
+    "Javni pozivi i konkursi",
+    "https://www.centar.ba/javni-pozivi-i-konkursi"
+   ],
+   [
+    8,
+    "NA RASPOLAGANJU 19 STAMBENIH JEDINICA Objavljen javni poziv za dodjelu i prodaju zamjenskih stanova na Šipu Danas je u d",
+    "https://www.centar.ba/vijesti/21582/objavljen-javni-poziv-za-dodjelu-i-prodaju-zamjenskih-stanova-na-sipu"
+   ],
+   [
+    8,
+    "Javni poziv za dodjelu sredstava za aktivizam mladih",
+    "https://www.centar.ba/mladi-u-opcini-centar/javni-poziv-za-dodjelu-sredstava-za-aktivizam-mladih"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "derventa",
+  "naziv": "Derventa",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.derventa.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    7,
+    "",
+    "https://www.derventa.ba/category/konkursi-i-oglasi/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "doboj",
+  "naziv": "Doboj",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://doboj.gov.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    5,
+    "Јавни позиви",
+    "https://doboj.gov.ba/javni-pozivi/"
+   ],
+   [
+    5,
+    "Јавни позив за јавну распараву",
+    "https://doboj.gov.ba/javni-pozivi/%d1%98%d0%b0%d0%b2%d0%bd%d0%b0-%d1%80%d0%b0%d1%81%d0%bf%d1%80%d0%b0%d0%b2%d0%b0/"
+   ],
+   [
+    3,
+    "Отворен јавни позив за треће издање програма „BizUP Goes Local“ Град Добој наставља подршку женском предузетништву",
+    "https://doboj.gov.ba/javni-pozivi/%d0%be%d1%82%d0%b2%d0%be%d1%80%d0%b5%d0%bd-%d1%98%d0%b0%d0%b2%d0%bd%d0%b8-%d0%bf%d0%be%d0%b7%d0%b8%d0%b2-%d0%b7%d0%b0-%d1%82%d1%80%d0%b5%d1%9b%d0%b5-%d0%b8%d0%b7%d0%b4%d0%b0%d1%9a%d0%b5-%d0%bf%d1%80/"
+   ],
+   [
+    3,
+    "Јавни позив за Наранџасти грант Омладинске банке Добој",
+    "https://doboj.gov.ba/javni-pozivi/%d1%98%d0%b0%d0%b2%d0%bd%d0%b8-%d0%bf%d0%be%d0%b7%d0%b8%d0%b2-%d0%b7%d0%b0-%d0%bd%d0%b0%d1%80%d0%b0%d0%bd%d1%9f%d0%b0%d1%81%d1%82%d0%b8-%d0%b3%d1%80%d0%b0%d0%bd%d1%82-%d0%be%d0%bc%d0%bb%d0%b0%d0%b4/"
+   ],
+   [
+    3,
+    "Јавни позив : За учешће малих и средњих привредних друштава у пројекту подршке „Јачање конкурентности и одрживог послова",
+    "https://doboj.gov.ba/javni-pozivi/%d1%98%d0%b0%d0%b2%d0%bd%d0%b8-%d0%bf%d0%be%d0%b7%d0%b8%d0%b2-%d0%b7%d0%b0-%d1%83%d1%87%d0%b5%d1%88%d1%9b%d0%b5-%d0%bc%d0%b0%d0%bb%d0%b8%d1%85-%d0%b8-%d1%81%d1%80%d0%b5%d0%b4%d1%9a%d0%b8%d1%85/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "doboj-istok",
+  "naziv": "Doboj Istok",
+  "kanton": "tk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://opcinadobojistok.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "Konkursi i oglasi",
+    "https://opcinadobojistok.ba/konkursi-i-oglasi"
+   ],
+   [
+    2,
+    "Elektronska oglasna tabla",
+    "https://opcinadobojistok.ba/elektronska-oglasna-tabla/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "doboj-jug",
+  "naziv": "Doboj Jug",
+  "kanton": "zdk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://dobojjug.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "dobretici",
+  "naziv": "Dobretići",
+  "kanton": "sbk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.opcinadobretici.ba/",
+  "izvor_weba": "pogodak",
+  "rubrike": [
+   [
+    8,
+    "ODLUKA o produljenju roka za podnošenje prijava na Javni poziv za raspodjelu sredstava iz Granta za poticaj i razvoj pol",
+    "https://opcinadobretici.ba/odluka-o-produljenju-roka-za-podnosenje-prijava-na-javni-poziv-za-raspodjelu-sredstava-iz-granta-za-poticaj-i-razvoj-poljoprivrede-za-2026-godinu/"
+   ],
+   [
+    6,
+    "Javni poziv za raspodjelu sredstava iz Granta za poticaj i razvoj poljoprivrede za 2026. godinu",
+    "https://opcinadobretici.ba/javni-poziv-za-raspodjelu-sredstava-iz-granta-za-poticaj-i-razvoj-poljoprivrede-za-2026-godinu/"
+   ],
+   [
+    2,
+    "",
+    "https://opcinadobretici.ba/javni-oglas-za-prijem-radnika-u-radni-odnos-na-odredeno-vrijeme-u-jkp-vodovod-i-kanalizacija-dobretici-d-o-o-dobretici/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "domaljevac-samac",
+  "naziv": "Domaljevac-Šamac",
+  "kanton": "pk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://domaljevac.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    12,
+    "Javni pozivi i natječaji",
+    "https://domaljevac.ba/category/javni-pozivi-i-natjecaji/"
+   ],
+   [
+    10,
+    "Javni natječaji",
+    "https://domaljevac.ba/javni-natjecaji/"
+   ],
+   [
+    8,
+    "JAVNI POZIV ZA DODJELU NOVČANIH POTPORA STUDENTIMA",
+    "https://domaljevac.ba/javni-poziv-za-dodjelu-novcanih-potpora-studentima-5/"
+   ],
+   [
+    5,
+    "(više…)",
+    "https://domaljevac.ba/javni-poziv-za-dodjelu-novcanih-potpora-studentima-5/#more-14062"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "donji-vakuf",
+  "naziv": "Donji Vakuf",
+  "kanton": "sbk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://donji-vakuf.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    12,
+    "Javni pozivi i konkursi",
+    "https://donji-vakuf.ba/category/vijesti/javni-pozivi-i-konkursi/"
+   ],
+   [
+    7,
+    "Javni pozivi i konkursi",
+    "https://donji-vakuf.ba/elementor-2387/"
+   ],
+   [
+    6,
+    "Javni poziv za Javnu raspravu o Nacrtu budžeta Općine Donji Vakuf za 2027. godinu",
+    "https://donji-vakuf.ba/2026/11/24/javni-poziv-za-javnu-raspravu-o-nacrtu-budzeta-opcine-donji-vakuf-za-2027-godinu/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "donji-zabar",
+  "naziv": "Donji Žabar",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.opstinadonjizabar.com/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    5,
+    "Конкурси",
+    "https://www.opstinadonjizabar.com/konkursi.html"
+   ],
+   [
+    2,
+    "Огласи и обавјештења",
+    "https://www.opstinadonjizabar.com/oglasi.html"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "drvar",
+  "naziv": "Drvar",
+  "kanton": "k10",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.opstinadrvar.net/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    5,
+    "Конкурси",
+    "https://www.opstinadrvar.net/konkursi/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "fojnica",
+  "naziv": "Fojnica",
+  "kanton": "sbk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.fojnica.ba/v3/",
+  "izvor_weba": "wikidata",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "foca",
+  "naziv": "Foča",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://foca-ustikolina.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "KONKURSI",
+    "https://foca-ustikolina.ba/2022/10/10/konkursi/"
+   ],
+   [
+    8,
+    "JAVNI POZIVI",
+    "https://foca-ustikolina.ba/wp_install/2022/10/10/javni-pozivi/"
+   ],
+   [
+    8,
+    "JAVNI POZIV za izdavanje pod zakup poslovnog prostora u vlasništvu Općine Foča",
+    "https://foca-ustikolina.ba/2026/10/21/javni-poziv-za-izdavanje-pod-zakup-poslovnog-prostora-u-vlasnistvu-opcine-foca-2/"
+   ],
+   [
+    8,
+    "JAVNI POZIV za izdavanje pod zakup poslovnog prostora u vlasništvu Općine Foča",
+    "https://foca-ustikolina.ba/2026/10/19/javni-poziv-za-izdavanje-pod-zakup-poslovnog-prostora-u-vlasnistvu-opcine-foca/"
+   ],
+   [
+    8,
+    "JAVNI POZIV za dodjelu sredstava za sufinansiranje rada dječije igraonice",
+    "https://foca-ustikolina.ba/2026/11/13/javni-poziv-za-dodjelu-sredstava-za-sufinansiranje-rada-djecije-igraonice/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "foca-ustikolina",
+  "naziv": "Foča-Ustikolina",
+  "kanton": "bpk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://foca-ustikolina.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "KONKURSI",
+    "https://foca-ustikolina.ba/2022/10/10/konkursi/"
+   ],
+   [
+    8,
+    "JAVNI POZIVI",
+    "https://foca-ustikolina.ba/wp_install/2022/10/10/javni-pozivi/"
+   ],
+   [
+    8,
+    "JAVNI POZIV za izdavanje pod zakup poslovnog prostora u vlasništvu Općine Foča",
+    "https://foca-ustikolina.ba/2026/10/21/javni-poziv-za-izdavanje-pod-zakup-poslovnog-prostora-u-vlasnistvu-opcine-foca-2/"
+   ],
+   [
+    8,
+    "JAVNI POZIV za izdavanje pod zakup poslovnog prostora u vlasništvu Općine Foča",
+    "https://foca-ustikolina.ba/2026/10/19/javni-poziv-za-izdavanje-pod-zakup-poslovnog-prostora-u-vlasnistvu-opcine-foca/"
+   ],
+   [
+    8,
+    "JAVNI POZIV za dodjelu sredstava za sufinansiranje rada dječije igraonice",
+    "https://foca-ustikolina.ba/2026/11/13/javni-poziv-za-dodjelu-sredstava-za-sufinansiranje-rada-djecije-igraonice/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "gacko",
+  "naziv": "Gacko",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "",
+  "izvor_weba": "",
+  "rubrike": [],
+  "napomena": "web nije pronađen"
+ },
+ {
+  "tip": "opcina",
+  "id": "glamoc",
+  "naziv": "Glamoč",
+  "kanton": "k10",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://opstinaglamoc.ba/language/ci/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    5,
+    "Јавни позиви и огласи",
+    "https://opstinaglamoc.ba/language/ci/javni-pozivi/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "gorazde",
+  "naziv": "Goražde",
+  "kanton": "bpk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://gorazde.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "KONKURSI",
+    "https://gorazde.ba/konkursi/"
+   ],
+   [
+    10,
+    "JAVNI POZIVI",
+    "https://gorazde.ba/javni-pozivi/"
+   ],
+   [
+    2,
+    "OGLASI",
+    "https://gorazde.ba/oglasi/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "gornji-vakuf-uskoplje",
+  "naziv": "Gornji Vakuf-Uskoplje",
+  "kanton": "sbk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "",
+  "izvor_weba": "",
+  "rubrike": [],
+  "napomena": "web nije pronađen"
+ },
+ {
+  "tip": "opcina",
+  "id": "grad-istocno-sarajevo",
+  "naziv": "Grad Istočno Sarajevo",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://gradistocnosarajevo.net/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    7,
+    "Јавни позиви и конкурси",
+    "https://gradistocnosarajevo.net/category/javni-pozivi-i-konkursi"
+   ],
+   [
+    4,
+    "Огласи",
+    "https://gradistocnosarajevo.net/category/oglasi"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "grad-sarajevo",
+  "naziv": "Grad Sarajevo",
+  "kanton": "ks",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.sarajevo.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "Javni pozivi i nabavke",
+    "https://www.sarajevo.ba/bs/javni-pozivi-i-nabavke"
+   ],
+   [
+    8,
+    "JAVNI POZIV za izbor lica na stručno osposobljavanje bez zasnivanja radnog odnosa u Gradu Sarajevo",
+    "https://www.sarajevo.ba/bs/javni-poziv-za-izbor-lica-na-strucno-osposobljavanje-bez-zasnivanja-radnog-odnosa-u-gradu-sarajevo-15917"
+   ],
+   [
+    2,
+    "Pozivi",
+    "https://www.sarajevo.ba/bs/pozivi"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "gradacac",
+  "naziv": "Gradačac",
+  "kanton": "tk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.gradacac.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "Javni pozivi",
+    "https://www.gradacac.ba/javni-pozivi"
+   ],
+   [
+    7,
+    "Javni pozivi, oglasi i rasprave",
+    "https://www.gradacac.ba/aktuelnosti"
+   ],
+   [
+    7,
+    "Javni pozivi",
+    "https://www.gradacac.ba/"
+   ],
+   [
+    6,
+    "JAVNI POZIV ZA JAVNU RASPRAVU O NACRTU PROGRAMA RADA GRADSKOG VIJEĆA GRADA GRADAČAC ZA 2027. GODINU",
+    "https://www.gradacac.ba/javni-pozivi/poziv/javni-poziv-za-javnu-raspravu-o-nacrtu-programa-rada-gradskog-vijeca-grada-gradacac-za-2027-godinu"
+   ],
+   [
+    6,
+    "JAVNI POZIV ZA FINANSIRANJE PROJEKATA ZA SPREČAVANJE ŠTETE OD DIVLJAČI U 2026. I 2027. GODINI",
+    "https://www.gradacac.ba/javni-pozivi/poziv/javni-poziv-za-finansiranje-projekata-za-sprecavanje-stete-od-divljaci-u-2026-i-2027-godini"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "gradiska",
+  "naziv": "Gradiška",
+  "kanton": "rs",
+  "web_staro": "https://www.gradgradiska.com",
+  "rubrika_staro": "",
+  "web": "https://www.gradgradiska.com/",
+  "izvor_weba": "baza",
+  "rubrike": [
+   [
+    7,
+    "Конкурси",
+    "https://www.gradgradiska.com/kategorija/konkursi/"
+   ],
+   [
+    7,
+    "Јавни позиви",
+    "https://www.gradgradiska.com/kategorija/javni-pozivi/"
+   ],
+   [
+    7,
+    "Јавни позиви",
+    "http://www.gradgradiska.com/kategorija/javni-pozivi/"
+   ],
+   [
+    4,
+    "Огласи",
+    "http://www.gradgradiska.com/kategorija/oglasi/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "gracanica",
+  "naziv": "Gračanica",
+  "kanton": "tk",
+  "web_staro": "https://gracanica.gov.ba",
+  "rubrika_staro": "",
+  "web": "https://gracanica.gov.ba/",
+  "izvor_weba": "baza",
+  "rubrike": [
+   [
+    12,
+    "Konkursi",
+    "https://gracanica.gov.ba/category/konkursi/"
+   ],
+   [
+    8,
+    "JAVNI POZIV za javnu raspravu o Nacrtu Odluke o komunalnoj naknadi Grada Gračanica",
+    "https://gracanica.gov.ba/javni-poziv-za-javnu-raspravu-o-nacrtu-odluke-o-komunalnoj-naknadi-grada-gracanica/"
+   ],
+   [
+    8,
+    "JAVNI KONKURS ZA IZBOR I IMENOVANJE ČLANOVA ODBORA ZA REVIZIJU J.P. “KOMUS” d.o.o. GRAČANICA",
+    "https://gracanica.gov.ba/javni-konkurs-za-izbor-i-imenovanje-clanova-odbora-za-reviziju-j-p-komus-d-o-o-gracanica/"
+   ],
+   [
+    8,
+    "Fond za zaštitu okoliša FBiH: Obavijest o raspisivanju dva Javna poziva iz oblasti energetske učinkovitosti",
+    "https://gracanica.gov.ba/fond-za-zastitu-okolisa-fbih-obavijest-o-raspisivanju-dva-javna-poziva-iz-oblasti-energetske-ucinkovitosti/"
+   ],
+   [
+    6,
+    "JAVNI POZIV za učešće u javnoj raspravi o Nacrtu Programa kapitalnih investicija Grada Gračanica za period 2026.-2028.go",
+    "https://gracanica.gov.ba/javni-poziv-za-ucesce-u-javnoj-raspravi-o-nacrtu-programa-kapitalnih-investicija-grada-gracanica-za-period-2026-2028-godina/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "grude",
+  "naziv": "Grude",
+  "kanton": "zhk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://grude.info/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    12,
+    "Oglasi i natječaji",
+    "https://grude.info/kategorija/oglasi-i-natjecaji/"
+   ],
+   [
+    7,
+    "Oglasi i natječaji",
+    "https://grude.info/"
+   ],
+   [
+    2,
+    "",
+    "https://grude.info/obavijest-o-ponistenju-oglasa/"
+   ],
+   [
+    2,
+    "",
+    "https://grude.info/javni-oglas-o-prodaji-neizgradenog-gradevinskog-zemljista-u-vlasnistvu-opcine-grude-putem-javnog-nadmetanja-licitacije/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "hadzici",
+  "naziv": "Hadžići",
+  "kanton": "ks",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://hadzici.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    2,
+    "Javni oglasi",
+    "https://hadzici.ba/javni-oglasi/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "han-pijesak",
+  "naziv": "Han Pijesak",
+  "kanton": "rs",
+  "web_staro": "https://hanpijesak.org",
+  "rubrika_staro": "",
+  "web": "https://hanpijesak.org/",
+  "izvor_weba": "baza",
+  "rubrike": [
+   [
+    5,
+    "Опширније →",
+    "https://hanpijesak.org/javni-poziv-za-sufinansiranje-projekta-sanacije-i-rekonstrukcije-objekata-sa-zajednicama-etaznih-vlasnika-na-podrucju-opstine-han-pijesak-za-2026-godinu/"
+   ],
+   [
+    5,
+    "Опширније →",
+    "https://hanpijesak.org/javni-poziv-za-dodjelu-subvencija-fizickim-licima-za-izradu-termoizolacionih-fasada-na-privatnim-stambenim-objektima-na-podrucju-opstine-han-pijesak-za-2026-godinu/"
+   ],
+   [
+    2,
+    "Опширније →",
+    "https://hanpijesak.org/oglas-o-prodaji-neizgradjenog-gradjevinskog-zemljista-kraljevo-naselje/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "ilidza",
+  "naziv": "Ilidža",
+  "kanton": "ks",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://opcinailidza.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "Konkursi",
+    "https://opcinailidza.ba/konkursi/"
+   ],
+   [
+    10,
+    "Javni pozivi",
+    "https://opcinailidza.ba/javni-pozivi/"
+   ],
+   [
+    8,
+    "Konkurs za stipendiranje učenika u srednjem i studenata u visokoškolskom obrazovanju koji su ostvarili uspjeh u prethodn",
+    "https://opcinailidza.ba/konkursi/konkurs-za-stipendiranje-ucenika-u-srednjem-i-studenata-u-visokoskolskom-obrazovanju-koji-su-ostvarili-uspjeh-u-prethodnoj-skolskoj-akademskoj-godini-a-imaju-odredjeni-iznos-prihoda-po-clanu-zajedni-2/"
+   ],
+   [
+    8,
+    "Javni poziv za sufinansiranje najboljih poslovnih planova",
+    "https://opcinailidza.ba/javni-pozivi/javni-poziv-za-sufinansiranje-najboljih-poslovnih-planova-2/"
+   ],
+   [
+    8,
+    "Javni poziv za prijem lica visoke stručne spreme bez radnog iskustva na stručno osposobljavanje bez zasnivanja radnog od",
+    "https://opcinailidza.ba/javni-pozivi/javni-poziv-za-prijem-lica-visoke-strucne-spreme-bez-radnog-iskustva-na-strucno-osposobljavanje-bez-zasnivanja-radnog-odnosa-u-opcini-ilidza-3/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "ilijas",
+  "naziv": "Ilijaš",
+  "kanton": "ks",
+  "web_staro": "https://ilijas.ba",
+  "rubrika_staro": "https://ilijas.ba/index.php/javni-pozivi/",
+  "web": "https://ilijas.ba/",
+  "izvor_weba": "baza",
+  "rubrike": [
+   [
+    12,
+    "Arhiva javnih poziva",
+    "https://ilijas.ba/index.php/javni-pozivi/arhiva-javnih-poziva1"
+   ],
+   [
+    10,
+    "Javni pozivi",
+    "https://ilijas.ba/index.php/javni-pozivi"
+   ],
+   [
+    8,
+    "Poziv organizacijama civilnog društva za učešće na prvom mentorskom sastanku u okviru javnog poziva za predaju projektni",
+    "https://ilijas.ba/index.php/vijesti/poziv-organizacijama-civilnog-drustva-za-ucesce-na-prvom-mentorskom-sastanku-u-okviru-javnog-poziva-za-predaju-projektnih-prijedloga-2"
+   ],
+   [
+    8,
+    "22 May Rezultati javnog poziva sa rang-listom projekata organizacija civilnog društva (OCD) po Javnom pozivu za su(finan",
+    "https://ilijas.ba/index.php/javni-pozivi/rezultati-javnog-poziva-sa-rang-listom-projekata-organizacija-civilnog-drustva-ocd-po-javnom-pozivu-za-su-finansiranje-projekata-po-lod-metodologiji-iz-budzeta-opcine-ilijas-za-2026-godinu"
+   ],
+   [
+    8,
+    "19 Jun Javni poziv za izražavanje interesa za odabir novih privremenih zemljišnoknjižnih asistenata ...",
+    "https://ilijas.ba/index.php/javni-pozivi/javni-poziv-za-izrazavanje-interesa-za-odabir-novih-privremenih-zemljisnoknjiznih-asistenata"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "istocna-ilidza",
+  "naziv": "Istočna Ilidža",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://istocnailidza.net/",
+  "izvor_weba": "wikidata",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "istocni-drvar",
+  "naziv": "Istočni Drvar",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "",
+  "izvor_weba": "",
+  "rubrike": [],
+  "napomena": "web nije pronađen"
+ },
+ {
+  "tip": "opcina",
+  "id": "istocni-mostar",
+  "naziv": "Istočni Mostar",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "",
+  "izvor_weba": "",
+  "rubrike": [],
+  "napomena": "web nije pronađen"
+ },
+ {
+  "tip": "opcina",
+  "id": "istocni-stari-grad",
+  "naziv": "Istočni Stari Grad",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "",
+  "izvor_weba": "",
+  "rubrike": [],
+  "napomena": "web nije pronađen"
+ },
+ {
+  "tip": "opcina",
+  "id": "istocno-novo-sarajevo",
+  "naziv": "Istočno Novo Sarajevo",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "",
+  "izvor_weba": "",
+  "rubrike": [],
+  "napomena": "web nije pronađen"
+ },
+ {
+  "tip": "opcina",
+  "id": "jablanica",
+  "naziv": "Jablanica",
+  "kanton": "hnk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "http://www.jablanica.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "jajce",
+  "naziv": "Jajce",
+  "kanton": "sbk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "http://www.opcina-jajce.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "Konkursi",
+    "http://www.opcina-jajce.ba/aktuelnosti/konkursi.html"
+   ],
+   [
+    10,
+    "Javni pozivi",
+    "http://www.opcina-jajce.ba/aktuelnosti/javni-pozivi.html"
+   ],
+   [
+    8,
+    "Javni poziv za uvid u Elaborat Resnik i prednacrt Odluke zona sanitarne zaštite",
+    "http://www.opcina-jajce.ba/aktuelnosti/javni-pozivi/4172-javni-poziv-za-uvid-u-elaborat-resnik-i-prednacrt-odluke-zona-sanitarne-zastite.html"
+   ],
+   [
+    2,
+    "Oglasi",
+    "http://www.opcina-jajce.ba/aktuelnosti/oglasi.html"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "jezero",
+  "naziv": "Jezero",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "",
+  "izvor_weba": "",
+  "rubrike": [],
+  "napomena": "web nije pronađen"
+ },
+ {
+  "tip": "opcina",
+  "id": "kakanj",
+  "naziv": "Kakanj",
+  "kanton": "zdk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://kakanj.gov.ba/v5/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    6,
+    "Javni poziv: “Regresiranje kamata za kredite odobrene u komercijalnim bankama u 2026. godini za poduzetnike i obrtnike s",
+    "https://kakanj.gov.ba/v5/javni-poziv-regresiranje-kamata-za-kredite-odobrene-u-komercijalnim-bankama-u-2026-godini-za-poduzetnike-i-obrtnike-sa-podrucja-opcine-kakanj/"
+   ],
+   [
+    2,
+    "",
+    "https://kakanj.gov.ba/v5/kvalitet-zraka-u-kaknju-proglasena-epizoda-pripravnost-3/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "kalesija",
+  "naziv": "Kalesija",
+  "kanton": "tk",
+  "web_staro": "https://kalesija.ba",
+  "rubrika_staro": "",
+  "web": "https://kalesija.ba/",
+  "izvor_weba": "baza",
+  "rubrike": [
+   [
+    12,
+    "Konkursi",
+    "https://kalesija.ba/notice-category/konkursi/"
+   ],
+   [
+    7,
+    "Nastavite čitati",
+    "https://kalesija.ba/notices/prelimarna-rang-lista-najpovoljnijih-ponudjaca-za-zakup-poljoprivrednog-zemljista-u-vlasnistvu-drzave-na-podrucju-opcine-kalesija-po-javnom-pozivu-broj-02-20-1030-3-od-05-08-2026-godine-prijedlog-k/"
+   ],
+   [
+    5,
+    "Obavijesti Oglasna ploča Pozivi, konkursi, oglasi i nadmetanja. Pregledajte objave →",
+    "https://kalesija.ba/notices/"
+   ],
+   [
+    4,
+    "Pozivi",
+    "https://kalesija.ba/notice-category/pozivi/"
+   ],
+   [
+    4,
+    "Oglasi",
+    "https://kalesija.ba/notice-category/oglasi/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "kalinovik",
+  "naziv": "Kalinovik",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://kalinovik.ba/",
+  "izvor_weba": "pogodak",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "kiseljak",
+  "naziv": "Kiseljak",
+  "kanton": "sbk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "",
+  "izvor_weba": "",
+  "rubrike": [],
+  "napomena": "web nije pronađen"
+ },
+ {
+  "tip": "opcina",
+  "id": "kladanj",
+  "naziv": "Kladanj",
+  "kanton": "tk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.kladanj.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "JAVNI POZIV-DODJELA SREDSTAVA ZA SPORT",
+    "https://www.kladanj.ba/javni-poziv-dodjela-sredstava-za-sport.html"
+   ],
+   [
+    2,
+    "Opširnije",
+    "https://www.kladanj.ba/javni-oglas-za-prijem-i-upis-djece-u-ju-dječije-obdanište-„edina-čamdžić“-kladanj-za-pedagošku-2026./2027.-godinu.html"
+   ],
+   [
+    2,
+    "Opširnije",
+    "https://www.kladanj.ba/j-a-v-n-i-oglas-za-prijem-radnika-u-radni-odnos-na-određeno-vrijeme-u-trajanju-od-(12)-mjeseci.html"
+   ],
+   [
+    2,
+    "Opširnije",
+    "https://www.kladanj.ba/ispravka-javnog-oglasa-o-pokretanju-postupka-odobravanja-i-registracije-redova-vožnje-za-redovni-javni-autobusni-linijski-prijevoz-putnika-na-području-općine-kladanj.html"
+   ],
+   [
+    2,
+    "Oglasi",
+    "https://www.kladanj.ba/#Popular"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "kljuc",
+  "naziv": "Ključ",
+  "kanton": "usk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.kljuc.ba/",
+  "izvor_weba": "pogodak",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "knezevo",
+  "naziv": "Kneževo",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://opstinaknezevo.org/",
+  "izvor_weba": "pogodak",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "konjic",
+  "naziv": "Konjic",
+  "kanton": "hnk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.konjic.ba/ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    8,
+    "Obavijest o raspisivanju ponovnog javnog poziva za podnošenje prijava za dodjelu sredstava fizičkim licima za sanaciju m",
+    "https://www.konjic.ba/ba/oglasi/794-o-b-a-v-i-j-e-s-t-o-raspisivanju-ponovnog-javnog-poziva-za-podnošenje-prijava-za-dodjelu-sredstava-fizičkim-licima-za-sanaciju-materijalnih-šteta-uzrokovanih-poplavama-na-području-grada-konjica-nastalih-04-10-2024-godine.html"
+   ],
+   [
+    6,
+    "Konkurs za dodjelu stipendija u školskoj/akademskoj 2026/2027.godini",
+    "https://www.konjic.ba/ba/oglasi/792-konkurs-za-dodjelu-stipendija-u-školskoj-akademskoj-2026-2027-godini.html"
+   ],
+   [
+    2,
+    "Javni oglasi",
+    "https://www.konjic.ba/ba/vijesti/oglasi.html"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "kostajnica",
+  "naziv": "Kostajnica",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.opstina-kostajnica.com/",
+  "izvor_weba": "pogodak",
+  "rubrike": [
+   [
+    10,
+    "Javni pozivi",
+    "https://www.opstina-kostajnica.com/index.php/javni-pozivi"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "kotor-varos",
+  "naziv": "Kotor Varoš",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://opstinakotorvaros.com/",
+  "izvor_weba": "pogodak",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "kozarska-dubica",
+  "naziv": "Kozarska Dubica",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "http://www.kozarskadubica.org/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    2,
+    "Oglasna tabla",
+    "http://www.kozarskadubica.org/Oglas/oglas.php"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "kresevo",
+  "naziv": "Kreševo",
+  "kanton": "sbk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://kresevo.info/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    8,
+    "Općina Kreševo Odluka o produženju roka za podnošenje prijava na Javni poziv za sufinanciranje troškova prijevoza učenik",
+    "https://kresevo.info/2026/11/23/odluka-o-produzenju-roka-za-podnosenje-prijava-na-javni-poziv-za-sufinanciranje-troskova-prijevoza-ucenika-srednjih-skola/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "krupa-na-uni",
+  "naziv": "Krupa na Uni",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.krupanauni.org/",
+  "izvor_weba": "pogodak",
+  "rubrike": [
+   [
+    10,
+    "Konkursi i Oglasi",
+    "https://www.krupanauni.org/konkursi-i-oglasi.html"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "kupres",
+  "naziv": "Kupres",
+  "kanton": "k10",
+  "web_staro": "https://www.opcinakupres.ba",
+  "rubrika_staro": "",
+  "web": "https://www.opcinakupres.ba/",
+  "izvor_weba": "baza",
+  "rubrike": [
+   [
+    5,
+    "",
+    "https://www.opcinakupres.ba/index.php?view=article&id=2020:objavljen-javni-poziv-za-prijavu-projekata-udruga-gradana-za-sufinanciranje-iz-proracuna-hercegbosanske-zupanije-za-2026-godinu&tmpl=component&print=1&layout=default&page="
+   ],
+   [
+    5,
+    "",
+    "https://www.opcinakupres.ba/index.php?view=article&id=2020:objavljen-javni-poziv-za-prijavu-projekata-udruga-gradana-za-sufinanciranje-iz-proracuna-hercegbosanske-zupanije-za-2026-godinu&format=pdf"
+   ],
+   [
+    5,
+    "",
+    "https://www.opcinakupres.ba/index.php?view=article&id=2015:objavljen-javni-poziv-za-prikupljanje-prijava-na-program-za-podrsku-poduzetnickim-ulaganjima-u-hercegbosanskoj-zupaniji&tmpl=component&print=1&layout=default&page="
+   ],
+   [
+    5,
+    "",
+    "https://www.opcinakupres.ba/index.php?view=article&id=2015:objavljen-javni-poziv-za-prikupljanje-prijava-na-program-za-podrsku-poduzetnickim-ulaganjima-u-hercegbosanskoj-zupaniji&format=pdf"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "kupres-rs",
+  "naziv": "Kupres (RS)",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.kupres.ba/",
+  "izvor_weba": "pogodak",
+  "rubrike": [
+   [
+    2,
+    "Mali oglasi",
+    "https://www.kupres.ba/oglasi/index.php"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "laktasi",
+  "naziv": "Laktaši",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "",
+  "izvor_weba": "",
+  "rubrike": [],
+  "napomena": "web nije pronađen"
+ },
+ {
+  "tip": "opcina",
+  "id": "livno",
+  "naziv": "Livno",
+  "kanton": "k10",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://livno.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    12,
+    "Natječaji, pozivi i oglasi",
+    "https://livno.ba/kategorija/natjecaji-i-pozivi/"
+   ],
+   [
+    10,
+    "Konačna lista kandidata za subvenciju prve stambene nekretnine po ponovljenom javnom pozivu",
+    "https://livno.ba/konacna-lista-kandidata-za-subvenciju-prve-stambene-nekretnine-po-ponovljenom-javnom-pozivu/"
+   ],
+   [
+    8,
+    "Javni poziv za sufinanciranje poljoprivrednih udruga na području grada Livna za tekuću godinu",
+    "https://livno.ba/javni-poziv-za-sufinanciranje-poljoprivrednih-udruga-na-podrucju-grada-livna-za-tekucu-godinu/"
+   ],
+   [
+    8,
+    "Javni poziv za subvencioniranje jesenske sjetve na području grada Livna",
+    "https://livno.ba/javni-poziv-za-subvencioniranje-jesenske-sjetve-na-podrucju-grada-livna-2/"
+   ],
+   [
+    8,
+    "Javni natječaj za izbor i imenovanje ravnatelja Centra za socijalnu skrb Livno",
+    "https://livno.ba/javni-natjecaj-za-izbor-i-imenovanje-ravnatelja-centra-za-socijalnu-skrb-livno/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "ljubinje",
+  "naziv": "Ljubinje",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://opstinaljubinje.org/",
+  "izvor_weba": "pogodak",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "ljubuski",
+  "naziv": "Ljubuški",
+  "kanton": "zhk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://ljubuski.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    12,
+    "Natječaji i pozivi",
+    "https://ljubuski.ba/obavijesti-kategorije/natjecaji-pozivi/"
+   ],
+   [
+    8,
+    "i Javni poziv za podnošenje zahtjeva za dodjelu novčanih potpora za uzgajivače goveda sa područja grada Ljubuškog",
+    "https://ljubuski.ba/obavijesti/javni-poziv-za-podnosenje-zahtjeva-za-dodjelu-novcanih-potpora-za-uzgajivace-goveda-sa-podrucja-grada-ljubuskog/"
+   ],
+   [
+    8,
+    "i JAVNI POZIV za dostavljanje prijedloga za investiranje, u cilju ažuriranja Plana kapitalnih investicija grada Ljubuško",
+    "https://ljubuski.ba/obavijesti/javni-poziv-za-dostavljanje-prijedloga-za-investiranje-u-cilju-azuriranja-plana-kapitalnih-investicija-grada-ljubuskog-3/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "lopare",
+  "naziv": "Lopare",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://opstinalopare.com/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    7,
+    "Јавни позиви и конкурси",
+    "https://opstinalopare.com/document-category/javni-pozivi-i-konkursi/"
+   ],
+   [
+    4,
+    "Јавни огласи и обавјештења",
+    "https://opstinalopare.com/document-category/javni-oglasi-i-obavestenja/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "lukavac",
+  "naziv": "Lukavac",
+  "kanton": "tk",
+  "web_staro": "https://lukavac.ba",
+  "rubrika_staro": "",
+  "web": "https://lukavac.ba/",
+  "izvor_weba": "baza",
+  "rubrike": [
+   [
+    8,
+    "Produžen rok za prijavu na Javni poziv za učešće u Impakt inkubatoru poslovnih ideja",
+    "https://lukavac.ba/produzen-rok-za-prijavu-na-javni-poziv-za-ucesce-u-impakt-inkubatoru-poslovnih-ideja/"
+   ],
+   [
+    8,
+    "Obavještenje o raspisivanju Javnog poziva za dodjelu novčanog stimulansa za novo zapošljavanje osoba sa invaliditetom u ",
+    "https://lukavac.ba/obavjestenje-o-raspisivanju-javnog-poziva-za-dodjelu-novcanog-stimulansa-za-novo-zaposljavanje-osoba-sa-invaliditetom-u-2026-godini/"
+   ],
+   [
+    8,
+    "Javni pozivi, konkursi grada Lukavac Pratite javne pozive i konkurse",
+    "https://lukavac.ba/javni-pozivi-konkursi-opcine-lukavac/"
+   ],
+   [
+    8,
+    "Javni poziv za odabir korisnika sredstava za poticaj zapošljavanju kroz subvencioniranje troškova doprinosa penzionog os",
+    "https://lukavac.ba/javni-poziv-za-odabir-korisnika-sredstava-za-poticaj-zaposljavanju-kroz-subvencioniranje-troskova-doprinosa-penzionog-osiguranja-7/"
+   ],
+   [
+    6,
+    "Javni poziv za dostavu projektnih prijedloga i inicijativa za izradu Programa kapitalnih investicija za period 2026-2029",
+    "https://lukavac.ba/javni-poziv-za-dostavu-projektnih-prijedloga-i-inicijativa-za-izradu-programa-kapitalnih-investicija-za-period-2026-2029/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "maglaj",
+  "naziv": "Maglaj",
+  "kanton": "zdk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "",
+  "izvor_weba": "",
+  "rubrike": [],
+  "napomena": "web nije pronađen"
+ },
+ {
+  "tip": "opcina",
+  "id": "milici",
+  "naziv": "Milići",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.opstinamilici.org/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    6,
+    "Konkurs za dodjelu 20 opštinskih stipendija za školsku 2026/2027.godinu",
+    "https://www.opstinamilici.org/index.php/1800-konkurs-za-dodjelu-20-opstinskih-stipendija-za-skolsku-2026-2027-godinu"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "modrica",
+  "naziv": "Modriča",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.modrica.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "mostar",
+  "naziv": "Mostar",
+  "kanton": "hnk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.mostar.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    12,
+    "Javni pozivi",
+    "https://www.mostar.ba/category/investicije-gospodarstvo/javni-pozivi/"
+   ],
+   [
+    8,
+    "Obavijest o održavanju info sesije za Javni poziv za odabir korisnika/ca pomoći za dodjelu podrške mikro poduzećima/obrt",
+    "https://www.mostar.ba/obavijest-o-odrzavanju-info-sesije-za-javni-poziv-za-odabir-korisnika-ca-pomoci-za-dodjelu-podrske-mikro-poduzecima-obrtima-usluznim-djelatnostima/"
+   ],
+   [
+    8,
+    "Javni poziv za uključivanje korisnika u projekt COOPeR 2.0 - poziv maslinarima za sudjelovanje u projektnim aktivnostima",
+    "https://www.mostar.ba/javni-poziv-za-ukljucivanje-korisnika-u-projekt-cooper-2-0-poziv-maslinarima-za-sudjelovanje-u-projektnim-aktivnostima/"
+   ],
+   [
+    8,
+    "Javni poziv za podnošenje prijava za zakup adventskih kućica i javnih površina u sklopu manifestacije „ADVENT I DOČEK NO",
+    "https://www.mostar.ba/javni-poziv-za-podnosenje-prijava-za-zakup-adventskih-kucica-i-javnih-povrsina-u-sklopu-manifestacije-advent-i-docek-nove-2027-godine/"
+   ],
+   [
+    8,
+    "Javni poziv za dodjelu sredstava za potporu razvoja maslinarstva na području Grada Mostara",
+    "https://www.mostar.ba/javni-poziv-za-dodjelu-sredstava-za-potporu-razvoja-maslinarstva-na-podrucju-grada-mostara/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "mrkonjic-grad",
+  "naziv": "Mrkonjić Grad",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.mrkonjic-grad.rs.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    5,
+    "Јавни позиви Јавни позиви општине Мркоњић Град Погледај документе",
+    "https://www.mrkonjic-grad.rs.ba/sr/kategorije/1416/javni-pozivi"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "neum",
+  "naziv": "Neum",
+  "kanton": "hnk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://neum.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "Natječaji",
+    "https://neum.ba/javni-oglasi-i-natjecaji/"
+   ],
+   [
+    6,
+    "Raspisan natječaj za stipendije studentima HNŽ-a za akademsku 2026./2027. godinu",
+    "https://neum.ba/raspisan-natjecaj-za-stipendije-studentima-hnz-a-za-akademsku-2026-2027-godinu/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "nevesinje",
+  "naziv": "Nevesinje",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://opstinanevesinje.rs.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    7,
+    "Конкурси",
+    "https://opstinanevesinje.rs.ba/category/info/konkursi/"
+   ],
+   [
+    7,
+    "Јавни позиви",
+    "https://opstinanevesinje.rs.ba/category/info/javni-pozivi/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "novi-grad",
+  "naziv": "Novi Grad",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.novigradsarajevo.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "Konkursi",
+    "https://www.novigradsarajevo.ba/cat/news/konkursi/"
+   ],
+   [
+    8,
+    "Rezultati Javnog poziva za ostvarivanje prava na direktne novčane podsticaje...",
+    "https://www.novigradsarajevo.ba/news/invitation/rezultati-javnog-poziva-za-ostvarivanje-prava-na-direktne-novcane-podsticaje-u-poljoprivrednoj-proizvodnji-za-2026-godinu/"
+   ],
+   [
+    8,
+    "JAVNI POZIV za odabir korisnika namjenske kreditne linije uz subvencioniranje...",
+    "https://www.novigradsarajevo.ba/news/invitation/javni-poziv-za-odabir-korisnika-namjenske-kreditne-linije-uz-subvencioniranje-dijela-kamate-na-stambene-kredite-za-mlade-s-podrucja-opcine-novi-grad-sarajevo-u-2026-godini/"
+   ],
+   [
+    7,
+    "Javni Pozivi",
+    "https://www.novigradsarajevo.ba/cat/news/invitation/"
+   ],
+   [
+    2,
+    "",
+    "https://www.novigradsarajevo.ba/news/invitation/javni-oglas-za-imenovanje-tri-clana-opcinske-izborne-komisije-novi-grad-sarajevo/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "novi-grad-sarajevo",
+  "naziv": "Novi Grad Sarajevo",
+  "kanton": "ks",
+  "web_staro": "https://www.novigradsarajevo.ba",
+  "rubrika_staro": "",
+  "web": "https://www.novigradsarajevo.ba/",
+  "izvor_weba": "baza",
+  "rubrike": [
+   [
+    10,
+    "Konkursi",
+    "https://www.novigradsarajevo.ba/cat/news/konkursi/"
+   ],
+   [
+    8,
+    "Rezultati Javnog poziva za ostvarivanje prava na direktne novčane podsticaje...",
+    "https://www.novigradsarajevo.ba/news/invitation/rezultati-javnog-poziva-za-ostvarivanje-prava-na-direktne-novcane-podsticaje-u-poljoprivrednoj-proizvodnji-za-2026-godinu/"
+   ],
+   [
+    8,
+    "JAVNI POZIV za odabir korisnika namjenske kreditne linije uz subvencioniranje...",
+    "https://www.novigradsarajevo.ba/news/invitation/javni-poziv-za-odabir-korisnika-namjenske-kreditne-linije-uz-subvencioniranje-dijela-kamate-na-stambene-kredite-za-mlade-s-podrucja-opcine-novi-grad-sarajevo-u-2026-godini/"
+   ],
+   [
+    7,
+    "Javni Pozivi",
+    "https://www.novigradsarajevo.ba/cat/news/invitation/"
+   ],
+   [
+    2,
+    "",
+    "https://www.novigradsarajevo.ba/news/invitation/javni-oglas-za-imenovanje-tri-clana-opcinske-izborne-komisije-novi-grad-sarajevo/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "novi-travnik",
+  "naziv": "Novi Travnik",
+  "kanton": "sbk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.novitravnik.gov.ba/",
+  "izvor_weba": "pogodak",
+  "rubrike": [
+   [
+    10,
+    "Oglasi i natječaji",
+    "https://www.novitravnik.gov.ba/index.php/novosti/oglasi-i-natjecaji"
+   ],
+   [
+    6,
+    "Natječaj za dodjelu stipendija za akademsku 2026./2027. 24.11.2026 Raspisuje se natječaj za dodjelu stipendija redov...",
+    "https://www.novitravnik.gov.ba/index.php/novosti/1995-natjecaj-za-dodjelu-stipendija-za-akademsku-2026-2027"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "novo-gorazde",
+  "naziv": "Novo Goražde",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://novogorazde.rs.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    2,
+    "СВЕ",
+    "https://novogorazde.rs.ba/oglasna-tabla"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "novo-sarajevo",
+  "naziv": "Novo Sarajevo",
+  "kanton": "ks",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.novosarajevo.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "Arhiva konkursa / oglasa",
+    "https://www.novosarajevo.ba/konkursi.php?ind=2"
+   ],
+   [
+    10,
+    "Aktuelni konkursi / oglasi",
+    "https://www.novosarajevo.ba/konkursi.php?ind=1"
+   ],
+   [
+    7,
+    "Javni pozivi",
+    "https://www.novosarajevo.ba/"
+   ],
+   [
+    7,
+    "Arhiva javnih poziva",
+    "https://www.novosarajevo.ba/jpozivi.php?ind=2"
+   ],
+   [
+    7,
+    "Aktuelni javni pozivi",
+    "https://www.novosarajevo.ba/jpozivi.php?ind=1"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "odzak",
+  "naziv": "Odžak",
+  "kanton": "pk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.odzak.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "Javni pozivi",
+    "https://www.odzak.ba/index.php/novosti/javni-pozivi"
+   ],
+   [
+    8,
+    "Produžen rok za prijavu na Javni poziv za dodjelu plastenika sa sadnim materijalom, sistemom za navodnjavanje i dodatnom",
+    "https://www.odzak.ba/index.php/novosti/javni-pozivi/2347-produzen-rok-za-prijavu-na-javni-poziv-za-dodjelu-plastenika-sa-sadnim-materijalom-sistemom-za-navodnjavanje-i-dodatnom-opremom"
+   ],
+   [
+    8,
+    "Objavljeni Javni pozivi Ministarstva gospodarstva, rada i prostornog uređenja",
+    "https://www.odzak.ba/index.php/novosti/javni-pozivi/2320-objavljeni-javni-pozivi-ministarstvo-gospodarstva-rada-i-prostornog-uredenja"
+   ],
+   [
+    8,
+    "Objavljen Javni poziv za subvencioniranje prvog rješavanja stambenog pitanja mladih obitelji",
+    "https://www.odzak.ba/index.php/novosti/javni-pozivi/2341-objavljen-javni-poziv-za-subvencioniranje-prvog-rjesavanja-stambenog-pitanja-mladih-obitelji"
+   ],
+   [
+    8,
+    "Javni poziv za predlaganje kandidata za dodjelu priznanja Općine Odžak",
+    "https://www.odzak.ba/index.php/novosti/opcinsko-vijece/2247-javni-poziv-za-predlaganje-kandidata-za-dodjelu-priznanja-opcine-odzak-5"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "olovo",
+  "naziv": "Olovo",
+  "kanton": "zdk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "http://olovo.gov.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    7,
+    "Javni pozivi",
+    "http://olovo.gov.ba/?cat=64"
+   ],
+   [
+    7,
+    "Javni konkursi",
+    "http://olovo.gov.ba/?cat=62"
+   ],
+   [
+    3,
+    "KONKURS za dodjelu stipendija studentima – braniocima i članovima njihovih porodica za studijsku 2026/2027.godinu",
+    "http://olovo.gov.ba?p=9330"
+   ],
+   [
+    2,
+    "Javni oglasi",
+    "http://olovo.gov.ba/?cat=61"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "orasje",
+  "naziv": "Orašje",
+  "kanton": "pk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.orasje.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "Natječaji",
+    "https://www.orasje.ba/natjecaj/aktualno"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "osmaci",
+  "naziv": "Osmaci",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.osmaci.org/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    3,
+    "ЈАВНИ КОНКУРС за пријем волонтера у Општинску управу Осмаци",
+    "https://www.osmaci.org/sr/novost/12081/javni-konkurs-za-prijem-volontera-u-optinsku-upravu-osmaci"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "ostra-luka",
+  "naziv": "Oštra Luka",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "",
+  "izvor_weba": "",
+  "rubrike": [],
+  "napomena": "web nije pronađen"
+ },
+ {
+  "tip": "opcina",
+  "id": "pale",
+  "naziv": "Pale",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://pale.rs.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "PRIJAVE Konkursi i obrasci",
+    "https://www.pale.rs.ba/opstina-pale-2/konkursi-obrazci-opstina-pale/"
+   ],
+   [
+    4,
+    "Oglasi",
+    "https://www.pale.rs.ba/category/oglasi/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "pale-praca",
+  "naziv": "Pale-Prača",
+  "kanton": "bpk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "",
+  "izvor_weba": "",
+  "rubrike": [],
+  "napomena": "web nije pronađen"
+ },
+ {
+  "tip": "opcina",
+  "id": "pelagicevo",
+  "naziv": "Pelagićevo",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://pelagicevo.gov.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    5,
+    "ЈАВНИ ПОЗИВ",
+    "https://pelagicevo.gov.ba/vijesti/532-javni-poziv-4-20-26"
+   ],
+   [
+    3,
+    "Статут Центра за социјални рад Пелагићево",
+    "https://pelagicevo.gov.ba/dokumenti/konkursi/Статут Центра за социјални рад Пелагићево.pdf0000644"
+   ],
+   [
+    3,
+    "Листа корисника којима није одобрена новчана помоћ 2",
+    "https://pelagicevo.gov.ba/dokumenti/konkursi/Листа корисника којима није одобрена новчана помоћ 2.pdf0000644"
+   ],
+   [
+    3,
+    "Листа корисника којима није одобрена новчана помоћ 1",
+    "https://pelagicevo.gov.ba/dokumenti/konkursi/Листа корисника којима није одобрена новчана помоћ 1.pdf0000644"
+   ],
+   [
+    3,
+    "Јавни позив за незапослене социјално угрожене борце",
+    "https://pelagicevo.gov.ba/dokumenti/konkursi/Јавни позив за незапослене социјално угрожене борце.pdf0000644"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "petrovac",
+  "naziv": "Petrovac",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://drinic.rs.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "petrovo",
+  "naziv": "Petrovo",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://petrovo.ba/",
+  "izvor_weba": "pogodak",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "posusje",
+  "naziv": "Posušje",
+  "kanton": "zhk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.opcina-posusje.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    12,
+    "Javni natječaji",
+    "https://www.opcina-posusje.ba/category/aktualnosti/javni-natjecaji/"
+   ],
+   [
+    8,
+    "Javni poziv za dostavu prijedloga za program kapitalnih investicija",
+    "https://www.opcina-posusje.ba/naslovnica-hr/javni-poziv-za-dostavu-prijedloga-za-program-kapitalnih-investicija/"
+   ],
+   [
+    4,
+    "Oglasna ploča",
+    "https://www.opcina-posusje.ba/category/oglasna-ploca/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "prijedor",
+  "naziv": "Prijedor",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.prijedorgrad.org/sr-BA/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    5,
+    "Јавни конкурси и позиви",
+    "https://www.prijedorgrad.org/sr-BA/sr-BA/#konkursi"
+   ],
+   [
+    5,
+    "",
+    "https://www.prijedorgrad.org/sr-BA/aktuelno-javni-konkursi.html"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "prnjavor",
+  "naziv": "Prnjavor",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "",
+  "izvor_weba": "",
+  "rubrike": [],
+  "napomena": "web nije pronađen"
+ },
+ {
+  "tip": "opcina",
+  "id": "prozor-rama",
+  "naziv": "Prozor-Rama",
+  "kanton": "hnk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.prozor-rama.org/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "Natječaji",
+    "https://prozor-rama.org/press-centar/natjecaji"
+   ],
+   [
+    8,
+    "Ponovni Javni natječaj za izbor i imenovanje direktora Društva “Javni prijevoz” d.o.o. Prozor-Rama",
+    "https://prozor-rama.org/press-centar/obavijesti/ponovni-javni-natjecaj-za-izbor-i-imenovanje-direktora-drustva-javni-prijevoz-d-o-o-prozor-rama/1333"
+   ],
+   [
+    6,
+    "JAVNI POZIV za javnu raspravu o Nacrtu Proračuna Općine Prozor-Rama za 2027. godinu",
+    "https://prozor-rama.org/press-centar/javni-oglasi/javni-poziv-za-javnu-raspravu-o-nacrtu-proracuna-opcine-prozor-rama-za-2027-godinu/1335"
+   ],
+   [
+    2,
+    "Program poticaja zapošljavanja",
+    "https://prozor-rama.org/program-zaposljavanja"
+   ],
+   [
+    2,
+    "Javni oglasi",
+    "https://prozor-rama.org/press-centar/javni-oglasi"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "ravno",
+  "naziv": "Ravno",
+  "kanton": "hnk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://ravno.gov.ba/",
+  "izvor_weba": "pogodak",
+  "rubrike": [
+   [
+    10,
+    "Javni pozivi i natječaji",
+    "https://ravno.gov.ba/javni-pozivi-i-natjecaji/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "ribnik",
+  "naziv": "Ribnik",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.opstinaribnik.org/",
+  "izvor_weba": "wikidata",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "rogatica",
+  "naziv": "Rogatica",
+  "kanton": "rs",
+  "web_staro": "https://www.rogatica.ba",
+  "rubrika_staro": "",
+  "web": "https://www.rogatica.ba/",
+  "izvor_weba": "baza",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "rudo",
+  "naziv": "Rudo",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://opstinarudo.com/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    7,
+    "Јавни позиви",
+    "https://opstinarudo.com/kategorija/javni-pozivi-i-konkursi/"
+   ],
+   [
+    1,
+    "Резултати пјесничког конкурса „Милош Видаковић“ Рудо 2026 16. новембар 2026.",
+    "https://opstinarudo.com/2026/11/rezultati-pjesnickog-konkursa-milos-vidakovic-rudo-2026/"
+   ],
+   [
+    1,
+    "Расписан конкурс за додјелу студентских стипендија из средстава буџета општине Рудо за школску 2026/2027. годину 24. нов",
+    "https://opstinarudo.com/2026/11/raspisan-konkurs-za-dodjelu-studentskih-stipendija-iz-sredstava-budzeta-opstine-rudo-za-skolsku-2026-2027-godinu/"
+   ],
+   [
+    1,
+    "Јавни позив ради споразумног прибављања непокретности 6. јул 2026.",
+    "https://opstinarudo.com/2026/07/javni-poziv-radi-sporazumnog-pribavljanja-nepokretnosti-3/"
+   ],
+   [
+    1,
+    "Јавни позив ради споразумног прибављања непокретности 19. јун 2026.",
+    "https://opstinarudo.com/2026/06/javni-poziv-radi-sporazumnog-pribavljanja-nepokretnosti-2/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "sanski-most",
+  "naziv": "Sanski Most",
+  "kanton": "usk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://sanskimost.gov.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    12,
+    "Javni pozivi",
+    "https://sanskimost.gov.ba/category/javni-pozivi/"
+   ],
+   [
+    10,
+    "PRELIMINARNA RANG LISTA REZULTATA Javnog poziva za dodjelu poticajnih sredstava za podršku biznis idejama mladih (13.10.",
+    "https://sanskimost.gov.ba/preliminarna-rang-lista-rezultata-javnog-poziva-za-dodjelu-poticajnih-sredstava-za-podrsku-biznis-idejama-mladih-13-10-2026/"
+   ],
+   [
+    8,
+    "PRELlMINARNA RANG LlSTA aplikanata koji su ispunili uslove po Javnom pozivu za subvenciju naknade za izvođenje praktične",
+    "https://sanskimost.gov.ba/prellminarna-rang-llsta-aplikanata-koji-su-ispunili-uslove-po-javnom-pozivu-za-subvenciju-naknade-za-izvodjenje-prakticne-nastave-u-skolskoj-2026-15-10-2026/"
+   ],
+   [
+    8,
+    "Konačna rang lista rezultata Javnog poziva za dodjelu poticajnih sredstava za podršku biznis idejama mladih (30.10.2026.",
+    "https://sanskimost.gov.ba/konacna-rang-lista-rezultata-javnog-poziva-za-dodjelu-poticajnih-sredstava-za-podrsku-biznis-idejama-mladih-30-10-2026-god/"
+   ],
+   [
+    8,
+    "Javni poziv OCD za predaju projektnih prijava u sklopu ReLOaD3 programa- (prvi mentorski sastanak bit će održan 03. dece",
+    "https://sanskimost.gov.ba/javni-poziv-ocd-za-predaju-projektnih-prijava-u-sklopu-reload3-programa-prvi-mentorski-sastanak-bit-ce-odrzan-03-decembra-2026-godine-u-plavoj-sali-opcine-sanski-most-ul-trg-ljiljana-3-objavlje/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "sapna",
+  "naziv": "Sapna",
+  "kanton": "tk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "http://www.opcinasapna.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    6,
+    "Obavještenje i Odluka br. 01-11-1755/2026 - Rezultati konkursa za izradu idejnog rješenja \"Etno selo u Sapni\"",
+    "http://www.opcinasapna.ba/obavjestenja/2809-obavjestenje-i-odluka-br-01-11-1755-2026-rezultati-konkursa-za-izradu-idejnog-rjesenja-etno-selo-u-sapni"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "sokolac",
+  "naziv": "Sokolac",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.opstinasokolac.net/cgi-sys/suspendedpage.cgi",
+  "izvor_weba": "pogodak",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "srbac",
+  "naziv": "Srbac",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://srbac-rs.com/",
+  "izvor_weba": "wikidata",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "srebrenica",
+  "naziv": "Srebrenica",
+  "kanton": "rs",
+  "web_staro": "https://srebrenica.gov.ba",
+  "rubrika_staro": "",
+  "web": "https://srebrenica.gov.ba/",
+  "izvor_weba": "baza",
+  "rubrike": [
+   [
+    10,
+    "Javni pozivi i obavještenja",
+    "https://srebrenica.gov.ba/javni-pozivi-i-obavjestenja/"
+   ],
+   [
+    8,
+    "Javni konkurs o dodjeli u zakup stambenih jedinica socijalnog stanovanja",
+    "https://srebrenica.gov.ba/javni-konkurs-o-dodjeli-u-zakup-stambenih-jedinica-socijalnog-stanovanja-2/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "srebrenik",
+  "naziv": "Srebrenik",
+  "kanton": "tk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.srebrenik.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    2,
+    "Nastavi čitati",
+    "https://www.srebrenik.ba/javni-oglas-za-dodjelu-u-zakup-stambenih-jedinica-u-zgradama-socijalnog-stanovanja-na-podrucju-grada-srebrenik-6/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "stanari",
+  "naziv": "Stanari",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.opstinastanari.com/",
+  "izvor_weba": "wikidata",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "stari-grad",
+  "naziv": "Stari Grad",
+  "kanton": "ks",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://starigrad.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "Javni pozivi, konkursi i oglasi",
+    "https://starigrad.ba/javni-pozivi-konkursi-i-oglasi/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "stolac",
+  "naziv": "Stolac",
+  "kanton": "hnk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://stolac.gov.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    8,
+    "Obavijest o Javnom pozivu za pomoć u projektima samoupošljavanja, otvaranja radnih mjesta i drugih oblika radnog angažir",
+    "https://stolac.gov.ba/vijesti/obavijest-o-javnom-pozivu-za-pomoc-u-projektima-samouposljavanja-otvaranja-radnih-mjesta-i-drugih-oblika-radnog-angaziranja-branitelja-clanova-njihovih-obitelji-i-clanova-obitelji-poginulih-umrlih/"
+   ],
+   [
+    8,
+    "Obavijest o Javnom pozivu za podnošenje zahtjeva za ostvarivanje prava na olakšice kod plaćanja naknada u obrazovnim ust",
+    "https://stolac.gov.ba/vijesti/obavijest-o-javnom-pozivu-za-podnosenje-zahtjeva-za-ostvarivanje-prava-na-olaksice-kod-placanja-naknada-u-obrazovnim-ustanovama-u-akademskoj-2026-27-godini/"
+   ],
+   [
+    8,
+    "Natječaj za dodjelu u zakup poslovnih prostora u vlasništvu grada Stoca",
+    "https://stolac.gov.ba/obavijesti/natjecaj-za-dodjelu-u-zakup-poslovnih-prostora-u-vlasnistvu-grada-stoca/"
+   ],
+   [
+    8,
+    "Javni natječaj za prikupljanje pisanih prijava za davanje u zakup poljoprivrednog zemljišta u državnoj svojini na područ",
+    "https://stolac.gov.ba/obavijesti/javno-natjecaj-za-prikupljanje-pisanih-prijava-za-davanje-u-zakup-poljoprivrednog-zemljista-u-drzavnoj-svojini-na-podrucju-grada-stoca/"
+   ],
+   [
+    8,
+    "Javni natječaj za prikupljanje pisanih prijava za davanje u zakup poljoprivrednog zemljišta u državnoj svojini na područ",
+    "https://stolac.gov.ba/obavijesti/javni-natjecaj-za-prikupljanje-pisanih-prijava-za-davanje-u-zakup-poljoprivrednog-zemljista-u-drzavnoj-svojini-na-podrucju-grada-stoca-8/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "teocak",
+  "naziv": "Teočak",
+  "kanton": "tk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://teocak.gov.ba/",
+  "izvor_weba": "pogodak",
+  "rubrike": [
+   [
+    8,
+    "Javni konkurs za prijavu kandidata za imenovanje predsjednika/zamjenika predsjednika biračkog odbora u osnovnim izbornim",
+    "https://teocak.gov.ba/javni-konkurs-za-prijavu-kandidata-za-imenovanje-predsjednika-zamjenika-predsjednika-birackog-odbora-u-osnovnim-izbornim-jedinicama-u-bosni-i-hercegovini-2/"
+   ],
+   [
+    8,
+    "01.10.2026. Javni poziv za subvencioniranje mjesečnih karata studentima i učenicima srednjih škola sa područja općine Te",
+    "https://teocak.gov.ba/oglasna-ploca/javni-poziv-za-subvencioniranje-mjesecnih-karata-studentima-i-ucenicima-srednjih-skola-sa-podrucja-opcine-teocak-koji-pohadjaju-srednju-skolu-van-mjesta-prebivalista/"
+   ],
+   [
+    7,
+    "Javni pozivi Oglasi i konkursi",
+    "https://teocak.gov.ba/oglasna-ploca/"
+   ],
+   [
+    6,
+    "13.10.2026. Konkurs za najbolje literarne radove povodom 34. godišnjice pogibije Hajrudina Mešića – Kapetana Hajre",
+    "https://teocak.gov.ba/oglasna-ploca/konkurs-za-najbolje-literarne-radove-povodom-34-godisnjice-pogibije-hajrudina-mesica-kapetana-hajre/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "teslic",
+  "naziv": "Teslić",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.gradteslic.com/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    12,
+    "Javni pozivi i oglasi",
+    "https://www.gradteslic.com/kategorije/javni_pozivi/"
+   ],
+   [
+    10,
+    "Javni pozivi i oglasi",
+    "https://www.gradteslic.com/javni-poziv-za-prikupljanje-ponuda-za-kupovinu-dvije-stambene-jedinice-na-podrucju-grada-teslic-radi-trajnog-stambenog-zbrinjavanja-lica-sa-statusom-clana-porodice-poginulog-borca-i-ratnog-vojnog-inva/"
+   ],
+   [
+    10,
+    "Javni pozivi i oglasi",
+    "https://www.gradteslic.com/javni-poziv-za-imenovanje-cetiri-clana-iz-reda-uglednih-i-afirmisanih-gradjana-u-javnom-zivotu-u-komisiju-za-eticka-pitanja-3/"
+   ],
+   [
+    10,
+    "Javni pozivi i oglasi",
+    "https://www.gradteslic.com/javni-poziv-za-dodjelu-podsticaja-iz-nadleznosti-ministarstva-energetike-i-rudarstva-u-2026-godini/"
+   ],
+   [
+    10,
+    "Javni pozivi i oglasi",
+    "https://www.gradteslic.com/javni-konkurs-za-stipendiranje-perspektivnih-sportista-iz-budzeta-grada-teslic-u-2026-godini/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "tesanj",
+  "naziv": "Tešanj",
+  "kanton": "zdk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "http://opcina-tesanj.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "Konkursi",
+    "https://opcina-tesanj.ba/uprava/mladi/podrska-start-up-idejama-mladih/konkursi/"
+   ],
+   [
+    10,
+    "Konkursi",
+    "https://opcina-tesanj.ba/uprava/mladi/omladinska-banka/konkursi/"
+   ],
+   [
+    8,
+    "Javni poziv za dodjelu poticaja zapošljavanja i samozapošljavanja...",
+    "https://opcina-tesanj.ba/javni-oglas/javni-poziv-za-dodjelu-poticaja-zaposljavanja-i-samozaposljavanja-pripadnika-branilacke-populacije-zdk-2/"
+   ],
+   [
+    8,
+    "Javni poziv stručnim licima za učešće u radu...",
+    "https://opcina-tesanj.ba/javni-oglas/javni-poziv-strucnim-licima-za-ucesce-u-radu-komisije-za-tehnicki-pregled-gradjevina/"
+   ],
+   [
+    8,
+    "Javni poziv radi sporazumnog pribavljanja nekretnina u javnom...",
+    "https://opcina-tesanj.ba/javni-oglas/javni-poziv-radi-sporazumnog-pribavljanja-nekretnina-u-javnom-interesu/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "tomislavgrad",
+  "naziv": "Tomislavgrad",
+  "kanton": "k10",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://tomislavgrad.gov.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "JAVNI POZIVI I OGLASI",
+    "https://tomislavgrad.gov.ba/javni-pozivi-i-oglasi/"
+   ],
+   [
+    8,
+    "JAVNI POZIV ZA USTUPANJE JAVNE POVRŠINE ZA PRIVREMENO KORIŠTENJE I POSTAVLJANJE DRVENIH KUĆICA ZA VRIJEME TRAJANJA MANIF",
+    "https://tomislavgrad.gov.ba/javni-poziv-za-ustupanje-javne-povrsine-za-privremeno-koristenje-i-postavljanje-drvenih-kucica-za-vrijeme-trajanja-manifestacije-bozicu-u-susret/"
+   ],
+   [
+    2,
+    "SUBVENCIJE NAKNADE I POMOĆI",
+    "https://tomislavgrad.gov.ba/teme-za-gradane/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "travnik",
+  "naziv": "Travnik",
+  "kanton": "sbk",
+  "web_staro": "https://opcinatravnik.com.ba",
+  "rubrika_staro": "",
+  "web": "https://opcinatravnik.com.ba/ba/",
+  "izvor_weba": "baza",
+  "rubrike": [
+   [
+    10,
+    "Konkursi",
+    "https://opcinatravnik.com.ba/ba/aktuelno/konkursi"
+   ],
+   [
+    10,
+    "Javni pozivi",
+    "https://opcinatravnik.com.ba/ba/aktuelno/javni-pozivi"
+   ],
+   [
+    8,
+    "Javni poziv organizacijama civilnog društva za predaju projektnih prijava u sklopuReLOaD3 programa",
+    "https://opcinatravnik.com.ba/ba/press/29927-javni-poziv-organizacijama-civilnog-drustva-za-predaju-projektnih-prijava-u-sklopureload3-programa"
+   ],
+   [
+    2,
+    "Javni oglasi",
+    "https://opcinatravnik.com.ba/ba/aktuelno/oglasi"
+   ],
+   [
+    2,
+    "",
+    "https://opcinatravnik.com.ba/images/photo/2026/Javni_oglas.jpg"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "trebinje",
+  "naziv": "Trebinje",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://trebinje.rs.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    5,
+    "Јавни позиви/конкурси",
+    "https://trebinje.rs.ba/javni-pozivi/"
+   ],
+   [
+    5,
+    "Јавни огласи",
+    "https://trebinje.rs.ba/konkursi-i-oglasi/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "trnovo",
+  "naziv": "Trnovo",
+  "kanton": "ks",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://trnovo-rs.com/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    2,
+    "Позиви",
+    "https://trnovo-rs.com/pozivi/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "trnovo-rs",
+  "naziv": "Trnovo (RS)",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.trnovo.ba/",
+  "izvor_weba": "pogodak",
+  "rubrike": [
+   [
+    12,
+    "Javni pozivi/oglasi",
+    "https://www.trnovo.ba/category/javni-pozivi-oglasi/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "tuzla",
+  "naziv": "Tuzla",
+  "kanton": "tk",
+  "web_staro": "https://grad.tuzla.ba",
+  "rubrika_staro": "https://grad.tuzla.ba/jp/",
+  "web": "https://grad.tuzla.ba/",
+  "izvor_weba": "baza",
+  "rubrike": [
+   [
+    10,
+    "Stalni javni pozivi",
+    "https://grad.tuzla.ba/stalni-javni-pozivi/"
+   ],
+   [
+    10,
+    "Javni pozivi i oglasi",
+    "https://grad.tuzla.ba/javni-pozivi-i-oglasi/"
+   ],
+   [
+    7,
+    "Javni pozivi",
+    "https://grad.tuzla.ba/jp/"
+   ],
+   [
+    2,
+    "Javni oglasi",
+    "https://grad.tuzla.ba/jo/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "ugljevik",
+  "naziv": "Ugljevik",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "",
+  "izvor_weba": "",
+  "rubrike": [],
+  "napomena": "web nije pronađen"
+ },
+ {
+  "tip": "opcina",
+  "id": "usora",
+  "naziv": "Usora",
+  "kanton": "zdk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://usora.ba/",
+  "izvor_weba": "pogodak",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "vares",
+  "naziv": "Vareš",
+  "kanton": "zdk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.vares.info/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    5,
+    "Poziv za plave grantove - Omladinska banka Vareš",
+    "https://www.vares.info/?q=node/1700"
+   ],
+   [
+    5,
+    "Konkurs za dodjelu novčane pomoći za nabavku školskih udžbenika",
+    "https://www.vares.info/?q=node/1709"
+   ],
+   [
+    5,
+    "Javni poziv za sufinansiranje (refundaciju) investicija kod obrta i subvencioniranje obavljanja djelatnosti prema Uredbi",
+    "https://www.vares.info/?q=node/1670"
+   ],
+   [
+    5,
+    "Javni poziv za dodjelu podrške mikro preduzećima/obrtima/uslužnim djelatnostima koji su pretrpjeli štete u poplavama 202",
+    "https://www.vares.info/?q=node/1725"
+   ],
+   [
+    5,
+    "Javni poziv za dodjelu novčanih sredstava učenicima osnovnih škola povratnicima na ime jednokratne novčane pomoći",
+    "https://www.vares.info/?q=node/1683"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "velika-kladusa",
+  "naziv": "Velika Kladuša",
+  "kanton": "usk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://velikakladusa.gov.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    12,
+    "Konkursi",
+    "https://velikakladusa.gov.ba/kategorija/konkursi/"
+   ],
+   [
+    12,
+    "Javni pozivi",
+    "https://velikakladusa.gov.ba/kategorija/javni-pozivi/"
+   ],
+   [
+    12,
+    "Javni pozivi",
+    "https://velikakladusa.gov.ba/kategorija/javni-pozivi-2/"
+   ],
+   [
+    8,
+    "Javni poziv za podnošenje prijava za dodjelu sredstava vjerskim zajednicama iz Budžeta Općine Velika Kladuša",
+    "https://velikakladusa.gov.ba/javni-poziv-za-podnosenje-prijava-za-dodjelu-sredstava-vjerskim-zajednicama-iz-budzeta-opcine-velika-kladusa/"
+   ],
+   [
+    8,
+    "Javni poziv za finansiranje i sufinansiranje projekata organizacija civilnog društva (OCD), odnosno nevladinih i neprofi",
+    "https://velikakladusa.gov.ba/javni-poziv-za-finansiranje-i-sufinansiranje-projekata-organizacija-civilnog-drustva-ocd-odnosno-nevladinih-i-neprofitnih-organizacija-iz-budzeta-opcine-velika-kladusa-za-2026-godinu/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "visoko",
+  "naziv": "Visoko",
+  "kanton": "zdk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.visoko.gov.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "Javni pozivi, konkursi i oglasi",
+    "https://www.visoko.gov.ba/e-grad-visoko/javni-pozivi-konkursi-oglasi"
+   ],
+   [
+    3,
+    "JAVNI POZIV ZA JAVNU RASPRAVU O NACRTU BUDŽEТА GRADA VISOKO ZA 2027.GODINU I NACRTU ODLUKE O IZVRŠENJU BUDŽETA GRADA VIS",
+    "https://www.visoko.gov.ba/novosti/6b05a52a09bcded7c3eecb4e"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "vitez",
+  "naziv": "Vitez",
+  "kanton": "sbk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://vitez.ba/",
+  "izvor_weba": "pogodak",
+  "rubrike": [
+   [
+    8,
+    "Javni poziv za odabir korisnika budžetskih sredstava po programu i kriterijima utroška sredstava iz budžeta SBK-KSB za p",
+    "https://vitez.ba/javni-poziv-poljovrivreda-sbk-2026/"
+   ],
+   [
+    6,
+    "Objavljen javni poziv za projekte poticaja povratku prognanih, obnovi i razvoju u SBK za 2026. godinu",
+    "https://vitez.ba/objavljen-javni-poziv-za-projekte-poticaja-povratku-prognanih-obnovi-i-razvoju-u-sbk-za-2026-godinu/"
+   ],
+   [
+    4,
+    "Javni oglasi",
+    "https://vitez.ba/tag/javni-oglasi/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "visegrad",
+  "naziv": "Višegrad",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://visegradturizam.com/",
+  "izvor_weba": "wikidata",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "vlasenica",
+  "naziv": "Vlasenica",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.opstina-vlasenica.org/",
+  "izvor_weba": "wikidata",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "vogosca",
+  "naziv": "Vogošća",
+  "kanton": "ks",
+  "web_staro": "https://vogosca.ba",
+  "rubrika_staro": "",
+  "web": "https://vogosca.ba/",
+  "izvor_weba": "baza",
+  "rubrike": [
+   [
+    12,
+    "Javni pozivi",
+    "https://vogosca.ba/category/javni_pozivi/"
+   ],
+   [
+    8,
+    "Read More → JAVNI POZIV ZA SUFINANSIRANJE PROJEKATA NEVLADINIH ORGANIZACIJA PO LOD METODOLOGIJI IZ BUDžETA OPĆINE VOGOŠĆ",
+    "https://vogosca.ba/2026/11/19/javni-poziv-za-sufinansiranje-projekata-nevladinih-organizacija-po-lod-metodologiji-iz-budzeta-opcine-vogosca-za-2027-godinu/"
+   ],
+   [
+    8,
+    "JAVNI POZIV ZA IZBOR I IMENOVANJE ČLANA I ZAMJENSKOG ČLANA KOMISIJE ZA EVALUACIJU I BODOVANJE PRISTIGLIH PRIJAVA PO JAVN",
+    "https://vogosca.ba/2026/11/19/javni-poziv-za-izbor-i-imenovanje-clana-i-zamjenskog-clana-komisije-za-evaluaciju-i-bodovanje-pristiglih-prijava-po-javnom-pozivu-iz-reda-sportskih-organizacija/"
+   ],
+   [
+    8,
+    "JAVNI POZIV ZA IZBOR I IMENOVANJE ČLANA I ZAMJENSKOG ČLANA KOMISIJE ZA BODOVANJE PRISTIGLIH PRIJAVA PO JAVNOM POZIVU IZ ",
+    "https://vogosca.ba/2026/11/20/javni-poziv-za-izbor-i-imenovanje-clana-i-zamjenskog-clana-komisije-za-bodovanje-pristiglih-prijava-po-javnom-pozivu-iz-reda-nevladinih-organizacija/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "vukosavlje",
+  "naziv": "Vukosavlje",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "",
+  "izvor_weba": "",
+  "rubrike": [],
+  "napomena": "web nije pronađen"
+ },
+ {
+  "tip": "opcina",
+  "id": "zavidovici",
+  "naziv": "Zavidovići",
+  "kanton": "zdk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://zavidovici.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    12,
+    "Javni Pozivi",
+    "https://zavidovici.ba/category/novosti/javni-pozivi/"
+   ],
+   [
+    12,
+    "Javni Konkursi",
+    "https://zavidovici.ba/category/novosti/javni-konkursi/"
+   ],
+   [
+    10,
+    "JAVNI POZIV za prikupljanje zahtjeva za raspored taksivozila na slobodna taksistajališta na području Grada Zavidovići za",
+    "https://zavidovici.ba/javni-poziv-za-prikupljanje-zahtjeva-za-raspored-taksivozila-na-slobodna-taksistajalista-na-podrucju-grada-zavidovici-za-2027-godinu/"
+   ],
+   [
+    8,
+    "Rezultati Javnog konkursa za prijem lica na stručno osposobljavanje bez zasnivanja radnog odnosa u Gradu Zavidovići",
+    "https://zavidovici.ba/rezultati-javnog-konkursa-za-prijem-lica-na-strucno-osposobljavanje-bez-zasnivanja-radnog-odnosa-u-gradu-zavidovici-10/"
+   ],
+   [
+    8,
+    "REZULTATI po Javnom pozivu za raspodjelu sredstava na Tekućem transferu za podršku projektima udruženjima- nevladinim or",
+    "https://zavidovici.ba/rezultati-po-javnom-pozivu-za-raspodjelu-sredstava-na-tekucem-transferu-za-podrsku-projektima-udruzenjima-nevladinim-organizacijama-koje-nemaju-poseban-transfer-u-budzetu-grada-zavidovici-za-2026-go/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "zenica",
+  "naziv": "Zenica",
+  "kanton": "zdk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://zenica.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "Oglasi i konkursi",
+    "https://zenica.ba/oglasi-i-konkursi/"
+   ],
+   [
+    10,
+    "Konačna lista o izboru kandidata prijavljenih na Javni poziv organizacijama civilnog društva/nevladinim organizacijama s",
+    "https://zenica.ba/obavjestenja/konacna-lista-o-izboru-kandidata-prijavljenih-na-javni-poziv-organizacijama-civilnog-drustva-nevladinim-organizacijama-sa-podrucja-grada-zenica-za-2026-godine/"
+   ],
+   [
+    10,
+    "Javni pozivi",
+    "https://zenica.ba/javni-pozivi/"
+   ],
+   [
+    10,
+    "JAVNI POZIV za prodaju betonskih ploča",
+    "https://zenica.ba/javni-pozivi/javni-poziv-za-prodaju-betonskih-ploca/"
+   ],
+   [
+    8,
+    "Javni poziv Federalnog ministarstva prostornog uređenja za uvid u Glavni projekat za izgradnju autoceste na korisdoru Vc",
+    "https://zenica.ba/javni-pozivi/javni-poziv-federalnog-ministarstva-prostornog-uredjenja-za-uvid-u-glavni-projekat-za-izgradnju-autoceste-na-korisdoru-vc-poddionica-vranduk-ponirak/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "zvornik",
+  "naziv": "Zvornik",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "http://www.opstina-zvornik.org/",
+  "izvor_weba": "wikidata",
+  "rubrike": [],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "cajnice",
+  "naziv": "Čajniče",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "",
+  "izvor_weba": "",
+  "rubrike": [],
+  "napomena": "web nije pronađen"
+ },
+ {
+  "tip": "opcina",
+  "id": "capljina",
+  "naziv": "Čapljina",
+  "kanton": "hnk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://capljina.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    12,
+    "Natječaji",
+    "https://capljina.ba/category/natjecaji-i-oglasi/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "celinac",
+  "naziv": "Čelinac",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.opstina-celinac.com/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    5,
+    "Јавни конкурс за продају неизграђеног градског грађевинског земљишта у својини о",
+    "https://www.opstina-celinac.com/?view=article&id=5715:javni-konkurs-za-prodaju-neizgradenog-gradskog-gradevinskog-zemlista-u-svojini-opstine-celinac-putem-licitacije-2&catid=48"
+   ],
+   [
+    3,
+    "Јавни позив - суфинансирање боравка дјеце у приватним предшколским установама + о",
+    "https://www.opstina-celinac.com/?view=article&id=5318:javni-poziv-sufinansiranje-boravka-djece-u-privatnim-predskolskim-ustanovama-obrazac-lat&catid=48"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "celic",
+  "naziv": "Čelić",
+  "kanton": "tk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://opcinacelic.ba",
+  "izvor_weba": "pogodak",
+  "rubrike": [
+   [
+    10,
+    "Javni pozivi za nabavke",
+    "https://opcinacelic.ba/javni-pozivi-za-nabavke"
+   ],
+   [
+    7,
+    "Javni pozivi i obavještenja",
+    "https://opcinacelic.ba/javni-oglasi"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "citluk",
+  "naziv": "Čitluk",
+  "kanton": "hnk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://citluk.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "Natječaji i oglasi",
+    "https://citluk.ba/natjecaji-i-oglasi/"
+   ],
+   [
+    5,
+    "Javni poziv za iskazivanje interesa za poslovnu suradnju – Izgradnja Autobusnog kolodvor",
+    "https://citluk.ba/opcina-citluk-uputila-poziv-za-poslovnu-suradnju-u-realizaciji-projekta-izgradnje-autobusnog-kolodvora/%20"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "samac",
+  "naziv": "Šamac",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.opstinasamac.org/sr-BA/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    5,
+    "Конкурси и јавни позиви",
+    "https://www.opstinasamac.org/sr-BA/sr-BA/samac-konkursi.html"
+   ],
+   [
+    2,
+    "Огласна табла",
+    "https://www.opstinasamac.org/sr-BA/sr-BA/oglasna-tabla.html"
+   ],
+   [
+    1,
+    "Детаљније... Јавни позив за закуп сајамских кућица и штандова у оквиру манифестације „Зимска чаролија на ушћу 2026“",
+    "https://www.opstinasamac.org/sr-BA/sr-BA/obavjestenja-kompletan-clanak/javni-poziv-za-zakup-sajamskih-kucica-i-standova-u-okviru-manifestacije-zimska-carolija-na-uscu-2026.html"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "sekovici",
+  "naziv": "Šekovići",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://sekovici.org/",
+  "izvor_weba": "pogodak",
+  "rubrike": [
+   [
+    8,
+    "Javni poziv za izbor MSP za učešće u programu podrške AI u praksi",
+    "https://sekovici.org/javni-poziv-za-izbor-msp-za-ucesce-u-programu-podrske-ai-u-praksi/"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "sipovo",
+  "naziv": "Šipovo",
+  "kanton": "rs",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "",
+  "izvor_weba": "",
+  "rubrike": [],
+  "napomena": "web nije pronađen"
+ },
+ {
+  "tip": "opcina",
+  "id": "siroki-brijeg",
+  "naziv": "Široki Brijeg",
+  "kanton": "zhk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "http://www.sirokibrijeg.ba/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "Javni oglasi i natječaji",
+    "http://www.sirokibrijeg.ba/index.php/gradska-uprava/javni-oglasi-i-natjecaji"
+   ],
+   [
+    8,
+    "Raspisan Matičin natječaj za kratku priču „Andrija Zeljko”",
+    "http://www.sirokibrijeg.ba/index.php/aktualnosti/3874-raspisan-maticin-natjecaj-za-kratku-pricu-andrija-zeljko"
+   ],
+   [
+    6,
+    "Otvoren 5. foto natječaj „Umirovljenici fotografi 2026.“",
+    "http://www.sirokibrijeg.ba/index.php/aktualnosti/3881-otvoren-5-foto-natjecaj-umirovljenici-fotografi-2026"
+   ],
+   [
+    6,
+    "Javni poziv za upis djece u JU Dječji vrtić „Trnoružica“ Široki Brijeg – područni vrtić Privalj za pedagošku 2026./2027.",
+    "http://www.sirokibrijeg.ba/index.php/gradska-uprava/javni-oglasi-i-natjecaji/3899-javni-poziv-za-upis-djece-u-ju-djecji-vrtic-trnoruzica-siroki-brijeg-podrucni-vrtic-privalj-za-pedagosku-2026-2027-godinu"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "zepce",
+  "naziv": "Žepče",
+  "kanton": "zdk",
+  "web_staro": "",
+  "rubrika_staro": "",
+  "web": "https://www.opcina-zepce.com/",
+  "izvor_weba": "wikidata",
+  "rubrike": [
+   [
+    10,
+    "POGLEDAJTE SVE OBAVIJESTI I JAVNE POZIVE",
+    "http://www.opcina-zepce.com/javni-pozivi"
+   ],
+   [
+    10,
+    "Javni Pozivi",
+    "https://www.opcina-zepce.com/javni-pozivi"
+   ],
+   [
+    8,
+    "Omladinska banka Žepče: Javni poziv za prijavu društveno-korisnih projekata",
+    "https://www.opcina-zepce.com/omladinska-banka-zepce-javni-poziv-za-prijavu-drustveno-korisnih-projekata"
+   ],
+   [
+    8,
+    "ODLUKA O DODJELI SREDSTAVA PO „JAVNOM POZIVU ORGANIZACIJAMA CIVILNOG DRUŠTVA, NEVLADINIM ORGANIZACIJAMA I SPORTSKIM KLUB",
+    "https://www.opcina-zepce.com/odluka-o-dodjeli-sredstava-po-javnom-pozivu-organizacijama-civilnog-drustva-nevladinim-organizacijama-i-sportskim-klubovima-za-2026-godinu"
+   ],
+   [
+    8,
+    "JAVNI POZIV ZA JAVNU RASPRAVU O NACRTU REGULACIJSKOG PLANA ZA IZMJENU I DOPUNU POSLOVNE ZONE “POLJA” U ŽEPČU",
+    "https://www.opcina-zepce.com/javni-poziv-za-javnu-raspravu-o-nacrtu-regulacijskog-plana-za-izmjenu-i-dopunu-poslovne-zone-polja-u-zepcu"
+   ]
+  ],
+  "napomena": ""
+ },
+ {
+  "tip": "opcina",
+  "id": "zivinice",
+  "naziv": "Živinice",
+  "kanton": "tk",
+  "web_staro": "https://gradzivinice.ba",
+  "rubrika_staro": "",
+  "web": "https://gradzivinice.ba/",
+  "izvor_weba": "baza",
+  "rubrike": [
+   [
+    10,
+    "Konkursi – Oglasi – Pozivi",
+    "https://gradzivinice.ba/konkursi/"
+   ],
+   [
+    8,
+    "Plan Javnih poziva za 2021.",
+    "https://gradzivinice.ba/plan-javnih-poziva-za-2021-godinu/"
+   ],
+   [
+    7,
+    "Konkursi-Oglasi-Pozivi",
+    "https://gradzivinice.ba/"
+   ]
+  ],
+  "napomena": ""
+ }
+]
